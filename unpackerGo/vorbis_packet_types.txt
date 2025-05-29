@@ -1,0 +1,30 @@
+Vorbis Packet Types (from RFC 3533 and Vorbis I specification):
+
+The Vorbis bitstream contains three header packets followed by audio packets:
+
+1. Identification header (packet type 1):
+   - First packet in the logical bitstream
+   - Contains basic codec information
+   - Format: [01] + "vorbis" + version + channels + sample_rate + bitrates + block_size_info + framing_bit
+
+2. Comment header (packet type 3):
+   - Second packet in the logical bitstream
+   - Contains metadata/comments
+   - Format: [03] + "vorbis" + vendor_string + user_comments + framing_bit
+
+3. Setup header (packet type 5):
+   - Third packet in the logical bitstream
+   - Contains codec setup information (codebooks, etc.)
+   - Format: [05] + "vorbis" + setup_data + framing_bit
+
+4. Audio packets (packet type 0):
+   - All subsequent packets
+   - Contains compressed audio data
+   - Format: [0] + audio_data
+
+Note: Packet types must be odd for header packets and even for audio packets.
+Header packets: 1, 3, 5
+Audio packets: 0 (or any even number, but typically 0)
+
+Our files show packet type 3, which suggests we're looking at the comment header, not the identification header.
+This means the identification header (type 1) should come before this packet.

@@ -42,7 +42,7 @@ type GPKEntryHeader struct {
 	ComprLen     uint32
 	Dflt         [4]byte
 	UncomprLen   uint32
-	ComprHeadLen byte
+	ComprHeadLen uint8
 }
 
 // GPKEntry represents a file entry in the GPK package
@@ -117,13 +117,20 @@ func (g *GPK) Load(fileName string) error {
 		compressedData[i] ^= cipherCode[i%16]
 	}
 
-	// Decompress data (Qt uses big-endian size prefix, zlib expects big-endian)
-	// Qt's qUncompress format: 4 bytes size (big-endian) + zlib data
+	// Decompress data - Qt's qUncompress format requires special handling
 	if len(compressedData) < 4 {
 		return fmt.Errorf("compressed data too short")
 	}
 
-	// Skip the first 4 bytes (Qt's size prefix) and decompress
+	// Qt's qUncompress format: modify the first 4 bytes to make it compatible with zlib
+	originalSize := make([]byte, 4)
+	copy(originalSize, compressedData[:4])
+	compressedData[0] = 0
+	compressedData[1] = 0
+	compressedData[2] = originalSize[1]
+	compressedData[3] = originalSize[0]
+
+	// Decompress starting from byte 4
 	zlibReader, err := zlib.NewReader(bytes.NewReader(compressedData[4:]))
 	if err != nil {
 		return fmt.Errorf("failed to create zlib reader: %w", err)
@@ -135,7 +142,7 @@ func (g *GPK) Load(fileName string) error {
 		return fmt.Errorf("failed to decompress data: %w", err)
 	}
 
-	// Parse entries
+	// Parse entries using the fixed header size from C++ struct
 	err = g.parseEntries(uncompressedData)
 	if err != nil {
 		return fmt.Errorf("failed to parse entries: %w", err)
@@ -146,51 +153,197 @@ func (g *GPK) Load(fileName string) error {
 
 // parseEntries parses the uncompressed PIDX data to extract file entries
 func (g *GPK) parseEntries(data []byte) error {
-	reader := bytes.NewReader(data)
+	offset := 0
+	dataLen := len(data)
+	headerSize := 23 // Fixed size based on C++ struct
 
-	for reader.Len() > 0 {
-		var entry GPKEntry
+	for offset < dataLen {
+		// Check if we have at least 2 bytes for filename length
+		if offset+2 > dataLen {
+			break
+		}
 
 		// Read filename length
-		var filenameLen uint16
-		err := binary.Read(reader, binary.LittleEndian, &filenameLen)
-		if err != nil {
-			if err == io.EOF {
-				break
-			}
-			return fmt.Errorf("failed to read filename length: %w", err)
+		filenameLen := binary.LittleEndian.Uint16(data[offset : offset+2])
+		offset += 2
+
+		// Sanity check for filename length
+		if filenameLen == 0 {
+			break
+		}
+		if filenameLen > 1024 {
+			return fmt.Errorf("invalid filename length: %d at offset %d", filenameLen, offset-2)
+		}
+
+		// Check if we have enough data remaining for filename
+		if offset+int(filenameLen)*2 > dataLen {
+			return fmt.Errorf("not enough data for filename: need %d bytes, have %d", filenameLen*2, dataLen-offset)
 		}
 
 		// Read filename (UTF-16LE)
-		filenameBytes := make([]byte, filenameLen*2)
-		_, err = reader.Read(filenameBytes)
-		if err != nil {
-			return fmt.Errorf("failed to read filename: %w", err)
-		}
+		filenameBytes := data[offset : offset+int(filenameLen)*2]
+		offset += int(filenameLen) * 2
 
 		// Convert UTF-16LE to string
 		utf16Data := make([]uint16, filenameLen)
-		for i := 0; i < int(filenameLen); i++ {
+		for i := range int(filenameLen) {
 			utf16Data[i] = binary.LittleEndian.Uint16(filenameBytes[i*2 : i*2+2])
 		}
-		entry.Name = string(utf16.Decode(utf16Data))
+		filename := string(utf16.Decode(utf16Data))
 
-		// Read entry header
-		err = binary.Read(reader, binary.LittleEndian, &entry.Header)
-		if err != nil {
-			return fmt.Errorf("failed to read entry header: %w", err)
+		// Check if we have enough data for header
+		if offset+headerSize > dataLen {
+			return fmt.Errorf("not enough data for header: need %d bytes, have %d", headerSize, dataLen-offset)
 		}
 
+		// Read header using fixed 23-byte size
+		headerBytes := data[offset : offset+headerSize]
+		offset += headerSize
+
+		// Parse the header manually
+		var entry GPKEntry
+		entry.Name = filename
+
+		headerReader := bytes.NewReader(headerBytes)
+		err := binary.Read(headerReader, binary.LittleEndian, &entry.Header.SubVersion)
+		if err != nil {
+			return fmt.Errorf("failed to read SubVersion: %w", err)
+		}
+		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.Version)
+		if err != nil {
+			return fmt.Errorf("failed to read Version: %w", err)
+		}
+		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.Zero)
+		if err != nil {
+			return fmt.Errorf("failed to read Zero: %w", err)
+		}
+		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.Offset)
+		if err != nil {
+			return fmt.Errorf("failed to read Offset: %w", err)
+		}
+		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.ComprLen)
+		if err != nil {
+			return fmt.Errorf("failed to read ComprLen: %w", err)
+		}
+		_, err = headerReader.Read(entry.Header.Dflt[:])
+		if err != nil {
+			return fmt.Errorf("failed to read Dflt: %w", err)
+		}
+		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.UncomprLen)
+		if err != nil {
+			return fmt.Errorf("failed to read UncomprLen: %w", err)
+		}
+		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.ComprHeadLen)
+		if err != nil {
+			return fmt.Errorf("failed to read ComprHeadLen: %w", err)
+		}
+
+		// Add the successfully parsed entry to our collection
 		g.entries = append(g.entries, entry)
+
+		// Check if this might be the end - look for patterns that suggest no more entries
+		if offset < dataLen-2 {
+			nextPotentialLen := binary.LittleEndian.Uint16(data[offset : offset+2])
+			if nextPotentialLen == 0 {
+				break
+			}
+			if nextPotentialLen > 1024 {
+				// Look for entry separator patterns: "OggS", "Ogg" + length, "Og" + length
+				found := false
+				for tryOffset := offset; tryOffset < offset+10 && tryOffset < dataLen-4; tryOffset++ {
+					// Check for "OggS" pattern
+					if tryOffset+4 <= dataLen &&
+						data[tryOffset] == 79 && data[tryOffset+1] == 103 &&
+						data[tryOffset+2] == 103 && data[tryOffset+3] == 83 { // "OggS"
+
+						// Look for next filename length after OggS + padding
+						for nextOffset := tryOffset + 4; nextOffset < tryOffset+10 && nextOffset < dataLen-2; nextOffset++ {
+							tryLen := binary.LittleEndian.Uint16(data[nextOffset : nextOffset+2])
+							if tryLen > 0 && tryLen <= 100 && g.isValidFilename(data, nextOffset, tryLen) {
+								offset = nextOffset
+								found = true
+								break
+							}
+						}
+						if found {
+							break
+						}
+					}
+					// Check for "Ogg" + length pattern
+					if !found && tryOffset+4 <= dataLen &&
+						data[tryOffset] == 79 && data[tryOffset+1] == 103 &&
+						data[tryOffset+2] == 103 { // "Ogg"
+
+						potentialLen := data[tryOffset+3]
+						if potentialLen > 0 && potentialLen <= 100 {
+							nextOffset := tryOffset + 3
+							if g.isValidFilename(data, nextOffset, uint16(potentialLen)) {
+								offset = nextOffset
+								found = true
+								break
+							}
+						}
+					}
+				}
+				// Check for "Og" + length pattern
+				if !found {
+					for tryOffset := offset; tryOffset < offset+10 && tryOffset < dataLen-3; tryOffset++ {
+						if data[tryOffset] == 79 && data[tryOffset+1] == 103 { // "Og"
+							potentialLen := data[tryOffset+2]
+							if potentialLen > 0 && potentialLen <= 100 {
+								nextOffset := tryOffset + 2
+								if g.isValidFilename(data, nextOffset, uint16(potentialLen)) {
+									offset = nextOffset
+									found = true
+									break
+								}
+							}
+						}
+					}
+				}
+				if !found {
+					break
+				} else {
+					continue // Try parsing from this new offset
+				}
+			}
+		}
 	}
 
 	return nil
+}
+
+// isValidFilename checks if the data at the given offset contains a valid UTF-16 filename
+func (g *GPK) isValidFilename(data []byte, offset int, filenameLen uint16) bool {
+	if offset+2+int(filenameLen)*2 >= len(data) {
+		return false
+	}
+
+	nameBytes := data[offset+2 : offset+2+int(filenameLen)*2]
+	utf16Data := make([]uint16, filenameLen)
+
+	for i := 0; i < int(filenameLen); i++ {
+		utf16Data[i] = binary.LittleEndian.Uint16(nameBytes[i*2 : i*2+2])
+		// Check if this looks like a reasonable character
+		if utf16Data[i] == 0 || utf16Data[i] > 0xFFFF {
+			return false
+		}
+	}
+
+	possibleName := string(utf16.Decode(utf16Data))
+	// Check if the name looks like a reasonable filename
+	return strings.Contains(possibleName, "/") && strings.Contains(possibleName, ".")
 }
 
 // GetName returns the package name without path and extension
 func (g *GPK) GetName() string {
 	base := filepath.Base(g.fileName)
 	return strings.TrimSuffix(base, ".GPK")
+}
+
+// GetEntries returns all entries in the GPK file
+func (g *GPK) GetEntries() []GPKEntry {
+	return g.entries
 }
 
 // UnpackAll unpacks all files in the GPK to the specified directory
@@ -201,7 +354,9 @@ func (g *GPK) UnpackAll(outputDir string) error {
 	}
 	defer file.Close()
 
-	for _, entry := range g.entries {
+	for i, entry := range g.entries {
+		fmt.Printf("Extracting %d/%d: %s\n", i+1, len(g.entries), entry.Name)
+
 		// Create output directory
 		outputPath := filepath.Join(outputDir, entry.Name)
 		outputDirPath := filepath.Dir(outputPath)
@@ -209,18 +364,45 @@ func (g *GPK) UnpackAll(outputDir string) error {
 		err := os.MkdirAll(outputDirPath, 0755)
 		if err != nil {
 			return fmt.Errorf("failed to create directory %s: %w", outputDirPath, err)
-		}
-
-		// Read file data
+		} // Read file data
 		_, err = file.Seek(int64(entry.Header.Offset), 0)
 		if err != nil {
 			return fmt.Errorf("failed to seek to entry %s: %w", entry.Name, err)
 		}
 
-		fileData := make([]byte, entry.Header.ComprLen)
-		_, err = file.Read(fileData)
+		// Read all data including header
+		allData := make([]byte, entry.Header.ComprLen)
+		_, err = file.Read(allData)
 		if err != nil {
 			return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
+		}
+
+		// Find the actual OGG data start by searching for "OggS" pattern
+		var fileData []byte
+		oggOffset := -1
+
+		// Search for "OggS" pattern in the data
+		for i := 0; i < len(allData)-3; i++ {
+			if allData[i] == 'O' && allData[i+1] == 'g' && allData[i+2] == 'g' && allData[i+3] == 'S' {
+				oggOffset = i
+				break
+			}
+		}
+
+		if oggOffset >= 0 {
+			// Found OGG data, extract from that position
+			fileData = allData[oggOffset:]
+			fmt.Printf("  Found OGG data at offset %d, skipping %d header bytes for %s\n", oggOffset, oggOffset, entry.Name)
+		} else {
+			// No OGG pattern found, try skipping compression header as fallback
+			if entry.Header.ComprHeadLen > 0 && int(entry.Header.ComprHeadLen) < len(allData) {
+				fileData = allData[entry.Header.ComprHeadLen:]
+				fmt.Printf("  No OGG pattern found, skipping %d compression header bytes for %s\n", entry.Header.ComprHeadLen, entry.Name)
+			} else {
+				// Use all data as-is
+				fileData = allData
+				fmt.Printf("  No header processing for %s\n", entry.Name)
+			}
 		}
 
 		// Write file
@@ -234,8 +416,6 @@ func (g *GPK) UnpackAll(outputDir string) error {
 		if err != nil {
 			return fmt.Errorf("failed to write file %s: %w", outputPath, err)
 		}
-
-		fmt.Printf("Extracted: %s\n", entry.Name)
 	}
 
 	return nil
@@ -298,8 +478,6 @@ func matchPattern(pattern, name string) bool {
 }
 
 // matchPatternExact performs pattern matching that mimics Qt's QRegExp.exactMatch() behavior
-// This function supports full regular expressions like the original Qt implementation
-// Currently unused but available for compatibility with original behavior
 func matchPatternExact(pattern, name string) bool {
 	// Handle empty pattern
 	if pattern == "" {
@@ -312,24 +490,21 @@ func matchPatternExact(pattern, name string) bool {
 	}
 
 	// Convert Qt-style wildcards to regex if needed
-	// Qt QRegExp supports both regex and wildcard patterns
 	regexPattern := convertQtPatternToRegex(pattern)
 
-	// Compile regex with case-insensitive flag (Qt::CaseInsensitive)
+	// Compile regex with case-insensitive flag
 	regex, err := regexp.Compile("(?i)^" + regexPattern + "$")
 	if err != nil {
 		// If regex compilation fails, fall back to simple string matching
 		return strings.EqualFold(pattern, name)
 	}
 
-	// Use MatchString for exact match behavior (entire string must match)
 	return regex.MatchString(name)
 }
 
 // convertQtPatternToRegex converts Qt-style patterns to Go regex
-// Qt QRegExp supports both wildcard and regex syntax
 func convertQtPatternToRegex(pattern string) string {
-	// If pattern already looks like a regex (contains regex metacharacters), use as-is
+	// If pattern already looks like a regex, use as-is
 	regexMetaChars := []string{"[", "]", "(", ")", "{", "}", "^", "$", "|", "+"}
 	hasRegexChars := false
 	for _, char := range regexMetaChars {
@@ -340,17 +515,11 @@ func convertQtPatternToRegex(pattern string) string {
 	}
 
 	if hasRegexChars {
-		// Pattern likely contains regex syntax, use it directly
 		return pattern
 	}
 
 	// Convert wildcard pattern to regex
-	// Escape special regex characters first
 	escaped := regexp.QuoteMeta(pattern)
-
-	// Convert escaped wildcards back to regex equivalents
-	// \* becomes .* (any characters)
-	// \? becomes .  (any single character)
 	escaped = strings.ReplaceAll(escaped, "\\*", ".*")
 	escaped = strings.ReplaceAll(escaped, "\\?", ".")
 
