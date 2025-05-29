@@ -8,7 +8,7 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: go run hexdump.go <file>")
+		fmt.Println("Usage: go run cmd/hexdump/main.go <file>")
 		os.Exit(1)
 	}
 

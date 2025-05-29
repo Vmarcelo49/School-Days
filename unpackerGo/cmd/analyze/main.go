@@ -20,7 +20,7 @@ type OggPageHeader struct {
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: go run analyze_ogg_stream.go <ogg_file>")
+		fmt.Println("Usage: go run cmd/analyze/main.go <ogg_file>")
 		os.Exit(1)
 	}
 

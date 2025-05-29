@@ -36,8 +36,8 @@ type VorbisIdHeader struct {
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: go run validate_ogg.go <path_to_extracted_files>")
-		fmt.Println("Example: go run validate_ogg.go extracted")
+		fmt.Println("Usage: go run cmd/validate/main.go <path_to_extracted_files>")
+		fmt.Println("Example: go run cmd/validate/main.go extracted")
 		os.Exit(1)
 	}
 
@@ -161,7 +161,7 @@ func validateOggVorbisFile(filePath string) bool {
 	fmt.Printf("  ✓ Vorbis version: %d\n", vorbisHeader.Version)
 
 	// Validate audio parameters
-	if vorbisHeader.Channels == 0 || vorbisHeader.Channels > 255 {
+	if vorbisHeader.Channels == 0 {
 		fmt.Printf("  Invalid channel count: %d\n", vorbisHeader.Channels)
 		return false
 	}
