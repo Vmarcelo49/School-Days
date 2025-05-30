@@ -9,7 +9,9 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"runtime"
 	"strings"
+	"sync"
 	"unicode/utf16"
 )
 
@@ -64,6 +66,24 @@ func NewGPK() *GPK {
 	}
 }
 
+// readGPKSignature reads GPK signature manually to ensure exact 32-byte layout
+func readGPKSignature(reader io.Reader) (*GPKSignature, error) {
+	sig := &GPKSignature{}
+
+	// Read each field explicitly to ensure exact byte layout (32 bytes total)
+	if err := binary.Read(reader, binary.LittleEndian, &sig.Sig0); err != nil {
+		return nil, fmt.Errorf("failed to read Sig0: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &sig.PidxLength); err != nil {
+		return nil, fmt.Errorf("failed to read PidxLength: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &sig.Sig1); err != nil {
+		return nil, fmt.Errorf("failed to read Sig1: %w", err)
+	}
+
+	return sig, nil
+}
+
 // Load loads a GPK file and parses its contents
 func (g *GPK) Load(fileName string) error {
 	g.fileName = fileName
@@ -80,15 +100,14 @@ func (g *GPK) Load(fileName string) error {
 		return fmt.Errorf("failed to get file stats: %w", err)
 	}
 	fileSize := stat.Size()
-
-	// Read signature from the end of file
-	var signature GPKSignature
-	_, err = file.Seek(fileSize-int64(binary.Size(signature)), 0)
+	// Read signature from the end of file manually to avoid padding issues
+	const signatureSize = 32 // 12 + 4 + 16 bytes exactly
+	_, err = file.Seek(fileSize-signatureSize, 0)
 	if err != nil {
 		return fmt.Errorf("failed to seek to signature: %w", err)
 	}
 
-	err = binary.Read(file, binary.LittleEndian, &signature)
+	signature, err := readGPKSignature(file)
 	if err != nil {
 		return fmt.Errorf("failed to read signature: %w", err)
 	}
@@ -98,9 +117,8 @@ func (g *GPK) Load(fileName string) error {
 		string(signature.Sig1[:len(GPKTailerIdent1)]) != GPKTailerIdent1 {
 		return fmt.Errorf("invalid GPK signature")
 	}
-
 	// Read compressed PIDX data
-	pidxOffset := fileSize - int64(binary.Size(signature)) - int64(signature.PidxLength)
+	pidxOffset := fileSize - signatureSize - int64(signature.PidxLength)
 	_, err = file.Seek(pidxOffset, 0)
 	if err != nil {
 		return fmt.Errorf("failed to seek to PIDX data: %w", err)
@@ -147,8 +165,166 @@ func (g *GPK) Load(fileName string) error {
 	if err != nil {
 		return fmt.Errorf("failed to parse entries: %w", err)
 	}
-
 	return nil
+}
+
+// readGPKEntryHeader reads GPK entry header manually to ensure exact 23-byte layout
+func readGPKEntryHeader(data []byte) (*GPKEntryHeader, error) {
+	if len(data) < 23 {
+		return nil, fmt.Errorf("insufficient data for header: need 23 bytes, have %d", len(data))
+	}
+
+	header := &GPKEntryHeader{}
+	reader := bytes.NewReader(data)
+
+	// Read each field in exact order to match C++ struct (total: 23 bytes)
+	if err := binary.Read(reader, binary.LittleEndian, &header.SubVersion); err != nil { // 2 bytes
+		return nil, fmt.Errorf("failed to read SubVersion: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &header.Version); err != nil { // 2 bytes
+		return nil, fmt.Errorf("failed to read Version: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &header.Zero); err != nil { // 2 bytes
+		return nil, fmt.Errorf("failed to read Zero: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &header.Offset); err != nil { // 4 bytes
+		return nil, fmt.Errorf("failed to read Offset: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &header.ComprLen); err != nil { // 4 bytes
+		return nil, fmt.Errorf("failed to read ComprLen: %w", err)
+	}
+	if _, err := reader.Read(header.Dflt[:]); err != nil { // 4 bytes
+		return nil, fmt.Errorf("failed to read Dflt: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &header.UncomprLen); err != nil { // 4 bytes
+		return nil, fmt.Errorf("failed to read UncomprLen: %w", err)
+	}
+	if err := binary.Read(reader, binary.LittleEndian, &header.ComprHeadLen); err != nil { // 1 byte
+		return nil, fmt.Errorf("failed to read ComprHeadLen: %w", err)
+	}
+	// Total: exactly 23 bytes
+
+	return header, nil
+}
+
+// Parse parses the GPK file and extracts entries
+func (g *GPK) Parse() error {
+	file, err := os.Open(g.fileName)
+	if err != nil {
+		return fmt.Errorf("failed to open GPK file: %w", err)
+	}
+	defer file.Close()
+
+	// Get file size
+	stat, err := file.Stat()
+	if err != nil {
+		return fmt.Errorf("failed to get file stats: %w", err)
+	}
+	fileSize := stat.Size()
+
+	// Read signature from the end of file manually to avoid padding issues
+	const signatureSize = 32 // 12 + 4 + 16 bytes exactly
+	_, err = file.Seek(fileSize-signatureSize, 0)
+	if err != nil {
+		return fmt.Errorf("failed to seek to signature: %w", err)
+	}
+
+	signature, err := readGPKSignature(file)
+	if err != nil {
+		return fmt.Errorf("failed to read signature: %w", err)
+	}
+
+	// Verify signature
+	if string(signature.Sig0[:len(GPKTailerIdent0)]) != GPKTailerIdent0 ||
+		string(signature.Sig1[:len(GPKTailerIdent1)]) != GPKTailerIdent1 {
+		return fmt.Errorf("invalid GPK signature")
+	}
+	// Read compressed PIDX data
+	pidxOffset := fileSize - signatureSize - int64(signature.PidxLength)
+	_, err = file.Seek(pidxOffset, 0)
+	if err != nil {
+		return fmt.Errorf("failed to seek to PIDX data: %w", err)
+	}
+
+	compressedData := make([]byte, signature.PidxLength)
+	_, err = file.Read(compressedData)
+	if err != nil {
+		return fmt.Errorf("failed to read compressed data: %w", err)
+	}
+
+	// Decrypt data
+	for i := 0; i < len(compressedData); i++ {
+		compressedData[i] ^= cipherCode[i%16]
+	}
+
+	// Decompress data - Qt's qUncompress format requires special handling
+	if len(compressedData) < 4 {
+		return fmt.Errorf("compressed data too short")
+	}
+
+	// Qt's qUncompress format: modify the first 4 bytes to make it compatible with zlib
+	originalSize := make([]byte, 4)
+	copy(originalSize, compressedData[:4])
+	compressedData[0] = 0
+	compressedData[1] = 0
+	compressedData[2] = originalSize[1]
+	compressedData[3] = originalSize[0]
+
+	// Decompress starting from byte 4
+	zlibReader, err := zlib.NewReader(bytes.NewReader(compressedData[4:]))
+	if err != nil {
+		return fmt.Errorf("failed to create zlib reader: %w", err)
+	}
+	defer zlibReader.Close()
+
+	uncompressedData, err := io.ReadAll(zlibReader)
+	if err != nil {
+		return fmt.Errorf("failed to decompress data: %w", err)
+	}
+
+	// Parse entries using the fixed header size from C++ struct
+	err = g.parseEntries(uncompressedData)
+	if err != nil {
+		return fmt.Errorf("failed to parse entries: %w", err)
+	}
+	return nil
+}
+
+// decompressData decompresses Qt's qUncompress format data
+// Based on the C++ decompress_data function in unpacker_cli_unfinished/gpk.cpp lines 64-86
+func decompressData(compressedData []byte, uncompressedSize uint32) ([]byte, error) {
+	if len(compressedData) < 4 {
+		return nil, fmt.Errorf("compressed data too short: need at least 4 bytes, have %d", len(compressedData))
+	}
+
+	// Qt's qUncompress format: first 4 bytes contain uncompressed size in big-endian
+	// followed by standard zlib data
+	originalSize := binary.BigEndian.Uint32(compressedData[:4])
+
+	// Verify the size matches what we expect
+	if originalSize != uncompressedSize {
+		return nil, fmt.Errorf("size mismatch: header says %d, expected %d", originalSize, uncompressedSize)
+	}
+
+	// Create zlib reader for the data after the 4-byte header
+	zlibReader, err := zlib.NewReader(bytes.NewReader(compressedData[4:]))
+	if err != nil {
+		return nil, fmt.Errorf("failed to create zlib reader: %w", err)
+	}
+	defer zlibReader.Close()
+
+	// Decompress the data
+	decompressedData, err := io.ReadAll(zlibReader)
+	if err != nil {
+		return nil, fmt.Errorf("failed to decompress data: %w", err)
+	}
+
+	// Verify the decompressed size
+	if len(decompressedData) != int(uncompressedSize) {
+		return nil, fmt.Errorf("decompressed size mismatch: got %d bytes, expected %d", len(decompressedData), uncompressedSize)
+	}
+
+	return decompressedData, nil
 }
 
 // parseEntries parses the uncompressed PIDX data to extract file entries
@@ -190,53 +366,25 @@ func (g *GPK) parseEntries(data []byte) error {
 			utf16Data[i] = binary.LittleEndian.Uint16(filenameBytes[i*2 : i*2+2])
 		}
 		filename := string(utf16.Decode(utf16Data))
-
 		// Check if we have enough data for header
 		if offset+headerSize > dataLen {
 			return fmt.Errorf("not enough data for header: need %d bytes, have %d", headerSize, dataLen-offset)
 		}
 
-		// Read header using fixed 23-byte size
+		// Read header using the manual reading function to ensure exact 23-byte layout
 		headerBytes := data[offset : offset+headerSize]
 		offset += headerSize
 
-		// Parse the header manually
+		// Parse the header using the new manual reading function
+		header, err := readGPKEntryHeader(headerBytes)
+		if err != nil {
+			return fmt.Errorf("failed to parse header: %w", err)
+		}
+
+		// Create entry with parsed header
 		var entry GPKEntry
 		entry.Name = filename
-
-		headerReader := bytes.NewReader(headerBytes)
-		err := binary.Read(headerReader, binary.LittleEndian, &entry.Header.SubVersion)
-		if err != nil {
-			return fmt.Errorf("failed to read SubVersion: %w", err)
-		}
-		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.Version)
-		if err != nil {
-			return fmt.Errorf("failed to read Version: %w", err)
-		}
-		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.Zero)
-		if err != nil {
-			return fmt.Errorf("failed to read Zero: %w", err)
-		}
-		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.Offset)
-		if err != nil {
-			return fmt.Errorf("failed to read Offset: %w", err)
-		}
-		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.ComprLen)
-		if err != nil {
-			return fmt.Errorf("failed to read ComprLen: %w", err)
-		}
-		_, err = headerReader.Read(entry.Header.Dflt[:])
-		if err != nil {
-			return fmt.Errorf("failed to read Dflt: %w", err)
-		}
-		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.UncomprLen)
-		if err != nil {
-			return fmt.Errorf("failed to read UncomprLen: %w", err)
-		}
-		err = binary.Read(headerReader, binary.LittleEndian, &entry.Header.ComprHeadLen)
-		if err != nil {
-			return fmt.Errorf("failed to read ComprHeadLen: %w", err)
-		}
+		entry.Header = *header
 
 		// Add the successfully parsed entry to our collection
 		g.entries = append(g.entries, entry)
@@ -321,11 +469,10 @@ func (g *GPK) isValidFilename(data []byte, offset int, filenameLen uint16) bool 
 
 	nameBytes := data[offset+2 : offset+2+int(filenameLen)*2]
 	utf16Data := make([]uint16, filenameLen)
-
 	for i := 0; i < int(filenameLen); i++ {
 		utf16Data[i] = binary.LittleEndian.Uint16(nameBytes[i*2 : i*2+2])
-		// Check if this looks like a reasonable character
-		if utf16Data[i] == 0 || utf16Data[i] > 0xFFFF {
+		// Check if this looks like a reasonable character (null character check only)
+		if utf16Data[i] == 0 {
 			return false
 		}
 	}
@@ -335,15 +482,19 @@ func (g *GPK) isValidFilename(data []byte, offset int, filenameLen uint16) bool 
 	return strings.Contains(possibleName, "/") && strings.Contains(possibleName, ".")
 }
 
-// GetName returns the package name without path and extension
-func (g *GPK) GetName() string {
-	base := filepath.Base(g.fileName)
-	return strings.TrimSuffix(base, ".GPK")
-}
-
-// GetEntries returns all entries in the GPK file
+// GetEntries returns all entries in the GPK
 func (g *GPK) GetEntries() []GPKEntry {
 	return g.entries
+}
+
+// GetName returns the base name of the GPK file without extension
+func (g *GPK) GetName() string {
+	// Extract base filename without path and extension
+	filename := filepath.Base(g.fileName)
+	if idx := strings.LastIndex(filename, "."); idx > 0 {
+		filename = filename[:idx]
+	}
+	return filename
 }
 
 // UnpackAll unpacks all files in the GPK to the specified directory
@@ -353,73 +504,46 @@ func (g *GPK) UnpackAll(outputDir string) error {
 		return fmt.Errorf("failed to open GPK file: %w", err)
 	}
 	defer file.Close()
-
 	for i, entry := range g.entries {
 		fmt.Printf("Extracting %d/%d: %s\n", i+1, len(g.entries), entry.Name)
 
-		// Create output directory
+		// Use original filename directly (GPK files already have correct extensions)
 		outputPath := filepath.Join(outputDir, entry.Name)
 		outputDirPath := filepath.Dir(outputPath)
 
 		err := os.MkdirAll(outputDirPath, 0755)
 		if err != nil {
 			return fmt.Errorf("failed to create directory %s: %w", outputDirPath, err)
-		} // Read file data
+		}
+
+		// Read file data - simple raw data extraction like C++ version
 		_, err = file.Seek(int64(entry.Header.Offset), 0)
 		if err != nil {
 			return fmt.Errorf("failed to seek to entry %s: %w", entry.Name, err)
 		}
-
-		// Read all data including header
-		allData := make([]byte, entry.Header.ComprLen)
-		_, err = file.Read(allData)
+		// Read raw data directly (matching C++ behavior: package.read(entry.header.comprlen))
+		fileData := make([]byte, entry.Header.ComprLen)
+		_, err = file.Read(fileData)
 		if err != nil {
 			return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
 		}
-		// Search for both identification header (type 1) and OGG-wrapped comment header (type 3)
-		var fileData []byte
-		idHeaderOffset := -1
-		oggOffset := -1
 
-		// First, search for raw Vorbis identification header (type 1)
-		for i := 0; i < len(allData)-6; i++ {
-			if allData[i] == 0x01 &&
-				allData[i+1] == 'v' && allData[i+2] == 'o' &&
-				allData[i+3] == 'r' && allData[i+4] == 'b' &&
-				allData[i+5] == 'i' && allData[i+6] == 's' {
-				idHeaderOffset = i
-				break
+		// Decompress file data if needed (when UncomprLen > 0 and differs from ComprLen)
+		var finalData []byte
+		if entry.Header.UncomprLen > 0 && entry.Header.UncomprLen != entry.Header.ComprLen {
+			// File is compressed, decompress it using Qt's qUncompress format
+			decompressedData, err := decompressData(fileData, entry.Header.UncomprLen)
+			if err != nil {
+				return fmt.Errorf("failed to decompress entry %s: %w", entry.Name, err)
 			}
-		}
-
-		// Search for "OggS" pattern (comment header)
-		for i := 0; i < len(allData)-3; i++ {
-			if allData[i] == 'O' && allData[i+1] == 'g' && allData[i+2] == 'g' && allData[i+3] == 'S' {
-				oggOffset = i
-				break
-			}
-		}
-
-		if idHeaderOffset >= 0 && oggOffset >= 0 {
-			// Found both headers - create proper Vorbis stream
-			fileData = g.createCompleteVorbisStream(allData, idHeaderOffset, oggOffset, entry.Name)
-			fmt.Printf("  Found ID header at %d and OGG at %d, creating complete stream for %s\n",
-				idHeaderOffset, oggOffset, entry.Name)
-		} else if oggOffset >= 0 {
-			// Only found OGG-wrapped header, use as-is (fallback)
-			fileData = allData[oggOffset:]
-			fmt.Printf("  Only found OGG data at offset %d for %s (missing ID header)\n", oggOffset, entry.Name)
+			finalData = decompressedData
 		} else {
-			// No OGG pattern found, try skipping compression header as fallback
-			if entry.Header.ComprHeadLen > 0 && int(entry.Header.ComprHeadLen) < len(allData) {
-				fileData = allData[entry.Header.ComprHeadLen:]
-				fmt.Printf("  No OGG pattern found, skipping %d compression header bytes for %s\n", entry.Header.ComprHeadLen, entry.Name)
-			} else {
-				// Use all data as-is
-				fileData = allData
-				fmt.Printf("  No header processing for %s\n", entry.Name)
-			}
+			// File is not compressed, use raw data
+			finalData = fileData
 		}
+
+		// Strip OGG header if needed
+		finalData = stripOGGHeader(finalData, entry.Name)
 
 		// Write file
 		outFile, err := os.Create(outputPath)
@@ -427,7 +551,7 @@ func (g *GPK) UnpackAll(outputDir string) error {
 			return fmt.Errorf("failed to create output file %s: %w", outputPath, err)
 		}
 
-		_, err = outFile.Write(fileData)
+		_, err = outFile.Write(finalData)
 		outFile.Close()
 		if err != nil {
 			return fmt.Errorf("failed to write file %s: %w", outputPath, err)
@@ -435,6 +559,31 @@ func (g *GPK) UnpackAll(outputDir string) error {
 	}
 
 	return nil
+}
+
+// stripOGGHeader removes custom headers from OGG files, finding the "OggS" pattern
+// and returning clean OGG data that starts with the actual OGG header
+func stripOGGHeader(data []byte, filename string) []byte {
+	// Look for OGG files by extension
+	if !strings.HasSuffix(strings.ToUpper(filename), ".OGG") {
+		return data
+	}
+
+	// Find the "OggS" pattern
+	for i := 0; i < len(data)-3; i++ {
+		if data[i] == 'O' && data[i+1] == 'g' && data[i+2] == 'g' && data[i+3] == 'S' {
+			if i > 0 {
+				// Found header to strip - return data starting from OggS
+				return data[i:]
+			} else {
+				// Already starts with OggS, no header to strip
+				return data
+			}
+		}
+	}
+
+	// No OggS pattern found, return original data
+	return data
 }
 
 // Open opens a specific file from the GPK package
@@ -505,200 +654,205 @@ func matchPatternExact(pattern, name string) bool {
 		return true
 	}
 
-	// Convert Qt-style wildcards to regex if needed
-	regexPattern := convertQtPatternToRegex(pattern)
+	// Simple wildcard matching without regex
+	if strings.Contains(pattern, "*") || strings.Contains(pattern, "?") {
+		// Convert wildcard pattern to regex
+		escaped := regexp.QuoteMeta(pattern)
+		escaped = strings.ReplaceAll(escaped, "\\*", ".*")
+		escaped = strings.ReplaceAll(escaped, "\\?", ".")
 
-	// Compile regex with case-insensitive flag
-	regex, err := regexp.Compile("(?i)^" + regexPattern + "$")
+		// Compile regex with case-insensitive flag
+		regex, err := regexp.Compile("(?i)^" + escaped + "$")
+		if err != nil {
+			// If regex compilation fails, fall back to simple string matching
+			return strings.EqualFold(pattern, name)
+		}
+		return regex.MatchString(name)
+	}
+
+	// Exact match (case insensitive)
+	return strings.EqualFold(pattern, name)
+}
+
+// FileExtractionJob represents a single file extraction task
+type FileExtractionJob struct {
+	Entry      GPKEntry
+	Index      int
+	TotalFiles int
+	OutputDir  string
+}
+
+// FileExtractionResult represents the result of a file extraction
+type FileExtractionResult struct {
+	Index    int
+	Error    error
+	Filename string
+}
+
+// UnpackAllConcurrent unpacks all files in the GPK to the specified directory using goroutines
+func (g *GPK) UnpackAllConcurrent(outputDir string) error {
+	// Determine optimal number of workers
+	// For I/O intensive tasks, we can use more workers than CPU cores
+	maxWorkers := runtime.NumCPU() * 2
+	if len(g.entries) < maxWorkers {
+		maxWorkers = len(g.entries)
+	}
+
+	// Limit to prevent too many file handles
+	if maxWorkers > 10 {
+		maxWorkers = 10
+	}
+
+	fmt.Printf("    Using %d workers for extracting %d files\n", maxWorkers, len(g.entries))
+
+	// Create channels for work distribution
+	jobs := make(chan FileExtractionJob, len(g.entries))
+	results := make(chan FileExtractionResult, len(g.entries))
+
+	// Start worker goroutines
+	var wg sync.WaitGroup
+	for w := 0; w < maxWorkers; w++ {
+		wg.Add(1)
+		go func(workerID int) {
+			defer wg.Done()
+			g.extractionWorker(workerID, jobs, results)
+		}(w)
+	}
+
+	// Send jobs to workers
+	for i, entry := range g.entries {
+		jobs <- FileExtractionJob{
+			Entry:      entry,
+			Index:      i,
+			TotalFiles: len(g.entries),
+			OutputDir:  outputDir,
+		}
+	}
+	close(jobs)
+
+	// Wait for all workers to complete
+	wg.Wait()
+	close(results)
+
+	// Collect results and check for errors
+	var errors []error
+	successCount := 0
+	for result := range results {
+		if result.Error != nil {
+			errors = append(errors, fmt.Errorf("file %s: %w", result.Filename, result.Error))
+		} else {
+			successCount++
+		}
+	}
+
+	if len(errors) > 0 {
+		fmt.Printf("    Extraction completed with %d successes and %d errors\n", successCount, len(errors))
+		for _, err := range errors {
+			fmt.Printf("    Error: %v\n", err)
+		}
+		// Return first error, but continue processing
+		return errors[0]
+	}
+
+	return nil
+}
+
+// extractionWorker processes file extraction jobs
+func (g *GPK) extractionWorker(workerID int, jobs <-chan FileExtractionJob, results chan<- FileExtractionResult) {
+	// Open the GPK file for this worker
+	file, err := os.Open(g.fileName)
 	if err != nil {
-		// If regex compilation fails, fall back to simple string matching
-		return strings.EqualFold(pattern, name)
-	}
-
-	return regex.MatchString(name)
-}
-
-// convertQtPatternToRegex converts Qt-style patterns to Go regex
-func convertQtPatternToRegex(pattern string) string {
-	// If pattern already looks like a regex, use as-is
-	regexMetaChars := []string{"[", "]", "(", ")", "{", "}", "^", "$", "|", "+"}
-	hasRegexChars := false
-	for _, char := range regexMetaChars {
-		if strings.Contains(pattern, char) {
-			hasRegexChars = true
-			break
-		}
-	}
-
-	if hasRegexChars {
-		return pattern
-	}
-
-	// Convert wildcard pattern to regex
-	escaped := regexp.QuoteMeta(pattern)
-	escaped = strings.ReplaceAll(escaped, "\\*", ".*")
-	escaped = strings.ReplaceAll(escaped, "\\?", ".")
-
-	return escaped
-}
-
-// createCompleteVorbisStream creates a proper Vorbis stream by combining the raw identification header
-// with the OGG-wrapped comment header
-func (g *GPK) createCompleteVorbisStream(allData []byte, idHeaderOffset, oggOffset int, filename string) []byte {
-	// Extract the identification header data
-	// We need to find the end of the identification header by parsing its structure
-	idHeaderStart := idHeaderOffset
-	if idHeaderStart+30 >= len(allData) {
-		// Not enough data for a complete identification header, fallback
-		return allData[oggOffset:]
-	}
-
-	// Vorbis identification header structure:
-	// 1 byte packet type (0x01)
-	// 6 bytes "vorbis"
-	// 4 bytes version (should be 0)
-	// 1 byte channels
-	// 4 bytes sample rate
-	// 4 bytes bitrate max
-	// 4 bytes bitrate nominal
-	// 4 bytes bitrate min
-	// 1 byte blocksize info
-	// 1 byte framing flag (should be 1)
-	// Total: 30 bytes
-
-	idHeaderEnd := idHeaderStart + 30
-	if idHeaderEnd > len(allData) {
-		// Not enough data, fallback
-		return allData[oggOffset:]
-	}
-
-	idHeaderData := allData[idHeaderStart:idHeaderEnd]
-
-	// Validate the identification header
-	if len(idHeaderData) < 30 ||
-		idHeaderData[0] != 0x01 ||
-		string(idHeaderData[1:7]) != "vorbis" ||
-		idHeaderData[29] != 0x01 { // framing flag should be 1
-		fmt.Printf("  Warning: Invalid identification header structure for %s, using fallback\n", filename)
-		return allData[oggOffset:]
-	}
-
-	// Create OGG page for identification header
-	idPage := g.createOggPage(idHeaderData, 0, 0, 0x02) // First page flag
-
-	// Get the existing OGG data (comment header and beyond)
-	existingOggData := allData[oggOffset:]
-
-	// Parse the existing OGG page to update sequence numbers
-	adjustedOggData := g.adjustOggSequenceNumbers(existingOggData, 1)
-
-	// Combine identification page with adjusted existing data
-	result := make([]byte, len(idPage)+len(adjustedOggData))
-	copy(result, idPage)
-	copy(result[len(idPage):], adjustedOggData)
-
-	return result
-}
-
-// createOggPage creates an OGG page with the given payload data
-func (g *GPK) createOggPage(payload []byte, granulePos uint64, serialNum uint32, headerType uint8) []byte {
-	// Calculate segment table
-	var segments []byte
-	remaining := len(payload)
-	for remaining > 0 {
-		if remaining >= 255 {
-			segments = append(segments, 255)
-			remaining -= 255
-		} else {
-			segments = append(segments, byte(remaining))
-			remaining = 0
-		}
-	}
-
-	// Create page header (27 bytes + segment table)
-	headerSize := 27 + len(segments)
-	header := make([]byte, headerSize)
-
-	// OGG page header structure
-	copy(header[0:4], []byte("OggS")) // Capture pattern
-	header[4] = 0                     // Version
-	header[5] = headerType            // Header type
-
-	// Granule position (8 bytes, little endian)
-	for i := 0; i < 8; i++ {
-		header[6+i] = byte(granulePos >> (i * 8))
-	}
-
-	// Serial number (4 bytes, little endian)
-	for i := 0; i < 4; i++ {
-		header[14+i] = byte(serialNum >> (i * 8))
-	}
-
-	// Page sequence number (4 bytes, little endian) - will be set to 0 for first page
-	// bytes 18-21 are already zero
-
-	// CRC32 checksum (4 bytes) - will be calculated later
-	// bytes 22-25 are left as zero for now
-
-	header[26] = byte(len(segments)) // Number of segments
-
-	// Copy segment table
-	copy(header[27:], segments)
-
-	// Create complete page
-	page := make([]byte, len(header)+len(payload))
-	copy(page, header)
-	copy(page[len(header):], payload)
-
-	// Calculate and set CRC32 checksum
-	// For simplicity, we'll set it to 0 and let the decoder handle it
-	// In a complete implementation, we'd calculate the actual CRC32
-
-	return page
-}
-
-// adjustOggSequenceNumbers adjusts the sequence numbers in OGG pages starting from the given number
-func (g *GPK) adjustOggSequenceNumbers(oggData []byte, startSeq uint32) []byte {
-	result := make([]byte, len(oggData))
-	copy(result, oggData)
-
-	offset := 0
-	pageSeq := startSeq
-
-	for offset < len(result)-27 {
-		// Check for OGG page header
-		if offset+4 <= len(result) &&
-			result[offset] == 'O' && result[offset+1] == 'g' &&
-			result[offset+2] == 'g' && result[offset+3] == 'S' {
-
-			// Update sequence number (bytes 18-21, little endian)
-			if offset+21 < len(result) {
-				for i := 0; i < 4; i++ {
-					result[offset+18+i] = byte(pageSeq >> (i * 8))
-				}
-				pageSeq++
+		// Send error for all jobs this worker would have processed
+		for job := range jobs {
+			results <- FileExtractionResult{
+				Index:    job.Index,
+				Error:    fmt.Errorf("worker %d failed to open GPK file: %w", workerID, err),
+				Filename: job.Entry.Name,
 			}
+		}
+		return
+	}
+	defer file.Close()
 
-			// Skip to next page by reading segment table and payload
-			if offset+26 < len(result) {
-				numSegments := int(result[offset+26])
-				if offset+27+numSegments <= len(result) {
-					payloadSize := 0
-					for i := 0; i < numSegments; i++ {
-						payloadSize += int(result[offset+27+i])
-					}
-					offset += 27 + numSegments + payloadSize
-				} else {
-					break
-				}
-			} else {
-				break
-			}
-		} else {
-			// Not an OGG page, move forward
-			offset++
+	for job := range jobs {
+		fmt.Printf("    [Worker %d] Extracting %d/%d: %s\n",
+			workerID, job.Index+1, job.TotalFiles, job.Entry.Name)
+
+		err := g.extractSingleFile(file, job.Entry, job.OutputDir)
+		results <- FileExtractionResult{
+			Index:    job.Index,
+			Error:    err,
+			Filename: job.Entry.Name,
 		}
 	}
+}
 
-	return result
+// normalizeFilename normalizes file names based on package type (like C++ version)
+func normalizeFilename(packageName, originalName string) string {
+	pkgUpper := strings.ToUpper(packageName)
+
+	// Apply the same normalization rules as the C++ version
+	if strings.HasPrefix(pkgUpper, "SYSSE") || strings.HasPrefix(pkgUpper, "SE") || strings.HasPrefix(pkgUpper, "VOICE") {
+		return originalName + ".ogg"
+	} else if strings.HasPrefix(pkgUpper, "BGM") {
+		return originalName + "_loop.ogg"
+	} else if strings.HasPrefix(pkgUpper, "EVENT") {
+		return originalName + ".PNG"
+	}
+
+	return originalName
+}
+
+// extractSingleFile extracts a single file from the GPK (thread-safe version)
+func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string) error {
+	// Use original filename directly (GPK files already have correct extensions)
+	outputPath := filepath.Join(outputDir, entry.Name)
+	outputDirPath := filepath.Dir(outputPath)
+
+	err := os.MkdirAll(outputDirPath, 0755)
+	if err != nil {
+		return fmt.Errorf("failed to create directory %s: %w", outputDirPath, err)
+	}
+
+	// Read file data - simple raw data extraction like C++ version
+	_, err = file.Seek(int64(entry.Header.Offset), 0)
+	if err != nil {
+		return fmt.Errorf("failed to seek to entry %s: %w", entry.Name, err)
+	}
+	// Read raw data directly (matching C++ behavior: package.read(entry.header.comprlen))
+	fileData := make([]byte, entry.Header.ComprLen)
+	_, err = file.Read(fileData)
+	if err != nil {
+		return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
+	}
+
+	// Decompress file data if needed (when UncomprLen > 0 and differs from ComprLen)
+	var finalData []byte
+	if entry.Header.UncomprLen > 0 && entry.Header.UncomprLen != entry.Header.ComprLen {
+		// File is compressed, decompress it using Qt's qUncompress format
+		decompressedData, err := decompressData(fileData, entry.Header.UncomprLen)
+		if err != nil {
+			return fmt.Errorf("failed to decompress entry %s: %w", entry.Name, err)
+		}
+		finalData = decompressedData
+	} else {
+		// File is not compressed, use raw data
+		finalData = fileData
+	}
+
+	// Strip OGG header if needed
+	finalData = stripOGGHeader(finalData, entry.Name)
+
+	// Write file
+	outFile, err := os.Create(outputPath)
+	if err != nil {
+		return fmt.Errorf("failed to create output file %s: %w", outputPath, err)
+	}
+	defer outFile.Close()
+
+	_, err = outFile.Write(finalData)
+	if err != nil {
+		return fmt.Errorf("failed to write file %s: %w", outputPath, err)
+	}
+	return nil
 }
