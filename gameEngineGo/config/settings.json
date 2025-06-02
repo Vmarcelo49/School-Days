@@ -1,0 +1,13 @@
+{
+  "screen_width": 800,
+  "screen_height": 600,
+  "fullscreen": false,
+  "vsync": true,
+  "bgm_volume": 0.8,
+  "sfx_volume": 0.8,
+  "voice_volume": 0.8,
+  "assets_path": "./assets",
+  "debug_mode": true,
+  "language": "en",
+  "text_speed": 3
+}
