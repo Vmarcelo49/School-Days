@@ -247,9 +247,13 @@ func (g *GPK) parseEntries(data []byte) error {
 			Header: *header,
 		}
 		g.entries = append(g.entries, entry)
-
 		// Check for continuation or end of data
-		if !g.shouldContinueParsing(data, offset) {
+		if offset >= len(data)-2 {
+			break
+		}
+
+		nextPotentialLen := binary.LittleEndian.Uint16(data[offset : offset+2])
+		if nextPotentialLen == 0 || nextPotentialLen > 1024 {
 			break
 		}
 	}
@@ -297,72 +301,6 @@ func (g *GPK) parseHeader(data []byte, offset int, headerSize int) (*GPKEntryHea
 	}
 
 	return header, offset, nil
-}
-
-// shouldContinueParsing determines if parsing should continue based on data patterns
-func (g *GPK) shouldContinueParsing(data []byte, offset int) bool {
-	if offset >= len(data)-2 {
-		return false
-	}
-
-	nextPotentialLen := binary.LittleEndian.Uint16(data[offset : offset+2])
-	if nextPotentialLen == 0 {
-		return false
-	}
-
-	if nextPotentialLen > 1024 {
-		// Look for entry separator patterns and try to recover
-		return g.findNextValidEntry(data, offset)
-	}
-
-	return true
-}
-
-// findNextValidEntry attempts to find the next valid entry in case of parsing issues
-func (g *GPK) findNextValidEntry(data []byte, offset int) bool {
-	// Look for entry separator patterns: "OggS", "Ogg" + length, "Og" + length
-	for tryOffset := offset; tryOffset < offset+10 && tryOffset < len(data)-4; tryOffset++ {
-		// Check for "OggS" pattern
-		if tryOffset+4 <= len(data) &&
-			data[tryOffset] == 79 && data[tryOffset+1] == 103 &&
-			data[tryOffset+2] == 103 && data[tryOffset+3] == 83 { // "OggS"
-
-			// Look for next filename length after OggS + padding
-			for nextOffset := tryOffset + 4; nextOffset < tryOffset+10 && nextOffset < len(data)-2; nextOffset++ {
-				tryLen := binary.LittleEndian.Uint16(data[nextOffset : nextOffset+2])
-				if tryLen > 0 && tryLen <= 100 && g.isValidFilename(data, nextOffset, tryLen) {
-					return true
-				}
-			}
-		}
-
-		// Check for "Ogg" + length pattern
-		if tryOffset+4 <= len(data) &&
-			data[tryOffset] == 79 && data[tryOffset+1] == 103 &&
-			data[tryOffset+2] == 103 { // "Ogg"
-
-			potentialLen := data[tryOffset+3]
-			if potentialLen > 0 && potentialLen <= 100 {
-				nextOffset := tryOffset + 3
-				if g.isValidFilename(data, nextOffset, uint16(potentialLen)) {
-					return true
-				}
-			}
-		}
-
-		// Check for "Og" + length pattern
-		if tryOffset+3 <= len(data) && data[tryOffset] == 79 && data[tryOffset+1] == 103 { // "Og"
-			potentialLen := data[tryOffset+2]
-			if potentialLen > 0 && potentialLen <= 100 {
-				nextOffset := tryOffset + 2
-				if g.isValidFilename(data, nextOffset, uint16(potentialLen)) {
-					return true
-				}
-			}
-		}
-	}
-
-	return false
 }
 
 // isValidFilename checks if the data at the given offset contains a valid UTF-16 filename

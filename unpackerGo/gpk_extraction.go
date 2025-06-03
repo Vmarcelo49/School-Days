@@ -2,9 +2,9 @@
 // This module handles the concurrent extraction of files from GPK archives.
 //
 // CRITICAL UPDATE (Based on analysis):
-// OGG files in GPK archives have custom compression headers that must be stripped
+// OGG files in GPK archives have custom compression headers that must carefully considered
 // to produce playable audio files. The ComprHeadLen field in GPK entry headers
-// specifies how many bytes to skip at the beginning of each file.
+// more info on them inside cpp_incorrect_ver, all the audio and png related code
 //
 // Key findings:
 // 1. ComprHeadLen contains the number of compression header bytes (typically 3-5)
@@ -21,7 +21,6 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
-	"strings"
 	"sync"
 )
 
@@ -142,7 +141,6 @@ func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string)
 	if err != nil {
 		return fmt.Errorf("failed to seek to entry %s: %w", entry.Name, err)
 	}
-
 	// Read exactly the compressed length bytes
 	fileData := make([]byte, entry.Header.ComprLen)
 	_, err = file.Read(fileData)
@@ -150,25 +148,13 @@ func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string)
 		return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
 	}
 
-	// For OGG files, skip the compression header to get clean OGG data
+	// Skip the compression header if present to get clean data
 	var finalData []byte
-	if isOGGFile(entry.Name) && entry.Header.ComprHeadLen > 0 {
-		if int(entry.Header.ComprHeadLen) < len(fileData) {
-			// Skip the compression header bytes
-			dataAfterHeader := fileData[entry.Header.ComprHeadLen:]
-
-			// Find the actual start of OGG data by looking for "OggS" signature
-			finalData = findOGGStart(dataAfterHeader)
-			if finalData == nil {
-				// Fallback: if OggS not found, use data after header
-				finalData = dataAfterHeader
-			}
-		} else {
-			// Compression header length is invalid, use original data
-			finalData = fileData
-		}
+	if entry.Header.ComprHeadLen > 0 && int(entry.Header.ComprHeadLen) < len(fileData) {
+		// Skip the compression header bytes
+		finalData = fileData[entry.Header.ComprHeadLen:]
 	} else {
-		// Non-OGG files or no compression header, use original data
+		// No compression header or invalid length, use original data
 		finalData = fileData
 	}
 
@@ -182,27 +168,10 @@ func (g *GPK) writeExtractedFile(outputPath string, data []byte) error {
 		return fmt.Errorf("failed to create output file %s: %w", outputPath, err)
 	}
 	defer outFile.Close()
+
 	_, err = outFile.Write(data)
 	if err != nil {
 		return fmt.Errorf("failed to write file %s: %w", outputPath, err)
 	}
-	return nil
-}
-
-// isOGGFile checks if a filename represents an OGG audio file
-func isOGGFile(filename string) bool {
-	return strings.HasSuffix(strings.ToUpper(filename), ".OGG")
-}
-
-// findOGGStart finds the actual start of OGG data by looking for "OggS" signature
-func findOGGStart(data []byte) []byte {
-	// Look for the "OggS" signature in the data
-	for i := 0; i <= len(data)-4; i++ {
-		if data[i] == 'O' && data[i+1] == 'g' && data[i+2] == 'g' && data[i+3] == 'S' {
-			// Found OGG signature, return data starting from here
-			return data[i:]
-		}
-	}
-	// OGG signature not found
 	return nil
 }

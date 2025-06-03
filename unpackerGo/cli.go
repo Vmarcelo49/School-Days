@@ -31,32 +31,7 @@ var (
 
 // parseCommandLine handles all command line parsing and flag setup
 func parseCommandLine() *CLIConfig {
-	// Check for special test/debug modes first
-	if len(os.Args) > 1 {
-		switch os.Args[1] {
-		case "test-ogg":
-			testOGGAnalysis()
-			os.Exit(0)
-		case "debug-ogg":
-			debugOGGCorruption()
-			os.Exit(0)
-		case "check-headers":
-			checkCompressionHeaders()
-			os.Exit(0)
-		case "investigate-encoding":
-			investigateOGGEncoding()
-			os.Exit(0)
-		case "fix-ogg-crc":
-			fixOGGCRC()
-			os.Exit(0)
-		case "fix-crc":
-			fixOGGCRC()
-			os.Exit(0)
-		case "fix-all-pages":
-			fixAllOGGPages()
-			os.Exit(0)
-		}
-	} // Define command line flags
+	// Define command line flags
 	var config CLIConfig
 	flag.BoolVar(&config.DebugMode, "debug", false, "Show compression information for GPK file")
 	flag.BoolVar(&config.VerboseMode, "verbose", false, "Enable verbose output and detailed processing information")
@@ -75,12 +50,7 @@ func parseCommandLine() *CLIConfig {
 		fmt.Fprintf(flag.CommandLine.Output(), "Flags:\n")
 		flag.PrintDefaults()
 		fmt.Fprintf(flag.CommandLine.Output(), "\nSpecial Commands:\n")
-		fmt.Fprintf(flag.CommandLine.Output(), "  test-ogg              Test OGG file analysis\n")
-		fmt.Fprintf(flag.CommandLine.Output(), "  debug-ogg             Debug OGG corruption issues\n")
 		fmt.Fprintf(flag.CommandLine.Output(), "  check-headers         Check compression headers\n")
-		fmt.Fprintf(flag.CommandLine.Output(), "  investigate-encoding  Investigate OGG encoding\n")
-		fmt.Fprintf(flag.CommandLine.Output(), "  fix-ogg-crc           Fix OGG CRC issues\n")
-		fmt.Fprintf(flag.CommandLine.Output(), "  fix-all-pages         Fix all OGG pages\n")
 		fmt.Fprintf(flag.CommandLine.Output(), "\nExamples:\n")
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s BGM.GPK\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -output extracted \"D:\\Games\\Overflow\\SCHOOLDAYS HQ\\Packs\"\n", os.Args[0])
@@ -89,7 +59,6 @@ func parseCommandLine() *CLIConfig {
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -quiet BGM.GPK\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -fix-png extracted/\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -decryptOnly source.gpk\n", os.Args[0])
-		fmt.Fprintf(flag.CommandLine.Output(), "  %s test-ogg\n", os.Args[0])
 	}
 	flag.Parse()
 

@@ -158,7 +158,7 @@ func (g *Game) loadAudioFile(audioFile AudioFile) error {
 		reader = NewOGGStreamReader(data, audioFile.GPKEntry)
 	} else {
 		// For regular files, use the data directly
-		fixedData := fixOGGHeader(data, audioFile.Name)
+		fixedData := data // Here we could implement a proper header fix
 		reader = bytes.NewReader(fixedData)
 	} // Decode with the streaming interface
 	stream, err := vorbis.DecodeWithSampleRate(sampleRate, reader)
@@ -221,8 +221,8 @@ func (g *Game) loadFromGPK(gpkPath, entryName string) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to read GPK file data: %w", err)
 	}
-	// Fix OGG header if needed (the GPK may have custom headers or corruption)
-	data = fixOGGHeader(data, entryName)
+	// Fix OGG , we need to implement a proper header fix
+	data = data
 
 	return data, nil
 }
@@ -315,10 +315,10 @@ type OGGStreamReader struct {
 	size   int64
 }
 
-// NewOGGStreamReader creates a new OGG stream reader with automatic header correction
+// needs to be remade to fix OGG header issues
 func NewOGGStreamReader(data []byte, filename string) *OGGStreamReader {
 	// Try to fix any header issues first
-	fixedData := fixOGGHeader(data, filename)
+	fixedData := data
 
 	return &OGGStreamReader{
 		data:   fixedData,
@@ -618,7 +618,7 @@ func saveOGGForAnalysis(data []byte, filename string) {
 	}
 }
 
-func main() {
+func runGameWindow() {
 	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle("Simple OGG Audio Player")
 
