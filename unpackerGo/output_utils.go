@@ -17,38 +17,38 @@ const (
 )
 
 // Printf prints formatted output only if the current verbosity level allows it
-func VerbosePrintf(level LogLevel, format string, args ...interface{}) {
+func VerbosePrintf(level LogLevel, format string, args ...any) {
 	if shouldPrint(level) {
 		fmt.Printf(format, args...)
 	}
 }
 
 // Println prints a line only if the current verbosity level allows it
-func VerbosePrintln(level LogLevel, args ...interface{}) {
+func VerbosePrintln(level LogLevel, args ...any) {
 	if shouldPrint(level) {
 		fmt.Println(args...)
 	}
 }
 
 // Print prints without newline only if the current verbosity level allows it
-func VerbosePrint(level LogLevel, args ...interface{}) {
+func VerbosePrint(level LogLevel, args ...any) {
 	if shouldPrint(level) {
 		fmt.Print(args...)
 	}
 }
 
 // ErrorPrintf always prints error messages to stderr regardless of verbosity
-func ErrorPrintf(format string, args ...interface{}) {
+func ErrorPrintf(format string, args ...any) {
 	fmt.Fprintf(os.Stderr, format, args...)
 }
 
 // InfoPrintf prints normal information (respects quiet mode)
-func InfoPrintf(format string, args ...interface{}) {
+func InfoPrintf(format string, args ...any) {
 	VerbosePrintf(LogNormal, format, args...)
 }
 
 // DebugPrintf prints debug information only in debug or verbose mode
-func DebugPrintf(format string, args ...interface{}) {
+func DebugPrintf(format string, args ...any) {
 	VerbosePrintf(LogDebug, format, args...)
 }
 
@@ -74,14 +74,14 @@ func shouldPrint(level LogLevel) bool {
 }
 
 // ProgressPrintf prints progress information (shows unless in quiet mode)
-func ProgressPrintf(format string, args ...interface{}) {
+func ProgressPrintf(format string, args ...any) {
 	if !IsQuietMode {
 		fmt.Printf(format, args...)
 	}
 }
 
 // ResultPrintf prints final results (always shows unless in quiet mode)
-func ResultPrintf(format string, args ...interface{}) {
+func ResultPrintf(format string, args ...any) {
 	if !IsQuietMode {
 		fmt.Printf(format, args...)
 	}

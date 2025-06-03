@@ -1,4 +1,13 @@
 // GPK Unpacker - Command Line Interface
+/*
+the overall simplicity of the audio selector is good but we need to rework how it gets audio from gpk files.
+
+you can understand how this works by looking at the code in cpp_incorrect_ver it is a visual novel engine
+
+we are currently making a simple extractor and a audio player based on it
+
+so your main files to consult are the audio related cpp files from that project
+*/
 package main
 
 import (
@@ -19,6 +28,7 @@ type CLIConfig struct {
 	OutputDir   string
 	FixPngMode  bool
 	DecryptOnly bool
+	AudioPlayer bool
 	InputPath   string
 }
 
@@ -30,8 +40,7 @@ var (
 )
 
 // parseCommandLine handles all command line parsing and flag setup
-func parseCommandLine() *CLIConfig {
-	// Define command line flags
+func parseCommandLine() *CLIConfig { // Define command line flags
 	var config CLIConfig
 	flag.BoolVar(&config.DebugMode, "debug", false, "Show compression information for GPK file")
 	flag.BoolVar(&config.VerboseMode, "verbose", false, "Enable verbose output and detailed processing information")
@@ -41,6 +50,7 @@ func parseCommandLine() *CLIConfig {
 	flag.StringVar(&config.OutputDir, "output", "extracted", "Output directory for extracted files")
 	flag.BoolVar(&config.FixPngMode, "fix-png", false, "Fix corrupted PNG files in specified directory")
 	flag.BoolVar(&config.DecryptOnly, "decryptOnly", false, "Decrypt GPK file without extracting contents")
+	flag.BoolVar(&config.AudioPlayer, "audio-player", false, "Launch the interactive audio player GUI")
 
 	// Custom usage message
 	flag.Usage = func() {
@@ -59,6 +69,7 @@ func parseCommandLine() *CLIConfig {
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -quiet BGM.GPK\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -fix-png extracted/\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -decryptOnly source.gpk\n", os.Args[0])
+		fmt.Fprintf(flag.CommandLine.Output(), "  %s -audio-player\n", os.Args[0])
 	}
 	flag.Parse()
 
@@ -72,19 +83,27 @@ func parseCommandLine() *CLIConfig {
 		fmt.Fprintf(os.Stderr, "Error: Cannot use both -verbose and -quiet flags simultaneously\n")
 		os.Exit(1)
 	}
-
-	// Check if we have the required positional argument
-	if flag.NArg() < 1 {
+	// Check if we have the required positional argument (not needed for audio player)
+	if flag.NArg() < 1 && !config.AudioPlayer {
 		flag.Usage()
 		os.Exit(1)
 	}
 
-	config.InputPath = flag.Arg(0)
+	if flag.NArg() > 0 {
+		config.InputPath = flag.Arg(0)
+	}
 	return &config
 }
 
 // runCLI executes the main CLI logic based on parsed configuration
 func runCLI(config *CLIConfig) error {
+	// Audio player mode - launch the interactive GUI
+	if config.AudioPlayer {
+		InfoPrintf("Launching interactive audio player...\n")
+		runGameWindow()
+		return nil
+	}
+
 	// PNG fix mode - fix corrupted PNG files in directory
 	if config.FixPngMode {
 		return FixAllPNGFiles(config.InputPath)

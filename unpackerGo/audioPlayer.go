@@ -31,6 +31,25 @@ type AudioFile struct {
 	GPKEntry  string // Entry name within GPK (if IsFromGPK is true)
 }
 
+// GPKAudioReader mimics the C++ ov_callbacks approach for streaming OGG from GPK files
+// This handles compression headers transparently, just like the C++ Stream class
+type GPKAudioReader struct {
+	gpk      *GPK
+	entry    *GPKEntry
+	data     []byte
+	position int64
+	size     int64
+}
+
+// ReadSeekCloser combines io.Reader, io.Seeker, and io.Closer for in-memory audio data
+type ReadSeekCloser struct {
+	*bytes.Reader
+}
+
+func (r *ReadSeekCloser) Close() error {
+	return nil // No-op for in-memory data
+}
+
 type Game struct {
 	audioContext *audio.Context
 	audioPlayer  *audio.Player
@@ -58,6 +77,114 @@ func NewGame() *Game {
 	}
 
 	return game
+}
+
+// NewGPKAudioReader creates a new GPK audio reader that handles compression headers
+// This mimics the C++ Stream class approach for transparent GPK file access
+func NewGPKAudioReader(gpk *GPK, entry *GPKEntry) (*GPKAudioReader, error) {
+	// Open the GPK file
+	file, err := os.Open(gpk.fileName)
+	if err != nil {
+		return nil, fmt.Errorf("failed to open GPK file: %w", err)
+	}
+	defer file.Close()
+
+	// Seek to the entry offset
+	_, err = file.Seek(int64(entry.Header.Offset), 0)
+	if err != nil {
+		return nil, fmt.Errorf("failed to seek to entry: %w", err)
+	}
+
+	// Read the compressed data
+	compressedData := make([]byte, entry.Header.ComprLen)
+	_, err = file.Read(compressedData)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read entry data: %w", err)
+	}
+
+	// Handle compression header - skip ComprHeadLen bytes to find OGG signature
+	var oggData []byte
+	if entry.Header.ComprHeadLen > 0 && int(entry.Header.ComprHeadLen) < len(compressedData) {
+		// Skip compression header bytes
+		headerSkipped := compressedData[entry.Header.ComprHeadLen:]
+
+		// Look for OggS signature after skipping header
+		oggPos := bytes.Index(headerSkipped, []byte("OggS"))
+		if oggPos >= 0 {
+			oggData = headerSkipped[oggPos:]
+		} else {
+			// Fallback: look in the entire data
+			oggPos = bytes.Index(compressedData, []byte("OggS"))
+			if oggPos >= 0 {
+				oggData = compressedData[oggPos:]
+			} else {
+				return nil, fmt.Errorf("no OGG signature found in entry %s", entry.Name)
+			}
+		}
+	} else {
+		// No compression header or invalid length
+		oggPos := bytes.Index(compressedData, []byte("OggS"))
+		if oggPos >= 0 {
+			oggData = compressedData[oggPos:]
+		} else {
+			return nil, fmt.Errorf("no OGG signature found in entry %s", entry.Name)
+		}
+	}
+
+	return &GPKAudioReader{
+		gpk:      gpk,
+		entry:    entry,
+		data:     oggData,
+		position: 0,
+		size:     int64(len(oggData)),
+	}, nil
+}
+
+// Read implements io.Reader interface for GPKAudioReader
+func (r *GPKAudioReader) Read(p []byte) (n int, err error) {
+	if r.position >= r.size {
+		return 0, io.EOF
+	}
+
+	available := r.size - r.position
+	toRead := int64(len(p))
+	if toRead > available {
+		toRead = available
+	}
+
+	copy(p, r.data[r.position:r.position+toRead])
+	r.position += toRead
+	return int(toRead), nil
+}
+
+// Seek implements io.Seeker interface for GPKAudioReader
+func (r *GPKAudioReader) Seek(offset int64, whence int) (int64, error) {
+	var newPos int64
+	switch whence {
+	case io.SeekStart:
+		newPos = offset
+	case io.SeekCurrent:
+		newPos = r.position + offset
+	case io.SeekEnd:
+		newPos = r.size + offset
+	default:
+		return 0, fmt.Errorf("invalid whence value: %d", whence)
+	}
+
+	if newPos < 0 {
+		newPos = 0
+	}
+	if newPos > r.size {
+		newPos = r.size
+	}
+
+	r.position = newPos
+	return newPos, nil
+}
+
+// Close implements io.Closer interface for GPKAudioReader
+func (r *GPKAudioReader) Close() error {
+	return nil // No resources to close for in-memory data
 }
 
 // findAudioFiles scans for both loose OGG files and OGG files within GPK packages
@@ -150,7 +277,9 @@ func (g *Game) loadAudioFile(audioFile AudioFile) error {
 		if err != nil {
 			return fmt.Errorf("failed to read file %s: %v", audioFile.Path, err)
 		}
-	} // Decode the OGG file using streaming approach for better compatibility
+	}
+
+	// Decode the OGG file using streaming approach for better compatibility
 	var reader io.ReadSeeker
 
 	if audioFile.IsFromGPK {
@@ -160,7 +289,9 @@ func (g *Game) loadAudioFile(audioFile AudioFile) error {
 		// For regular files, use the data directly
 		fixedData := data // Here we could implement a proper header fix
 		reader = bytes.NewReader(fixedData)
-	} // Decode with the streaming interface
+	}
+
+	// Decode with the streaming interface
 	stream, err := vorbis.DecodeWithSampleRate(sampleRate, reader)
 	if err != nil {
 		// If decoding fails, analyze the OGG structure for debugging
@@ -221,8 +352,6 @@ func (g *Game) loadFromGPK(gpkPath, entryName string) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to read GPK file data: %w", err)
 	}
-	// Fix OGG , we need to implement a proper header fix
-	data = data
 
 	return data, nil
 }
@@ -277,7 +406,9 @@ func (g *Game) Draw(screen *ebiten.Image) {
 	ebitenutil.DebugPrint(screen, "Simple OGG Audio Player")
 	ebitenutil.DebugPrintAt(screen, "Controls:", 10, 30)
 	ebitenutil.DebugPrintAt(screen, "SPACE: Play/Pause", 10, 50)
-	ebitenutil.DebugPrintAt(screen, "LEFT/RIGHT: Previous/Next file", 10, 70) // Show current file
+	ebitenutil.DebugPrintAt(screen, "LEFT/RIGHT: Previous/Next file", 10, 70)
+
+	// Show current file
 	if len(g.audioFiles) > 0 {
 		currentAudio := g.audioFiles[g.currentFile]
 		var displayName string
@@ -315,7 +446,7 @@ type OGGStreamReader struct {
 	size   int64
 }
 
-// needs to be remade to fix OGG header issues
+// NewOGGStreamReader creates a new stream reader for OGG data
 func NewOGGStreamReader(data []byte, filename string) *OGGStreamReader {
 	// Try to fix any header issues first
 	fixedData := data
@@ -425,7 +556,7 @@ func analyzeOGGStructure(data []byte, filename string) {
 	}
 }
 
-// analyzeOGGVorbisHeaders provides detailed analysis of OGG Vorbis header packets
+// Analyze OGG Vorbis headers
 func analyzeOGGVorbisHeaders(data []byte, filename string) {
 	log.Printf("Detailed Vorbis analysis for: %s", filename)
 
