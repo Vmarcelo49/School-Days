@@ -94,15 +94,14 @@ func (g *GPK) Load(fileName string) error {
 		return fmt.Errorf("failed to get file stats: %w", err)
 	}
 	fileSize := stat.Size()
-
 	// Read and verify signature
-	signature, err := g.readSignature(file, fileSize)
+	signature, isAlreadyDecrypted, err := g.readSignature(file, fileSize)
 	if err != nil {
 		return err
 	}
 
 	// Read and decompress PIDX data
-	uncompressedData, err := g.readPIDXData(file, fileSize, signature)
+	uncompressedData, err := g.readPIDXData(file, fileSize, signature, isAlreadyDecrypted)
 	if err != nil {
 		return err
 	}
@@ -122,29 +121,59 @@ func (g *GPK) Parse() error {
 }
 
 // readSignature reads and verifies the GPK signature from the end of the file
-func (g *GPK) readSignature(file *os.File, fileSize int64) (*GPKSignature, error) {
+// Returns the signature and a boolean indicating if the file was already decrypted
+func (g *GPK) readSignature(file *os.File, fileSize int64) (*GPKSignature, bool, error) {
 	const signatureSize = 32 // 12 + 4 + 16 bytes exactly
 	_, err := file.Seek(fileSize-signatureSize, 0)
 	if err != nil {
-		return nil, fmt.Errorf("failed to seek to signature: %w", err)
+		return nil, false, fmt.Errorf("failed to seek to signature: %w", err)
 	}
 
-	signature, err := readGPKSignature(file)
+	// Read raw signature data
+	encryptedSig := make([]byte, signatureSize)
+	_, err = file.Read(encryptedSig)
 	if err != nil {
-		return nil, fmt.Errorf("failed to read signature: %w", err)
+		return nil, false, fmt.Errorf("failed to read signature: %w", err)
 	}
 
-	// Verify signature
-	if string(signature.Sig0[:len(GPKTailerIdent0)]) != GPKTailerIdent0 ||
-		string(signature.Sig1[:len(GPKTailerIdent1)]) != GPKTailerIdent1 {
-		return nil, fmt.Errorf("invalid GPK signature")
+	// Try decrypted signature first
+	decryptedSig := make([]byte, signatureSize)
+	copy(decryptedSig, encryptedSig)
+	decryptData(decryptedSig)
+
+	signature, err := readGPKSignature(bytes.NewReader(decryptedSig))
+	if err != nil {
+		return nil, false, fmt.Errorf("failed to parse decrypted signature: %w", err)
 	}
 
-	return signature, nil
+	// Check if decrypted signature is valid
+	isValidDecrypted := string(signature.Sig0[:len(GPKTailerIdent0)]) == GPKTailerIdent0 &&
+		string(signature.Sig1[:len(GPKTailerIdent1)]) == GPKTailerIdent1
+
+	if isValidDecrypted {
+		// File was encrypted, we had to decrypt the signature
+		return signature, false, nil
+	}
+
+	// Try original signature (might be already decrypted)
+	signatureOriginal, err := readGPKSignature(bytes.NewReader(encryptedSig))
+	if err != nil {
+		return nil, false, fmt.Errorf("failed to parse original signature: %w", err)
+	}
+
+	isValidOriginal := string(signatureOriginal.Sig0[:len(GPKTailerIdent0)]) == GPKTailerIdent0 &&
+		string(signatureOriginal.Sig1[:len(GPKTailerIdent1)]) == GPKTailerIdent1
+
+	if isValidOriginal {
+		// File was already decrypted
+		return signatureOriginal, true, nil
+	}
+
+	return nil, false, fmt.Errorf("invalid GPK signature - neither encrypted nor decrypted version is valid")
 }
 
 // readPIDXData reads and decompresses the PIDX data from the GPK file
-func (g *GPK) readPIDXData(file *os.File, fileSize int64, signature *GPKSignature) ([]byte, error) {
+func (g *GPK) readPIDXData(file *os.File, fileSize int64, signature *GPKSignature, isAlreadyDecrypted bool) ([]byte, error) {
 	const signatureSize = 32
 	pidxOffset := fileSize - signatureSize - int64(signature.PidxLength)
 
@@ -159,8 +188,8 @@ func (g *GPK) readPIDXData(file *os.File, fileSize int64, signature *GPKSignatur
 		return nil, fmt.Errorf("failed to read compressed data: %w", err)
 	}
 
-	// Decompress PIDX data
-	uncompressedData, err := decompressPIDX(compressedData)
+	// Decompress PIDX data with auto-detection, but hint from signature detection
+	uncompressedData, err := decompressPIDX(compressedData, isAlreadyDecrypted)
 	if err != nil {
 		return nil, fmt.Errorf("failed to decompress PIDX data: %w", err)
 	}

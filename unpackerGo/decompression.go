@@ -70,26 +70,43 @@ func decryptData(data []byte) {
 	}
 }
 
-// decompressPIDX decompresses PIDX data after decryption
-func decompressPIDX(compressedData []byte) ([]byte, error) {
+// decompressPIDX decompresses PIDX data, with auto-detection of encryption status
+func decompressPIDX(compressedData []byte, forceSkipDecryption bool) ([]byte, error) {
 	// Make a copy to avoid modifying the original data
 	data := make([]byte, len(compressedData))
 	copy(data, compressedData)
 
-	// Decrypt data first
-	decryptData(data)
-
 	var dataToDecompress []byte
+	var decryptionApplied bool
 
-	// Check if we have a valid zlib header at offset 0
-	if len(data) >= 2 && isValidZlibHeader(data[0], data[1]) {
-		fmt.Println("Found valid zlib header at offset 0")
-		dataToDecompress = data
-	} else if len(data) >= 6 && isValidZlibHeader(data[4], data[5]) {
-		fmt.Println("Found valid zlib header at offset 4, skipping 4-byte header")
-		dataToDecompress = data[4:]
-	} else {
-		fmt.Printf("No valid zlib header found at offset 0 or 4\n")
+	// If forced to skip decryption, try original data first
+	if forceSkipDecryption {
+		// Check if we have a valid zlib header at offset 0
+		if len(data) >= 2 && isValidZlibHeader(data[0], data[1]) {
+			dataToDecompress = data
+			decryptionApplied = false
+		} else if len(data) >= 6 && isValidZlibHeader(data[4], data[5]) {
+			dataToDecompress = data[4:]
+			decryptionApplied = false
+		}
+	}
+
+	// If we haven't found a valid header yet, try with decryption
+	if dataToDecompress == nil {
+		decryptData(data)
+		decryptionApplied = true
+
+		// Check if we have a valid zlib header at offset 0
+		if len(data) >= 2 && isValidZlibHeader(data[0], data[1]) {
+			dataToDecompress = data
+		} else if len(data) >= 6 && isValidZlibHeader(data[4], data[5]) {
+			dataToDecompress = data[4:]
+		}
+	}
+
+	// If still no valid header, show debug info
+	if dataToDecompress == nil {
+		fmt.Printf("No valid zlib header found (decryption applied: %v)\n", decryptionApplied)
 		if len(data) >= 6 {
 			fmt.Printf("Bytes at offset 0: %02X %02X\n", data[0], data[1])
 			fmt.Printf("Bytes at offset 4: %02X %02X\n", data[4], data[5])

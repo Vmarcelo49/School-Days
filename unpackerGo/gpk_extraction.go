@@ -1,19 +1,18 @@
 // GPK file extraction functionality
 // This module handles the concurrent extraction of files from GPK archives.
 //
-// IMPORTANT FIX (2025-06-01):
-// The original Go implementation was incorrectly cutting file headers by:
-// 1. Searching for "OggS" signatures and discarding data before them
-// 2. Skipping compression header bytes (ComprHeadLen)
-// 3. Attempting to decompress and process file data
+// CRITICAL UPDATE (Based on analysis):
+// OGG files in GPK archives have custom compression headers that must be stripped
+// to produce playable audio files. The ComprHeadLen field in GPK entry headers
+// specifies how many bytes to skip at the beginning of each file.
 //
-// Analysis of the original C++ code revealed it does simple raw extraction:
-// - Seek to entry.header.offset
-// - Read exactly entry.header.comprlen bytes
-// - Write raw data directly without any processing
+// Key findings:
+// 1. ComprHeadLen contains the number of compression header bytes (typically 3-5)
+// 2. After skipping these bytes, we need to find the actual "OggS" signature
+// 3. The original C++ engine handles this transparently through the Stream class
+// 4. Our extractor must manually skip these headers to produce clean OGG files
 //
-// This fix matches that behavior, ensuring files are extracted with complete
-// headers and metadata intact, resolving audio playback issues.
+// This implementation correctly handles ComprHeadLen to extract playable OGG files.
 
 package main
 
@@ -22,6 +21,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"strings"
 	"sync"
 )
 
@@ -126,7 +126,7 @@ func (g *GPK) extractionWorker(workerID int, jobs <-chan FileExtractionJob, resu
 }
 
 // extractSingleFile extracts a single file from the GPK (thread-safe version)
-// This function now matches the original C++ behavior: extract raw data without header manipulation
+// This function properly handles ComprHeadLen to produce clean, playable OGG files
 func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string) error {
 	// Use original filename directly (GPK files already have correct extensions)
 	outputPath := filepath.Join(outputDir, entry.Name)
@@ -143,15 +143,36 @@ func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string)
 		return fmt.Errorf("failed to seek to entry %s: %w", entry.Name, err)
 	}
 
-	// Read exactly the compressed length bytes (matching C++ behavior)
+	// Read exactly the compressed length bytes
 	fileData := make([]byte, entry.Header.ComprLen)
 	_, err = file.Read(fileData)
 	if err != nil {
 		return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
 	}
-	// Write raw data directly to file (matching C++ behavior)
-	// No header manipulation, no OggS searching, no compression header skipping
-	return g.writeExtractedFile(outputPath, fileData)
+
+	// For OGG files, skip the compression header to get clean OGG data
+	var finalData []byte
+	if isOGGFile(entry.Name) && entry.Header.ComprHeadLen > 0 {
+		if int(entry.Header.ComprHeadLen) < len(fileData) {
+			// Skip the compression header bytes
+			dataAfterHeader := fileData[entry.Header.ComprHeadLen:]
+
+			// Find the actual start of OGG data by looking for "OggS" signature
+			finalData = findOGGStart(dataAfterHeader)
+			if finalData == nil {
+				// Fallback: if OggS not found, use data after header
+				finalData = dataAfterHeader
+			}
+		} else {
+			// Compression header length is invalid, use original data
+			finalData = fileData
+		}
+	} else {
+		// Non-OGG files or no compression header, use original data
+		finalData = fileData
+	}
+
+	return g.writeExtractedFile(outputPath, finalData)
 }
 
 // writeExtractedFile writes the processed file data to disk
@@ -165,5 +186,23 @@ func (g *GPK) writeExtractedFile(outputPath string, data []byte) error {
 	if err != nil {
 		return fmt.Errorf("failed to write file %s: %w", outputPath, err)
 	}
+	return nil
+}
+
+// isOGGFile checks if a filename represents an OGG audio file
+func isOGGFile(filename string) bool {
+	return strings.HasSuffix(strings.ToUpper(filename), ".OGG")
+}
+
+// findOGGStart finds the actual start of OGG data by looking for "OggS" signature
+func findOGGStart(data []byte) []byte {
+	// Look for the "OggS" signature in the data
+	for i := 0; i <= len(data)-4; i++ {
+		if data[i] == 'O' && data[i+1] == 'g' && data[i+2] == 'g' && data[i+3] == 'S' {
+			// Found OGG signature, return data starting from here
+			return data[i:]
+		}
+	}
+	// OGG signature not found
 	return nil
 }
