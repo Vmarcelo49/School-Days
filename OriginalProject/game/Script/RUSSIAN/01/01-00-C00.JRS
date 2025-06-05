@@ -1,0 +1,41 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 13266
+    },
+    {
+        "action": "PlayBgm",
+        "end": 21283,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3000,
+        "file": "Event01/01-00/01-00-C00/01-00-C00-001",
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 12383,
+        "file": "Movie01/01-00/01-00-C00/01-00-C00-002",
+        "start": 3000
+    },
+    {
+        "action": "CreateBG",
+        "end": 21283,
+        "file": "Event01/01-00/01-00-C00/01-00-C00-003",
+        "start": 12383
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Сэкаи мне просто друг.^",
+        "answer2": "Кажется, я её люблю...",
+        "end": 20266,
+        "start": 13266
+    },
+    {
+        "action": "Next",
+        "start": 21283
+    }
+]

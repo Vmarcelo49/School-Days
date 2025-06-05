@@ -1,0 +1,86 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 12000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 12000,
+        "file": "BGM/SD_BGM/sdbgm07",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7300,
+        "file": "Event03/03-KB/03-KB-H02/03-KB-H02-001",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 3083,
+        "file": "SysSe/SE_all/keitai/keitai_vib",
+        "layer": 1,
+        "start": 300
+    },
+    {
+        "action": "PrintText",
+        "end": 4050,
+        "persona": "Макото",
+        "start": 2266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4050,
+        "file": "Voice03/03-KB/03-KB-H02/03-KB-H02-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2266
+    },
+    {
+        "action": "PlaySe",
+        "end": 5350,
+        "file": "SysSe/SE_all/keitai/keitai_vib",
+        "layer": 1,
+        "start": 3166
+    },
+    {
+        "action": "PlaySe",
+        "end": 8216,
+        "file": "SysSe/SE_all/keitai/keitai_vib",
+        "layer": 1,
+        "start": 6050
+    },
+    {
+        "action": "PrintText",
+        "end": 10033,
+        "persona": "Макото",
+        "start": 6083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10033,
+        "file": "Voice03/03-KB/03-KB-H02/03-KB-H02-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6083
+    },
+    {
+        "action": "CreateBG",
+        "end": 12000,
+        "file": "Event03/03-KB/03-KB-H02/03-KB-H02-002",
+        "start": 7300
+    },
+    {
+        "action": "PlaySe",
+        "end": 11100,
+        "file": "SysSe/SE_all/keitai/keitai_vib",
+        "layer": 1,
+        "start": 8316
+    },
+    {
+        "action": "Next",
+        "start": 12000
+    }
+]

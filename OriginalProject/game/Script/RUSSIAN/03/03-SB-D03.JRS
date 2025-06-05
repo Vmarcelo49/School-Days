@@ -1,0 +1,94 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 9000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 9000,
+        "file": "BGM/SD_BGM/sdbgm03",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3200,
+        "file": "Event03/03-SB/03-SB-D03/03-SB-D03-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1350,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Нет, ничего.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1350,
+        "file": "Voice03/03-SB/03-SB-D03/03-SB-D03-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2266,
+        "persona": "Сэкаи",
+        "start": 1350,
+        "text": "Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2266,
+        "file": "Voice03/03-SB/03-SB-D03/03-SB-D03-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 1350
+    },
+    {
+        "action": "PrintText",
+        "end": 4233,
+        "persona": "Макото",
+        "start": 2266,
+        "text": "Ага...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4233,
+        "file": "Voice03/03-SB/03-SB-D03/03-SB-D03-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2266
+    },
+    {
+        "action": "CreateBG",
+        "end": 4233,
+        "file": "Event03/03-SB/03-SB-D03/03-SB-D03-002",
+        "start": 3200
+    },
+    {
+        "action": "CreateBG",
+        "end": 9000,
+        "file": "Event03/03-SB/03-SB-D03/03-SB-D03-003",
+        "start": 4233
+    },
+    {
+        "action": "PrintText",
+        "end": 8250,
+        "persona": "Сэкаи",
+        "start": 4233,
+        "text": "Слушай, ты знаешь, сейчас по телику такое идёт...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8250,
+        "file": "Voice03/03-SB/03-SB-D03/03-SB-D03-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 4233
+    },
+    {
+        "action": "Next",
+        "start": 9000
+    }
+]

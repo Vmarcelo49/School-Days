@@ -1,0 +1,439 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 100300
+    },
+    {
+        "action": "PlaySe",
+        "end": 69083,
+        "file": "SysSe/SE_all/gaya/okujou",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3000,
+        "file": "Event05/05-SE/05-SE-D00/05-SE-D00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 11000,
+        "file": "Event05/05-KF/05-KF-D00/05-KF-D00-002",
+        "start": 3000
+    },
+    {
+        "action": "PrintText",
+        "end": 6100,
+        "persona": "Котоноха",
+        "start": 3000,
+        "text": "Заметно уж похолодало...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6100,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3000
+    },
+    {
+        "action": "PrintText",
+        "end": 11016,
+        "persona": "Макото",
+        "start": 6100,
+        "text": "Ага, декабрь ведь на дворе.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11016,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6100
+    },
+    {
+        "action": "CreateBG",
+        "end": 18383,
+        "file": "Event05/05-SE/05-SE-D00/05-SE-D00-003",
+        "start": 11000
+    },
+    {
+        "action": "PrintText",
+        "end": 15283,
+        "persona": "Котоноха",
+        "start": 11016,
+        "text": "Если не против, может теперь будем у меня в классе кушать?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15283,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 11016
+    },
+    {
+        "action": "PrintText",
+        "end": 18083,
+        "persona": "Макото",
+        "start": 15283,
+        "text": "В 4-м?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18083,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 15283
+    },
+    {
+        "action": "PrintText",
+        "end": 18366,
+        "persona": "Котоноха",
+        "start": 18083,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18366,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 18083
+    },
+    {
+        "action": "PrintText",
+        "end": 21283,
+        "persona": "Макото",
+        "start": 18366,
+        "text": "Дай подумать...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21283,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18366
+    },
+    {
+        "action": "CreateBG",
+        "end": 26266,
+        "file": "Event05/05-SE/05-SE-D00/05-SE-D00-004",
+        "start": 18383
+    },
+    {
+        "action": "PrintText",
+        "end": 26266,
+        "persona": "Котоноха",
+        "start": 21283,
+        "text": "Я, тем более хочу, чтобы одноклассники тоже поняли, что ты мой парень.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26266,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 21283
+    },
+    {
+        "action": "CreateBG",
+        "end": 47350,
+        "file": "Event05/05-SE/05-SE-D00/05-SE-D00-005",
+        "start": 26266
+    },
+    {
+        "action": "PrintText",
+        "end": 27300,
+        "persona": "Макото",
+        "start": 26266,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27300,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 26266
+    },
+    {
+        "action": "PrintText",
+        "end": 29183,
+        "persona": "Котоноха",
+        "start": 27316,
+        "text": "Ничего!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29183,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 27316
+    },
+    {
+        "action": "PrintText",
+        "end": 31133,
+        "persona": "Макото",
+        "start": 29183,
+        "text": "Что такое?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31133,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 29183
+    },
+    {
+        "action": "PrintText",
+        "end": 37283,
+        "persona": "Котоноха",
+        "start": 31133,
+        "text": "Ну... Просто... Понимаешь, ты среди девушек довольно популярен...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37283,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 31133
+    },
+    {
+        "action": "PrintText",
+        "end": 39233,
+        "persona": "Макото",
+        "start": 37283,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 39233,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 37283
+    },
+    {
+        "action": "PrintText",
+        "end": 47333,
+        "persona": "Котоноха",
+        "start": 39250,
+        "text": "И в нашем классе ты кое-кому нравишься... Двум-трём девчонкам...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 47333,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0160",
+        "layer": 0,
+        "persona": "kot",
+        "start": 39250
+    },
+    {
+        "action": "CreateBG",
+        "end": 58333,
+        "file": "Event05/05-KF/05-KF-D00/05-KF-D00-F006",
+        "start": 47350
+    },
+    {
+        "action": "PrintText",
+        "end": 51316,
+        "persona": "Макото",
+        "start": 47350,
+        "text": "Да? И кому же?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 51316,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0170",
+        "layer": 1,
+        "persona": "mak",
+        "start": 47350
+    },
+    {
+        "action": "PrintText",
+        "end": 56100,
+        "persona": "Котоноха",
+        "start": 51300,
+        "text": "Не скажу! Ты же сразу изменять мне начнёшь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 56100,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0180",
+        "layer": 0,
+        "persona": "kot",
+        "start": 51300
+    },
+    {
+        "action": "PrintText",
+        "end": 58316,
+        "persona": "Макото",
+        "start": 56100,
+        "text": "Изменять?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 58316,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0190",
+        "layer": 1,
+        "persona": "mak",
+        "start": 56100
+    },
+    {
+        "action": "PrintText",
+        "end": 68100,
+        "persona": "Котоноха",
+        "start": 58316,
+        "text": "Да и... Като с Обути... Всё ещё твердят, что мы с тобой не встречаемся, что всё это враньё...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 68100,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0200",
+        "layer": 0,
+        "persona": "kot",
+        "start": 58316
+    },
+    {
+        "action": "CreateBG",
+        "end": 88183,
+        "file": "Event05/05-SE/05-SE-D00/05-SE-D00-007",
+        "start": 58333
+    },
+    {
+        "action": "PrintText",
+        "end": 70333,
+        "persona": "Макото",
+        "start": 68100,
+        "text": "Като?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 70333,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0210",
+        "layer": 1,
+        "persona": "mak",
+        "start": 68100
+    },
+    {
+        "action": "PrintText",
+        "end": 75133,
+        "persona": "Котоноха",
+        "start": 70333,
+        "text": "Она вроде с тобой из одной средней школы...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 75133,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0220",
+        "layer": 0,
+        "persona": "kot",
+        "start": 70333
+    },
+    {
+        "action": "PlaySe",
+        "end": 106366,
+        "file": "SysSe/SE_all/gaya/okujou",
+        "layer": 2,
+        "start": 71200
+    },
+    {
+        "action": "PrintText",
+        "end": 82066,
+        "persona": "Макото",
+        "start": 75133,
+        "text": "Ага. Мы всегда в одном классе были. Мы с ней раньше часто вместе развлекались.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 82066,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0230",
+        "layer": 1,
+        "persona": "mak",
+        "start": 75133
+    },
+    {
+        "action": "PrintText",
+        "end": 88216,
+        "persona": "Котоноха",
+        "start": 82066,
+        "text": "Вот она и говорит, что хорошо тебя знает... Что ты бы со мной встречаться не стал.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 88216,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0240",
+        "layer": 0,
+        "persona": "kot",
+        "start": 82066
+    },
+    {
+        "action": "CreateBG",
+        "end": 106366,
+        "file": "Event05/05-KF/05-KF-D00/05-KF-D00-008",
+        "start": 88183
+    },
+    {
+        "action": "PrintText",
+        "end": 91033,
+        "persona": "Макото",
+        "start": 88233,
+        "text": "Като, говоришь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 91033,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0250",
+        "layer": 1,
+        "persona": "mak",
+        "start": 88233
+    },
+    {
+        "action": "PrintText",
+        "end": 98100,
+        "persona": "Котоноха",
+        "start": 91033,
+        "text": "Вот, и если мы вместе в моём классе будем есть... Все всё поймут... Наверное...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 98100,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0260",
+        "layer": 0,
+        "persona": "kot",
+        "start": 91033
+    },
+    {
+        "action": "PrintText",
+        "end": 100283,
+        "persona": "Макото",
+        "start": 98100,
+        "text": "О...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 100283,
+        "file": "Voice05/05-KF/05-KF-D00/05-KF-D00-0270",
+        "layer": 1,
+        "persona": "mak",
+        "start": 98100
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Похвастаться, значит, мной хочешь.",
+        "answer2": "Нет уж.",
+        "end": 105300,
+        "start": 100300
+    },
+    {
+        "action": "Next",
+        "start": 106366
+    }
+]

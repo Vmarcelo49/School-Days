@@ -1,0 +1,373 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 54000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 54000,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 54000,
+        "file": "Se01/01-00/01-00-B00/SE01-00-B00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2050,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7333,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-001B",
+        "start": 2050
+    },
+    {
+        "action": "PrintText",
+        "end": 4033,
+        "persona": "Макото",
+        "start": 2050,
+        "text": "Да подожди ты!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4033,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2050
+    },
+    {
+        "action": "PrintText",
+        "end": 4183,
+        "persona": "Сэкаи",
+        "start": 4000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4183,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0050",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 4000
+    },
+    {
+        "action": "PrintText",
+        "end": 6233,
+        "persona": "Макото",
+        "start": 5016,
+        "text": "Ну чего ты злишься?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6233,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5016
+    },
+    {
+        "action": "PrintText",
+        "end": 7316,
+        "persona": "Сэкаи",
+        "start": 6250,
+        "text": "Я не злюсь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7316,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6250
+    },
+    {
+        "action": "PrintText",
+        "end": 9100,
+        "persona": "Макото",
+        "start": 7316,
+        "text": "Ну я же вижу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9100,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7316
+    },
+    {
+        "action": "CreateBG",
+        "end": 9100,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-004",
+        "start": 7333
+    },
+    {
+        "action": "CreateBG",
+        "end": 17316,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-003",
+        "start": 9100
+    },
+    {
+        "action": "PrintText",
+        "end": 14183,
+        "persona": "Сэкаи",
+        "start": 9100,
+        "text": "Даже если и злюсь, то только на себя. Ты тут ни при чём!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14183,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0090",
+        "layer": 0,
+        "persona": "sek",
+        "start": 9100
+    },
+    {
+        "action": "PrintText",
+        "end": 16316,
+        "persona": "Макото",
+        "start": 14183,
+        "text": "Ну как же я ни при чём?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16316,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14183
+    },
+    {
+        "action": "PrintText",
+        "end": 17300,
+        "persona": "Сэкаи",
+        "start": 16316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17300,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0110",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 16316
+    },
+    {
+        "action": "PrintText",
+        "end": 23000,
+        "persona": "Макото",
+        "start": 17300,
+        "text": "Прости, я знаю, почему ты злишься, за обедом я так и не смог ничего сказать.^"
+    },
+    {
+        "action": "PrintText",
+        "end": 25166,
+        "persona": "Макото",
+        "start": 23000,
+        "text": "Завтра я ей всё объясню.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25166,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 17300
+    },
+    {
+        "action": "CreateBG",
+        "end": 25183,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-004",
+        "start": 17316
+    },
+    {
+        "action": "CreateBG",
+        "end": 29200,
+        "file": "Event02/02-2K/02-2K-E06/02-2K-E06-001",
+        "start": 25183
+    },
+    {
+        "action": "PrintText",
+        "end": 26250,
+        "persona": "Сэкаи",
+        "start": 25183,
+        "text": "Да ничего ты ей не расскажешь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26250,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0130",
+        "layer": 0,
+        "persona": "sek",
+        "start": 25183
+    },
+    {
+        "action": "PrintText",
+        "end": 27166,
+        "persona": "Макото",
+        "start": 26250,
+        "text": "Скажу!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27166,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 26250
+    },
+    {
+        "action": "PrintText",
+        "end": 28083,
+        "persona": "Сэкаи",
+        "start": 27183,
+        "text": "Не скажешь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28083,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0150",
+        "layer": 0,
+        "persona": "sek",
+        "start": 27183
+    },
+    {
+        "action": "PrintText",
+        "end": 29200,
+        "persona": "Макото",
+        "start": 28083,
+        "text": "Скажу!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29200,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 28083
+    },
+    {
+        "action": "CreateBG",
+        "end": 32233,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-001B",
+        "start": 29200
+    },
+    {
+        "action": "PrintText",
+        "end": 31300,
+        "persona": "Сэкаи",
+        "start": 29200,
+        "text": "Не скажешь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31300,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0170",
+        "layer": 0,
+        "persona": "sek",
+        "start": 29200
+    },
+    {
+        "action": "CreateBG",
+        "end": 36116,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-008",
+        "start": 32233
+    },
+    {
+        "action": "PrintText",
+        "end": 36183,
+        "persona": "Сэкаи",
+        "start": 32233,
+        "text": "Макото, думаешь, я не вижу, что ты до сих пор её любишь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 36183,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0190",
+        "layer": 0,
+        "persona": "sek",
+        "start": 32233
+    },
+    {
+        "action": "CreateBG",
+        "end": 37383,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-009",
+        "start": 36116
+    },
+    {
+        "action": "PrintText",
+        "end": 37066,
+        "persona": "Макото",
+        "start": 36266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37066,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 36266
+    },
+    {
+        "action": "CreateBG",
+        "end": 46300,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-003",
+        "start": 37383
+    },
+    {
+        "action": "PrintText",
+        "end": 47000,
+        "persona": "Сэкаи",
+        "start": 37383,
+        "text": "Я просто не могу тебя отпустить... Вот и злюсь... на себя...^"
+    },
+    {
+        "action": "PrintText",
+        "end": 50333,
+        "persona": "Сэкаи",
+        "start": 47000,
+        "text": "Прости, ты ни в чём не виноват...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50333,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0210",
+        "layer": 0,
+        "persona": "sek",
+        "start": 37383
+    },
+    {
+        "action": "CreateBG",
+        "end": 54000,
+        "file": "Event02/02-2S/02-2S-L00/02-2S-L00-004",
+        "start": 46300
+    },
+    {
+        "action": "PrintText",
+        "end": 53133,
+        "persona": "Макото",
+        "start": 50333,
+        "text": "Сэкаи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 53133,
+        "file": "Voice02/02-2S/02-2S-L00/02-2S-L00-0230",
+        "layer": 1,
+        "persona": "mak",
+        "start": 50333
+    },
+    {
+        "action": "Next",
+        "start": 54000
+    }
+]

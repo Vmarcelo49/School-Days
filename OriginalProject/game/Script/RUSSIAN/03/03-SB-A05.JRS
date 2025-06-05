@@ -1,0 +1,95 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 4233
+    },
+    {
+        "action": "PlayBgm",
+        "end": 4233,
+        "file": "BGM/SD_BGM/sdbgm07",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 4233,
+        "file": "Se03/03-SB/03-SB-A05/SE03-SB-A05-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2250,
+        "file": "Event03/03-SB/03-SB-A05/03-SB-A05-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1316,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Не говори так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1316,
+        "file": "Voice03/03-SB/03-SB-A05/03-SB-A05-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2233,
+        "persona": "Сэкаи",
+        "start": 1316,
+        "text": "Извини...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2233,
+        "file": "Voice03/03-SB/03-SB-A05/03-SB-A05-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 1316
+    },
+    {
+        "action": "CreateBG",
+        "end": 4233,
+        "file": "Event03/03-SB/03-SB-A05/03-SB-A05-002",
+        "start": 2250
+    },
+    {
+        "action": "PrintText",
+        "end": 3266,
+        "persona": "Макото",
+        "start": 2250,
+        "text": "Ты знаешь, я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3266,
+        "file": "Voice03/03-SB/03-SB-A05/03-SB-A05-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2250
+    },
+    {
+        "action": "PrintText",
+        "end": 4100,
+        "persona": "Сэкаи",
+        "start": 3266,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4100,
+        "file": "Voice03/03-SB/03-SB-A05/03-SB-A05-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 3266
+    },
+    {
+        "action": "Next",
+        "start": 4233
+    }
+]

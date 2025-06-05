@@ -1,0 +1,101 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 9000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 9000,
+        "file": "BGM/SD_BGM/sdbgm03",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 9000,
+        "file": "Se01/01-00/01-00-E00/SE01-00-E00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3133,
+        "file": "Event02/02-2S/02-2S-I04/02-2S-I04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1333,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Наверное, пойдём все вместе.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1333,
+        "file": "Voice02/02-2S/02-2S-I04/02-2S-I04-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3133,
+        "persona": "Котоноха",
+        "start": 1333,
+        "text": "Да, пойдем.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3133,
+        "file": "Voice02/02-2S/02-2S-I04/02-2S-I04-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 1333
+    },
+    {
+        "action": "CreateBG",
+        "end": 9000,
+        "file": "Event02/02-2S/02-2S-I01/02-2S-I01-011",
+        "start": 3133
+    },
+    {
+        "action": "PrintText",
+        "end": 6033,
+        "persona": "Макото",
+        "start": 3133,
+        "text": "Сегодня снаружи что-то слишком холодно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6033,
+        "file": "Voice02/02-2S/02-2S-I04/02-2S-I04-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3133
+    },
+    {
+        "action": "PrintText",
+        "end": 7216,
+        "persona": "Котоноха",
+        "start": 6050,
+        "text": "Действительно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7216,
+        "file": "Voice02/02-2S/02-2S-I04/02-2S-I04-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 6050
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 9000,
+        "start": 8000
+    },
+    {
+        "action": "Next",
+        "start": 9000
+    }
+]

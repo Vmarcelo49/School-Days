@@ -1,0 +1,1016 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 280283
+    },
+    {
+        "action": "PlayBgm",
+        "end": 143033,
+        "file": "BGM/SD_BGM/sdbgm16",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5000,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-001",
+        "start": 0
+    },
+    {
+        "action": "BlackFade",
+        "dir": "IN",
+        "end": 1000,
+        "start": 0
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 5000,
+        "start": 4000
+    },
+    {
+        "action": "PlaySe",
+        "end": 109366,
+        "file": "Se05/05-5H/05-5H-E00/SE05-5H-E00-001",
+        "layer": 2,
+        "start": 5000
+    },
+    {
+        "action": "CreateBG",
+        "end": 8083,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-002",
+        "start": 5000
+    },
+    {
+        "action": "BlackFade",
+        "dir": "IN",
+        "end": 6000,
+        "start": 5000
+    },
+    {
+        "action": "PlaySe",
+        "end": 8116,
+        "file": "SysSe/SE_all/keitai/keitai_sousa",
+        "layer": 1,
+        "start": 8083
+    },
+    {
+        "action": "PlayMovie",
+        "end": 16350,
+        "file": "Movie05/05-5H/05-5H-E00/H5-5H-E00-003",
+        "start": 8083
+    },
+    {
+        "action": "PrintText",
+        "end": 11283,
+        "persona": "Макото",
+        "start": 8183,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11283,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 8183
+    },
+    {
+        "action": "PrintText",
+        "end": 13016,
+        "persona": "Макото",
+        "start": 12033,
+        "text": "Спать охота...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13016,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12033
+    },
+    {
+        "action": "PrintText",
+        "end": 14350,
+        "persona": "Хикари",
+        "start": 13000,
+        "text": "Проснулся?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14350,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0060",
+        "layer": 0,
+        "persona": "hik",
+        "start": 13000
+    },
+    {
+        "action": "PrintText",
+        "end": 15316,
+        "persona": "Макото",
+        "start": 14350,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15316,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14350
+    },
+    {
+        "action": "PlayMovie",
+        "end": 35266,
+        "file": "Movie05/05-5H/05-5H-E00/05-5H-E00-004",
+        "start": 16350
+    },
+    {
+        "action": "PrintText",
+        "end": 20050,
+        "persona": "Хикари",
+        "start": 16366,
+        "text": "Тут от Сэкаи смс-ка пришла недавно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20050,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0090",
+        "layer": 0,
+        "persona": "hik",
+        "start": 16366
+    },
+    {
+        "action": "PrintText",
+        "end": 22383,
+        "persona": "Макото",
+        "start": 20000,
+        "text": "Нефиг рыться в чужом телефоне!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22383,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 20000
+    },
+    {
+        "action": "PrintText",
+        "end": 29166,
+        "persona": "Хикари",
+        "start": 23250,
+        "text": "«Последнее время только в школе и видимся. Как твои дела? Люблю». - говорит.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29166,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0110",
+        "layer": 0,
+        "persona": "hik",
+        "start": 23250
+    },
+    {
+        "action": "PrintText",
+        "end": 31033,
+        "persona": "Макото",
+        "start": 29166,
+        "text": "Нечего и читать даже.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31033,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 29166
+    },
+    {
+        "action": "PrintText",
+        "end": 38133,
+        "persona": "Хикари",
+        "start": 31316,
+        "text": "Я ей ответила: «Я тебя тоже. Скучаю. Целую».^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38133,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0130",
+        "layer": 0,
+        "persona": "hik",
+        "start": 31316
+    },
+    {
+        "action": "CreateBG",
+        "end": 40166,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-004",
+        "start": 35266
+    },
+    {
+        "action": "PrintText",
+        "end": 40150,
+        "persona": "Макото",
+        "start": 38150,
+        "text": "И отвечать нечего!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 40150,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 38150
+    },
+    {
+        "action": "PrintText",
+        "end": 44000,
+        "persona": "Хикари",
+        "start": 40100,
+        "text": "Не такой ты и убедительный, без штанов-то.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 44000,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0150",
+        "layer": 0,
+        "persona": "hik",
+        "start": 40100
+    },
+    {
+        "action": "PlayMovie",
+        "end": 46266,
+        "file": "Movie05/05-5H/05-5H-E00/H5-5H-E00-006",
+        "start": 40166
+    },
+    {
+        "action": "PrintText",
+        "end": 45150,
+        "persona": "Макото",
+        "start": 44000,
+        "text": "Блин.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 45150,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 44000
+    },
+    {
+        "action": "PrintText",
+        "end": 46250,
+        "persona": "Хикари",
+        "start": 45166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46250,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0170",
+        "layer": 0,
+        "persona": "hik",
+        "start": 45166
+    },
+    {
+        "action": "PlayMovie",
+        "end": 81200,
+        "file": "Movie05/05-5H/05-5H-E00/05-5H-E00-007",
+        "start": 46266
+    },
+    {
+        "action": "PrintText",
+        "end": 54200,
+        "persona": "Макото",
+        "start": 46300,
+        "text": "Ты мне не девушка, никто! Какого ж чёрта ты каждый день на ночь остаёшься?! Мама моя уже, наверняка, себе напридумывала.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 54200,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0180",
+        "layer": 1,
+        "persona": "mak",
+        "start": 46300
+    },
+    {
+        "action": "PrintText",
+        "end": 58016,
+        "persona": "Хикари",
+        "start": 54350,
+        "text": "Да ладно, ерунда. Так даже лучше.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 58016,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0190",
+        "layer": 0,
+        "persona": "hik",
+        "start": 54350
+    },
+    {
+        "action": "PrintText",
+        "end": 59216,
+        "persona": "Макото",
+        "start": 58033,
+        "text": "Чем же это лучше?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 59216,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 58033
+    },
+    {
+        "action": "PrintText",
+        "end": 62183,
+        "persona": "Хикари",
+        "start": 59366,
+        "text": "Как чем? Сексом проще заниматься.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 62183,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0210",
+        "layer": 0,
+        "persona": "hik",
+        "start": 59366
+    },
+    {
+        "action": "PrintText",
+        "end": 63283,
+        "persona": "Макото",
+        "start": 62216,
+        "text": "Ну ты, блин...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 63283,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0220",
+        "layer": 1,
+        "persona": "mak",
+        "start": 62216
+    },
+    {
+        "action": "PrintText",
+        "end": 67283,
+        "persona": "Хикари",
+        "start": 64033,
+        "text": "Я ведь говорила, что всегда пригрею.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 67283,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0230",
+        "layer": 0,
+        "persona": "hik",
+        "start": 64033
+    },
+    {
+        "action": "PrintText",
+        "end": 69116,
+        "persona": "Макото",
+        "start": 67300,
+        "text": "Говорила...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 69116,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0240",
+        "layer": 1,
+        "persona": "mak",
+        "start": 67300
+    },
+    {
+        "action": "PrintText",
+        "end": 76133,
+        "persona": "Хикари",
+        "start": 69250,
+        "text": "В школе ты сам не захотел, мол, Сэкаи может заметить.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 76133,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0270",
+        "layer": 0,
+        "persona": "hik",
+        "start": 69250
+    },
+    {
+        "action": "PrintText",
+        "end": 80333,
+        "persona": "Макото",
+        "start": 76116,
+        "text": "Так-то оно так!.. Но если Сэкаи прознает...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 80333,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0280",
+        "layer": 1,
+        "persona": "mak",
+        "start": 76116
+    },
+    {
+        "action": "PrintText",
+        "end": 85050,
+        "persona": "Хикари",
+        "start": 80350,
+        "text": "А Сэкаи-то всё никак не заметит.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 85050,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0290",
+        "layer": 0,
+        "persona": "hik",
+        "start": 80350
+    },
+    {
+        "action": "PlayMovie",
+        "end": 85033,
+        "file": "Movie05/05-5H/05-5H-E00/05-5H-E00-011",
+        "start": 81200
+    },
+    {
+        "action": "PlayMovie",
+        "end": 94000,
+        "file": "Movie05/05-5H/05-5H-E00/H5-5H-E00-008",
+        "start": 85033
+    },
+    {
+        "action": "PrintText",
+        "end": 89166,
+        "persona": "Макото",
+        "start": 85033,
+        "text": "Потому что в школе ты, как и прежде, притворяешься, что терпеть меня не можешь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 89166,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0300",
+        "layer": 1,
+        "persona": "mak",
+        "start": 85033
+    },
+    {
+        "action": "PrintText",
+        "end": 90350,
+        "persona": "Хикари",
+        "start": 89200,
+        "text": "И на ура притворяюсь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 90350,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0310",
+        "layer": 0,
+        "persona": "hik",
+        "start": 89200
+    },
+    {
+        "action": "PrintText",
+        "end": 94200,
+        "persona": "Макото",
+        "start": 90333,
+        "text": "И не говори... В классе никто и не догадывается.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 94200,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0320",
+        "layer": 1,
+        "persona": "mak",
+        "start": 90333
+    },
+    {
+        "action": "PlayMovie",
+        "end": 98233,
+        "file": "Movie05/05-5H/05-5H-E00/05-5H-E00-009",
+        "start": 94000
+    },
+    {
+        "action": "PrintText",
+        "end": 98383,
+        "persona": "Хикари",
+        "start": 94183,
+        "text": "Но когда ты меня ласкаешь, я совсем не притворяюсь. Всё по-настоящему.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 98383,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0330",
+        "layer": 0,
+        "persona": "hik",
+        "start": 94183
+    },
+    {
+        "action": "CreateBG",
+        "end": 99183,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-010",
+        "start": 98233
+    },
+    {
+        "action": "PrintText",
+        "end": 99200,
+        "persona": "Макото",
+        "start": 98350,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 99200,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0340",
+        "layer": 1,
+        "persona": "mak",
+        "start": 98350
+    },
+    {
+        "action": "PlayMovie",
+        "end": 108166,
+        "file": "Movie05/05-5H/05-5H-E00/05-5H-E00-011",
+        "start": 99183
+    },
+    {
+        "action": "PrintText",
+        "end": 105300,
+        "persona": "Хикари",
+        "start": 99216,
+        "text": "У нас с тобой каждый раз до седьмого неба!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 105300,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0350",
+        "layer": 0,
+        "persona": "hik",
+        "start": 99216
+    },
+    {
+        "action": "PrintText",
+        "end": 107116,
+        "persona": "Макото",
+        "start": 105300,
+        "text": "Ага-ага...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 107116,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0360",
+        "layer": 1,
+        "persona": "mak",
+        "start": 105300
+    },
+    {
+        "action": "PrintText",
+        "end": 108216,
+        "persona": "Хикари",
+        "start": 107133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 108216,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0370",
+        "layer": 0,
+        "persona": "hik",
+        "start": 107133
+    },
+    {
+        "action": "CreateBG",
+        "end": 118083,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-011",
+        "start": 108166
+    },
+    {
+        "action": "PrintText",
+        "end": 116016,
+        "persona": "Макото",
+        "start": 108216,
+        "text": "И не подумай ведь я тогда... Всё было бы по-другому...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 116016,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0380",
+        "layer": 1,
+        "persona": "mak",
+        "start": 108216
+    },
+    {
+        "action": "PlaySe",
+        "end": 143033,
+        "file": "Se05/05-5H/05-5H-E00/SE05-5H-E00-001",
+        "layer": 1,
+        "start": 109266
+    },
+    {
+        "action": "PrintText",
+        "end": 117083,
+        "persona": "Хикари",
+        "start": 116016,
+        "text": "Чего-чего?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 117083,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0390",
+        "layer": 0,
+        "persona": "hik",
+        "start": 116016
+    },
+    {
+        "action": "PrintText",
+        "end": 118000,
+        "persona": "Макото",
+        "start": 117016,
+        "text": "Ничего.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 118000,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0400",
+        "layer": 1,
+        "persona": "mak",
+        "start": 117016
+    },
+    {
+        "action": "PlayMovie",
+        "end": 123116,
+        "file": "Movie05/05-5H/05-5H-E00/05-5H-E00-013",
+        "start": 118083
+    },
+    {
+        "action": "PrintText",
+        "end": 120066,
+        "persona": "Хикари",
+        "start": 118083,
+        "text": "Ну, иди в школу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 120066,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0410",
+        "layer": 0,
+        "persona": "hik",
+        "start": 118083
+    },
+    {
+        "action": "PrintText",
+        "end": 121066,
+        "persona": "Макото",
+        "start": 120116,
+        "text": "А ты?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 121066,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0420",
+        "layer": 1,
+        "persona": "mak",
+        "start": 120116
+    },
+    {
+        "action": "PrintText",
+        "end": 123066,
+        "persona": "Хикари",
+        "start": 121050,
+        "text": "Мне в больницу зайти надо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 123066,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0430",
+        "layer": 0,
+        "persona": "hik",
+        "start": 121050
+    },
+    {
+        "action": "PlayMovie",
+        "end": 128083,
+        "file": "Movie05/05-5H/05-5H-E00/H5-5H-E00-014",
+        "start": 123116
+    },
+    {
+        "action": "PrintText",
+        "end": 124266,
+        "persona": "Макото",
+        "start": 123116,
+        "text": "Что-то не так?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 124266,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0440",
+        "layer": 1,
+        "persona": "mak",
+        "start": 123116
+    },
+    {
+        "action": "PrintText",
+        "end": 126383,
+        "persona": "Хикари",
+        "start": 124283,
+        "text": "Да нет, вполне себе так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 126383,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0450",
+        "layer": 0,
+        "persona": "hik",
+        "start": 124283
+    },
+    {
+        "action": "PrintText",
+        "end": 128050,
+        "persona": "Макото",
+        "start": 127083,
+        "text": "В смысле?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 128050,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0460",
+        "layer": 1,
+        "persona": "mak",
+        "start": 127083
+    },
+    {
+        "action": "PlayMovie",
+        "end": 131083,
+        "file": "Movie05/05-5H/05-5H-E00/05-5H-E00-015",
+        "start": 128083
+    },
+    {
+        "action": "PrintText",
+        "end": 131000,
+        "persona": "Хикари",
+        "start": 128083,
+        "text": "Ничего!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 131000,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0470",
+        "layer": 0,
+        "persona": "hik",
+        "start": 128083
+    },
+    {
+        "action": "CreateBG",
+        "end": 132366,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-016",
+        "start": 131083
+    },
+    {
+        "action": "PrintText",
+        "end": 132333,
+        "persona": "Макото",
+        "start": 131100,
+        "text": "Странная ты...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 132333,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0480",
+        "layer": 1,
+        "persona": "mak",
+        "start": 131100
+    },
+    {
+        "action": "PrintText",
+        "end": 134250,
+        "persona": "Хикари",
+        "start": 132350,
+        "text": "Потом расскажу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 134250,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0490",
+        "layer": 0,
+        "persona": "hik",
+        "start": 132350
+    },
+    {
+        "action": "CreateBG",
+        "end": 146316,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-016",
+        "start": 132366
+    },
+    {
+        "action": "PrintText",
+        "end": 136116,
+        "persona": "Макото",
+        "start": 134350,
+        "text": "Ясно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 136116,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0500",
+        "layer": 1,
+        "persona": "mak",
+        "start": 134350
+    },
+    {
+        "action": "PrintText",
+        "end": 139233,
+        "persona": "Хикари",
+        "start": 136116,
+        "text": "Ох, и удивишься же ты...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 139233,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0510",
+        "layer": 0,
+        "persona": "hik",
+        "start": 136116
+    },
+    {
+        "action": "PrintText",
+        "end": 140300,
+        "persona": "Макото",
+        "start": 139316,
+        "text": "С чего это?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 140300,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0520",
+        "layer": 1,
+        "persona": "mak",
+        "start": 139316
+    },
+    {
+        "action": "PrintText",
+        "end": 143166,
+        "persona": "Хикари",
+        "start": 141066,
+        "text": "Ни с чего. Иди уже!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 143166,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0530",
+        "layer": 0,
+        "persona": "hik",
+        "start": 141066
+    },
+    {
+        "action": "EndBGM",
+        "end": 261233,
+        "file": "BGM/Vocal/SDV08",
+        "start": 143033
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 146316,
+        "start": 143316
+    },
+    {
+        "action": "EndRoll",
+        "end": 266100,
+        "file": "Movie05/ENDROLL/06-1",
+        "start": 146316
+    },
+    {
+        "action": "PlayBgm",
+        "end": 280283,
+        "file": "BGM/SD_BGM/sdbgm17",
+        "start": 266100
+    },
+    {
+        "action": "PlaySe",
+        "end": 280283,
+        "file": "Se05/05-5H/05-5H-E00/SE05-5H-E00-002",
+        "layer": 1,
+        "start": 266100
+    },
+    {
+        "action": "CreateBG",
+        "end": 280283,
+        "file": "Event05/05-5H/05-5H-E00/05-5H-E00-020",
+        "start": 266100
+    },
+    {
+        "action": "PrintText",
+        "end": 267116,
+        "persona": "Хикари",
+        "start": 266133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 267116,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0570",
+        "layer": 0,
+        "persona": "hik",
+        "start": 266133
+    },
+    {
+        "action": "PrintText",
+        "end": 270316,
+        "persona": "Макото",
+        "start": 267116,
+        "text": "Что ты на мой телефон без спросу снимаешь-то, блин?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 270316,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0600",
+        "layer": 1,
+        "persona": "mak",
+        "start": 267116
+    },
+    {
+        "action": "PrintText",
+        "end": 271383,
+        "persona": "Хикари",
+        "start": 270183,
+        "text": "Да будет тебе!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 271383,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0610",
+        "layer": 0,
+        "persona": "hik",
+        "start": 270183
+    },
+    {
+        "action": "PrintText",
+        "end": 272383,
+        "persona": "Макото",
+        "start": 271350,
+        "text": "Не будет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 272383,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0620",
+        "layer": 1,
+        "persona": "mak",
+        "start": 271350
+    },
+    {
+        "action": "PrintText",
+        "end": 276150,
+        "persona": "Хикари",
+        "start": 272300,
+        "text": "Ну... Вот ведь ворчливый папочка...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 276150,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0630",
+        "layer": 0,
+        "persona": "hik",
+        "start": 272300
+    },
+    {
+        "action": "PrintText",
+        "end": 277333,
+        "persona": "Ребёнок",
+        "start": 276166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 277333,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0640",
+        "layer": 0,
+        "persona": "aka",
+        "start": 276166
+    },
+    {
+        "action": "PrintText",
+        "end": 278266,
+        "persona": "Макото",
+        "start": 277233,
+        "text": "Ух...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 278266,
+        "file": "Voice05/05-5H/05-5H-E00/05-5H-E00-0650",
+        "layer": 1,
+        "persona": "mak",
+        "start": 277233
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 280283,
+        "start": 278283
+    },
+    {
+        "action": "Next",
+        "start": 281283
+    }
+]

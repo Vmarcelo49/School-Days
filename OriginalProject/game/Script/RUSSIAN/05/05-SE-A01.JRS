@@ -1,0 +1,335 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 59150
+    },
+    {
+        "action": "PlayBgm",
+        "end": 59150,
+        "file": "BGM/SD_BGM/sdbgm21",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 333,
+        "file": "SysSe/SE_all/footsteps/asioto_out_run",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 1216,
+        "file": "Event05/05-SE/05-SE-A00/05-SE-A00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5333,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Сэкаи! Котоноха...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5333,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 6133,
+        "file": "Event05/05-SE/05-SE-A01/05-SE-A01-002",
+        "start": 1216
+    },
+    {
+        "action": "PrintText",
+        "end": 9300,
+        "persona": "Котоноха",
+        "start": 5333,
+        "text": "Тихо. Будешь кричать - разбудишь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9300,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 5333
+    },
+    {
+        "action": "CreateBG",
+        "end": 16050,
+        "file": "Event05/05-SE/05-SE-A01/05-SE-A01-003",
+        "start": 6133
+    },
+    {
+        "action": "PrintText",
+        "end": 10233,
+        "persona": "Макото",
+        "start": 9300,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10233,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9300
+    },
+    {
+        "action": "PrintText",
+        "end": 16050,
+        "persona": "Котоноха",
+        "start": 10233,
+        "text": "Она лекарство приняла. Если сейчас отдохнёт, то ей станет лучше.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16050,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 10233
+    },
+    {
+        "action": "CreateBG",
+        "end": 35200,
+        "file": "Event05/05-SE/05-SE-A01/05-SE-A01-004",
+        "start": 16050
+    },
+    {
+        "action": "PrintText",
+        "end": 17183,
+        "persona": "Макото",
+        "start": 16050,
+        "text": "Всё в порядке?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17183,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16050
+    },
+    {
+        "action": "PrintText",
+        "end": 18033,
+        "persona": "Котоноха",
+        "start": 17166,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18033,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 17166
+    },
+    {
+        "action": "PrintText",
+        "end": 23166,
+        "persona": "Макото",
+        "start": 18033,
+        "text": "Ясно... Меня как обухом огрели, когда узнал, что она перед школой сознание потеряла.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23166,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18033
+    },
+    {
+        "action": "PrintText",
+        "end": 29316,
+        "persona": "Макото",
+        "start": 23166,
+        "text": "Пошёл в медкабинет, там сказали, что она в больнице... Ты её сюда довела?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29316,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0111",
+        "layer": 1,
+        "persona": "mak",
+        "start": 23166
+    },
+    {
+        "action": "PrintText",
+        "end": 30216,
+        "persona": "Котоноха",
+        "start": 29316,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30216,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 29316
+    },
+    {
+        "action": "PrintText",
+        "end": 33350,
+        "persona": "Макото",
+        "start": 30200,
+        "text": "Ясно... Спасибо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33350,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 30200
+    },
+    {
+        "action": "PrintText",
+        "end": 34283,
+        "persona": "Котоноха",
+        "start": 33333,
+        "text": "Не за что.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 34283,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 33333
+    },
+    {
+        "action": "CreateBG",
+        "end": 38366,
+        "file": "Event05/05-SE/05-SE-A01/05-SE-A01-005",
+        "start": 35200
+    },
+    {
+        "action": "PrintText",
+        "end": 36250,
+        "persona": "Макото",
+        "start": 35200,
+        "text": "Сэкаи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 36250,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 35200
+    },
+    {
+        "action": "PrintText",
+        "end": 38350,
+        "persona": "Котоноха",
+        "start": 37200,
+        "text": "Пойдём домой?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38350,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 37200
+    },
+    {
+        "action": "CreateBG",
+        "end": 59150,
+        "file": "Event05/05-SE/05-SE-A01/05-SE-A01-006",
+        "start": 38366
+    },
+    {
+        "action": "PrintText",
+        "end": 40350,
+        "persona": "Макото",
+        "start": 38366,
+        "text": "Э?.. Но...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 40350,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0180",
+        "layer": 1,
+        "persona": "mak",
+        "start": 38366
+    },
+    {
+        "action": "PrintText",
+        "end": 45100,
+        "persona": "Котоноха",
+        "start": 40333,
+        "text": "Тут мама её подошла недавно. Так что всё уже хорошо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 45100,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0190",
+        "layer": 0,
+        "persona": "kot",
+        "start": 40333
+    },
+    {
+        "action": "PrintText",
+        "end": 46116,
+        "persona": "Макото",
+        "start": 45116,
+        "text": "Ясно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46116,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 45116
+    },
+    {
+        "action": "PrintText",
+        "end": 55133,
+        "persona": "Котоноха",
+        "start": 46116,
+        "text": "Я понимаю, что ты о ней переживаешь... Но так мы ей только отдыхать мешать будем.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 55133,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0210",
+        "layer": 0,
+        "persona": "kot",
+        "start": 46116
+    },
+    {
+        "action": "PrintText",
+        "end": 56166,
+        "persona": "Макото",
+        "start": 55133,
+        "text": "Да уж...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 56166,
+        "file": "Voice05/05-SE/05-SE-A01/05-SE-A01-0220",
+        "layer": 1,
+        "persona": "mak",
+        "start": 55133
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 59150,
+        "start": 57150
+    },
+    {
+        "action": "Next",
+        "start": 59150
+    }
+]

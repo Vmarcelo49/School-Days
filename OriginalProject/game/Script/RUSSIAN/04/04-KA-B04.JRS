@@ -1,0 +1,192 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 42333
+    },
+    {
+        "action": "PlayBgm",
+        "end": 42333,
+        "file": "BGM/SD_BGM/sdbgm26",
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 27033,
+        "file": "Movie04/04-KA/04-KA-B04/04-KA-B04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2250,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2250,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5283,
+        "persona": "Котоноха",
+        "start": 2250,
+        "text": "Сейчас разденусь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5283,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0050",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2250
+    },
+    {
+        "action": "PrintText",
+        "end": 9133,
+        "persona": "Макото",
+        "start": 5283,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9133,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5283
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10133,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0070",
+        "layer": -1,
+        "persona": "",
+        "start": 9133
+    },
+    {
+        "action": "PrintText",
+        "end": 13200,
+        "persona": "Котоноха",
+        "start": 10133,
+        "text": "Ну...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13200,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 10133
+    },
+    {
+        "action": "PrintText",
+        "end": 16300,
+        "persona": "Макото",
+        "start": 13200,
+        "text": "Котоноха!.. Я!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16300,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13200
+    },
+    {
+        "action": "PrintText",
+        "end": 23333,
+        "persona": "Котоноха",
+        "start": 16300,
+        "text": "Ничего... Я готова на всё... Что ты захочешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23333,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 16300
+    },
+    {
+        "action": "PrintText",
+        "end": 25233,
+        "persona": "Макото",
+        "start": 23333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25233,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 23333
+    },
+    {
+        "action": "PrintText",
+        "end": 31350,
+        "persona": "Котоноха",
+        "start": 25233,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31350,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 25233
+    },
+    {
+        "action": "CreateBG",
+        "end": 42333,
+        "file": "Event04/04-KA/04-KA-B04/04-KA-B04-002",
+        "start": 27033
+    },
+    {
+        "action": "PrintText",
+        "end": 37333,
+        "persona": "Макото",
+        "start": 31350,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37333,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 31350
+    },
+    {
+        "action": "PrintText",
+        "end": 41150,
+        "persona": "Котоноха",
+        "start": 37333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 41150,
+        "file": "Voice04/04-KA/04-KA-B04/04-KA-B04-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 37333
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 42333,
+        "start": 39333
+    },
+    {
+        "action": "Next",
+        "start": 42333
+    }
+]

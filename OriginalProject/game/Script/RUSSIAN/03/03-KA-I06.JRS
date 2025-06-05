@@ -1,0 +1,189 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 25166
+    },
+    {
+        "action": "PlayBgm",
+        "end": 31216,
+        "file": "BGM/SD_BGM/sdbgm03",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 31216,
+        "file": "Se03/03-KA/03-KA-I06/SE03-KA-I06-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7066,
+        "file": "Event03/03-KA/03-KA-I06/03-KA-I06-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1283,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Меня много кто по имени зовёт, Сэкаи например.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1283,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3000,
+        "persona": "Сэцуна",
+        "start": 1383,
+        "text": "Ага...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3000,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0040",
+        "layer": 0,
+        "persona": "set",
+        "start": 1383
+    },
+    {
+        "action": "PrintText",
+        "end": 7033,
+        "persona": "Макото",
+        "start": 3116,
+        "text": "Мы же друзья, к друзьям по имени нормально обращаться.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7033,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3116
+    },
+    {
+        "action": "CreateBG",
+        "end": 18016,
+        "file": "Event03/03-KA/03-KA-I06/03-KA-I06-002A",
+        "start": 7066
+    },
+    {
+        "action": "PrintText",
+        "end": 14116,
+        "persona": "Сэцуна",
+        "start": 7066,
+        "text": "Вот как? Теперь мне все ясно... Макото.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14116,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0060",
+        "layer": 0,
+        "persona": "set",
+        "start": 7066
+    },
+    {
+        "action": "PrintText",
+        "end": 14300,
+        "persona": "Макото",
+        "start": 14033,
+        "text": "А?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14300,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14033
+    },
+    {
+        "action": "PrintText",
+        "end": 18116,
+        "persona": "Сэцуна",
+        "start": 15133,
+        "text": "Макото, ты дальше вот тут крась.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18116,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0080",
+        "layer": 0,
+        "persona": "set",
+        "start": 15133
+    },
+    {
+        "action": "CreateBG",
+        "end": 23016,
+        "file": "Event03/03-KA/03-KA-I06/03-KA-I06-002B",
+        "start": 18016
+    },
+    {
+        "action": "PrintText",
+        "end": 23016,
+        "persona": "Макото",
+        "start": 18016,
+        "text": "Нет... Подожди, а ты почему меня по имени зовёшь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23016,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18016
+    },
+    {
+        "action": "CreateBG",
+        "end": 31216,
+        "file": "Event03/03-KA/03-KA-I06/03-KA-I06-002A",
+        "start": 23016
+    },
+    {
+        "action": "PrintText",
+        "end": 24100,
+        "persona": "Сэцуна",
+        "start": 23016,
+        "text": "Мы ведь друзья?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24100,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0100",
+        "layer": 0,
+        "persona": "set",
+        "start": 23016
+    },
+    {
+        "action": "PrintText",
+        "end": 25116,
+        "persona": "Макото",
+        "start": 24150,
+        "text": "Ну...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25116,
+        "file": "Voice03/03-KA/03-KA-I06/03-KA-I06-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 24150
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Ну конечно!^",
+        "answer2": "С чего бы это мы друзья?^",
+        "end": 30166,
+        "start": 25166
+    },
+    {
+        "action": "Next",
+        "start": 31216
+    }
+]

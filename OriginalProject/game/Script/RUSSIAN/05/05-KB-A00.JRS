@@ -1,0 +1,154 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 37050
+    },
+    {
+        "action": "PlayBgm",
+        "end": 37050,
+        "file": "BGM/SD_BGM/sdbgm18",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7033,
+        "file": "Event05/05-KB/05-KB-A00/05-KB-A00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5150,
+        "persona": "Котоноха",
+        "start": 216,
+        "text": "В каком смысле... Устал?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5150,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0050",
+        "layer": 0,
+        "persona": "kot",
+        "start": 216
+    },
+    {
+        "action": "CreateBG",
+        "end": 31200,
+        "file": "Event05/05-KB/05-KB-A00/05-KB-A00-002",
+        "start": 7033
+    },
+    {
+        "action": "PrintText",
+        "end": 9366,
+        "persona": "Котоноха",
+        "start": 7133,
+        "text": "Неужели нельзя просто любить?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9366,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 7133
+    },
+    {
+        "action": "PrintText",
+        "end": 16050,
+        "persona": "Котоноха",
+        "start": 11116,
+        "text": "Макото... Меня...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16050,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 11116
+    },
+    {
+        "action": "PrintText",
+        "end": 20250,
+        "persona": "Котоноха",
+        "start": 18250,
+        "text": "С Саиёндзи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20250,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 18250
+    },
+    {
+        "action": "PrintText",
+        "end": 23166,
+        "persona": "Котоноха",
+        "start": 21083,
+        "text": "Быть того не может...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23166,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 21083
+    },
+    {
+        "action": "PrintText",
+        "end": 26200,
+        "persona": "Котоноха",
+        "start": 25200,
+        "text": "Ведь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26200,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 25200
+    },
+    {
+        "action": "PrintText",
+        "end": 31000,
+        "persona": "Котоноха",
+        "start": 27250,
+        "text": "Макото... Мой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31000,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 27250
+    },
+    {
+        "action": "CreateBG",
+        "end": 37050,
+        "file": "Event05/05-KB/05-KB-A00/05-KB-A00-001",
+        "start": 31200
+    },
+    {
+        "action": "PrintText",
+        "end": 33383,
+        "persona": "Котоноха",
+        "start": 32283,
+        "text": "Мой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33383,
+        "file": "Voice05/05-KB/05-KB-A00/05-KB-A00-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 32283
+    },
+    {
+        "action": "Next",
+        "start": 37050
+    }
+]

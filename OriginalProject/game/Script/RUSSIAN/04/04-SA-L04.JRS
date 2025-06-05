@@ -1,0 +1,298 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 39383
+    },
+    {
+        "action": "PlayBgm",
+        "end": 39366,
+        "file": "BGM/SD_BGM/sdbgm28",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4100,
+        "file": "Event04/04-SA/04-SA-L04/04-SA-L04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 4116,
+        "persona": "Сэцуна",
+        "start": 183,
+        "text": "Ты знаешь старосту 4-го?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4116,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0050",
+        "layer": 0,
+        "persona": "set",
+        "start": 183
+    },
+    {
+        "action": "CreateBG",
+        "end": 5166,
+        "file": "Event04/04-SA/04-SA-L04/04-SA-L04-001B",
+        "start": 4100
+    },
+    {
+        "action": "PrintText",
+        "end": 4350,
+        "persona": "Сэкаи",
+        "start": 4116,
+        "text": "Э?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4350,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 4116
+    },
+    {
+        "action": "PrintText",
+        "end": 5200,
+        "persona": "Сэцуна",
+        "start": 5033,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5200,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0080",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 5033
+    },
+    {
+        "action": "CreateBG",
+        "end": 23033,
+        "file": "Event04/04-SA/04-SA-L04/04-SA-L04-002",
+        "start": 5166
+    },
+    {
+        "action": "PrintText",
+        "end": 7150,
+        "persona": "Сэкаи",
+        "start": 6133,
+        "text": "Да нет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7150,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0090",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6133
+    },
+    {
+        "action": "PrintText",
+        "end": 11183,
+        "persona": "Сэцуна",
+        "start": 7233,
+        "text": "Ито... Похоже на неё запал.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11183,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0100",
+        "layer": 0,
+        "persona": "set",
+        "start": 7233
+    },
+    {
+        "action": "PrintText",
+        "end": 12116,
+        "persona": "Сэкаи",
+        "start": 11200,
+        "text": "Угу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12116,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0110",
+        "layer": 0,
+        "persona": "sek",
+        "start": 11200
+    },
+    {
+        "action": "PrintText",
+        "end": 13216,
+        "persona": "Сэцуна",
+        "start": 12116,
+        "text": "Так ты знаешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13216,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0120",
+        "layer": 0,
+        "persona": "set",
+        "start": 12116
+    },
+    {
+        "action": "PrintText",
+        "end": 14366,
+        "persona": "Сэцуна",
+        "start": 14050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14366,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0140",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 14050
+    },
+    {
+        "action": "PrintText",
+        "end": 16283,
+        "persona": "Сэкаи",
+        "start": 15266,
+        "text": "Не знаю.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16283,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0130",
+        "layer": 0,
+        "persona": "sek",
+        "start": 15266
+    },
+    {
+        "action": "PrintText",
+        "end": 20116,
+        "persona": "Сэцуна",
+        "start": 16333,
+        "text": "И грустишь не от этого?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20116,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0160",
+        "layer": 0,
+        "persona": "set",
+        "start": 16333
+    },
+    {
+        "action": "PrintText",
+        "end": 23033,
+        "persona": "Сэцуна",
+        "start": 21250,
+        "text": "Можешь и не отвечать.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23033,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0180",
+        "layer": 0,
+        "persona": "set",
+        "start": 21250
+    },
+    {
+        "action": "CreateBG",
+        "end": 26050,
+        "file": "Event04/04-SA/04-SA-L04/04-SA-L04-003",
+        "start": 23033
+    },
+    {
+        "action": "CreateBG",
+        "end": 31050,
+        "file": "Event04/04-SA/04-SA-L04/04-SA-L04-004",
+        "start": 26050
+    },
+    {
+        "action": "PrintText",
+        "end": 28266,
+        "persona": "Сэкаи",
+        "start": 26166,
+        "text": "Понятно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28266,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0210",
+        "layer": 0,
+        "persona": "sek",
+        "start": 26166
+    },
+    {
+        "action": "PrintText",
+        "end": 31050,
+        "persona": "Сэкаи",
+        "start": 28383,
+        "text": "Ради меня...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31050,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0220",
+        "layer": 0,
+        "persona": "sek",
+        "start": 28383
+    },
+    {
+        "action": "CreateBG",
+        "end": 34250,
+        "file": "Event04/04-SA/04-SA-L04/04-SA-L04-005",
+        "start": 31050
+    },
+    {
+        "action": "PrintText",
+        "end": 31350,
+        "persona": "Котоноха",
+        "start": 31083,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31350,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0230",
+        "layer": 0,
+        "persona": "kot",
+        "start": 31083
+    },
+    {
+        "action": "PrintText",
+        "end": 34283,
+        "persona": "Сэкаи",
+        "start": 31366,
+        "text": "Ничего! Я сама с собой.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 34283,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0240",
+        "layer": 0,
+        "persona": "sek",
+        "start": 31366
+    },
+    {
+        "action": "CreateBG",
+        "end": 39383,
+        "file": "Event04/04-SA/04-SA-L04/04-SA-L04-006",
+        "start": 34250
+    },
+    {
+        "action": "PrintText",
+        "end": 37183,
+        "persona": "Сэкаи",
+        "start": 36116,
+        "text": "Сэцуна...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37183,
+        "file": "Voice04/04-SA/04-SA-L04/04-SA-L04-0250",
+        "layer": 0,
+        "persona": "sek",
+        "start": 36116
+    },
+    {
+        "action": "Next",
+        "start": 39383
+    }
+]

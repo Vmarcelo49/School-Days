@@ -1,0 +1,194 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 43216
+    },
+    {
+        "action": "PlayBgm",
+        "end": 43216,
+        "file": "BGM/SD_BGM/sdbgm26",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3150,
+        "file": "Event02/02-2K/02-2K-K08/02-2K-K08-001",
+        "start": 0
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5166,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0040",
+        "layer": 1,
+        "persona": "",
+        "start": 0
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 3150,
+        "start": 2350
+    },
+    {
+        "action": "CreateBG",
+        "end": 9250,
+        "file": "Event02/02-2K/02-2K-J05/02-2K-J05-004",
+        "start": 3150
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 3350,
+        "start": 3150
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9233,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0060",
+        "layer": 1,
+        "persona": "",
+        "start": 5166
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 9250,
+        "start": 9050
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14166,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0080",
+        "layer": 1,
+        "persona": "",
+        "start": 9233
+    },
+    {
+        "action": "CreateBG",
+        "end": 14166,
+        "file": "Event02/02-2K/02-2K-K02/02-2K-K02-003",
+        "start": 9250
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 10050,
+        "start": 9250
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 14166,
+        "start": 13366
+    },
+    {
+        "action": "PlayMovie",
+        "end": 20033,
+        "file": "Movie02/02-2K/02-2K-J10/02-2K-J10-004",
+        "start": 14166
+    },
+    {
+        "action": "PrintText",
+        "end": 19333,
+        "persona": "Макото",
+        "start": 14166,
+        "text": "Котоноха...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19333,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0100",
+        "layer": 1,
+        "persona": "",
+        "start": 14166
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 14366,
+        "start": 14166
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26100,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 19333
+    },
+    {
+        "action": "PlayMovie",
+        "end": 22383,
+        "file": "Movie02/02-2K/02-2K-J10/02-2K-J10-006",
+        "start": 20033
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 22383,
+        "start": 22183
+    },
+    {
+        "action": "CreateBG",
+        "end": 29116,
+        "file": "Event02/02-2K/02-2K-K08/02-2K-K08-005",
+        "start": 22383
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 23183,
+        "start": 22383
+    },
+    {
+        "action": "PlaySe",
+        "end": 28033,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0140",
+        "layer": 1,
+        "start": 26100
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 29116,
+        "start": 26333
+    },
+    {
+        "action": "CreateBG",
+        "end": 43216,
+        "file": "Event02/02-2K/02-2K-K03/02-2K-K03-001",
+        "start": 29116
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 30116,
+        "start": 29116
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37250,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 30116
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43183,
+        "file": "Voice02/02-2K/02-2K-K08/02-2K-K08-0180",
+        "layer": 1,
+        "persona": "mak",
+        "start": 37250
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 43216,
+        "start": 42216
+    },
+    {
+        "action": "Next",
+        "start": 43216
+    }
+]

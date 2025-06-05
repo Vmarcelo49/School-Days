@@ -1,0 +1,196 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 26000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 26000,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3000,
+        "file": "Event05/05-KA/05-KA-E00/05-KA-E00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 11033,
+        "file": "Event05/05-KA/05-KA-E00/05-KA-E00-002",
+        "start": 3000
+    },
+    {
+        "action": "PrintText",
+        "end": 11016,
+        "persona": "Сэкаи",
+        "start": 3016,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11016,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 3016
+    },
+    {
+        "action": "CreateBG",
+        "end": 21016,
+        "file": "Event05/05-KA/05-KA-E00/05-KA-E00-004",
+        "start": 11033
+    },
+    {
+        "action": "PrintText",
+        "end": 12033,
+        "persona": "Сэцуна",
+        "start": 11066,
+        "text": "Сэкаи.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12033,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0060",
+        "layer": 0,
+        "persona": "set",
+        "start": 11066
+    },
+    {
+        "action": "PrintText",
+        "end": 14150,
+        "persona": "Сэкаи",
+        "start": 12050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14150,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 12050
+    },
+    {
+        "action": "PrintText",
+        "end": 15350,
+        "persona": "Сэцуна",
+        "start": 14183,
+        "text": "Что случилось?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15350,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0080",
+        "layer": 0,
+        "persona": "set",
+        "start": 14183
+    },
+    {
+        "action": "PrintText",
+        "end": 16383,
+        "persona": "Сэкаи",
+        "start": 15350,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16383,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0090",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 15350
+    },
+    {
+        "action": "PrintText",
+        "end": 18000,
+        "persona": "Сэцуна",
+        "start": 16383,
+        "text": "Расскажи.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18000,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0100",
+        "layer": 0,
+        "persona": "set",
+        "start": 16383
+    },
+    {
+        "action": "PrintText",
+        "end": 19283,
+        "persona": "Сэкаи",
+        "start": 18016,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19283,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0110",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 18016
+    },
+    {
+        "action": "PrintText",
+        "end": 21000,
+        "persona": "Сэцуна",
+        "start": 19300,
+        "text": "С Ито что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21000,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0120",
+        "layer": 0,
+        "persona": "set",
+        "start": 19300
+    },
+    {
+        "action": "CreateBG",
+        "end": 26000,
+        "file": "Event05/05-KA/05-KA-E00/05-KA-E00-005",
+        "start": 21016
+    },
+    {
+        "action": "PrintText",
+        "end": 23300,
+        "persona": "Сэкаи",
+        "start": 21016,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23300,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0130",
+        "layer": 0,
+        "persona": "sek",
+        "start": 21016
+    },
+    {
+        "action": "PrintText",
+        "end": 24333,
+        "persona": "Сэцуна",
+        "start": 24000,
+        "text": "Ясно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24333,
+        "file": "Voice05/05-KA/05-KA-E00/05-KA-E00-0140",
+        "layer": 0,
+        "persona": "set",
+        "start": 24000
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 26000,
+        "start": 25000
+    },
+    {
+        "action": "Next",
+        "start": 26000
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 11316
+    },
+    {
+        "action": "PlayBgm",
+        "end": 11316,
+        "file": "BGM/SD_BGM/sdbgm29",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 11316,
+        "file": "SysSe/SE_all/gaya/beach1",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5316,
+        "file": "Event05/05-KF/05-KF-H06/05-KF-H06-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5333,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Но я люблю тебя, Сэкаи.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5333,
+        "file": "Voice05/05-KF/05-KF-H06/05-KF-H06-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7233,
+        "file": "Event05/05-KF/05-KF-H06/05-KF-H06-002",
+        "start": 5316
+    },
+    {
+        "action": "PrintText",
+        "end": 7033,
+        "persona": "Сэкаи",
+        "start": 5333,
+        "text": "И я тебя.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7033,
+        "file": "Voice05/05-KF/05-KF-H06/05-KF-H06-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 5333
+    },
+    {
+        "action": "PrintText",
+        "end": 8366,
+        "persona": "Макото",
+        "start": 7033,
+        "text": "Сэкаи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8366,
+        "file": "Voice05/05-KF/05-KF-H06/05-KF-H06-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7033
+    },
+    {
+        "action": "CreateBG",
+        "end": 10000,
+        "file": "Event05/05-KF/05-KF-H06/05-KF-H06-003",
+        "start": 7233
+    },
+    {
+        "action": "CreateBG",
+        "end": 11316,
+        "file": "Event05/05-KF/05-KF-H06/05-KF-H06-004",
+        "start": 10000
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10166,
+        "file": "Voice05/05-KF/05-KF-H06/05-KF-H06-0060",
+        "layer": -1,
+        "persona": "",
+        "start": 10000
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 11316,
+        "start": 10316
+    },
+    {
+        "action": "Next",
+        "start": 11316
+    }
+]

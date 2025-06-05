@@ -1,0 +1,80 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 8266
+    },
+    {
+        "action": "PlayBgm",
+        "end": 14316,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2116,
+        "file": "Event03/03-KA/03-KA-L02/03-KA-L02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1316,
+        "persona": "Макото",
+        "start": 116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1316,
+        "file": "Voice03/03-KA/03-KA-L02/03-KA-L02-0050",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 116
+    },
+    {
+        "action": "CreateBG",
+        "end": 14316,
+        "file": "Event03/03-KA/03-KA-L02/03-KA-L02-003A",
+        "start": 2116
+    },
+    {
+        "action": "PrintText",
+        "end": 5350,
+        "persona": "Макото",
+        "start": 2316,
+        "text": "Если подумать...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5350,
+        "file": "Voice03/03-KA/03-KA-L02/03-KA-L02-0060",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 2316
+    },
+    {
+        "action": "PrintText",
+        "end": 8100,
+        "persona": "Макото",
+        "start": 7150,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8100,
+        "file": "Voice03/03-KA/03-KA-L02/03-KA-L02-0070",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 7150
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Мне нравится Котоноха.^",
+        "answer2": "Сегодняшнее совещание...^",
+        "end": 13266,
+        "start": 8266
+    },
+    {
+        "action": "Next",
+        "start": 14316
+    }
+]

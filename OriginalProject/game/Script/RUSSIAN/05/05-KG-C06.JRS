@@ -1,0 +1,116 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 11250
+    },
+    {
+        "action": "PlaySe",
+        "end": 11250,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3200,
+        "file": "Event05/05-KG/05-KG-C06/05-KG-C06-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2083,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Позвать что ли?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2083,
+        "file": "Voice05/05-KG/05-KG-C06/05-KG-C06-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3033,
+        "persona": "Сэкаи",
+        "start": 2100,
+        "text": "Э?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3033,
+        "file": "Voice05/05-KG/05-KG-C06/05-KG-C06-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 2100
+    },
+    {
+        "action": "PrintText",
+        "end": 6233,
+        "persona": "Макото",
+        "start": 3016,
+        "text": "Эй, Котоноха!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6233,
+        "file": "Voice05/05-KG/05-KG-C06/05-KG-C06-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3016
+    },
+    {
+        "action": "CreateBG",
+        "end": 8183,
+        "file": "Event05/05-KG/05-KG-C06/05-KG-C06-002",
+        "start": 3200
+    },
+    {
+        "action": "PrintText",
+        "end": 8166,
+        "persona": "Сэкаи",
+        "start": 6250,
+        "text": "А... Постой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8166,
+        "file": "Voice05/05-KG/05-KG-C06/05-KG-C06-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6250
+    },
+    {
+        "action": "PrintText",
+        "end": 10250,
+        "persona": "Макото",
+        "start": 8166,
+        "text": "Пошли!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10250,
+        "file": "Voice05/05-KG/05-KG-C06/05-KG-C06-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 8166
+    },
+    {
+        "action": "CreateBG",
+        "end": 11250,
+        "file": "Event05/05-KG/05-KG-C06/05-KG-C06-007",
+        "start": 8183
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 11250,
+        "start": 10333
+    },
+    {
+        "action": "Next",
+        "start": 11250
+    }
+]

@@ -1,0 +1,815 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 135166
+    },
+    {
+        "action": "PlaySe",
+        "end": 100000,
+        "file": "SysSe/SE_all/station_train/gakuenmae_yuugata",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2350,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2166,
+        "persona": "Таисукэ",
+        "start": 1333,
+        "text": "А.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2166,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0040",
+        "layer": 1,
+        "persona": "tai",
+        "start": 1333
+    },
+    {
+        "action": "CreateBG",
+        "end": 4366,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-002",
+        "start": 2350
+    },
+    {
+        "action": "PrintText",
+        "end": 4216,
+        "persona": "Котоноха",
+        "start": 3016,
+        "text": "Саванага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4216,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3016
+    },
+    {
+        "action": "CreateBG",
+        "end": 6300,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-003",
+        "start": 4366
+    },
+    {
+        "action": "PrintText",
+        "end": 6250,
+        "persona": "Таисукэ",
+        "start": 5016,
+        "text": "Собралась куда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6250,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0070",
+        "layer": 1,
+        "persona": "tai",
+        "start": 5016
+    },
+    {
+        "action": "CreateBG",
+        "end": 8333,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-004",
+        "start": 6300
+    },
+    {
+        "action": "PrintText",
+        "end": 10333,
+        "persona": "Котоноха",
+        "start": 6350,
+        "text": "К Макото в гости...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10333,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 6350
+    },
+    {
+        "action": "CreateBG",
+        "end": 12150,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-004B",
+        "start": 8333
+    },
+    {
+        "action": "PrintText",
+        "end": 12000,
+        "persona": "Хикари",
+        "start": 11016,
+        "text": "Э?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12000,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0090",
+        "layer": 0,
+        "persona": "hik",
+        "start": 11016
+    },
+    {
+        "action": "CreateBG",
+        "end": 16133,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-005",
+        "start": 12150
+    },
+    {
+        "action": "PrintText",
+        "end": 16050,
+        "persona": "Котоноха",
+        "start": 12150,
+        "text": "Я сказала ему... Что приду сегодня.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16050,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 12150
+    },
+    {
+        "action": "CreateBG",
+        "end": 22183,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-006",
+        "start": 16133
+    },
+    {
+        "action": "PrintText",
+        "end": 19333,
+        "persona": "Хикари",
+        "start": 16200,
+        "text": "И... Ито дал добро?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19333,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0110",
+        "layer": 0,
+        "persona": "hik",
+        "start": 16200
+    },
+    {
+        "action": "PrintText",
+        "end": 20333,
+        "persona": "Котоноха",
+        "start": 20050,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20333,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 20050
+    },
+    {
+        "action": "PrintText",
+        "end": 22133,
+        "persona": "Хикари",
+        "start": 21033,
+        "text": "Врёшь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22133,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0130",
+        "layer": 0,
+        "persona": "hik",
+        "start": 21033
+    },
+    {
+        "action": "CreateBG",
+        "end": 24216,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-007",
+        "start": 22183
+    },
+    {
+        "action": "PrintText",
+        "end": 24166,
+        "persona": "Котоноха",
+        "start": 22233,
+        "text": "С чего бы это?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24166,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 22233
+    },
+    {
+        "action": "CreateBG",
+        "end": 28300,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-008",
+        "start": 24216
+    },
+    {
+        "action": "PrintText",
+        "end": 28250,
+        "persona": "Хикари",
+        "start": 24266,
+        "text": "Ведь Ито к Сэкаи пошёл!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28250,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0150",
+        "layer": 0,
+        "persona": "hik",
+        "start": 24266
+    },
+    {
+        "action": "CreateBG",
+        "end": 30283,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-009",
+        "start": 28300
+    },
+    {
+        "action": "PrintText",
+        "end": 30233,
+        "persona": "Котоноха",
+        "start": 28333,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30233,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0160",
+        "layer": 0,
+        "persona": "kot",
+        "start": 28333
+    },
+    {
+        "action": "CreateBG",
+        "end": 38050,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-010",
+        "start": 30283
+    },
+    {
+        "action": "PrintText",
+        "end": 33333,
+        "persona": "Хикари",
+        "start": 30333,
+        "text": "А ты! Ты ему и в подмётки не годишься!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33333,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0170",
+        "layer": 0,
+        "persona": "hik",
+        "start": 30333
+    },
+    {
+        "action": "PrintText",
+        "end": 36133,
+        "persona": "Таисукэ",
+        "start": 33383,
+        "text": "Да успокойся ты, Хикари!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 36133,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0180",
+        "layer": 1,
+        "persona": "tai",
+        "start": 33383
+    },
+    {
+        "action": "PrintText",
+        "end": 38016,
+        "persona": "Хикари",
+        "start": 36233,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38016,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0190",
+        "layer": 0,
+        "persona": "hik",
+        "start": 36233
+    },
+    {
+        "action": "CreateBG",
+        "end": 47300,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-011",
+        "start": 38050
+    },
+    {
+        "action": "PrintText",
+        "end": 41316,
+        "persona": "Котоноха",
+        "start": 38100,
+        "text": "Это... правда?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 41316,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0200",
+        "layer": 0,
+        "persona": "kot",
+        "start": 38100
+    },
+    {
+        "action": "PrintText",
+        "end": 42233,
+        "persona": "Таисукэ",
+        "start": 42000,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 42233,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0210",
+        "layer": 1,
+        "persona": "tai",
+        "start": 42000
+    },
+    {
+        "action": "PrintText",
+        "end": 47233,
+        "persona": "Котоноха",
+        "start": 42350,
+        "text": "То, что Макото к Саиёндзи пошёл?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 47233,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0220",
+        "layer": 0,
+        "persona": "kot",
+        "start": 42350
+    },
+    {
+        "action": "CreateBG",
+        "end": 66350,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-012",
+        "start": 47300
+    },
+    {
+        "action": "PrintText",
+        "end": 48300,
+        "persona": "Таисукэ",
+        "start": 47350,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48300,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0230",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 47350
+    },
+    {
+        "action": "PrintText",
+        "end": 52083,
+        "persona": "Котоноха",
+        "start": 49066,
+        "text": "Правда... значит...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 52083,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0240",
+        "layer": 0,
+        "persona": "kot",
+        "start": 49066
+    },
+    {
+        "action": "PrintText",
+        "end": 58150,
+        "persona": "Таисукэ",
+        "start": 52300,
+        "text": "Нет. Это Саиёндзи ему навязала, так что пойдёт он к ней или нет, я не знаю.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 58150,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0250",
+        "layer": 1,
+        "persona": "tai",
+        "start": 52300
+    },
+    {
+        "action": "PlayVoice",
+        "end": 60316,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0260",
+        "layer": -1,
+        "persona": "",
+        "start": 58350
+    },
+    {
+        "action": "PrintText",
+        "end": 66283,
+        "persona": "Таисукэ",
+        "start": 61200,
+        "text": "Но... Макото был всем этим порядком озабочен... Так что я даже и не знаю.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 66283,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0270",
+        "layer": 1,
+        "persona": "tai",
+        "start": 61200
+    },
+    {
+        "action": "CreateBG",
+        "end": 68316,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-013",
+        "start": 66350
+    },
+    {
+        "action": "PrintText",
+        "end": 68183,
+        "persona": "Котоноха",
+        "start": 67083,
+        "text": "Э?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 68183,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0280",
+        "layer": 0,
+        "persona": "kot",
+        "start": 67083
+    },
+    {
+        "action": "CreateBG",
+        "end": 80133,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-014",
+        "start": 68316
+    },
+    {
+        "action": "PrintText",
+        "end": 74166,
+        "persona": "Таисукэ",
+        "start": 69066,
+        "text": "Если он тебе уже пообещал, то к Саиёндзи скорее всего не пойдёт.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 74166,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0290",
+        "layer": 1,
+        "persona": "tai",
+        "start": 69066
+    },
+    {
+        "action": "PrintText",
+        "end": 77050,
+        "persona": "Хикари",
+        "start": 75033,
+        "text": "Он правда обещал?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 77050,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0300",
+        "layer": 0,
+        "persona": "hik",
+        "start": 75033
+    },
+    {
+        "action": "PrintText",
+        "end": 78200,
+        "persona": "Котоноха",
+        "start": 77216,
+        "text": "Наверное...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 78200,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0310",
+        "layer": 0,
+        "persona": "kot",
+        "start": 77216
+    },
+    {
+        "action": "PrintText",
+        "end": 80033,
+        "persona": "Хикари",
+        "start": 79000,
+        "text": "Наверное?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 80033,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0320",
+        "layer": 0,
+        "persona": "hik",
+        "start": 79000
+    },
+    {
+        "action": "CreateBG",
+        "end": 91083,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-015",
+        "start": 80133
+    },
+    {
+        "action": "PrintText",
+        "end": 87266,
+        "persona": "Котоноха",
+        "start": 80233,
+        "text": "Я тоже... Просто сказала ему, что приду... Но согласился ли он или нет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 87266,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0330",
+        "layer": 0,
+        "persona": "kot",
+        "start": 80233
+    },
+    {
+        "action": "PrintText",
+        "end": 89016,
+        "persona": "Таисукэ",
+        "start": 88016,
+        "text": "Кацура.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 89016,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0340",
+        "layer": 1,
+        "persona": "tai",
+        "start": 88016
+    },
+    {
+        "action": "PrintText",
+        "end": 90383,
+        "persona": "Котоноха",
+        "start": 89183,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 90383,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0350",
+        "layer": 0,
+        "persona": "kot",
+        "start": 89183
+    },
+    {
+        "action": "CreateBG",
+        "end": 106233,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-016",
+        "start": 91083
+    },
+    {
+        "action": "PrintText",
+        "end": 97083,
+        "persona": "Таисукэ",
+        "start": 91133,
+        "text": "Если Макото тебя действительно любит... Он придёт.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 97083,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0360",
+        "layer": 1,
+        "persona": "tai",
+        "start": 91133
+    },
+    {
+        "action": "PrintText",
+        "end": 99133,
+        "persona": "Котоноха",
+        "start": 97233,
+        "text": "Да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 99133,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0370",
+        "layer": 0,
+        "persona": "kot",
+        "start": 97233
+    },
+    {
+        "action": "PlaySe",
+        "end": 135166,
+        "file": "SysSe/SE_all/station_train/gakuenmae_yuugata",
+        "layer": 2,
+        "start": 98350
+    },
+    {
+        "action": "PrintText",
+        "end": 106150,
+        "persona": "Таисукэ",
+        "start": 99300,
+        "text": "Но... Если не вдруг не придёт - то, пожалуйста, забудь о нём.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 106150,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0380",
+        "layer": 1,
+        "persona": "tai",
+        "start": 99300
+    },
+    {
+        "action": "CreateBG",
+        "end": 108200,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-017",
+        "start": 106233
+    },
+    {
+        "action": "PrintText",
+        "end": 108100,
+        "persona": "Котоноха",
+        "start": 106300,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 108100,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0390",
+        "layer": 0,
+        "persona": "kot",
+        "start": 106300
+    },
+    {
+        "action": "CreateBG",
+        "end": 113283,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-018",
+        "start": 108200
+    },
+    {
+        "action": "PrintText",
+        "end": 113116,
+        "persona": "Таисукэ",
+        "start": 108266,
+        "text": "Я хочу, чтобы ты уважала выбор, к которому придёт Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 113116,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0400",
+        "layer": 1,
+        "persona": "tai",
+        "start": 108266
+    },
+    {
+        "action": "CreateBG",
+        "end": 118033,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-019",
+        "start": 113283
+    },
+    {
+        "action": "PrintText",
+        "end": 115150,
+        "persona": "Котоноха",
+        "start": 113366,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 115150,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0410",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 113366
+    },
+    {
+        "action": "PrintText",
+        "end": 116233,
+        "persona": "Таисукэ",
+        "start": 115283,
+        "text": "Прошу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 116233,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0420",
+        "layer": 1,
+        "persona": "tai",
+        "start": 115283
+    },
+    {
+        "action": "PrintText",
+        "end": 117316,
+        "persona": "Котоноха",
+        "start": 117016,
+        "text": "Хорошо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 117316,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0430",
+        "layer": 0,
+        "persona": "kot",
+        "start": 117016
+    },
+    {
+        "action": "CreateBG",
+        "end": 131166,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-020",
+        "start": 118033
+    },
+    {
+        "action": "PrintText",
+        "end": 124100,
+        "persona": "Таисукэ",
+        "start": 118116,
+        "text": "Ну, мы пойдём... Но, буду молиться, чтобы он выбрал тебя, Кацура.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 124100,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0440",
+        "layer": 1,
+        "persona": "tai",
+        "start": 118116
+    },
+    {
+        "action": "PrintText",
+        "end": 126333,
+        "persona": "Хикари",
+        "start": 124350,
+        "text": "А я не буду!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 126333,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0450",
+        "layer": 0,
+        "persona": "hik",
+        "start": 124350
+    },
+    {
+        "action": "PrintText",
+        "end": 128283,
+        "persona": "Таисукэ",
+        "start": 127083,
+        "text": "Хватит уже, пошли.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 128283,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0460",
+        "layer": 1,
+        "persona": "tai",
+        "start": 127083
+    },
+    {
+        "action": "PrintText",
+        "end": 131100,
+        "persona": "Хикари",
+        "start": 128383,
+        "text": "Да подожди!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 131100,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0470",
+        "layer": 0,
+        "persona": "hik",
+        "start": 128383
+    },
+    {
+        "action": "CreateBG",
+        "end": 135166,
+        "file": "Event05/05-5O/05-5O-N00/05-5O-N00-021",
+        "start": 131166
+    },
+    {
+        "action": "PrintText",
+        "end": 133266,
+        "persona": "Котоноха",
+        "start": 131233,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 133266,
+        "file": "Voice05/05-5O/05-5O-N00/05-5O-N00-0480",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 131233
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 135166,
+        "start": 134166
+    },
+    {
+        "action": "Next",
+        "start": 135166
+    }
+]

@@ -1,0 +1,873 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 294283
+    },
+    {
+        "action": "PlayBgm",
+        "end": 162350,
+        "file": "BGM/SD_BGM/sdbgm25",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3000,
+        "file": "Event04/04-KB/04-KB-E01/04-KB-E01-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4350,
+        "file": "Event04/04-KB/04-KB-E01/04-KB-E01-002",
+        "start": 3000
+    },
+    {
+        "action": "CreateBG",
+        "end": 7333,
+        "file": "Event04/04-KC/04-KC-E01/04-KC-E01-003",
+        "start": 4350
+    },
+    {
+        "action": "PlayMovie",
+        "end": 13250,
+        "file": "Movie04/04-KC/04-KC-E01/04-KC-E01-004",
+        "start": 7333
+    },
+    {
+        "action": "PlaySe",
+        "end": 8133,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-008",
+        "layer": 1,
+        "start": 8116
+    },
+    {
+        "action": "PrintText",
+        "end": 13050,
+        "persona": "Сэкаи",
+        "start": 12100,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13050,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 12100
+    },
+    {
+        "action": "PlayMovie",
+        "end": 45133,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-005",
+        "start": 13250
+    },
+    {
+        "action": "PlaySe",
+        "end": 14333,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-001",
+        "layer": 1,
+        "start": 14050
+    },
+    {
+        "action": "PrintText",
+        "end": 14300,
+        "persona": "Сэкаи",
+        "start": 14100,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14300,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0070",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 14100
+    },
+    {
+        "action": "PlaySe",
+        "end": 18316,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-002",
+        "layer": 1,
+        "start": 15166
+    },
+    {
+        "action": "PrintText",
+        "end": 17333,
+        "persona": "Сэкаи",
+        "start": 16266,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17333,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0120",
+        "layer": 0,
+        "persona": "sek",
+        "start": 16266
+    },
+    {
+        "action": "PlaySe",
+        "end": 19383,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-001",
+        "layer": 1,
+        "start": 19100
+    },
+    {
+        "action": "PlaySe",
+        "end": 21383,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-003",
+        "layer": 1,
+        "start": 20150
+    },
+    {
+        "action": "PrintText",
+        "end": 21233,
+        "persona": "Сэкаи",
+        "start": 20183,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21233,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0140",
+        "layer": 0,
+        "persona": "sek",
+        "start": 20183
+    },
+    {
+        "action": "PlaySe",
+        "end": 25266,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-002",
+        "layer": 1,
+        "start": 22116
+    },
+    {
+        "action": "PrintText",
+        "end": 24366,
+        "persona": "Сэкаи",
+        "start": 22366,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24366,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0160",
+        "layer": 0,
+        "persona": "sek",
+        "start": 22366
+    },
+    {
+        "action": "PrintText",
+        "end": 29166,
+        "persona": "Сэкаи",
+        "start": 25250,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29166,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0170",
+        "layer": 0,
+        "persona": "sek",
+        "start": 25250
+    },
+    {
+        "action": "PlaySe",
+        "end": 29200,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-002",
+        "layer": 1,
+        "start": 26050
+    },
+    {
+        "action": "PlaySe",
+        "end": 27366,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-004",
+        "layer": 2,
+        "start": 27016
+    },
+    {
+        "action": "PlaySe",
+        "end": 30183,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-001",
+        "layer": 1,
+        "start": 29300
+    },
+    {
+        "action": "PrintText",
+        "end": 34100,
+        "persona": "Сэкаи",
+        "start": 30116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 34100,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0190",
+        "layer": 0,
+        "persona": "sek",
+        "start": 30116
+    },
+    {
+        "action": "PlaySe",
+        "end": 34116,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-002",
+        "layer": 1,
+        "start": 30366
+    },
+    {
+        "action": "PlaySe",
+        "end": 32366,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-004",
+        "layer": 2,
+        "start": 31000
+    },
+    {
+        "action": "PlaySe",
+        "end": 36033,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-003",
+        "layer": 1,
+        "start": 34200
+    },
+    {
+        "action": "PrintText",
+        "end": 36266,
+        "persona": "Сэкаи",
+        "start": 34350,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 36266,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0210",
+        "layer": 0,
+        "persona": "sek",
+        "start": 34350
+    },
+    {
+        "action": "PlaySe",
+        "end": 35350,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-004",
+        "layer": 2,
+        "start": 35000
+    },
+    {
+        "action": "PlaySe",
+        "end": 39333,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-002",
+        "layer": 1,
+        "start": 36183
+    },
+    {
+        "action": "PrintText",
+        "end": 44333,
+        "persona": "Сэкаи",
+        "start": 37300,
+        "text": "Так хорошо... Сильнее...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 44333,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0220",
+        "layer": 0,
+        "persona": "sek",
+        "start": 37300
+    },
+    {
+        "action": "PlaySe",
+        "end": 38383,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-004",
+        "layer": 2,
+        "start": 38033
+    },
+    {
+        "action": "PlaySe",
+        "end": 43150,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-002",
+        "layer": 2,
+        "start": 39383
+    },
+    {
+        "action": "PlaySe",
+        "end": 44200,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-003",
+        "layer": 1,
+        "start": 42366
+    },
+    {
+        "action": "PlaySe",
+        "end": 66333,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-004",
+        "layer": 2,
+        "start": 45016
+    },
+    {
+        "action": "PlayMovie",
+        "end": 52250,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-006",
+        "start": 45133
+    },
+    {
+        "action": "PrintText",
+        "end": 49383,
+        "persona": "Сэкаи",
+        "start": 46000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 49383,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0230",
+        "layer": 0,
+        "persona": "sek",
+        "start": 46000
+    },
+    {
+        "action": "PrintText",
+        "end": 51383,
+        "persona": "Сэкаи",
+        "start": 50300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 51383,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0250",
+        "layer": 0,
+        "persona": "sek",
+        "start": 50300
+    },
+    {
+        "action": "PlayMovie",
+        "end": 59266,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-007",
+        "start": 52250
+    },
+    {
+        "action": "PrintText",
+        "end": 58233,
+        "persona": "Сэкаи",
+        "start": 52366,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 58233,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0270",
+        "layer": 0,
+        "persona": "sek",
+        "start": 52366
+    },
+    {
+        "action": "PlaySe",
+        "end": 75083,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-004",
+        "layer": 1,
+        "start": 53166
+    },
+    {
+        "action": "PrintText",
+        "end": 63216,
+        "persona": "Сэкаи",
+        "start": 59033,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 63216,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0290",
+        "layer": 0,
+        "persona": "sek",
+        "start": 59033
+    },
+    {
+        "action": "PlayMovie",
+        "end": 83000,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-010B",
+        "start": 59266
+    },
+    {
+        "action": "PlayMovie",
+        "end": 88000,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-010",
+        "start": 83000
+    },
+    {
+        "action": "PrintText",
+        "end": 70016,
+        "persona": "Сэкаи",
+        "start": 64083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 70016,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0310",
+        "layer": 0,
+        "persona": "sek",
+        "start": 64083
+    },
+    {
+        "action": "PrintText",
+        "end": 75116,
+        "persona": "Сэкаи",
+        "start": 70316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 75116,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0330",
+        "layer": 0,
+        "persona": "sek",
+        "start": 70316
+    },
+    {
+        "action": "PrintText",
+        "end": 82083,
+        "persona": "Сэкаи",
+        "start": 75316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 82083,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0350",
+        "layer": 0,
+        "persona": "sek",
+        "start": 75316
+    },
+    {
+        "action": "PrintText",
+        "end": 87083,
+        "persona": "Сэкаи",
+        "start": 83050,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 87083,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0360",
+        "layer": 0,
+        "persona": "sek",
+        "start": 83050
+    },
+    {
+        "action": "PrintText",
+        "end": 88216,
+        "persona": "Сэкаи",
+        "start": 87100,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 88216,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0450",
+        "layer": 0,
+        "persona": "sek",
+        "start": 87100
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 88200,
+        "start": 88000
+    },
+    {
+        "action": "CreateBG",
+        "end": 99200,
+        "file": "Event04/04-KB/04-KB-E01/04-KB-E01-011",
+        "start": 88200
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 89000,
+        "start": 88200
+    },
+    {
+        "action": "PrintText",
+        "end": 99150,
+        "persona": "Сэкаи",
+        "start": 88216,
+        "text": "А вот если тебе, Макото, не Кацура, а другая девчонка признается... Попросит обнять её, что делать будешь? Не поддашься?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 99150,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0380",
+        "layer": 0,
+        "persona": "sek",
+        "start": 88216
+    },
+    {
+        "action": "PlaySe",
+        "end": 107250,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-004",
+        "layer": 1,
+        "start": 99100
+    },
+    {
+        "action": "CreateBG",
+        "end": 102316,
+        "file": "Event04/04-KB/04-KB-E01/04-KB-E01-012",
+        "start": 99200
+    },
+    {
+        "action": "PrintText",
+        "end": 103083,
+        "persona": "Макото",
+        "start": 99200,
+        "text": "Не поддамся!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 103083,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0390",
+        "layer": 1,
+        "persona": "mak",
+        "start": 99200
+    },
+    {
+        "action": "CreateBG",
+        "end": 105066,
+        "file": "Event04/04-KB/04-KB-E01/04-KB-E01-013",
+        "start": 102316
+    },
+    {
+        "action": "PrintText",
+        "end": 105100,
+        "persona": "Сэкаи",
+        "start": 102316,
+        "text": "Ух, молодец какой!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 105100,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0400",
+        "layer": 0,
+        "persona": "sek",
+        "start": 102316
+    },
+    {
+        "action": "CreateBG",
+        "end": 112000,
+        "file": "Event04/04-KB/04-KB-E01/04-KB-E01-014",
+        "start": 105066
+    },
+    {
+        "action": "PrintText",
+        "end": 107083,
+        "persona": "Макото",
+        "start": 105066,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 107083,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0410",
+        "layer": 1,
+        "persona": "mak",
+        "start": 105066
+    },
+    {
+        "action": "PrintText",
+        "end": 107133,
+        "persona": "Сэкаи",
+        "start": 106316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 107133,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0420",
+        "layer": 0,
+        "persona": "sek",
+        "start": 106316
+    },
+    {
+        "action": "PrintText",
+        "end": 111083,
+        "persona": "Макото",
+        "start": 107266,
+        "text": "А... Тебе вот, правда, могу и...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 111083,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0430",
+        "layer": 1,
+        "persona": "mak",
+        "start": 107266
+    },
+    {
+        "action": "PlaySe",
+        "end": 128083,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-005",
+        "layer": 2,
+        "start": 107283
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 112000,
+        "start": 111200
+    },
+    {
+        "action": "PlayMovie",
+        "end": 124316,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-015",
+        "start": 112000
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 112200,
+        "start": 112000
+    },
+    {
+        "action": "PrintText",
+        "end": 124116,
+        "persona": "Сэкаи",
+        "start": 113066,
+        "text": "Я всё ещё... Люблю... Тебя...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 124116,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0470",
+        "layer": 0,
+        "persona": "sek",
+        "start": 113066
+    },
+    {
+        "action": "PlayMovie",
+        "end": 138083,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-010B",
+        "start": 124316
+    },
+    {
+        "action": "PrintText",
+        "end": 129366,
+        "persona": "Сэкаи",
+        "start": 124350,
+        "text": "Макото... Люблю...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 129366,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0490",
+        "layer": 0,
+        "persona": "sek",
+        "start": 124350
+    },
+    {
+        "action": "PrintText",
+        "end": 134183,
+        "persona": "Сэкаи",
+        "start": 130183,
+        "text": "…^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 134183,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0500",
+        "layer": 0,
+        "persona": "sek",
+        "start": 130183
+    },
+    {
+        "action": "PrintText",
+        "end": 142150,
+        "persona": "Сэкаи",
+        "start": 135000,
+        "text": "Макото... Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 142150,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0520",
+        "layer": 0,
+        "persona": "sek",
+        "start": 135000
+    },
+    {
+        "action": "PlayMovie",
+        "end": 145216,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-017",
+        "start": 138083
+    },
+    {
+        "action": "PlaySe",
+        "end": 150316,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-007",
+        "layer": 1,
+        "start": 140333
+    },
+    {
+        "action": "PlaySe",
+        "end": 144350,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-006",
+        "layer": 3,
+        "start": 140333
+    },
+    {
+        "action": "PrintText",
+        "end": 147133,
+        "persona": "Сэкаи",
+        "start": 142366,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 147133,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0530",
+        "layer": 0,
+        "persona": "sek",
+        "start": 142366
+    },
+    {
+        "action": "PlaySe",
+        "end": 148383,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-006",
+        "layer": 4,
+        "start": 144366
+    },
+    {
+        "action": "PlayMovie",
+        "end": 154033,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-018",
+        "start": 145216
+    },
+    {
+        "action": "PrintText",
+        "end": 153333,
+        "persona": "Сэкаи",
+        "start": 148050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 153333,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0560",
+        "layer": 0,
+        "persona": "sek",
+        "start": 148050
+    },
+    {
+        "action": "PlaySe",
+        "end": 153016,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-006",
+        "layer": 5,
+        "start": 149000
+    },
+    {
+        "action": "PlaySe",
+        "end": 153083,
+        "file": "Se04/04-KB/04-KB-E01/SE04-KB-E01-007",
+        "layer": 3,
+        "start": 150350
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 154033,
+        "start": 152033
+    },
+    {
+        "action": "PlayMovie",
+        "end": 158250,
+        "file": "Movie04/04-KC/04-KC-E01/04-KC-E01-020",
+        "start": 154033
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 155033,
+        "start": 154033
+    },
+    {
+        "action": "PrintText",
+        "end": 158150,
+        "persona": "Сэкаи",
+        "start": 155316,
+        "text": "Как я могу забыть?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 158150,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0610",
+        "layer": 0,
+        "persona": "sek",
+        "start": 155316
+    },
+    {
+        "action": "PlayMovie",
+        "end": 163233,
+        "file": "Movie04/04-KB/04-KB-E01/04-KB-E01-015",
+        "start": 158250
+    },
+    {
+        "action": "PrintText",
+        "end": 163183,
+        "persona": "Сэкаи",
+        "start": 159033,
+        "text": "Не говори... Что всё прошло...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 163183,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0620",
+        "layer": 0,
+        "persona": "sek",
+        "start": 159033
+    },
+    {
+        "action": "EndBGM",
+        "end": 294050,
+        "file": "BGM/Vocal/SDV04",
+        "start": 163166
+    },
+    {
+        "action": "PlayMovie",
+        "end": 166000,
+        "file": "Movie04/04-KC/04-KC-E01/04-KC-E01-022",
+        "start": 163233
+    },
+    {
+        "action": "PrintText",
+        "end": 169383,
+        "persona": "Сэкаи",
+        "start": 164083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 169383,
+        "file": "Voice04/04-KB/04-KB-E01/04-KB-E01-0630",
+        "layer": 0,
+        "persona": "sek",
+        "start": 164083
+    },
+    {
+        "action": "CreateBG",
+        "end": 173233,
+        "file": "Event04/04-KB/04-KB-E01/04-KB-E01-001",
+        "start": 166000
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 173233,
+        "start": 170233
+    },
+    {
+        "action": "EndRoll",
+        "end": 294283,
+        "file": "Movie04/ENDROLL/05-6",
+        "start": 173233
+    },
+    {
+        "action": "Next",
+        "start": 295283
+    }
+]

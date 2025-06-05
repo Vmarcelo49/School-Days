@@ -1,0 +1,158 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 17200
+    },
+    {
+        "action": "PlayBgm",
+        "end": 23200,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2300,
+        "file": "Event05/05-5O/05-5O-E06/05-5O-E06-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2050,
+        "persona": "Макото",
+        "start": 266,
+        "text": "Не знаю я!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2050,
+        "file": "Voice05/05-5O/05-5O-E06/05-5O-E06-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 266
+    },
+    {
+        "action": "CreateBG",
+        "end": 4183,
+        "file": "Event05/05-5O/05-5O-E06/05-5O-E06-002",
+        "start": 2300
+    },
+    {
+        "action": "PrintText",
+        "end": 4133,
+        "persona": "Сэцуна",
+        "start": 2333,
+        "text": "В смысле?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4133,
+        "file": "Voice05/05-5O/05-5O-E06/05-5O-E06-0040",
+        "layer": 0,
+        "persona": "set",
+        "start": 2333
+    },
+    {
+        "action": "CreateBG",
+        "end": 11333,
+        "file": "Event05/05-5O/05-5O-E06/05-5O-E06-003",
+        "start": 4183
+    },
+    {
+        "action": "PrintText",
+        "end": 11233,
+        "persona": "Макото",
+        "start": 4233,
+        "text": "Собственных чувств не понимаю! Не хочу я с таким настроем к Сэкаи идти!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11233,
+        "file": "Voice05/05-5O/05-5O-E06/05-5O-E06-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4233
+    },
+    {
+        "action": "CreateBG",
+        "end": 17050,
+        "file": "Event05/05-5O/05-5O-E06/05-5O-E06-004",
+        "start": 11333
+    },
+    {
+        "action": "PrintText",
+        "end": 15100,
+        "persona": "Сэцуна",
+        "start": 11350,
+        "text": "Вот сходишь и проверишь, что ты по-настоящему испытываешь к ней!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15100,
+        "file": "Voice05/05-5O/05-5O-E06/05-5O-E06-0060",
+        "layer": 0,
+        "persona": "set",
+        "start": 11350
+    },
+    {
+        "action": "PrintText",
+        "end": 16000,
+        "persona": "Макото",
+        "start": 15166,
+        "text": "Э?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16000,
+        "file": "Voice05/05-5O/05-5O-E06/05-5O-E06-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 15166
+    },
+    {
+        "action": "PrintText",
+        "end": 16383,
+        "persona": "Сэцуна",
+        "start": 16050,
+        "text": "Сходи.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16383,
+        "file": "Voice05/05-5O/05-5O-E06/05-5O-E06-0080",
+        "layer": 0,
+        "persona": "set",
+        "start": 16050
+    },
+    {
+        "action": "CreateBG",
+        "end": 23200,
+        "file": "Event05/05-5O/05-5O-E06/05-5O-E06-005",
+        "start": 17050
+    },
+    {
+        "action": "PrintText",
+        "end": 18283,
+        "persona": "Макото",
+        "start": 17200,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18283,
+        "file": "Voice05/05-5O/05-5O-E06/05-5O-E06-0090",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 17200
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Хорошо.",
+        "answer2": "NULL",
+        "end": 22200,
+        "start": 17200
+    },
+    {
+        "action": "Next",
+        "start": 23200
+    }
+]

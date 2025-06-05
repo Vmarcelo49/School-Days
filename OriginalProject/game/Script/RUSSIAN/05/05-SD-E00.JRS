@@ -1,0 +1,289 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 35000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 35000,
+        "file": "BGM/SD_BGM/sdbgm19",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2050,
+        "file": "Event05/05-SD/05-SD-E00/05-SD-E00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5333,
+        "persona": "Хикари",
+        "start": 0,
+        "text": "Сэкаи! Пошли уже! Без тебя-то нам чего собираться?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5333,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0040",
+        "layer": 0,
+        "persona": "hik",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5316,
+        "file": "Event05/05-SD/05-SD-E00/05-SD-E00-002",
+        "start": 2050
+    },
+    {
+        "action": "CreateBG",
+        "end": 13133,
+        "file": "Event05/05-SD/05-SD-E00/05-SD-E00-003",
+        "start": 5316
+    },
+    {
+        "action": "PrintText",
+        "end": 9000,
+        "persona": "Сэкаи",
+        "start": 5316,
+        "text": "Угу, погоди минутку.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9000,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0050",
+        "layer": 0,
+        "persona": "sek",
+        "start": 5316
+    },
+    {
+        "action": "PrintText",
+        "end": 10116,
+        "persona": "Сэкаи",
+        "start": 9016,
+        "text": "Что ж...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10116,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0080",
+        "layer": 0,
+        "persona": "sek",
+        "start": 9016
+    },
+    {
+        "action": "PrintText",
+        "end": 13133,
+        "persona": "Макото",
+        "start": 10116,
+        "text": "Ну, береги себя.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13133,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 10116
+    },
+    {
+        "action": "CreateBG",
+        "end": 19333,
+        "file": "Event05/05-SD/05-SD-E00/05-SD-E00-004",
+        "start": 13133
+    },
+    {
+        "action": "PrintText",
+        "end": 16133,
+        "persona": "Сэкаи",
+        "start": 13133,
+        "text": "Я буду писать тебе письма!.. И смс-ки!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16133,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0100",
+        "layer": 0,
+        "persona": "sek",
+        "start": 13133
+    },
+    {
+        "action": "PrintText",
+        "end": 17016,
+        "persona": "Макото",
+        "start": 16150,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17016,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16150
+    },
+    {
+        "action": "PrintText",
+        "end": 19333,
+        "persona": "Сэкаи",
+        "start": 17016,
+        "text": "И ты мне пиши!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19333,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0120",
+        "layer": 0,
+        "persona": "sek",
+        "start": 17016
+    },
+    {
+        "action": "CreateBG",
+        "end": 23316,
+        "file": "Event05/05-SD/05-SD-E00/05-SD-E00-005",
+        "start": 19333
+    },
+    {
+        "action": "PrintText",
+        "end": 21000,
+        "persona": "Макото",
+        "start": 19333,
+        "text": "Хорошо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21000,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 19333
+    },
+    {
+        "action": "PrintText",
+        "end": 22166,
+        "persona": "Сэкаи",
+        "start": 21000,
+        "text": "Обязательно!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22166,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0140",
+        "layer": 0,
+        "persona": "sek",
+        "start": 21000
+    },
+    {
+        "action": "PrintText",
+        "end": 23316,
+        "persona": "Макото",
+        "start": 22183,
+        "text": "Понял я, понял.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23316,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 22183
+    },
+    {
+        "action": "PrintText",
+        "end": 24350,
+        "persona": "Сэкаи",
+        "start": 23300,
+        "text": "Обещай!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24350,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0160",
+        "layer": 0,
+        "persona": "sek",
+        "start": 23300
+    },
+    {
+        "action": "CreateBG",
+        "end": 25016,
+        "file": "Event05/05-SD/05-SD-E00/05-SD-E00-006",
+        "start": 23316
+    },
+    {
+        "action": "CreateBG",
+        "end": 30216,
+        "file": "Event05/05-SD/05-SD-C02/05-SD-C02-001",
+        "start": 25016
+    },
+    {
+        "action": "PrintText",
+        "end": 26183,
+        "persona": "Макото",
+        "start": 25016,
+        "text": "Да-да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26183,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0170",
+        "layer": 1,
+        "persona": "mak",
+        "start": 25016
+    },
+    {
+        "action": "PrintText",
+        "end": 30150,
+        "persona": "Сэкаи",
+        "start": 27000,
+        "text": "Ну... Я поехала.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30150,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0180",
+        "layer": 0,
+        "persona": "sek",
+        "start": 27000
+    },
+    {
+        "action": "PrintText",
+        "end": 31033,
+        "persona": "Макото",
+        "start": 30166,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31033,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0190",
+        "layer": 1,
+        "persona": "mak",
+        "start": 30166
+    },
+    {
+        "action": "CreateBG",
+        "end": 35000,
+        "file": "Event05/05-SD/05-SD-E00/05-SD-E00-006",
+        "start": 30216
+    },
+    {
+        "action": "PrintText",
+        "end": 33383,
+        "persona": "Макото",
+        "start": 32166,
+        "text": "Прощай...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33383,
+        "file": "Voice05/05-SD/05-SD-E00/05-SD-E00-0210",
+        "layer": 1,
+        "persona": "mak",
+        "start": 32166
+    },
+    {
+        "action": "Next",
+        "start": 35000
+    }
+]

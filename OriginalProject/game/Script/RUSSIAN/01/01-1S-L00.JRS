@@ -1,0 +1,82 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 15116
+    },
+    {
+        "action": "PlayBgm",
+        "end": 15116,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3000,
+        "file": "Event01/01-1S/01-1S-L00/01-1S-L00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5333,
+        "file": "Event01/01-1S/01-1S-L00/01-1S-L00-002",
+        "start": 3000
+    },
+    {
+        "action": "PlayMovie",
+        "end": 9000,
+        "file": "Movie01/01-1S/01-1S-L00/01-1S-L00-003",
+        "start": 5333
+    },
+    {
+        "action": "PrintText",
+        "end": 8150,
+        "persona": "Макото",
+        "start": 7066,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8150,
+        "file": "Voice01/01-1S/01-1S-L00/01-1S-L00-0040",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 7066
+    },
+    {
+        "action": "CreateBG",
+        "end": 12100,
+        "file": "Event01/01-00/01-00-N05/01-00-N05-001",
+        "start": 9000
+    },
+    {
+        "action": "CreateBG",
+        "end": 15116,
+        "file": "Event01/01-00/01-00-N00/01-00-N00-002",
+        "start": 12100
+    },
+    {
+        "action": "PrintText",
+        "end": 13250,
+        "persona": "Макото",
+        "start": 12316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13250,
+        "file": "Voice01/01-1S/01-1S-L00/01-1S-L00-0060",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 12316
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 15116,
+        "start": 14116
+    },
+    {
+        "action": "Next",
+        "start": 15116
+    }
+]

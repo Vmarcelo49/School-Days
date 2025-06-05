@@ -1,0 +1,785 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 104166
+    },
+    {
+        "action": "PlaySe",
+        "end": 26116,
+        "file": "Se01/01-1K/01-1K-F00/SE01-1K-F00-001",
+        "layer": 2,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 3383,
+        "file": "Movie01/01-1S/01-1S-G00/01-1S-G00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 333,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 333,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0060A",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2116,
+        "persona": "Котоноха",
+        "start": 350,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2116,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 350
+    },
+    {
+        "action": "PrintText",
+        "end": 3333,
+        "persona": "Макото",
+        "start": 2100,
+        "text": "Д-да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3333,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2100
+    },
+    {
+        "action": "PrintText",
+        "end": 7100,
+        "persona": "Котоноха",
+        "start": 3366,
+        "text": "Хорошо в кино выбрались.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7100,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3366
+    },
+    {
+        "action": "PlayMovie",
+        "end": 14133,
+        "file": "Movie01/01-1S/01-1S-G00/01-1S-G00-002",
+        "start": 3383
+    },
+    {
+        "action": "PrintText",
+        "end": 9116,
+        "persona": "Макото",
+        "start": 7050,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9116,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7050
+    },
+    {
+        "action": "PrintText",
+        "end": 12316,
+        "persona": "Котоноха",
+        "start": 9150,
+        "text": "Спасибо, что пригласил, мне очень понравилось.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12316,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 9150
+    },
+    {
+        "action": "PrintText",
+        "end": 13183,
+        "persona": "Макото",
+        "start": 12300,
+        "text": "Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13183,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12300
+    },
+    {
+        "action": "PrintText",
+        "end": 14100,
+        "persona": "Котоноха",
+        "start": 13216,
+        "text": "Да!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14100,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0130",
+        "layer": 0,
+        "persona": "kot",
+        "start": 13216
+    },
+    {
+        "action": "CreateBG",
+        "end": 18366,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-003",
+        "start": 14133
+    },
+    {
+        "action": "PrintText",
+        "end": 18350,
+        "persona": "Макото",
+        "start": 14150,
+        "text": "Понятно... Здорово.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18350,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14150
+    },
+    {
+        "action": "PlayMovie",
+        "end": 23350,
+        "file": "Movie01/01-1S/01-1S-G00/01-1S-G00-004",
+        "start": 18366
+    },
+    {
+        "action": "PrintText",
+        "end": 22050,
+        "persona": "Котоноха",
+        "start": 18383,
+        "text": "Прости, что я руку отдёрнула...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22050,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0160",
+        "layer": 0,
+        "persona": "kot",
+        "start": 18383
+    },
+    {
+        "action": "PrintText",
+        "end": 23366,
+        "persona": "Макото",
+        "start": 22066,
+        "text": "Ч-что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23366,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0170",
+        "layer": 1,
+        "persona": "mak",
+        "start": 22066
+    },
+    {
+        "action": "PlayMovie",
+        "end": 33100,
+        "file": "Movie01/01-1S/01-1S-G00/01-1S-G00-005",
+        "start": 23350
+    },
+    {
+        "action": "PrintText",
+        "end": 25266,
+        "persona": "Котоноха",
+        "start": 23350,
+        "text": "Просто... Немного неожиданно было.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25266,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0180",
+        "layer": 0,
+        "persona": "kot",
+        "start": 23350
+    },
+    {
+        "action": "PrintText",
+        "end": 28083,
+        "persona": "Макото",
+        "start": 25233,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28083,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0190",
+        "layer": 1,
+        "persona": "mak",
+        "start": 25233
+    },
+    {
+        "action": "PlaySe",
+        "end": 52216,
+        "file": "Se01/01-1K/01-1K-F00/SE01-1K-F00-001",
+        "layer": 3,
+        "start": 26100
+    },
+    {
+        "action": "PrintText",
+        "end": 32050,
+        "persona": "Котоноха",
+        "start": 28066,
+        "text": "Я ведь совсем ничего об этом не знаю...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 32050,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0200",
+        "layer": 0,
+        "persona": "kot",
+        "start": 28066
+    },
+    {
+        "action": "PrintText",
+        "end": 33100,
+        "persona": "Макото",
+        "start": 32033,
+        "text": "Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33100,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0210",
+        "layer": 1,
+        "persona": "mak",
+        "start": 32033
+    },
+    {
+        "action": "CreateBG",
+        "end": 51000,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-006",
+        "start": 33100
+    },
+    {
+        "action": "PrintText",
+        "end": 37366,
+        "persona": "Котоноха",
+        "start": 33100,
+        "text": "В младшей школе у нас были уроки танцев.^"
+    },
+    {
+        "action": "PrintText",
+        "end": 41366,
+        "persona": "Котоноха",
+        "start": 37383,
+        "text": "Нужно было в паре с мальчиками танцевать.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 41366,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0220",
+        "layer": 0,
+        "persona": "kot",
+        "start": 33100
+    },
+    {
+        "action": "PrintText",
+        "end": 43166,
+        "persona": "Макото",
+        "start": 41366,
+        "text": "Ага...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43166,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0230",
+        "layer": 1,
+        "persona": "mak",
+        "start": 41366
+    },
+    {
+        "action": "PrintText",
+        "end": 47166,
+        "persona": "Котоноха",
+        "start": 43166,
+        "text": "И я тогда жутко стеснялась...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 47166,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0240",
+        "layer": 0,
+        "persona": "kot",
+        "start": 43166
+    },
+    {
+        "action": "PrintText",
+        "end": 48133,
+        "persona": "Макото",
+        "start": 47200,
+        "text": "Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48133,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0250",
+        "layer": 1,
+        "persona": "mak",
+        "start": 47200
+    },
+    {
+        "action": "PrintText",
+        "end": 50183,
+        "persona": "Котоноха",
+        "start": 48150,
+        "text": "Да, но...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50183,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0260",
+        "layer": 0,
+        "persona": "kot",
+        "start": 48150
+    },
+    {
+        "action": "PrintText",
+        "end": 50366,
+        "persona": "Макото",
+        "start": 50150,
+        "text": "М?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50366,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0270",
+        "layer": 1,
+        "persona": "mak",
+        "start": 50150
+    },
+    {
+        "action": "CreateBG",
+        "end": 54266,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-007",
+        "start": 51000
+    },
+    {
+        "action": "PrintText",
+        "end": 53333,
+        "persona": "Котоноха",
+        "start": 51000,
+        "text": "Я больше тебя не оттолкну...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 53333,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0280",
+        "layer": 0,
+        "persona": "kot",
+        "start": 51000
+    },
+    {
+        "action": "PlaySe",
+        "end": 78316,
+        "file": "Se01/01-1K/01-1K-F00/SE01-1K-F00-001",
+        "layer": 2,
+        "start": 52200
+    },
+    {
+        "action": "PrintText",
+        "end": 54250,
+        "persona": "Макото",
+        "start": 53350,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 54250,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0290",
+        "layer": 1,
+        "persona": "mak",
+        "start": 53350
+    },
+    {
+        "action": "CreateBG",
+        "end": 59083,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-008",
+        "start": 54266
+    },
+    {
+        "action": "PrintText",
+        "end": 57300,
+        "persona": "Котоноха",
+        "start": 54283,
+        "text": "Если ты хочешь взять меня за руку, я не против...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 57300,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0300",
+        "layer": 0,
+        "persona": "kot",
+        "start": 54283
+    },
+    {
+        "action": "PrintText",
+        "end": 59083,
+        "persona": "Макото",
+        "start": 57316,
+        "text": "Хорошо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 59083,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0310",
+        "layer": 1,
+        "persona": "mak",
+        "start": 57316
+    },
+    {
+        "action": "CreateBG",
+        "end": 64083,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-002",
+        "start": 59083
+    },
+    {
+        "action": "PrintText",
+        "end": 62233,
+        "persona": "Котоноха",
+        "start": 59083,
+        "text": "Я всё равно стесняюсь, но это не неприятно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 62233,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0320",
+        "layer": 0,
+        "persona": "kot",
+        "start": 59083
+    },
+    {
+        "action": "PrintText",
+        "end": 63133,
+        "persona": "Макото",
+        "start": 62233,
+        "text": "Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 63133,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0330",
+        "layer": 1,
+        "persona": "mak",
+        "start": 62233
+    },
+    {
+        "action": "PrintText",
+        "end": 64066,
+        "persona": "Котоноха",
+        "start": 63183,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 64066,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0340",
+        "layer": 0,
+        "persona": "kot",
+        "start": 63183
+    },
+    {
+        "action": "PlayMovie",
+        "end": 66383,
+        "file": "Movie01/01-1S/01-1S-G00/01-1S-G00-010",
+        "start": 64083
+    },
+    {
+        "action": "CreateBG",
+        "end": 74050,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-015",
+        "start": 66383
+    },
+    {
+        "action": "PrintText",
+        "end": 71050,
+        "persona": "Котоноха",
+        "start": 66383,
+        "text": "Всё нормально.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 71050,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0370",
+        "layer": 0,
+        "persona": "kot",
+        "start": 66383
+    },
+    {
+        "action": "PrintText",
+        "end": 71283,
+        "persona": "Макото",
+        "start": 71033,
+        "text": "Ладно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 71283,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0390",
+        "layer": 1,
+        "persona": "mak",
+        "start": 71033
+    },
+    {
+        "action": "PrintText",
+        "end": 73316,
+        "persona": "Макото",
+        "start": 72250,
+        "text": "Раз ты не против.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 73316,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0400",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 72250
+    },
+    {
+        "action": "CreateBG",
+        "end": 76266,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-002",
+        "start": 74050
+    },
+    {
+        "action": "PrintText",
+        "end": 75283,
+        "persona": "Макото",
+        "start": 74383,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 75283,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0420",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 74383
+    },
+    {
+        "action": "PlayMovie",
+        "end": 78266,
+        "file": "Movie01/01-1S/01-1S-G00/01-1S-G00-013",
+        "start": 76266
+    },
+    {
+        "action": "PrintText",
+        "end": 78200,
+        "persona": "Котоноха",
+        "start": 77250,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 78200,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0440",
+        "layer": 0,
+        "persona": "kot",
+        "start": 77250
+    },
+    {
+        "action": "CreateBG",
+        "end": 79350,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-014",
+        "start": 78266
+    },
+    {
+        "action": "PlaySe",
+        "end": 82050,
+        "file": "Se01/01-1K/01-1K-F00/SE01-1K-F00-001",
+        "layer": 3,
+        "start": 78283
+    },
+    {
+        "action": "PrintText",
+        "end": 79300,
+        "persona": "Макото",
+        "start": 78316,
+        "text": "Спасибо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 79300,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0450",
+        "layer": 1,
+        "persona": "mak",
+        "start": 78316
+    },
+    {
+        "action": "CreateBG",
+        "end": 82050,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-015",
+        "start": 79350
+    },
+    {
+        "action": "PrintText",
+        "end": 81300,
+        "persona": "Котоноха",
+        "start": 79383,
+        "text": "Тебе спасибо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 81300,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0470",
+        "layer": 0,
+        "persona": "kot",
+        "start": 79383
+    },
+    {
+        "action": "PlaySe",
+        "end": 90250,
+        "file": "Se01/01-00/01-00-M03/SE01-00-M03-002",
+        "layer": 2,
+        "start": 82050
+    },
+    {
+        "action": "PlaySe",
+        "end": 97333,
+        "file": "SysSe/SE_all/station_train/station",
+        "layer": 4,
+        "start": 82050
+    },
+    {
+        "action": "PlayMovie",
+        "end": 90250,
+        "file": "Movie01/01-1K/01-1K-F00/01-1K-F00-012",
+        "start": 82050
+    },
+    {
+        "action": "PlaySe",
+        "end": 86033,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0500",
+        "layer": 1,
+        "start": 82133
+    },
+    {
+        "action": "PrintText",
+        "end": 87316,
+        "persona": "Котоноха",
+        "start": 85383,
+        "text": "А вот и моя станция.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 87316,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0520",
+        "layer": 0,
+        "persona": "kot",
+        "start": 85383
+    },
+    {
+        "action": "CreateBG",
+        "end": 92333,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-023",
+        "start": 90250
+    },
+    {
+        "action": "PrintText",
+        "end": 92116,
+        "persona": "Котоноха",
+        "start": 91100,
+        "text": "Макото.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 92116,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0540",
+        "layer": 0,
+        "persona": "kot",
+        "start": 91100
+    },
+    {
+        "action": "PlayMovie",
+        "end": 97333,
+        "file": "Movie01/01-1S/01-1S-G00/01-1S-G00-021",
+        "start": 92333
+    },
+    {
+        "action": "PlaySe",
+        "end": 98066,
+        "file": "SysSe/SE_all/station_train/train_door_close",
+        "layer": 1,
+        "start": 93150
+    },
+    {
+        "action": "PrintText",
+        "end": 94250,
+        "persona": "Котоноха",
+        "start": 93183,
+        "text": "До завтра!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 94250,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0560",
+        "layer": 0,
+        "persona": "kot",
+        "start": 93183
+    },
+    {
+        "action": "PrintText",
+        "end": 95216,
+        "persona": "Макото",
+        "start": 94383,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 95216,
+        "file": "Voice01/01-1S/01-1S-G00/01-1S-G00-0570",
+        "layer": 1,
+        "persona": "mak",
+        "start": 94383
+    },
+    {
+        "action": "PlaySe",
+        "end": 104166,
+        "file": "SysSe/SE_all/station_train/train_start",
+        "layer": 2,
+        "start": 97100
+    },
+    {
+        "action": "CreateBG",
+        "end": 104166,
+        "file": "Event01/01-1S/01-1S-G00/01-1S-G00-020",
+        "start": 97333
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 104166,
+        "start": 103166
+    },
+    {
+        "action": "Next",
+        "start": 104166
+    }
+]

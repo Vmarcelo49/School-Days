@@ -1,0 +1,154 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 18033
+    },
+    {
+        "action": "PlayBgm",
+        "end": 18033,
+        "file": "BGM/SD_BGM/sdbgm19",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 10200,
+        "file": "Event03/03-A1/03-A1-E02/03-A1-E02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1333,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Нет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1333,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3000,
+        "persona": "Сэцуна",
+        "start": 1333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3000,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0040",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 1333
+    },
+    {
+        "action": "PrintText",
+        "end": 10183,
+        "persona": "Макото",
+        "start": 3000,
+        "text": "Ну, может, держал её за руку... Ну грудь трогал как-то раз...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10183,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3000
+    },
+    {
+        "action": "PrintText",
+        "end": 11300,
+        "persona": "Сэцуна",
+        "start": 10183,
+        "text": "Озабоченный!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11300,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0060",
+        "layer": 0,
+        "persona": "set",
+        "start": 10183
+    },
+    {
+        "action": "CreateBG",
+        "end": 15266,
+        "file": "Event03/03-A1/03-A1-E01/03-A1-E01-003",
+        "start": 10200
+    },
+    {
+        "action": "PrintText",
+        "end": 14033,
+        "persona": "Макото",
+        "start": 11233,
+        "text": "Да ладно тебе! Все мужчины такие!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14033,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11233
+    },
+    {
+        "action": "PrintText",
+        "end": 15266,
+        "persona": "Сэцуна",
+        "start": 13300,
+        "text": "Не соглашусь... Но продолжай...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15266,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0080",
+        "layer": 0,
+        "persona": "set",
+        "start": 13300
+    },
+    {
+        "action": "CreateBG",
+        "end": 18033,
+        "file": "Event03/03-A1/03-A1-E02/03-A1-E02-003",
+        "start": 15266
+    },
+    {
+        "action": "PrintText",
+        "end": 16350,
+        "persona": "Макото",
+        "start": 15333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16350,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 15333
+    },
+    {
+        "action": "PrintText",
+        "end": 17333,
+        "persona": "Сэцуна",
+        "start": 17016,
+        "text": "Давай!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17333,
+        "file": "Voice03/03-A1/03-A1-E02/03-A1-E02-0100",
+        "layer": 0,
+        "persona": "set",
+        "start": 17016
+    },
+    {
+        "action": "Next",
+        "start": 18033
+    }
+]

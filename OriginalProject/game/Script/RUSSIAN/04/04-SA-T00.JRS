@@ -1,0 +1,413 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 66250
+    },
+    {
+        "action": "PlaySe",
+        "end": 66250,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 1283,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1283,
+        "persona": "Макото",
+        "start": 66,
+        "text": "Так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1283,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 66
+    },
+    {
+        "action": "CreateBG",
+        "end": 3250,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-002",
+        "start": 1283
+    },
+    {
+        "action": "PrintText",
+        "end": 3233,
+        "persona": "Сэкаи",
+        "start": 1350,
+        "text": "Кацура.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3233,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 1350
+    },
+    {
+        "action": "CreateBG",
+        "end": 7250,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-003",
+        "start": 3250
+    },
+    {
+        "action": "PrintText",
+        "end": 6083,
+        "persona": "Котоноха",
+        "start": 3283,
+        "text": "Ну, пойдём?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6083,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3283
+    },
+    {
+        "action": "PrintText",
+        "end": 7250,
+        "persona": "Сэкаи",
+        "start": 6083,
+        "text": "Тут такое дело...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7250,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0090",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6083
+    },
+    {
+        "action": "CreateBG",
+        "end": 20250,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-004",
+        "start": 7250
+    },
+    {
+        "action": "PrintText",
+        "end": 9200,
+        "persona": "Котоноха",
+        "start": 7333,
+        "text": "Что-то случилось?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9200,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 7333
+    },
+    {
+        "action": "PrintText",
+        "end": 16233,
+        "persona": "Макото",
+        "start": 9183,
+        "text": "Таисукэ с Куродой заранее договорились вместе в столовке поесть... Так что, пойдём втроём?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16233,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9183
+    },
+    {
+        "action": "PrintText",
+        "end": 19266,
+        "persona": "Котоноха",
+        "start": 16250,
+        "text": "А... Ну раз так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19266,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 16250
+    },
+    {
+        "action": "PrintText",
+        "end": 20250,
+        "persona": "Сэкаи",
+        "start": 19250,
+        "text": "Ты уж извини.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20250,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0130",
+        "layer": 0,
+        "persona": "sek",
+        "start": 19250
+    },
+    {
+        "action": "CreateBG",
+        "end": 26050,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-005",
+        "start": 20250
+    },
+    {
+        "action": "PrintText",
+        "end": 26016,
+        "persona": "Котоноха",
+        "start": 20333,
+        "text": "Ничего. Я считаю, что они подходят друг другу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26016,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 20333
+    },
+    {
+        "action": "CreateBG",
+        "end": 35250,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-006",
+        "start": 26050
+    },
+    {
+        "action": "PrintText",
+        "end": 27350,
+        "persona": "Макото",
+        "start": 26116,
+        "text": "Ну что, на крышу?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27350,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 26116
+    },
+    {
+        "action": "PrintText",
+        "end": 31333,
+        "persona": "Сэкаи",
+        "start": 27383,
+        "text": "Ага. Сегодня тепло, можно и туда.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31333,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0160",
+        "layer": 0,
+        "persona": "sek",
+        "start": 27383
+    },
+    {
+        "action": "PrintText",
+        "end": 34166,
+        "persona": "Котоноха",
+        "start": 31383,
+        "text": "Я чёрный чай заварила.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 34166,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 31383
+    },
+    {
+        "action": "PrintText",
+        "end": 35300,
+        "persona": "Сэкаи",
+        "start": 34116,
+        "text": "Вот и славно!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 35300,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0180",
+        "layer": 0,
+        "persona": "sek",
+        "start": 34116
+    },
+    {
+        "action": "CreateBG",
+        "end": 48066,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-007",
+        "start": 35250
+    },
+    {
+        "action": "PrintText",
+        "end": 48083,
+        "persona": "Исполком",
+        "start": 36166,
+        "text": "Старосты, за время большой перемены подойдите за распечатками.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48083,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0190",
+        "layer": 0,
+        "persona": "jin",
+        "start": 36166
+    },
+    {
+        "action": "CreateBG",
+        "end": 49116,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-008",
+        "start": 48066
+    },
+    {
+        "action": "PrintText",
+        "end": 48383,
+        "persona": "Котоноха",
+        "start": 48083,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48383,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0200",
+        "layer": 0,
+        "persona": "kot",
+        "start": 48083
+    },
+    {
+        "action": "CreateBG",
+        "end": 53050,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-009",
+        "start": 49116
+    },
+    {
+        "action": "PrintText",
+        "end": 52283,
+        "persona": "Макото",
+        "start": 49133,
+        "text": "Я подержу термос, можешь бежать.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 52283,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0210",
+        "layer": 1,
+        "persona": "mak",
+        "start": 49133
+    },
+    {
+        "action": "PrintText",
+        "end": 53050,
+        "persona": "Котоноха",
+        "start": 52150,
+        "text": "Хорошо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 53050,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0220",
+        "layer": 0,
+        "persona": "kot",
+        "start": 52150
+    },
+    {
+        "action": "CreateBG",
+        "end": 61250,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-010",
+        "start": 53050
+    },
+    {
+        "action": "PrintText",
+        "end": 56100,
+        "persona": "Сэкаи",
+        "start": 53233,
+        "text": "Да и булочки бы отдала...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 56100,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0240",
+        "layer": 0,
+        "persona": "sek",
+        "start": 53233
+    },
+    {
+        "action": "PrintText",
+        "end": 60250,
+        "persona": "Макото",
+        "start": 56116,
+        "text": "Растерялась, наверное. Мы ведь давно уже вместе не ели.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 60250,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0250",
+        "layer": 1,
+        "persona": "mak",
+        "start": 56116
+    },
+    {
+        "action": "PrintText",
+        "end": 61233,
+        "persona": "Сэкаи",
+        "start": 60266,
+        "text": "Ясно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 61233,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0260",
+        "layer": 0,
+        "persona": "sek",
+        "start": 60266
+    },
+    {
+        "action": "CreateBG",
+        "end": 66250,
+        "file": "Event04/04-SA/04-SA-T00/04-SA-T00-011",
+        "start": 61250
+    },
+    {
+        "action": "PrintText",
+        "end": 63250,
+        "persona": "Макото",
+        "start": 61366,
+        "text": "Ну, пойдём пока.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 63250,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0270",
+        "layer": 1,
+        "persona": "mak",
+        "start": 61366
+    },
+    {
+        "action": "PrintText",
+        "end": 64150,
+        "persona": "Сэкаи",
+        "start": 63283,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 64150,
+        "file": "Voice04/04-SA/04-SA-T00/04-SA-T00-0280",
+        "layer": 0,
+        "persona": "sek",
+        "start": 63283
+    },
+    {
+        "action": "Next",
+        "start": 66250
+    }
+]

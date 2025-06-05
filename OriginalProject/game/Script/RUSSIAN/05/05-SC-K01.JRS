@@ -1,0 +1,137 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 16150
+    },
+    {
+        "action": "PlayBgm",
+        "end": 16150,
+        "file": "BGM/SD_BGM/sdbgm29",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 16150,
+        "file": "SysSe/SE_all/station_train/train_in",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 1283,
+        "file": "Event05/05-KB/05-KB-K01/05-KB-K01-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1250,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Ну давай.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1250,
+        "file": "Voice05/05-KB/05-KB-K01/05-KB-K01-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3100,
+        "persona": "Котоноха",
+        "start": 1266,
+        "text": "Правда?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3100,
+        "file": "Voice05/05-KB/05-KB-K01/05-KB-K01-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 1266
+    },
+    {
+        "action": "CreateBG",
+        "end": 3100,
+        "file": "Event05/05-KB/05-KB-K01/05-KB-K01-002",
+        "start": 1283
+    },
+    {
+        "action": "CreateBG",
+        "end": 6183,
+        "file": "Event05/05-KB/05-KB-K01/05-KB-K01-003",
+        "start": 3100
+    },
+    {
+        "action": "PrintText",
+        "end": 4350,
+        "persona": "Макото",
+        "start": 3100,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4350,
+        "file": "Voice05/05-KB/05-KB-K01/05-KB-K01-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3100
+    },
+    {
+        "action": "PrintText",
+        "end": 6166,
+        "persona": "Котоноха",
+        "start": 4333,
+        "text": "Вот и славно!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6166,
+        "file": "Voice05/05-KB/05-KB-K01/05-KB-K01-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 4333
+    },
+    {
+        "action": "PrintText",
+        "end": 14050,
+        "persona": "Макото",
+        "start": 6166,
+        "text": "Как раньше... Когда на крыше собирались... Вот бы опять так хорошо время провести.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14050,
+        "file": "Voice05/05-KB/05-KB-K01/05-KB-K01-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6166
+    },
+    {
+        "action": "PlayMovie",
+        "end": 16150,
+        "file": "Movie05/05-KB/05-KB-K02/05-KB-K02-005",
+        "start": 6183
+    },
+    {
+        "action": "PrintText",
+        "end": 15183,
+        "persona": "Котоноха",
+        "start": 14050,
+        "text": "Согласна.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15183,
+        "file": "Voice05/05-KB/05-KB-K01/05-KB-K01-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 14050
+    },
+    {
+        "action": "Next",
+        "start": 16150
+    }
+]

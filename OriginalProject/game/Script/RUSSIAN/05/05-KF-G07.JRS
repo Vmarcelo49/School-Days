@@ -1,0 +1,266 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 31066
+    },
+    {
+        "action": "PlaySe",
+        "end": 31066,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5333,
+        "file": "Event05/05-KF/05-KF-G07/05-KF-G07-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2166,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2166,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5333,
+        "persona": "Котоноха",
+        "start": 2166,
+        "text": "Но... Почему?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5333,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2166
+    },
+    {
+        "action": "CreateBG",
+        "end": 15316,
+        "file": "Event05/05-KF/05-KF-G07/05-KF-G07-002",
+        "start": 5333
+    },
+    {
+        "action": "PrintText",
+        "end": 8316,
+        "persona": "Макото",
+        "start": 5333,
+        "text": "Сердцу не прикажешь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8316,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5333
+    },
+    {
+        "action": "PrintText",
+        "end": 13066,
+        "persona": "Котоноха",
+        "start": 8233,
+        "text": "О чём ты?.. Ещё вчера ведь... Ни слова...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13066,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 8233
+    },
+    {
+        "action": "PrintText",
+        "end": 15300,
+        "persona": "Макото",
+        "start": 12033,
+        "text": "В общем... Такие дела.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15300,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12033
+    },
+    {
+        "action": "PlayMovie",
+        "end": 17350,
+        "file": "Movie05/05-KF/05-KF-G07/05-KF-G07-003",
+        "start": 15316
+    },
+    {
+        "action": "PrintText",
+        "end": 17333,
+        "persona": "Котоноха",
+        "start": 15316,
+        "text": "Нет! Я!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17333,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 15316
+    },
+    {
+        "action": "PrintText",
+        "end": 20033,
+        "persona": "Макото",
+        "start": 17033,
+        "text": "Извини, но это конец.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20033,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 17033
+    },
+    {
+        "action": "CreateBG",
+        "end": 19383,
+        "file": "Event05/05-KF/05-KF-G07/05-KF-G07-004",
+        "start": 17350
+    },
+    {
+        "action": "PrintText",
+        "end": 21033,
+        "persona": "Котоноха",
+        "start": 19333,
+        "text": "Нет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21033,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 19333
+    },
+    {
+        "action": "CreateBG",
+        "end": 21033,
+        "file": "Event05/05-KF/05-KF-G07/05-KF-G07-003",
+        "start": 19383
+    },
+    {
+        "action": "PlayMovie",
+        "end": 22266,
+        "file": "Movie05/05-KF/05-KF-G07/05-KF-G07-006",
+        "start": 21033
+    },
+    {
+        "action": "PrintText",
+        "end": 22266,
+        "persona": "Макото",
+        "start": 21050,
+        "text": "Чего пристала?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22266,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 21050
+    },
+    {
+        "action": "PrintText",
+        "end": 23233,
+        "persona": "Котоноха",
+        "start": 22233,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23233,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 22233
+    },
+    {
+        "action": "PlayMovie",
+        "end": 27250,
+        "file": "Movie05/05-KF/05-KF-G07/05-KF-G07-007",
+        "start": 22266
+    },
+    {
+        "action": "PrintText",
+        "end": 25216,
+        "persona": "Макото",
+        "start": 23233,
+        "text": "Прощай.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25216,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 23233
+    },
+    {
+        "action": "PrintText",
+        "end": 27266,
+        "persona": "Котоноха",
+        "start": 25200,
+        "text": "Нет!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27266,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 25200
+    },
+    {
+        "action": "CreateBG",
+        "end": 31066,
+        "file": "Event05/05-KF/05-KF-G10/05-KF-G10-005",
+        "start": 27250
+    },
+    {
+        "action": "PrintText",
+        "end": 30050,
+        "persona": "Котоноха",
+        "start": 27266,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30050,
+        "file": "Voice05/05-KF/05-KF-G07/05-KF-G07-0160",
+        "layer": 0,
+        "persona": "kot",
+        "start": 27266
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 31066,
+        "start": 30066
+    },
+    {
+        "action": "Next",
+        "start": 31066
+    }
+]

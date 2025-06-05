@@ -1,0 +1,119 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 8233
+    },
+    {
+        "action": "PlayMovie",
+        "end": 6266,
+        "file": "Movie03/03-B2/03-B2-A01/03-B2-A01-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 350,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Но знаешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 350,
+        "file": "Voice03/03-B2/03-B2-A01/03-B2-A01-0040",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2366,
+        "persona": "Макото",
+        "start": 1316,
+        "text": "Котоноха^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2366,
+        "file": "Voice03/03-B2/03-B2-A01/03-B2-A01-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 1316
+    },
+    {
+        "action": "PrintText",
+        "end": 3250,
+        "persona": "Котоноха",
+        "start": 2300,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3250,
+        "file": "Voice03/03-B2/03-B2-A01/03-B2-A01-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2300
+    },
+    {
+        "action": "PrintText",
+        "end": 4350,
+        "persona": "Макото",
+        "start": 4033,
+        "text": "Я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4350,
+        "file": "Voice03/03-B2/03-B2-A01/03-B2-A01-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4033
+    },
+    {
+        "action": "PrintText",
+        "end": 6166,
+        "persona": "Котоноха",
+        "start": 5083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6166,
+        "file": "Voice03/03-B2/03-B2-A01/03-B2-A01-0080",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 5083
+    },
+    {
+        "action": "CreateBG",
+        "end": 14250,
+        "file": "Event03/03-B2/03-B2-A01/03-B2-A01-002",
+        "start": 6266
+    },
+    {
+        "action": "PrintText",
+        "end": 9066,
+        "persona": "Макото",
+        "start": 6366,
+        "text": "Я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9066,
+        "file": "Voice03/03-B2/03-B2-A01/03-B2-A01-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6366
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Котоноха, я тебя люблю!^",
+        "answer2": "NULL",
+        "end": 13233,
+        "start": 8233
+    },
+    {
+        "action": "Next",
+        "start": 14250
+    }
+]

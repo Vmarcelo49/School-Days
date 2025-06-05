@@ -1,0 +1,86 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 12216
+    },
+    {
+        "action": "PlayBgm",
+        "end": 18216,
+        "file": "BGM/SD_BGM/sdbgm21",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3066,
+        "file": "Event05/05-KB/05-KB-D04/05-KB-D04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3100,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3100,
+        "file": "Voice05/05-KB/05-KB-D04/05-KB-D04-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7350,
+        "file": "Event05/05-KB/05-KB-D04/05-KB-D04-002",
+        "start": 3066
+    },
+    {
+        "action": "PrintText",
+        "end": 7333,
+        "persona": "Котоноха",
+        "start": 3100,
+        "text": "Извини... Что так поздно пришла.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7333,
+        "file": "Voice05/05-KB/05-KB-D04/05-KB-D04-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3100
+    },
+    {
+        "action": "PrintText",
+        "end": 12216,
+        "persona": "Макото",
+        "start": 7316,
+        "text": "Ну... Если честно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12216,
+        "file": "Voice05/05-KB/05-KB-D04/05-KB-D04-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7316
+    },
+    {
+        "action": "CreateBG",
+        "end": 18216,
+        "file": "Event05/05-KB/05-KB-D04/05-KB-D04-003",
+        "start": 7350
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Я рад.",
+        "answer2": "Я зол.",
+        "end": 17216,
+        "start": 12216
+    },
+    {
+        "action": "Next",
+        "start": 18216
+    }
+]

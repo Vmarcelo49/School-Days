@@ -1,0 +1,277 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 52183
+    },
+    {
+        "action": "PlayBgm",
+        "end": 52183,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3266,
+        "file": "Event05/05-SB/05-SB-H05/05-SB-H05-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 15083,
+        "file": "Event05/05-SB/05-SB-H05/05-SB-H05-002",
+        "start": 3266
+    },
+    {
+        "action": "PrintText",
+        "end": 7116,
+        "persona": "Нанами",
+        "start": 3266,
+        "text": "Если она теперь повеселеет, во всём Ито виноват был.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7116,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0040",
+        "layer": 0,
+        "persona": "nan",
+        "start": 3266
+    },
+    {
+        "action": "PrintText",
+        "end": 10316,
+        "persona": "Хикари",
+        "start": 7133,
+        "text": "Сколько ж с ними хлопот...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10316,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0050",
+        "layer": 0,
+        "persona": "hik",
+        "start": 7133
+    },
+    {
+        "action": "PrintText",
+        "end": 15066,
+        "persona": "Нанами",
+        "start": 10316,
+        "text": "Но вытянут ли они?.. Оба какие-то никакие сидели...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15066,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0060",
+        "layer": 0,
+        "persona": "nan",
+        "start": 10316
+    },
+    {
+        "action": "CreateBG",
+        "end": 27000,
+        "file": "Event05/05-SB/05-SB-H05/05-SB-H05-003",
+        "start": 15083
+    },
+    {
+        "action": "PrintText",
+        "end": 17383,
+        "persona": "Хикари",
+        "start": 15083,
+        "text": "Да стеснялись! Всё нормально!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17383,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0070",
+        "layer": 0,
+        "persona": "hik",
+        "start": 15083
+    },
+    {
+        "action": "PrintText",
+        "end": 19133,
+        "persona": "Нанами",
+        "start": 17383,
+        "text": "Ну, хорошо, если так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19133,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0080",
+        "layer": 0,
+        "persona": "nan",
+        "start": 17383
+    },
+    {
+        "action": "PrintText",
+        "end": 24150,
+        "persona": "Хикари",
+        "start": 19133,
+        "text": "Не о чем нам переживать! Пойдёмте в столовку.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24150,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0090",
+        "layer": 0,
+        "persona": "hik",
+        "start": 19133
+    },
+    {
+        "action": "PrintText",
+        "end": 27000,
+        "persona": "Нанами",
+        "start": 24166,
+        "text": "Ага. Можно иногда и туда.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27000,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0100",
+        "layer": 0,
+        "persona": "nan",
+        "start": 24166
+    },
+    {
+        "action": "CreateBG",
+        "end": 43383,
+        "file": "Event05/05-SB/05-SB-H05/05-SB-H05-004",
+        "start": 27000
+    },
+    {
+        "action": "PrintText",
+        "end": 31250,
+        "persona": "Таисукэ",
+        "start": 27000,
+        "text": "Э?.. А мы разве не за напитками шли?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31250,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0110",
+        "layer": 1,
+        "persona": "tai",
+        "start": 27000
+    },
+    {
+        "action": "PrintText",
+        "end": 35083,
+        "persona": "Хикари",
+        "start": 31266,
+        "text": "Не совсем. Пошли с нами, Саванага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 35083,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0120",
+        "layer": 0,
+        "persona": "hik",
+        "start": 31266
+    },
+    {
+        "action": "PrintText",
+        "end": 38200,
+        "persona": "Таисукэ",
+        "start": 35100,
+        "text": "Э?.. В столовку?.. К ним не вернёмся?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38200,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0130",
+        "layer": 1,
+        "persona": "tai",
+        "start": 35100
+    },
+    {
+        "action": "PrintText",
+        "end": 39183,
+        "persona": "Хикари",
+        "start": 38216,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 39183,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0140",
+        "layer": 0,
+        "persona": "hik",
+        "start": 38216
+    },
+    {
+        "action": "PrintText",
+        "end": 43366,
+        "persona": "Таисукэ",
+        "start": 39183,
+        "text": "Н-но... Н-не слишком ли это к ним жестоко?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43366,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0150",
+        "layer": 1,
+        "persona": "tai",
+        "start": 39183
+    },
+    {
+        "action": "PrintText",
+        "end": 46116,
+        "persona": "Нанами",
+        "start": 43366,
+        "text": "Дурень. Пойдём уже.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46116,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0160",
+        "layer": 0,
+        "persona": "nan",
+        "start": 43366
+    },
+    {
+        "action": "CreateBG",
+        "end": 52183,
+        "file": "Event05/05-SB/05-SB-H05/05-SB-H05-005",
+        "start": 43383
+    },
+    {
+        "action": "PrintText",
+        "end": 47266,
+        "persona": "Таисукэ",
+        "start": 46133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 47266,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0170",
+        "layer": 1,
+        "persona": "tai",
+        "start": 46133
+    },
+    {
+        "action": "PrintText",
+        "end": 50283,
+        "persona": "Хикари",
+        "start": 47266,
+        "text": "Не виси! Пошли!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50283,
+        "file": "Voice05/05-SB/05-SB-H05/05-SB-H05-0180",
+        "layer": 0,
+        "persona": "hik",
+        "start": 47266
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 52183,
+        "start": 51250
+    },
+    {
+        "action": "Next",
+        "start": 52183
+    }
+]

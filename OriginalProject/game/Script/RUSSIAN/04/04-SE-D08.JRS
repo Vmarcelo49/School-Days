@@ -1,0 +1,144 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 24000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 24000,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 24000,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 1233,
+        "file": "Event04/04-SE/04-SE-D08/04-SE-D08-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1216,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Секрет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1216,
+        "file": "Voice04/04-SE/04-SE-D08/04-SE-D08-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2266,
+        "persona": "Сэкаи",
+        "start": 1216,
+        "text": "Э?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2266,
+        "file": "Voice04/04-SE/04-SE-D08/04-SE-D08-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 1216
+    },
+    {
+        "action": "CreateBG",
+        "end": 20000,
+        "file": "Event04/04-SE/04-SE-D08/04-SE-D08-002",
+        "start": 1233
+    },
+    {
+        "action": "PrintText",
+        "end": 6116,
+        "persona": "Макото",
+        "start": 2266,
+        "text": "Спать...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6116,
+        "file": "Voice04/04-SE/04-SE-D08/04-SE-D08-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2266
+    },
+    {
+        "action": "PrintText",
+        "end": 12133,
+        "persona": "Макото",
+        "start": 10000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12133,
+        "file": "Voice04/04-SE/04-SE-D08/04-SE-D08-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 10000
+    },
+    {
+        "action": "PlaySe",
+        "end": 18150,
+        "file": "SysSe/SE_all/h/nuno2",
+        "layer": 1,
+        "start": 17133
+    },
+    {
+        "action": "CreateBG",
+        "end": 21166,
+        "file": "Event04/04-SE/04-SE-D08/04-SE-D08-003",
+        "start": 20000
+    },
+    {
+        "action": "PrintText",
+        "end": 21000,
+        "persona": "Сэкаи",
+        "start": 20000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21000,
+        "file": "Voice04/04-SE/04-SE-D08/04-SE-D08-0090",
+        "layer": 0,
+        "persona": "sek",
+        "start": 20000
+    },
+    {
+        "action": "CreateBG",
+        "end": 24000,
+        "file": "Event04/04-SE/04-SE-D08/04-SE-D08-005",
+        "start": 21166
+    },
+    {
+        "action": "PrintText",
+        "end": 22300,
+        "persona": "Сэкаи",
+        "start": 22000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22300,
+        "file": "Voice04/04-SE/04-SE-D08/04-SE-D08-0110",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 22000
+    },
+    {
+        "action": "Next",
+        "start": 24000
+    }
+]

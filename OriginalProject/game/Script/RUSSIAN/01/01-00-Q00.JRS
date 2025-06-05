@@ -1,0 +1,84 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 16133
+    },
+    {
+        "action": "PlayBgm",
+        "end": 16133,
+        "file": "BGM/SD_BGM/sdbgm01",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 6133,
+        "file": "Se01/01-00/01-00-Q00/SE01-00-Q00-002",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 3000,
+        "file": "Movie01/01-00/01-00-Q00/01-00-Q00-001",
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 6133,
+        "file": "Movie01/01-00/01-00-Q00/01-00-Q00-002",
+        "start": 3000
+    },
+    {
+        "action": "PrintText",
+        "end": 5350,
+        "persona": "Макото",
+        "start": 4383,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5350,
+        "file": "Voice01/01-00/01-00-Q00/01-00-Q00-0040",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 4383
+    },
+    {
+        "action": "PlaySe",
+        "end": 14333,
+        "file": "Se01/01-00/01-00-M03/SE01-00-M03-002",
+        "layer": 2,
+        "start": 6133
+    },
+    {
+        "action": "PlaySe",
+        "end": 16133,
+        "file": "Se01/01-00/01-00-L00/SE01-00-L00-001",
+        "layer": 3,
+        "start": 6133
+    },
+    {
+        "action": "PlayMovie",
+        "end": 16133,
+        "file": "Movie01/01-00/01-00-Q00/01-00-Q00-003",
+        "start": 6133
+    },
+    {
+        "action": "PrintText",
+        "end": 16133,
+        "persona": "Объявление",
+        "start": 13166,
+        "text": "Станция Харамихама^"
+    },
+    {
+        "action": "PlaySe",
+        "end": 16133,
+        "file": "Se01/01-00/01-00-Q00/SE01-00-Q00-004",
+        "layer": 1,
+        "start": 13166
+    },
+    {
+        "action": "Next",
+        "start": 16133
+    }
+]

@@ -1,0 +1,161 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 29183
+    },
+    {
+        "action": "PlaySe",
+        "end": 29150,
+        "file": "SysSe/SE_all/station_train/station",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 10000,
+        "file": "SysSe/SE_all/station_train/train_stop",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 10000,
+        "file": "Movie05/05-SD/05-SD-F00/05-SD-F00-001",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 11000,
+        "file": "SysSe/SE_all/station_train/TRAIN_DOOR_OPEN",
+        "layer": 1,
+        "start": 10000
+    },
+    {
+        "action": "CreateBG",
+        "end": 12016,
+        "file": "Event05/05-SD/05-SD-F00/05-SD-F00-002",
+        "start": 10000
+    },
+    {
+        "action": "PrintText",
+        "end": 13000,
+        "persona": "Сэцуна",
+        "start": 11000,
+        "text": "Ну... Давай завтра тоже.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13000,
+        "file": "Voice05/05-SD/05-SD-F00/05-SD-F00-0060",
+        "layer": 0,
+        "persona": "set",
+        "start": 11000
+    },
+    {
+        "action": "CreateBG",
+        "end": 16233,
+        "file": "Event05/05-SD/05-SD-F00/05-SD-F00-003",
+        "start": 12016
+    },
+    {
+        "action": "PrintText",
+        "end": 16183,
+        "persona": "Макото",
+        "start": 13016,
+        "text": "Знаю. Пока.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16183,
+        "file": "Voice05/05-SD/05-SD-F00/05-SD-F00-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13016
+    },
+    {
+        "action": "PlaySe",
+        "end": 32150,
+        "file": "SysSe/SE_all/station_train/train_start",
+        "layer": 2,
+        "start": 16233
+    },
+    {
+        "action": "PlayMovie",
+        "end": 26166,
+        "file": "Movie05/05-SD/05-SD-F00/05-SD-F00-004",
+        "start": 16183
+    },
+    {
+        "action": "CreateBG",
+        "end": 26250,
+        "file": "Event05/05-SD/05-SD-F00/05-SD-F00-005",
+        "start": 25166
+    },
+    {
+        "action": "PrintText",
+        "end": 26233,
+        "persona": "Сэкаи",
+        "start": 25166,
+        "text": "Сэцуна.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26233,
+        "file": "Voice05/05-SD/05-SD-F00/05-SD-F00-0100",
+        "layer": 0,
+        "persona": "sek",
+        "start": 25166
+    },
+    {
+        "action": "CreateBG",
+        "end": 27283,
+        "file": "Event05/05-SD/05-SD-F00/05-SD-F00-006",
+        "start": 26250
+    },
+    {
+        "action": "PrintText",
+        "end": 27283,
+        "persona": "Сэцуна",
+        "start": 26250,
+        "text": "Сэкаи?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27283,
+        "file": "Voice05/05-SD/05-SD-F00/05-SD-F00-0120",
+        "layer": 0,
+        "persona": "set",
+        "start": 26250
+    },
+    {
+        "action": "PrintText",
+        "end": 28166,
+        "persona": "Сэкаи",
+        "start": 27266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28166,
+        "file": "Voice05/05-SD/05-SD-F00/05-SD-F00-0130",
+        "layer": 0,
+        "persona": "sek",
+        "start": 27266
+    },
+    {
+        "action": "CreateBG",
+        "end": 29183,
+        "file": "Event05/05-SD/05-SD-F00/05-SD-F00-007",
+        "start": 27283
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 29183,
+        "start": 28183
+    },
+    {
+        "action": "Next",
+        "start": 29183
+    }
+]

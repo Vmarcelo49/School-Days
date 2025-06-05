@@ -1,0 +1,176 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 26133
+    },
+    {
+        "action": "PlayBgm",
+        "end": 26133,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 26133,
+        "file": "Se01/01-00/01-00-B00/SE01-00-B00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 10000,
+        "file": "Event02/02-2K/02-2K-H06/02-2K-H06-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 12100,
+        "file": "Event02/02-2K/02-2K-H06/02-2K-H06-002",
+        "start": 10000
+    },
+    {
+        "action": "PrintText",
+        "end": 15050,
+        "persona": "Сэцуна",
+        "start": 11033,
+        "text": "Сэкаи, по дороге домой пошли вместе в Макдональдс.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15050,
+        "file": "Voice02/02-2K/02-2K-H06/02-2K-H06-0050",
+        "layer": 0,
+        "persona": "set",
+        "start": 11033
+    },
+    {
+        "action": "CreateBG",
+        "end": 17033,
+        "file": "Event02/02-2K/02-2K-H06/02-2K-H06-003",
+        "start": 12100
+    },
+    {
+        "action": "PrintText",
+        "end": 16333,
+        "persona": "Сэкаи",
+        "start": 15066,
+        "text": "Да, давай.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16333,
+        "file": "Voice02/02-2K/02-2K-H06/02-2K-H06-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 15066
+    },
+    {
+        "action": "CreateBG",
+        "end": 19050,
+        "file": "Event02/02-2K/02-2K-E02/02-2K-E02-006",
+        "start": 17033
+    },
+    {
+        "action": "PrintText",
+        "end": 18383,
+        "persona": "Макото",
+        "start": 18016,
+        "text": "Ты домой?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18383,
+        "file": "Voice02/02-2K/02-2K-H06/02-2K-H06-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18016
+    },
+    {
+        "action": "CreateBG",
+        "end": 21383,
+        "file": "Event02/02-2K/02-2K-H06/02-2K-H06-005",
+        "start": 19050
+    },
+    {
+        "action": "PrintText",
+        "end": 20100,
+        "persona": "Макото",
+        "start": 19166,
+        "text": "Давай, до завтра.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20100,
+        "file": "Voice02/02-2K/02-2K-H06/02-2K-H06-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 19166
+    },
+    {
+        "action": "PrintText",
+        "end": 21283,
+        "persona": "Сэкаи",
+        "start": 20100,
+        "text": "Угу, пока.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21283,
+        "file": "Voice02/02-2K/02-2K-H06/02-2K-H06-0110",
+        "layer": 0,
+        "persona": "sek",
+        "start": 20100
+    },
+    {
+        "action": "CreateBG",
+        "end": 23083,
+        "file": "Event02/02-2K/02-2K-H06/02-2K-H06-006",
+        "start": 21383
+    },
+    {
+        "action": "CreateBG",
+        "end": 26133,
+        "file": "Event02/02-2K/02-2K-H06/02-2K-H06-007",
+        "start": 23083
+    },
+    {
+        "action": "PrintText",
+        "end": 24133,
+        "persona": "Сэцуна",
+        "start": 23233,
+        "text": "Идём!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24133,
+        "file": "Voice02/02-2K/02-2K-H06/02-2K-H06-0140",
+        "layer": 0,
+        "persona": "set",
+        "start": 23233
+    },
+    {
+        "action": "PrintText",
+        "end": 25066,
+        "persona": "Сэкаи",
+        "start": 24216,
+        "text": "Угу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25066,
+        "file": "Voice02/02-2K/02-2K-H06/02-2K-H06-0150",
+        "layer": 0,
+        "persona": "sek",
+        "start": 24216
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 26133,
+        "start": 25133
+    },
+    {
+        "action": "Next",
+        "start": 26133
+    }
+]

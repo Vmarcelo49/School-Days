@@ -1,0 +1,235 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 40000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 46016,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 6000,
+        "persona": "Заметка",
+        "start": 0,
+        "text": "(Хикари читает поэму Уильяма Блейка \"Единоборство\".)^"
+    },
+    {
+        "action": "PlaySe",
+        "end": 11350,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0050",
+        "layer": 2,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 6000,
+        "file": "Event01/01-00/01-00-R00/01-00-R00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 8050,
+        "file": "Event01/01-00/01-00-R00/01-00-R00-003",
+        "start": 6000
+    },
+    {
+        "action": "PrintText",
+        "end": 7066,
+        "persona": "Сэкаи",
+        "start": 6166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7066,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0060",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 6166
+    },
+    {
+        "action": "CreateBG",
+        "end": 10083,
+        "file": "Event01/01-00/01-00-B00/01-00-B00-003",
+        "start": 8050
+    },
+    {
+        "action": "PlayMovie",
+        "end": 12166,
+        "file": "Movie01/01-00/01-00-R00/01-00-R00-005",
+        "start": 10083
+    },
+    {
+        "action": "PrintText",
+        "end": 11316,
+        "persona": "Макото",
+        "start": 11050,
+        "text": "Хм-м?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11316,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11050
+    },
+    {
+        "action": "PlaySe",
+        "end": 24266,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0051",
+        "layer": 2,
+        "start": 11350
+    },
+    {
+        "action": "PlayMovie",
+        "end": 14366,
+        "file": "Movie01/01-00/01-00-R00/01-00-R00-006",
+        "start": 12166
+    },
+    {
+        "action": "PrintText",
+        "end": 14150,
+        "persona": "Макото",
+        "start": 12283,
+        "text": "Как это так?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14150,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12283
+    },
+    {
+        "action": "CreateBG",
+        "end": 17150,
+        "file": "Event01/01-00/01-00-R00/01-00-R00-007",
+        "start": 14366
+    },
+    {
+        "action": "CreateBG",
+        "end": 17350,
+        "file": "Event01/01-00/01-00-B00/01-00-B00-003",
+        "start": 17150
+    },
+    {
+        "action": "PlayMovie",
+        "end": 22066,
+        "file": "Movie01/01-00/01-00-R00/01-00-R00-009",
+        "start": 17350
+    },
+    {
+        "action": "PrintText",
+        "end": 21333,
+        "persona": "Макото",
+        "start": 20000,
+        "text": "О чём это она?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21333,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 20000
+    },
+    {
+        "action": "PlayMovie",
+        "end": 25066,
+        "file": "Movie01/01-00/01-00-R00/01-00-R00-010",
+        "start": 22066
+    },
+    {
+        "action": "PlaySe",
+        "end": 42250,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0052",
+        "layer": 2,
+        "start": 24266
+    },
+    {
+        "action": "PlaySe",
+        "end": 25283,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0170",
+        "layer": 1,
+        "start": 25066
+    },
+    {
+        "action": "CreateBG",
+        "end": 27250,
+        "file": "Event01/01-00/01-00-R00/01-00-R00-011",
+        "start": 25066
+    },
+    {
+        "action": "PlaySe",
+        "end": 27116,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0180",
+        "layer": 1,
+        "start": 26100
+    },
+    {
+        "action": "CreateBG",
+        "end": 46000,
+        "file": "Event01/01-00/01-00-R00/01-00-R00-012",
+        "start": 27250
+    },
+    {
+        "action": "PrintText",
+        "end": 29750,
+        "persona": "Макото",
+        "start": 27250,
+        "text": "Блин! Ну чего она дуется?^"
+    },
+    {
+        "action": "PrintText",
+        "end": 33366,
+        "persona": "Макото",
+        "start": 29750,
+        "text": "Мы так славно повеселились за обедом.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33366,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0190",
+        "layer": 1,
+        "persona": "mak",
+        "start": 27250
+    },
+    {
+        "action": "PrintText",
+        "end": 40066,
+        "persona": "Макото",
+        "start": 37266,
+        "text": "М... О чём это она?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 40066,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 34266
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "О поцелуе?^",
+        "answer2": "О Котонохе?^",
+        "end": 45000,
+        "start": 40000
+    },
+    {
+        "action": "PlaySe",
+        "end": 45116,
+        "file": "Voice01/01-00/01-00-R00/01-00-R00-0053",
+        "layer": 2,
+        "start": 42266
+    },
+    {
+        "action": "Next",
+        "start": 46016
+    }
+]

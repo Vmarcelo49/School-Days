@@ -1,0 +1,346 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 73216
+    },
+    {
+        "action": "PlaySe",
+        "end": 69133,
+        "file": "SysSe/SE_all/gaya/okujou",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4000,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7383,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-002",
+        "start": 4000
+    },
+    {
+        "action": "PrintText",
+        "end": 7366,
+        "persona": "Макото",
+        "start": 4000,
+        "text": "Котоноха... Опаздывает...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7366,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4000
+    },
+    {
+        "action": "CreateBG",
+        "end": 16150,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-003",
+        "start": 7383
+    },
+    {
+        "action": "PlaySe",
+        "end": 13066,
+        "file": "SysSe/SE_all/door/door_mansyon",
+        "layer": 2,
+        "start": 8000
+    },
+    {
+        "action": "PrintText",
+        "end": 14283,
+        "persona": "Макото",
+        "start": 11216,
+        "text": "Опаздываешь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14283,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11216
+    },
+    {
+        "action": "PrintText",
+        "end": 16133,
+        "persona": "Котоноха",
+        "start": 14283,
+        "text": "Прости...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16133,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 14283
+    },
+    {
+        "action": "CreateBG",
+        "end": 18366,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-004",
+        "start": 16150
+    },
+    {
+        "action": "PrintText",
+        "end": 18283,
+        "persona": "Макото",
+        "start": 16383,
+        "text": "Котоноха?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18283,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16383
+    },
+    {
+        "action": "CreateBG",
+        "end": 35166,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-005",
+        "start": 18366
+    },
+    {
+        "action": "PrintText",
+        "end": 29233,
+        "persona": "Котоноха",
+        "start": 18366,
+        "text": "Я... Приготовила поесть... Да... Сам знаешь, какая неловкая... Споткнулась... И всё рассыпала...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29233,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 18366
+    },
+    {
+        "action": "PrintText",
+        "end": 31000,
+        "persona": "Макото",
+        "start": 29250,
+        "text": "Э?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31000,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 29250
+    },
+    {
+        "action": "PrintText",
+        "end": 35150,
+        "persona": "Котоноха",
+        "start": 31016,
+        "text": "Остался... Только чай...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 35150,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 31016
+    },
+    {
+        "action": "CreateBG",
+        "end": 48183,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-006",
+        "start": 35166
+    },
+    {
+        "action": "PrintText",
+        "end": 38050,
+        "persona": "Макото",
+        "start": 35166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38050,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 35166
+    },
+    {
+        "action": "PrintText",
+        "end": 39250,
+        "persona": "Котоноха",
+        "start": 38066,
+        "text": "Извини...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 39250,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0130",
+        "layer": 0,
+        "persona": "kot",
+        "start": 38066
+    },
+    {
+        "action": "PrintText",
+        "end": 44216,
+        "persona": "Макото",
+        "start": 39250,
+        "text": "Ничего. Пойдём тогда, купим чего-нибудь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 44216,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 39250
+    },
+    {
+        "action": "PrintText",
+        "end": 46333,
+        "persona": "Котоноха",
+        "start": 44216,
+        "text": "Прости...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46333,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 44216
+    },
+    {
+        "action": "PrintText",
+        "end": 48183,
+        "persona": "Макото",
+        "start": 46333,
+        "text": "Да ладно тебе.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48183,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 46333
+    },
+    {
+        "action": "CreateBG",
+        "end": 62283,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-007",
+        "start": 48183
+    },
+    {
+        "action": "PrintText",
+        "end": 51150,
+        "persona": "Котоноха",
+        "start": 48183,
+        "text": "Прости меня... Прости...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 51150,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 48183
+    },
+    {
+        "action": "PrintText",
+        "end": 58183,
+        "persona": "Макото",
+        "start": 51150,
+        "text": "Что ж, пойду закупаться... Булок... Сейчас уже не найдёшь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 58183,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0180",
+        "layer": 1,
+        "persona": "mak",
+        "start": 51150
+    },
+    {
+        "action": "PrintText",
+        "end": 60333,
+        "persona": "Котоноха",
+        "start": 58183,
+        "text": "Мне... Что сам выберешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 60333,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0190",
+        "layer": 0,
+        "persona": "kot",
+        "start": 58183
+    },
+    {
+        "action": "PrintText",
+        "end": 62266,
+        "persona": "Макото",
+        "start": 60333,
+        "text": "Хорошо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 62266,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 60333
+    },
+    {
+        "action": "CreateBG",
+        "end": 65116,
+        "file": "Event05/05-KB/05-KB-L00/05-KB-L00-008",
+        "start": 62283
+    },
+    {
+        "action": "PrintText",
+        "end": 72366,
+        "persona": "Котоноха",
+        "start": 62283,
+        "text": "Прости...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 72366,
+        "file": "Voice05/05-KB/05-KB-L00/05-KB-L00-0220",
+        "layer": 0,
+        "persona": "kot",
+        "start": 62283
+    },
+    {
+        "action": "PlayMovie",
+        "end": 73216,
+        "file": "Movie05/05-KB/05-KB-L00/05-KB-L00-009",
+        "start": 65116
+    },
+    {
+        "action": "PlaySe",
+        "end": 73216,
+        "file": "SysSe/SE_all/gaya/okujou",
+        "layer": 3,
+        "start": 67316
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 73216,
+        "start": 72216
+    },
+    {
+        "action": "Next",
+        "start": 73216
+    }
+]

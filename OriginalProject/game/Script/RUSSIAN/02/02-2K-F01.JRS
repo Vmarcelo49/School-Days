@@ -1,0 +1,111 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 10333
+    },
+    {
+        "action": "PlayBgm",
+        "end": 16366,
+        "file": "BGM/SD_BGM/sdbgm15",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 16366,
+        "file": "Se01/01-00/01-00-E00/SE01-00-E00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 16366,
+        "file": "Event02/02-2K/02-2K-F05/02-2K-F05-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2016,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Я тебя согрею.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2016,
+        "file": "Voice02/02-2K/02-2K-F01/02-2K-F01-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 6283,
+        "persona": "Котоноха",
+        "start": 2016,
+        "text": "А... Я... Мне...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6283,
+        "file": "Voice02/02-2K/02-2K-F01/02-2K-F01-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2016
+    },
+    {
+        "action": "PrintText",
+        "end": 7316,
+        "persona": "Макото",
+        "start": 6283,
+        "text": "Котоноха...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7316,
+        "file": "Voice02/02-2K/02-2K-F01/02-2K-F01-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6283
+    },
+    {
+        "action": "PrintText",
+        "end": 9300,
+        "persona": "Котоноха",
+        "start": 7333,
+        "text": "Д-да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9300,
+        "file": "Voice02/02-2K/02-2K-F01/02-2K-F01-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 7333
+    },
+    {
+        "action": "PrintText",
+        "end": 11033,
+        "persona": "Макото",
+        "start": 9300,
+        "text": "Ты...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11033,
+        "file": "Voice02/02-2K/02-2K-F01/02-2K-F01-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9300
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Так приятно пахнешь.^",
+        "answer2": "У тебя нежная грудь.^",
+        "end": 15333,
+        "start": 10333
+    },
+    {
+        "action": "Next",
+        "start": 16366
+    }
+]

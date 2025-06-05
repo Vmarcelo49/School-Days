@@ -1,0 +1,154 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 25033
+    },
+    {
+        "action": "PlayBgm",
+        "end": 25033,
+        "file": "BGM/SD_BGM/sdbgm08",
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 14300,
+        "file": "Movie05/05-5O/05-5O-D09/05-5O-D09-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 4100,
+        "persona": "Макото",
+        "start": 16,
+        "text": "Что-то мне поплохело...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4100,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16
+    },
+    {
+        "action": "PrintText",
+        "end": 5133,
+        "persona": "Итару",
+        "start": 3283,
+        "text": "А мне нормально!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5133,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0040",
+        "layer": 0,
+        "persona": "ita",
+        "start": 3283
+    },
+    {
+        "action": "PrintText",
+        "end": 8183,
+        "persona": "Макото",
+        "start": 5150,
+        "text": "Всё потому, что ты как моторчик, постоянно бегаешь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8183,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5150
+    },
+    {
+        "action": "PrintText",
+        "end": 9200,
+        "persona": "Итару",
+        "start": 8100,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9200,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0060",
+        "layer": 0,
+        "persona": "ita",
+        "start": 8100
+    },
+    {
+        "action": "PrintText",
+        "end": 15050,
+        "persona": "Макото",
+        "start": 9133,
+        "text": "Так. Считаем до двадцати и выходим, будем сок персиковый пить!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15050,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9133
+    },
+    {
+        "action": "PlayMovie",
+        "end": 25033,
+        "file": "Movie05/05-5O/05-5O-D09/05-5O-D09-002",
+        "start": 14300
+    },
+    {
+        "action": "PrintText",
+        "end": 16283,
+        "persona": "Итару",
+        "start": 15000,
+        "text": "Персиковый!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16283,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0080",
+        "layer": 0,
+        "persona": "ita",
+        "start": 15000
+    },
+    {
+        "action": "PrintText",
+        "end": 19083,
+        "persona": "Макото",
+        "start": 16116,
+        "text": "Стоять. Сначала до 20 посчитай.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19083,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16116
+    },
+    {
+        "action": "PrintText",
+        "end": 25033,
+        "persona": "Итару",
+        "start": 19050,
+        "text": "Угу! Один! Два! Три!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25033,
+        "file": "Voice05/05-5O/05-5O-D09/05-5O-D09-0120",
+        "layer": 0,
+        "persona": "ita",
+        "start": 19050
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 25033,
+        "start": 24033
+    },
+    {
+        "action": "Next",
+        "start": 25033
+    }
+]

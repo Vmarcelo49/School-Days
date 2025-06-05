@@ -1,0 +1,155 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 14266
+    },
+    {
+        "action": "PlaySe",
+        "end": 14266,
+        "file": "SysSe/SE_all/station_train/train_in",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5183,
+        "file": "Event05/05-5O/05-5O-I07/05-5O-I07-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1216,
+        "persona": "Котоноха",
+        "start": 133,
+        "text": "Сегодня...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1216,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0030",
+        "layer": 0,
+        "persona": "kot",
+        "start": 133
+    },
+    {
+        "action": "PrintText",
+        "end": 2083,
+        "persona": "Макото",
+        "start": 1266,
+        "text": "Э?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2083,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 1266
+    },
+    {
+        "action": "PrintText",
+        "end": 5133,
+        "persona": "Котоноха",
+        "start": 2216,
+        "text": "Приходи ко мне...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5133,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0050",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2216
+    },
+    {
+        "action": "CreateBG",
+        "end": 11366,
+        "file": "Event05/05-5O/05-5O-I07/05-5O-I07-002",
+        "start": 5183
+    },
+    {
+        "action": "PrintText",
+        "end": 7333,
+        "persona": "Макото",
+        "start": 5216,
+        "text": "К тебе?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7333,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5216
+    },
+    {
+        "action": "PrintText",
+        "end": 10283,
+        "persona": "Котоноха",
+        "start": 8033,
+        "text": "У меня дома никого не будет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10283,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 8033
+    },
+    {
+        "action": "PrintText",
+        "end": 11316,
+        "persona": "Макото",
+        "start": 10350,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11316,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0080",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 10350
+    },
+    {
+        "action": "CreateBG",
+        "end": 14266,
+        "file": "Event05/05-5O/05-5O-I07/05-5O-I07-003",
+        "start": 11366
+    },
+    {
+        "action": "PrintText",
+        "end": 13216,
+        "persona": "Котоноха",
+        "start": 12033,
+        "text": "Приходи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13216,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 12033
+    },
+    {
+        "action": "PrintText",
+        "end": 14250,
+        "persona": "Макото",
+        "start": 13300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14250,
+        "file": "Voice05/05-5O/05-5O-I07/05-5O-I07-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13300
+    },
+    {
+        "action": "Next",
+        "start": 14266
+    }
+]

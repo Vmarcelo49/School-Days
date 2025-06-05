@@ -1,0 +1,178 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 20216
+    },
+    {
+        "action": "PlayBgm",
+        "end": 20216,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3266,
+        "file": "Event01/01-00/01-00-O04/01-00-O04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3266,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Сегодня ты что-то мне хотела сказать?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3266,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4283,
+        "file": "Event01/01-00/01-00-O04/01-00-O04-002",
+        "start": 3266
+    },
+    {
+        "action": "PrintText",
+        "end": 4266,
+        "persona": "Котоноха",
+        "start": 3266,
+        "text": "Э...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4266,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3266
+    },
+    {
+        "action": "PrintText",
+        "end": 6300,
+        "persona": "Макото",
+        "start": 4266,
+        "text": "Ну, за обедом...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6300,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4266
+    },
+    {
+        "action": "CreateBG",
+        "end": 6300,
+        "file": "Event01/01-00/01-00-O04/01-00-O04-003",
+        "start": 4283
+    },
+    {
+        "action": "CreateBG",
+        "end": 9383,
+        "file": "Event01/01-00/01-00-O04/01-00-O04-004",
+        "start": 6300
+    },
+    {
+        "action": "PrintText",
+        "end": 9366,
+        "persona": "Котоноха",
+        "start": 6300,
+        "text": "Хватит уже об этом спрашивать!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9366,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 6300
+    },
+    {
+        "action": "CreateBG",
+        "end": 17116,
+        "file": "Event01/01-00/01-00-O04/01-00-O04-005",
+        "start": 9383
+    },
+    {
+        "action": "PrintText",
+        "end": 10283,
+        "persona": "Макото",
+        "start": 9383,
+        "text": "Но...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10283,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9383
+    },
+    {
+        "action": "PrintText",
+        "end": 13066,
+        "persona": "Котоноха",
+        "start": 10283,
+        "text": "Слушай, я уже спать ложусь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13066,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 10283
+    },
+    {
+        "action": "PrintText",
+        "end": 17100,
+        "persona": "Макото",
+        "start": 13066,
+        "text": "А... Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17100,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13066
+    },
+    {
+        "action": "CreateBG",
+        "end": 20216,
+        "file": "Event01/01-00/01-00-N05/01-00-N05-001",
+        "start": 17116
+    },
+    {
+        "action": "PrintText",
+        "end": 18200,
+        "persona": "Котоноха",
+        "start": 17116,
+        "text": "Спокойной ночи.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18200,
+        "file": "Voice01/01-00/01-00-O04/01-00-O04-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 17116
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 20216,
+        "start": 19216
+    },
+    {
+        "action": "Next",
+        "start": 20216
+    }
+]

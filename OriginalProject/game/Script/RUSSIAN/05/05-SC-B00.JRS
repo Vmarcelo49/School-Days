@@ -1,0 +1,94 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 10233
+    },
+    {
+        "action": "PlayBgm",
+        "end": 10233,
+        "file": "BGM/SD_BGM/sdbgm21",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3283,
+        "file": "Event00/00-00/00-00-A03/00-00-A03-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 250,
+        "persona": "Сэкаи",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 250,
+        "file": "Voice05/05-SC/05-SC-B00/05-SC-B00-0050",
+        "layer": 0,
+        "persona": "sek",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1300,
+        "persona": "Сэкаи",
+        "start": 1100,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1300,
+        "file": "Voice05/05-SC/05-SC-B00/05-SC-B00-0090",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 1100
+    },
+    {
+        "action": "PrintText",
+        "end": 2383,
+        "persona": "Макото",
+        "start": 2033,
+        "text": "Что такое?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2383,
+        "file": "Voice05/05-SC/05-SC-B00/05-SC-B00-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2033
+    },
+    {
+        "action": "PrintText",
+        "end": 4300,
+        "persona": "Сэкаи",
+        "start": 2383,
+        "text": "Да нет, ничего.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4300,
+        "file": "Voice05/05-SC/05-SC-B00/05-SC-B00-0110",
+        "layer": 0,
+        "persona": "sek",
+        "start": 2383
+    },
+    {
+        "action": "CreateBG",
+        "end": 6016,
+        "file": "Event05/05-SC/05-SC-B00/05-SC-B00-002",
+        "start": 3283
+    },
+    {
+        "action": "CreateBG",
+        "end": 10233,
+        "file": "Event05/05-SC/05-SC-B00/05-SC-B00-004",
+        "start": 6016
+    },
+    {
+        "action": "Next",
+        "start": 10233
+    }
+]

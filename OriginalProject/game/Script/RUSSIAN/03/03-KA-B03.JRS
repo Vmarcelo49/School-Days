@@ -1,0 +1,80 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 9366
+    },
+    {
+        "action": "PlayBgm",
+        "end": 9366,
+        "file": "BGM/SD_BGM/sdbgm03",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 9366,
+        "file": "Se03/03-KA/03-KA-B03/SE03-KA-B03-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 9366,
+        "file": "Event03/03-KA/03-KA-B03/03-KA-B03-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 383,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 383,
+        "file": "Voice03/03-KA/03-KA-B03/03-KA-B03-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5166,
+        "persona": "Макото",
+        "start": 1350,
+        "text": "Наверное, тут уже ничего не поделаешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5166,
+        "file": "Voice03/03-KA/03-KA-B03/03-KA-B03-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 1350
+    },
+    {
+        "action": "PrintText",
+        "end": 8266,
+        "persona": "Макото",
+        "start": 6083,
+        "text": "Пойду-ка я в обратно в класс...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8266,
+        "file": "Voice03/03-KA/03-KA-B03/03-KA-B03-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6083
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 9366,
+        "start": 8366
+    },
+    {
+        "action": "Next",
+        "start": 9366
+    }
+]

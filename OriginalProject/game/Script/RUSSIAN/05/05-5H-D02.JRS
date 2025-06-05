@@ -1,0 +1,184 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 39066
+    },
+    {
+        "action": "PlayBgm",
+        "end": 39050,
+        "file": "BGM/SD_BGM/sdbgm19",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 7350,
+        "file": "SysSe/SE_all/h/h_05",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 14266,
+        "file": "Movie05/05-5H/05-5H-D02/H5-5H-D02-001",
+        "start": 0
+    },
+    {
+        "action": "MoveSom",
+        "end": 14266,
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 7366,
+        "persona": "Хикари",
+        "start": 150,
+        "text": "Ведь... Так... Хорошо!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7366,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0030",
+        "layer": 0,
+        "persona": "hik",
+        "start": 150
+    },
+    {
+        "action": "PrintText",
+        "end": 10183,
+        "persona": "Макото",
+        "start": 6166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10183,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6166
+    },
+    {
+        "action": "PlaySe",
+        "end": 29366,
+        "file": "SysSe/SE_all/h/h_03",
+        "layer": 2,
+        "start": 7150
+    },
+    {
+        "action": "PrintText",
+        "end": 14100,
+        "persona": "Хикари",
+        "start": 9300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14100,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0050",
+        "layer": 0,
+        "persona": "hik",
+        "start": 9300
+    },
+    {
+        "action": "PrintText",
+        "end": 19316,
+        "persona": "Макото",
+        "start": 13150,
+        "text": "Хикари!.. И... Мне!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19316,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13150
+    },
+    {
+        "action": "PlayMovie",
+        "end": 31100,
+        "file": "Movie05/05-5H/05-5H-D02/H5-5H-D02-002",
+        "start": 14266
+    },
+    {
+        "action": "MoveSom",
+        "end": 31100,
+        "start": 14266
+    },
+    {
+        "action": "PrintText",
+        "end": 24166,
+        "persona": "Хикари",
+        "start": 18366,
+        "text": "Всё!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24166,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0070",
+        "layer": 0,
+        "persona": "hik",
+        "start": 18366
+    },
+    {
+        "action": "PrintText",
+        "end": 32216,
+        "persona": "Хикари",
+        "start": 24316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 32216,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0090",
+        "layer": 0,
+        "persona": "hik",
+        "start": 24316
+    },
+    {
+        "action": "PrintText",
+        "end": 38250,
+        "persona": "Макото",
+        "start": 28133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38250,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 28133
+    },
+    {
+        "action": "PlayMovie",
+        "end": 39066,
+        "file": "Movie05/05-5H/05-5H-D02/H5-5H-D02-003",
+        "start": 31100
+    },
+    {
+        "action": "PrintText",
+        "end": 38016,
+        "persona": "Хикари",
+        "start": 33100,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38016,
+        "file": "Voice05/05-5H/05-5H-D02/05-5H-D02-0120",
+        "layer": 0,
+        "persona": "hik",
+        "start": 33100
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 39066,
+        "start": 38066
+    },
+    {
+        "action": "Next",
+        "start": 39066
+    }
+]

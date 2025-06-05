@@ -1,0 +1,274 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 51066
+    },
+    {
+        "action": "PlayBgm",
+        "end": 51066,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 10116,
+        "file": "Event01/01-00/01-00-O03/01-00-O03-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1250,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Прости меня...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1250,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 6383,
+        "persona": "Котоноха",
+        "start": 1183,
+        "text": "А? За что ты извиняешься?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6383,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 1183
+    },
+    {
+        "action": "PrintText",
+        "end": 10116,
+        "persona": "Макото",
+        "start": 6316,
+        "text": "Ну, мне показалось, я сегодня тебя расстроил.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10116,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6316
+    },
+    {
+        "action": "CreateBG",
+        "end": 21183,
+        "file": "Event01/01-00/01-00-O03/01-00-O03-002",
+        "start": 10116
+    },
+    {
+        "action": "PrintText",
+        "end": 21166,
+        "persona": "Котоноха",
+        "start": 10133,
+        "text": "Нет! Что ты! Это я должна извиниться.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21166,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 10133
+    },
+    {
+        "action": "PrintText",
+        "end": 22333,
+        "persona": "Макото",
+        "start": 21100,
+        "text": "Нет, тебе не нужно извиняться!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22333,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 21100
+    },
+    {
+        "action": "CreateBG",
+        "end": 36033,
+        "file": "Event01/01-00/01-00-O03/01-00-O03-003",
+        "start": 21183
+    },
+    {
+        "action": "PrintText",
+        "end": 23316,
+        "persona": "Котоноха",
+        "start": 22233,
+        "text": "Но я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23316,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 22233
+    },
+    {
+        "action": "PrintText",
+        "end": 31350,
+        "persona": "Макото",
+        "start": 23300,
+        "text": "Ты днём что-то хотела сказать, и я подумал, вдруг это что-то важное,^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31350,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 23300
+    },
+    {
+        "action": "PrintText",
+        "end": 36033,
+        "persona": "Макото",
+        "start": 32150,
+        "text": "но я был слишком настойчив...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 36033,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0091",
+        "layer": 1,
+        "persona": "mak",
+        "start": 32150
+    },
+    {
+        "action": "CreateBG",
+        "end": 37250,
+        "file": "Event01/01-00/01-00-O03/01-00-O03-002",
+        "start": 36033
+    },
+    {
+        "action": "PrintText",
+        "end": 37066,
+        "persona": "Котоноха",
+        "start": 36050,
+        "text": "Нет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37066,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 36050
+    },
+    {
+        "action": "CreateBG",
+        "end": 43050,
+        "file": "Event01/01-00/01-00-O03/01-00-O03-003",
+        "start": 37250
+    },
+    {
+        "action": "PrintText",
+        "end": 43000,
+        "persona": "Макото",
+        "start": 37250,
+        "text": "Так или иначе, хотел за это извиниться.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43000,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 37250
+    },
+    {
+        "action": "CreateBG",
+        "end": 49116,
+        "file": "Event01/01-00/01-00-O03/01-00-O03-006",
+        "start": 43050
+    },
+    {
+        "action": "PrintText",
+        "end": 44116,
+        "persona": "Котоноха",
+        "start": 43100,
+        "text": "Ито...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 44116,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 43100
+    },
+    {
+        "action": "PrintText",
+        "end": 44350,
+        "persona": "Макото",
+        "start": 44133,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 44350,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 44133
+    },
+    {
+        "action": "PrintText",
+        "end": 49066,
+        "persona": "Котоноха",
+        "start": 45133,
+        "text": "Спасибо, что позвонил, спокойной ночи.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 49066,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 45133
+    },
+    {
+        "action": "CreateBG",
+        "end": 51066,
+        "file": "Event01/01-00/01-00-O03/01-00-O03-007",
+        "start": 49116
+    },
+    {
+        "action": "PrintText",
+        "end": 50066,
+        "persona": "Макото",
+        "start": 49150,
+        "text": "Спокойной ночи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50066,
+        "file": "Voice01/01-00/01-00-O03/01-00-O03-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 49150
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 51066,
+        "start": 50066
+    },
+    {
+        "action": "Next",
+        "start": 51066
+    }
+]

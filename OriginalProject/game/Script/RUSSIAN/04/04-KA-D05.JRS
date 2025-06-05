@@ -1,0 +1,763 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 125166
+    },
+    {
+        "action": "PlayBgm",
+        "end": 125166,
+        "file": "BGM/SD_BGM/sdbgm26",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 87266,
+        "file": "Se04/04-KA/04-KA-D05/SE04-KA-D05-001",
+        "layer": 3,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 4150,
+        "file": "Movie02/02-2K/02-2K-J05/02-2K-J05-001",
+        "start": 0
+    },
+    {
+        "action": "MoveSom",
+        "end": 4166,
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3083,
+        "persona": "Макото",
+        "start": 183,
+        "text": "Продолжай... Потихоньку...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3083,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 183
+    },
+    {
+        "action": "PlayMovie",
+        "end": 20183,
+        "file": "Movie04/04-KA/04-KA-D04/04-KA-D04-001",
+        "start": 4150
+    },
+    {
+        "action": "MoveSom",
+        "end": 20183,
+        "start": 4166
+    },
+    {
+        "action": "PrintText",
+        "end": 5316,
+        "persona": "Макото",
+        "start": 4250,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5316,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4250
+    },
+    {
+        "action": "PrintText",
+        "end": 8150,
+        "persona": "Макото",
+        "start": 7166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8150,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7166
+    },
+    {
+        "action": "PrintText",
+        "end": 12300,
+        "persona": "Макото",
+        "start": 9150,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12300,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9150
+    },
+    {
+        "action": "PrintText",
+        "end": 16166,
+        "persona": "Макото",
+        "start": 13150,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16166,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13150
+    },
+    {
+        "action": "PrintText",
+        "end": 18166,
+        "persona": "Котоноха",
+        "start": 16183,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18166,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0130",
+        "layer": 0,
+        "persona": "kot",
+        "start": 16183
+    },
+    {
+        "action": "PrintText",
+        "end": 21083,
+        "persona": "Макото",
+        "start": 18150,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21083,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18150
+    },
+    {
+        "action": "CreateBG",
+        "end": 23200,
+        "file": "Event04/04-KA/04-KA-D03/04-KA-D03-006",
+        "start": 20183
+    },
+    {
+        "action": "MoveSom",
+        "end": 27133,
+        "start": 20183
+    },
+    {
+        "action": "PrintText",
+        "end": 23183,
+        "persona": "Котоноха",
+        "start": 21250,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23183,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 21250
+    },
+    {
+        "action": "CreateBG",
+        "end": 27133,
+        "file": "Event04/04-KA/04-KA-D03/04-KA-D03-002",
+        "start": 23200
+    },
+    {
+        "action": "PrintText",
+        "end": 26250,
+        "persona": "Макото",
+        "start": 24316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26250,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 24316
+    },
+    {
+        "action": "PrintText",
+        "end": 28150,
+        "persona": "Котоноха",
+        "start": 26266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28150,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 26266
+    },
+    {
+        "action": "PlayMovie",
+        "end": 34383,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-005",
+        "start": 27133
+    },
+    {
+        "action": "MoveSom",
+        "end": 34383,
+        "start": 27133
+    },
+    {
+        "action": "PrintText",
+        "end": 31266,
+        "persona": "Макото",
+        "start": 28233,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31266,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0180",
+        "layer": 1,
+        "persona": "mak",
+        "start": 28233
+    },
+    {
+        "action": "PrintText",
+        "end": 34266,
+        "persona": "Котоноха",
+        "start": 32266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 34266,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0190",
+        "layer": 0,
+        "persona": "kot",
+        "start": 32266
+    },
+    {
+        "action": "PlayMovie",
+        "end": 41066,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-006",
+        "start": 34383
+    },
+    {
+        "action": "MoveSom",
+        "end": 41066,
+        "start": 34383
+    },
+    {
+        "action": "PrintText",
+        "end": 39333,
+        "persona": "Макото",
+        "start": 35033,
+        "text": "Котоноха...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 39333,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 35033
+    },
+    {
+        "action": "PrintText",
+        "end": 40366,
+        "persona": "Котоноха",
+        "start": 39333,
+        "text": "Да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 40366,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0210",
+        "layer": 0,
+        "persona": "kot",
+        "start": 39333
+    },
+    {
+        "action": "PlayMovie",
+        "end": 47233,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-007",
+        "start": 41066
+    },
+    {
+        "action": "MoveSom",
+        "end": 47233,
+        "start": 41066
+    },
+    {
+        "action": "PrintText",
+        "end": 45183,
+        "persona": "Макото",
+        "start": 41166,
+        "text": "Больше... Не... Могу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 45183,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0220",
+        "layer": 1,
+        "persona": "mak",
+        "start": 41166
+    },
+    {
+        "action": "PrintText",
+        "end": 46366,
+        "persona": "Котоноха",
+        "start": 46133,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46366,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0230",
+        "layer": 0,
+        "persona": "kot",
+        "start": 46133
+    },
+    {
+        "action": "PlayMovie",
+        "end": 51000,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-006",
+        "start": 47233
+    },
+    {
+        "action": "MoveSom",
+        "end": 51000,
+        "start": 47233
+    },
+    {
+        "action": "PrintText",
+        "end": 49050,
+        "persona": "Макото",
+        "start": 47350,
+        "text": "Прекрати...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 49050,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0240",
+        "layer": 1,
+        "persona": "mak",
+        "start": 47350
+    },
+    {
+        "action": "PrintText",
+        "end": 50233,
+        "persona": "Котоноха",
+        "start": 49350,
+        "text": "Нет.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50233,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0250",
+        "layer": 0,
+        "persona": "kot",
+        "start": 49350
+    },
+    {
+        "action": "PlayMovie",
+        "end": 64000,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-005",
+        "start": 51000
+    },
+    {
+        "action": "MoveSom",
+        "end": 64000,
+        "start": 51000
+    },
+    {
+        "action": "PrintText",
+        "end": 52083,
+        "persona": "Макото",
+        "start": 51116,
+        "text": "...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 52083,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0270",
+        "layer": 1,
+        "persona": "mak",
+        "start": 51116
+    },
+    {
+        "action": "PrintText",
+        "end": 56366,
+        "persona": "Котоноха",
+        "start": 52283,
+        "text": "Всё нормально.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 56366,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0280",
+        "layer": 0,
+        "persona": "kot",
+        "start": 52283
+    },
+    {
+        "action": "PrintText",
+        "end": 62150,
+        "persona": "Макото",
+        "start": 57166,
+        "text": "О... Чем... Ты?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 62150,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0290",
+        "layer": 1,
+        "persona": "mak",
+        "start": 57166
+    },
+    {
+        "action": "PrintText",
+        "end": 63300,
+        "persona": "Котоноха",
+        "start": 62150,
+        "text": "Кончай.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 63300,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0300",
+        "layer": 0,
+        "persona": "kot",
+        "start": 62150
+    },
+    {
+        "action": "PlayMovie",
+        "end": 67183,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-010",
+        "start": 64000
+    },
+    {
+        "action": "MoveSom",
+        "end": 67183,
+        "start": 64000
+    },
+    {
+        "action": "PrintText",
+        "end": 65366,
+        "persona": "Макото",
+        "start": 64083,
+        "text": "Т-ты чего?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 65366,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0310",
+        "layer": 1,
+        "persona": "mak",
+        "start": 64083
+    },
+    {
+        "action": "PrintText",
+        "end": 67033,
+        "persona": "Котоноха",
+        "start": 66083,
+        "text": "Прямо сюда.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 67033,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0320",
+        "layer": 0,
+        "persona": "kot",
+        "start": 66083
+    },
+    {
+        "action": "PlayMovie",
+        "end": 73350,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-007",
+        "start": 67183
+    },
+    {
+        "action": "MoveSom",
+        "end": 73350,
+        "start": 67183
+    },
+    {
+        "action": "PrintText",
+        "end": 74033,
+        "persona": "Макото",
+        "start": 67350,
+        "text": "Н... Нельзя же... Так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 74033,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0340",
+        "layer": 1,
+        "persona": "mak",
+        "start": 67350
+    },
+    {
+        "action": "PlaySe",
+        "end": 72166,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0380",
+        "layer": 1,
+        "start": 69200
+    },
+    {
+        "action": "PlayMovie",
+        "end": 75283,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-005",
+        "start": 73350
+    },
+    {
+        "action": "MoveSom",
+        "end": 75283,
+        "start": 73350
+    },
+    {
+        "action": "PrintText",
+        "end": 74266,
+        "persona": "Котоноха",
+        "start": 74083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 74266,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0350",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 74083
+    },
+    {
+        "action": "PlayMovie",
+        "end": 81200,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-013",
+        "start": 75283
+    },
+    {
+        "action": "MoveSom",
+        "end": 81200,
+        "start": 75283
+    },
+    {
+        "action": "PrintText",
+        "end": 81050,
+        "persona": "Макото",
+        "start": 75350,
+        "text": "Я ведь правда... Сейчас...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 81050,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0360",
+        "layer": 1,
+        "persona": "mak",
+        "start": 75350
+    },
+    {
+        "action": "PlayVoice",
+        "end": 95350,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0370",
+        "layer": -1,
+        "persona": "",
+        "start": 81066
+    },
+    {
+        "action": "PlayMovie",
+        "end": 84233,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-014",
+        "start": 81200
+    },
+    {
+        "action": "PlayMovie",
+        "end": 87266,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-014",
+        "start": 84233
+    },
+    {
+        "action": "PlaySe",
+        "end": 92183,
+        "file": "Se04/04-KA/04-KA-D05/SE04-KA-D05-002",
+        "layer": 2,
+        "start": 85150
+    },
+    {
+        "action": "CreateBG",
+        "end": 95283,
+        "file": "Event04/04-KA/04-KA-D05/04-KA-D05-015",
+        "start": 87266
+    },
+    {
+        "action": "PlaySe",
+        "end": 94316,
+        "file": "Se04/04-KA/04-KA-D05/SE04-KA-D05-003",
+        "layer": 3,
+        "start": 92300
+    },
+    {
+        "action": "PlaySe",
+        "end": 95283,
+        "file": "Se04/04-KA/04-KA-D05/SE04-KA-D05-005",
+        "layer": 1,
+        "start": 94333
+    },
+    {
+        "action": "PlayMovie",
+        "end": 107150,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-016",
+        "start": 95283
+    },
+    {
+        "action": "PrintText",
+        "end": 100366,
+        "persona": "Макото",
+        "start": 95350,
+        "text": "Почему... Всё так обернулось?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 100366,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0400",
+        "layer": 1,
+        "persona": "mak",
+        "start": 95350
+    },
+    {
+        "action": "PrintText",
+        "end": 103133,
+        "persona": "Котоноха",
+        "start": 100383,
+        "text": "Тебе ведь такое нравится, Макото?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 103133,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0410",
+        "layer": 0,
+        "persona": "kot",
+        "start": 100383
+    },
+    {
+        "action": "PlaySe",
+        "end": 104183,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0480A",
+        "layer": 2,
+        "start": 103100
+    },
+    {
+        "action": "PrintText",
+        "end": 104166,
+        "persona": "Макото",
+        "start": 103133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 104166,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0420",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 103133
+    },
+    {
+        "action": "PrintText",
+        "end": 105383,
+        "persona": "Котоноха",
+        "start": 104183,
+        "text": "Я так рада.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 105383,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0430",
+        "layer": 0,
+        "persona": "kot",
+        "start": 104183
+    },
+    {
+        "action": "PrintText",
+        "end": 107133,
+        "persona": "Макото",
+        "start": 105366,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 107133,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0440",
+        "layer": 1,
+        "persona": "mak",
+        "start": 105366
+    },
+    {
+        "action": "PlayMovie",
+        "end": 117383,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-017",
+        "start": 107150
+    },
+    {
+        "action": "PlayMovie",
+        "end": 125166,
+        "file": "Movie04/04-KA/04-KA-D05/04-KA-D05-018",
+        "start": 117383
+    },
+    {
+        "action": "PrintText",
+        "end": 121100,
+        "persona": "Котоноха",
+        "start": 118116,
+        "text": "До завтра.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 121100,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0460",
+        "layer": 0,
+        "persona": "kot",
+        "start": 118116
+    },
+    {
+        "action": "PlaySe",
+        "end": 125166,
+        "file": "Se04/04-KA/04-KA-D05/SE04-KA-D05-004",
+        "layer": 3,
+        "start": 123083
+    },
+    {
+        "action": "PrintText",
+        "end": 124150,
+        "persona": "Макото",
+        "start": 123116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 124150,
+        "file": "Voice04/04-KA/04-KA-D05/04-KA-D05-0480",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 123116
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 125166,
+        "start": 124366
+    },
+    {
+        "action": "Next",
+        "start": 125166
+    }
+]

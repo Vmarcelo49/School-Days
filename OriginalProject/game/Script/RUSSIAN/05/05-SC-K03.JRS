@@ -1,0 +1,189 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 27333
+    },
+    {
+        "action": "PlayBgm",
+        "end": 27333,
+        "file": "BGM/SD_BGM/sdbgm01",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 8150,
+        "file": "Se00/00-00/00-00-A00/SE00-00-A00-005",
+        "layer": 2,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 8150,
+        "file": "Movie05/05-KB/05-KB-K03/05-KB-K03-001",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 27333,
+        "file": "SysSe/SE_all/station_train/train_in",
+        "layer": 1,
+        "start": 8150
+    },
+    {
+        "action": "CreateBG",
+        "end": 23100,
+        "file": "Event05/05-KB/05-KB-K03/05-KB-K03-002",
+        "start": 8150
+    },
+    {
+        "action": "PrintText",
+        "end": 11066,
+        "persona": "Котоноха",
+        "start": 9083,
+        "text": "Макото!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11066,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 9083
+    },
+    {
+        "action": "PrintText",
+        "end": 14033,
+        "persona": "Макото",
+        "start": 11083,
+        "text": "Привет.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14033,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11083
+    },
+    {
+        "action": "PrintText",
+        "end": 15183,
+        "persona": "Нанами",
+        "start": 14033,
+        "text": "Ито...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15183,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0060",
+        "layer": 0,
+        "persona": "nan",
+        "start": 14033
+    },
+    {
+        "action": "PrintText",
+        "end": 19150,
+        "persona": "Макото",
+        "start": 15183,
+        "text": "Прости, но оставь нас?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19150,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 15183
+    },
+    {
+        "action": "PrintText",
+        "end": 20016,
+        "persona": "Нанами",
+        "start": 19150,
+        "text": "Э?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20016,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0080",
+        "layer": 0,
+        "persona": "nan",
+        "start": 19150
+    },
+    {
+        "action": "PrintText",
+        "end": 22233,
+        "persona": "Макото",
+        "start": 20033,
+        "text": "У меня к Котонохе разговор.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22233,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 20033
+    },
+    {
+        "action": "PrintText",
+        "end": 23233,
+        "persona": "Нанами",
+        "start": 22233,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23233,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0100",
+        "layer": 0,
+        "persona": "nan",
+        "start": 22233
+    },
+    {
+        "action": "PlayMovie",
+        "end": 27333,
+        "file": "Movie05/05-KB/05-KB-K03/05-KB-K03-003",
+        "start": 23100
+    },
+    {
+        "action": "PrintText",
+        "end": 25333,
+        "persona": "Котоноха",
+        "start": 23233,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25333,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0120",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 23233
+    },
+    {
+        "action": "PrintText",
+        "end": 26266,
+        "persona": "Нанами",
+        "start": 25333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26266,
+        "file": "Voice05/05-KB/05-KB-K03/05-KB-K03-0140",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 25333
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 27333,
+        "start": 26333
+    },
+    {
+        "action": "Next",
+        "start": 27333
+    }
+]

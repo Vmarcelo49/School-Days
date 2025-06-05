@@ -1,0 +1,59 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 11100
+    },
+    {
+        "action": "PlayBgm",
+        "end": 17200,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 17200,
+        "file": "Event03/03-KA/03-KA-L09/03-KA-L09-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5100,
+        "persona": "Макото",
+        "start": 100,
+        "text": "Вчера и сегодня мы с Котонохой вместе не обедали.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5100,
+        "file": "Voice03/03-KA/03-KA-L09/03-KA-L09-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 100
+    },
+    {
+        "action": "PrintText",
+        "end": 10300,
+        "persona": "Макото",
+        "start": 6283,
+        "text": "Всего два дня прошло, но я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10300,
+        "file": "Voice03/03-KA/03-KA-L09/03-KA-L09-0040",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 6283
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Постепенно забываю её.^",
+        "answer2": "Скучаю по ней.^",
+        "end": 16100,
+        "start": 11100
+    },
+    {
+        "action": "Next",
+        "start": 17200
+    }
+]

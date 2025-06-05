@@ -1,0 +1,229 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 35150
+    },
+    {
+        "action": "PlayBgm",
+        "end": 35150,
+        "file": "BGM/SD_BGM/sdbgm26",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3000,
+        "file": "Event02/02-2K/02-2K-A00/02-2K-A00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5150,
+        "file": "Event02/02-2K/02-2K-L01/02-2K-L01-002",
+        "start": 3000
+    },
+    {
+        "action": "PrintText",
+        "end": 4183,
+        "persona": "Котоноха",
+        "start": 3183,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4183,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3183
+    },
+    {
+        "action": "PlayMovie",
+        "end": 21050,
+        "file": "Movie02/02-2K/02-2K-L01/02-2K-L01-003",
+        "start": 5150
+    },
+    {
+        "action": "PrintText",
+        "end": 7250,
+        "persona": "Котоноха",
+        "start": 5216,
+        "text": "Он всю меня облапал...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7250,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 5216
+    },
+    {
+        "action": "PrintText",
+        "end": 10366,
+        "persona": "Котоноха",
+        "start": 8233,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10366,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0070",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 8233
+    },
+    {
+        "action": "PrintText",
+        "end": 13300,
+        "persona": "Котоноха",
+        "start": 11233,
+        "text": "Было неприятно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13300,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 11233
+    },
+    {
+        "action": "PrintText",
+        "end": 15350,
+        "persona": "Котоноха",
+        "start": 14350,
+        "text": "но...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15350,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 14350
+    },
+    {
+        "action": "PrintText",
+        "end": 20350,
+        "persona": "Котоноха",
+        "start": 16266,
+        "text": "Ведь мальчикам нравится трогать?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20350,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 16266
+    },
+    {
+        "action": "CreateBG",
+        "end": 22150,
+        "file": "Event02/02-2K/02-2K-L01/02-2K-L01-004",
+        "start": 21050
+    },
+    {
+        "action": "PrintText",
+        "end": 21383,
+        "persona": "Котоноха",
+        "start": 21200,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21383,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 21200
+    },
+    {
+        "action": "PlayMovie",
+        "end": 26300,
+        "file": "Movie02/02-2K/02-2K-L01/02-2K-L01-005",
+        "start": 22150
+    },
+    {
+        "action": "PrintText",
+        "end": 26050,
+        "persona": "Котоноха",
+        "start": 22266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26050,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 22266
+    },
+    {
+        "action": "CreateBG",
+        "end": 28016,
+        "file": "Event02/02-2K/02-2K-L01/02-2K-L01-006",
+        "start": 26300
+    },
+    {
+        "action": "PrintText",
+        "end": 27300,
+        "persona": "Котоноха",
+        "start": 26383,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27300,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 26383
+    },
+    {
+        "action": "CreateBG",
+        "end": 35150,
+        "file": "Event02/02-2K/02-2K-A00/02-2K-A00-001",
+        "start": 28016
+    },
+    {
+        "action": "PrintText",
+        "end": 30266,
+        "persona": "Котоноха",
+        "start": 28133,
+        "text": "Что я вообще делаю?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30266,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0160",
+        "layer": 0,
+        "persona": "kot",
+        "start": 28133
+    },
+    {
+        "action": "PrintText",
+        "end": 33316,
+        "persona": "Котоноха",
+        "start": 31016,
+        "text": "Как неловко...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33316,
+        "file": "Voice02/02-2K/02-2K-L01/02-2K-L01-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 31016
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 35150,
+        "start": 34150
+    },
+    {
+        "action": "Next",
+        "start": 35150
+    }
+]

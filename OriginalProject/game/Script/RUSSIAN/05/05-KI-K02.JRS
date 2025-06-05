@@ -1,0 +1,209 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 29133
+    },
+    {
+        "action": "PlayBgm",
+        "end": 29133,
+        "file": "BGM/SD_BGM/sdbgm29",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 29133,
+        "file": "SysSe/SE_all/station_train/train_in",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3350,
+        "file": "Event05/05-KB/05-KB-K02/05-KB-K02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3316,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3316,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5033,
+        "persona": "Котоноха",
+        "start": 3316,
+        "text": "Не получится?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5033,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3316
+    },
+    {
+        "action": "CreateBG",
+        "end": 9100,
+        "file": "Event05/05-KB/05-KB-K02/05-KB-K02-002",
+        "start": 3350
+    },
+    {
+        "action": "PrintText",
+        "end": 7283,
+        "persona": "Макото",
+        "start": 5033,
+        "text": "Нет.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7283,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5033
+    },
+    {
+        "action": "PrintText",
+        "end": 8183,
+        "persona": "Котоноха",
+        "start": 7283,
+        "text": "Э...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8183,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 7283
+    },
+    {
+        "action": "PrintText",
+        "end": 13350,
+        "persona": "Макото",
+        "start": 8183,
+        "text": "Я на завтра уже с Сэкаи договорился.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13350,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 8183
+    },
+    {
+        "action": "CreateBG",
+        "end": 13366,
+        "file": "Event05/05-KB/05-KB-K02/05-KB-K02-003",
+        "start": 9100
+    },
+    {
+        "action": "PrintText",
+        "end": 15216,
+        "persona": "Котоноха",
+        "start": 13350,
+        "text": "Вон оно как...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15216,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 13350
+    },
+    {
+        "action": "CreateBG",
+        "end": 16083,
+        "file": "Event05/05-KB/05-KB-K02/05-KB-K02-004",
+        "start": 13366
+    },
+    {
+        "action": "PrintText",
+        "end": 17250,
+        "persona": "Макото",
+        "start": 15216,
+        "text": "Ты прости уж...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17250,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 15216
+    },
+    {
+        "action": "PlayMovie",
+        "end": 29133,
+        "file": "Movie05/05-KB/05-KB-K02/05-KB-K02-005",
+        "start": 16083
+    },
+    {
+        "action": "PrintText",
+        "end": 18200,
+        "persona": "Котоноха",
+        "start": 17250,
+        "text": "Ничего...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18200,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 17250
+    },
+    {
+        "action": "PrintText",
+        "end": 27166,
+        "persona": "Макото",
+        "start": 18200,
+        "text": "Пойми... Что есть у меня та, кто приоритетнее друзей.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27166,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18200
+    },
+    {
+        "action": "PrintText",
+        "end": 28133,
+        "persona": "Котоноха",
+        "start": 27183,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28133,
+        "file": "Voice05/05-KB/05-KB-K02/05-KB-K02-0120",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 27183
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 29133,
+        "start": 28133
+    },
+    {
+        "action": "Next",
+        "start": 29133
+    }
+]

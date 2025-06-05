@@ -1,0 +1,178 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 17000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 17000,
+        "file": "BGM/SD_BGM/sdbgm28",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 9216,
+        "file": "Event03/03-A1/03-A1-D07/03-A1-D07-004",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 383,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 383,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1216,
+        "persona": "Сэцуна",
+        "start": 1050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1216,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0040",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 1050
+    },
+    {
+        "action": "PrintText",
+        "end": 5350,
+        "persona": "Макото",
+        "start": 2050,
+        "text": "Значит, в покое ты меня не оставишь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5350,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2050
+    },
+    {
+        "action": "PrintText",
+        "end": 6316,
+        "persona": "Сэцуна",
+        "start": 6066,
+        "text": "Нет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6316,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0060",
+        "layer": 0,
+        "persona": "set",
+        "start": 6066
+    },
+    {
+        "action": "PrintText",
+        "end": 8233,
+        "persona": "Макото",
+        "start": 7116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8233,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0070",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 7116
+    },
+    {
+        "action": "PrintText",
+        "end": 9100,
+        "persona": "Сэцуна",
+        "start": 8333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9100,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0080",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 8333
+    },
+    {
+        "action": "CreateBG",
+        "end": 17000,
+        "file": "Event03/03-A1/03-A1-D10/03-A1-D10-002",
+        "start": 9216
+    },
+    {
+        "action": "PrintText",
+        "end": 12250,
+        "persona": "Макото",
+        "start": 9300,
+        "text": "Ладно! Я понял...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12250,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9300
+    },
+    {
+        "action": "PrintText",
+        "end": 14016,
+        "persona": "Сэцуна",
+        "start": 12300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14016,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0100",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 12300
+    },
+    {
+        "action": "PrintText",
+        "end": 15366,
+        "persona": "Макото",
+        "start": 14133,
+        "text": "Хочешь, чтобы я все тебе рассказал?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15366,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14133
+    },
+    {
+        "action": "PrintText",
+        "end": 16233,
+        "persona": "Сэцуна",
+        "start": 15383,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16233,
+        "file": "Voice03/03-A1/03-A1-D10/03-A1-D10-0120",
+        "layer": 0,
+        "persona": "set",
+        "start": 15383
+    },
+    {
+        "action": "Next",
+        "start": 17000
+    }
+]

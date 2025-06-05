@@ -1,0 +1,91 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 11016
+    },
+    {
+        "action": "PlayBgm",
+        "end": 11016,
+        "file": "BGM/SD_BGM/sdbgm08",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 3383,
+        "file": "SysSe/SE_all/h/h_02",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 5233,
+        "file": "Movie05/05-5H/05-5H-C06/05-5H-C06-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 10333,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10333,
+        "file": "Voice05/05-5H/05-5H-C06/05-5H-C06-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "MoveSom",
+        "end": 5233,
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3350,
+        "persona": "Хикари",
+        "start": 266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3350,
+        "file": "Voice05/05-5H/05-5H-C06/05-5H-C06-0040",
+        "layer": 0,
+        "persona": "hik",
+        "start": 266
+    },
+    {
+        "action": "PlayMovie",
+        "end": 11016,
+        "file": "Movie05/05-5H/05-5H-C06/H5-5H-C06-002",
+        "start": 5233
+    },
+    {
+        "action": "PrintText",
+        "end": 8133,
+        "persona": "Хикари",
+        "start": 6266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8133,
+        "file": "Voice05/05-5H/05-5H-C06/05-5H-C06-0060",
+        "layer": 0,
+        "persona": "hik",
+        "start": 6266
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 11016,
+        "start": 10016
+    },
+    {
+        "action": "Next",
+        "start": 11016
+    }
+]

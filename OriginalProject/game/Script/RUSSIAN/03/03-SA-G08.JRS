@@ -1,0 +1,155 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 24250
+    },
+    {
+        "action": "PlaySe",
+        "end": 30250,
+        "file": "Se03/03-SA/03-SA-G08/SE03-SA-G08-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4216,
+        "file": "Event03/03-SA/03-SA-G08/03-SA-G08-001",
+        "start": 0
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4183,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0030",
+        "layer": -1,
+        "persona": "",
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 6316,
+        "file": "Movie03/03-SA/03-SA-G08/03-SA-G08-002",
+        "start": 4216
+    },
+    {
+        "action": "PrintText",
+        "end": 6033,
+        "persona": "Сэкаи",
+        "start": 4233,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6033,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 4233
+    },
+    {
+        "action": "CreateBG",
+        "end": 30250,
+        "file": "Event03/03-SA/03-SA-G08/03-SA-G08-003",
+        "start": 6316
+    },
+    {
+        "action": "PrintText",
+        "end": 10383,
+        "persona": "Сэкаи",
+        "start": 6316,
+        "text": "Нет... Мы не должны...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10383,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6316
+    },
+    {
+        "action": "PrintText",
+        "end": 12000,
+        "persona": "Макото",
+        "start": 10383,
+        "text": "Всё нормально...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12000,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 10383
+    },
+    {
+        "action": "PrintText",
+        "end": 17016,
+        "persona": "Сэкаи",
+        "start": 12000,
+        "text": "Нет... Нет... Сейчас же обеденный перерыв...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17016,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0080",
+        "layer": 0,
+        "persona": "sek",
+        "start": 12000
+    },
+    {
+        "action": "PrintText",
+        "end": 18100,
+        "persona": "Макото",
+        "start": 17016,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18100,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0090",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 17016
+    },
+    {
+        "action": "PrintText",
+        "end": 21016,
+        "persona": "Сэкаи",
+        "start": 18116,
+        "text": "Не... надо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21016,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0100",
+        "layer": 0,
+        "persona": "sek",
+        "start": 18116
+    },
+    {
+        "action": "PrintText",
+        "end": 22133,
+        "persona": "Макото",
+        "start": 21016,
+        "text": "Сэкаи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22133,
+        "file": "Voice03/03-SA/03-SA-G08/03-SA-G08-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 21016
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "В этом платье такая милая!^",
+        "answer2": "Давай забьём на нашу смену?^",
+        "end": 29250,
+        "start": 24250
+    },
+    {
+        "action": "Next",
+        "start": 30250
+    }
+]

@@ -1,0 +1,249 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 37000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 37000,
+        "file": "BGM/SD_BGM/sdbgm07",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 37000,
+        "file": "Se02/02-2S/02-2S-V00/SE02-2S-V00-001",
+        "layer": 2,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2350,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5383,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-002",
+        "start": 2350
+    },
+    {
+        "action": "CreateBG",
+        "end": 8216,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-003",
+        "start": 5383
+    },
+    {
+        "action": "PrintText",
+        "end": 6366,
+        "persona": "Отомэ",
+        "start": 6083,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6366,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0050",
+        "layer": 0,
+        "persona": "oto",
+        "start": 6083
+    },
+    {
+        "action": "PrintText",
+        "end": 9333,
+        "persona": "Макото",
+        "start": 7083,
+        "text": "Привет, Като. На тренировку собираешься?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9333,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7083
+    },
+    {
+        "action": "CreateBG",
+        "end": 15233,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-004",
+        "start": 8216
+    },
+    {
+        "action": "PrintText",
+        "end": 11150,
+        "persona": "Отомэ",
+        "start": 9350,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11150,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0070",
+        "layer": 0,
+        "persona": "oto",
+        "start": 9350
+    },
+    {
+        "action": "PrintText",
+        "end": 13300,
+        "persona": "Макото",
+        "start": 11150,
+        "text": "Что это с тобой? Ты чего такая хмурая?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13300,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11150
+    },
+    {
+        "action": "PrintText",
+        "end": 15233,
+        "persona": "Отомэ",
+        "start": 13266,
+        "text": "Нет, у меня всё нормально!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15233,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0090",
+        "layer": 0,
+        "persona": "oto",
+        "start": 13266
+    },
+    {
+        "action": "CreateBG",
+        "end": 19333,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-005",
+        "start": 15233
+    },
+    {
+        "action": "PrintText",
+        "end": 18050,
+        "persona": "Макото",
+        "start": 15250,
+        "text": "Вот как? Ну ладно тогда. Пока.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18050,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 15250
+    },
+    {
+        "action": "PrintText",
+        "end": 19383,
+        "persona": "Отомэ",
+        "start": 18250,
+        "text": "Ито...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19383,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0110",
+        "layer": 0,
+        "persona": "oto",
+        "start": 18250
+    },
+    {
+        "action": "CreateBG",
+        "end": 23083,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-006",
+        "start": 19333
+    },
+    {
+        "action": "PrintText",
+        "end": 21033,
+        "persona": "Макото",
+        "start": 19333,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21033,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 19333
+    },
+    {
+        "action": "PrintText",
+        "end": 27183,
+        "persona": "Отомэ",
+        "start": 21133,
+        "text": "Макото, послушай.... Ка... А нет, ничего.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27183,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0130",
+        "layer": 0,
+        "persona": "oto",
+        "start": 21133
+    },
+    {
+        "action": "CreateBG",
+        "end": 25016,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-007",
+        "start": 23083
+    },
+    {
+        "action": "CreateBG",
+        "end": 33266,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-008",
+        "start": 25016
+    },
+    {
+        "action": "PrintText",
+        "end": 32216,
+        "persona": "Макото",
+        "start": 27100,
+        "text": "М? Ладно, удачи тебе на тренировке.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 32216,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 27100
+    },
+    {
+        "action": "PrintText",
+        "end": 33150,
+        "persona": "Отомэ",
+        "start": 32250,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33150,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0150",
+        "layer": 0,
+        "persona": "oto",
+        "start": 32250
+    },
+    {
+        "action": "PlaySe",
+        "end": 37000,
+        "file": "Voice02/02-2S/02-2S-V00/02-2S-V00-0160",
+        "layer": 1,
+        "start": 33266
+    },
+    {
+        "action": "CreateBG",
+        "end": 37000,
+        "file": "Event02/02-2S/02-2S-V00/02-2S-V00-009",
+        "start": 33266
+    },
+    {
+        "action": "Next",
+        "start": 37000
+    }
+]

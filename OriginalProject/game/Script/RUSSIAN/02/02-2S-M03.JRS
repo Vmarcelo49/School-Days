@@ -1,0 +1,254 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 37250
+    },
+    {
+        "action": "PlayBgm",
+        "end": 37250,
+        "file": "BGM/SD_BGM/sdbgm29",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 37250,
+        "file": "Se01/01-00/01-00-L00/SE01-00-L00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 15166,
+        "file": "Event02/02-2S/02-2S-M03/02-2S-M03-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 4216,
+        "persona": "Сэкаи",
+        "start": 0,
+        "text": "Я тебя все равно люблю, Макото!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4216,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0030",
+        "layer": 0,
+        "persona": "sek",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 5200,
+        "persona": "Макото",
+        "start": 4366,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5200,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4366
+    },
+    {
+        "action": "PrintText",
+        "end": 11083,
+        "persona": "Сэкаи",
+        "start": 5383,
+        "text": "Даже если тебе другие девушки нравятся... Я всё равно тебя буду любить!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11083,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0050",
+        "layer": 0,
+        "persona": "sek",
+        "start": 5383
+    },
+    {
+        "action": "PrintText",
+        "end": 12150,
+        "persona": "Макото",
+        "start": 11200,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12150,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0060",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 11200
+    },
+    {
+        "action": "PrintText",
+        "end": 13300,
+        "persona": "Сэкаи",
+        "start": 12300,
+        "text": "Слышишь?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13300,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 12300
+    },
+    {
+        "action": "PrintText",
+        "end": 15000,
+        "persona": "Макото",
+        "start": 14033,
+        "text": "Сэкаи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15000,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14033
+    },
+    {
+        "action": "CreateBG",
+        "end": 22350,
+        "file": "Event02/02-2S/02-2S-M03/02-2S-M03-002",
+        "start": 15166
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16183,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0100",
+        "layer": -1,
+        "persona": "",
+        "start": 15183
+    },
+    {
+        "action": "PrintText",
+        "end": 21366,
+        "persona": "Макото",
+        "start": 16383,
+        "text": "Прости, заставил я тебя поволноваться...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21366,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16383
+    },
+    {
+        "action": "PrintText",
+        "end": 22233,
+        "persona": "Сэкаи",
+        "start": 22016,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22233,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0120",
+        "layer": 0,
+        "persona": "sek",
+        "start": 22016
+    },
+    {
+        "action": "CreateBG",
+        "end": 25150,
+        "file": "Event02/02-2S/02-2S-M03/02-2S-M03-003",
+        "start": 22350
+    },
+    {
+        "action": "PrintText",
+        "end": 23366,
+        "persona": "Макото",
+        "start": 23016,
+        "text": "Я тебя люблю!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23366,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 23016
+    },
+    {
+        "action": "PrintText",
+        "end": 25033,
+        "persona": "Сэкаи",
+        "start": 24000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25033,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0140",
+        "layer": 0,
+        "persona": "sek",
+        "start": 24000
+    },
+    {
+        "action": "CreateBG",
+        "end": 30200,
+        "file": "Event02/02-2S/02-2S-M03/02-2S-M03-004",
+        "start": 25150
+    },
+    {
+        "action": "PrintText",
+        "end": 28266,
+        "persona": "Макото",
+        "start": 25150,
+        "text": "Мы вместе, и только это важно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 28266,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 25150
+    },
+    {
+        "action": "PrintText",
+        "end": 30050,
+        "persona": "Сэкаи",
+        "start": 29000,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30050,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0160",
+        "layer": 0,
+        "persona": "sek",
+        "start": 29000
+    },
+    {
+        "action": "PlayMovie",
+        "end": 37250,
+        "file": "Movie02/02-2S/02-2S-M03/02-2S-M03-005",
+        "start": 30200
+    },
+    {
+        "action": "PlaySe",
+        "end": 37166,
+        "file": "Voice02/02-2S/02-2S-M03/02-2S-M03-0180",
+        "layer": 1,
+        "start": 33383
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 37250,
+        "start": 36250
+    },
+    {
+        "action": "Next",
+        "start": 37250
+    }
+]

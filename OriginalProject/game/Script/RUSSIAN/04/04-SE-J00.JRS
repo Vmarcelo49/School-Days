@@ -1,0 +1,790 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 157016
+    },
+    {
+        "action": "PlayBgm",
+        "end": 157016,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 15183,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1033,
+        "persona": "Отомэ",
+        "start": 0,
+        "text": "Нанами.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1033,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0030",
+        "layer": 0,
+        "persona": "oto",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2016,
+        "persona": "Нанами",
+        "start": 1033,
+        "text": "Отомэ?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2016,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0040",
+        "layer": 0,
+        "persona": "nan",
+        "start": 1033
+    },
+    {
+        "action": "PrintText",
+        "end": 10200,
+        "persona": "Отомэ",
+        "start": 2016,
+        "text": "Слушай... На меня что-то с самого обеда все пялятся... Да перешёптываются... Не знаешь, почему?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10200,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0050",
+        "layer": 0,
+        "persona": "oto",
+        "start": 2016
+    },
+    {
+        "action": "PrintText",
+        "end": 13066,
+        "persona": "Нанами",
+        "start": 10200,
+        "text": "О... Значит и вправду...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13066,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0060",
+        "layer": 0,
+        "persona": "nan",
+        "start": 10200
+    },
+    {
+        "action": "PrintText",
+        "end": 15200,
+        "persona": "Отомэ",
+        "start": 13066,
+        "text": "Что такое? Рассказывай.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15200,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0070",
+        "layer": 0,
+        "persona": "oto",
+        "start": 13066
+    },
+    {
+        "action": "CreateBG",
+        "end": 27316,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-002",
+        "start": 15183
+    },
+    {
+        "action": "PrintText",
+        "end": 23383,
+        "persona": "Нанами",
+        "start": 15200,
+        "text": "Понимаешь... Подруга моя... Помнишь, которая на физ-ре подходила? Саиёндзи Сэкаи её зовут.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23383,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0080",
+        "layer": 0,
+        "persona": "nan",
+        "start": 15200
+    },
+    {
+        "action": "PrintText",
+        "end": 24366,
+        "persona": "Отомэ",
+        "start": 23383,
+        "text": "Ну?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24366,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0090",
+        "layer": 0,
+        "persona": "oto",
+        "start": 23383
+    },
+    {
+        "action": "PrintText",
+        "end": 27333,
+        "persona": "Нанами",
+        "start": 24366,
+        "text": "Она - девушка Ито.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27333,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0100",
+        "layer": 0,
+        "persona": "nan",
+        "start": 24366
+    },
+    {
+        "action": "CreateBG",
+        "end": 35083,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-003",
+        "start": 27316
+    },
+    {
+        "action": "PrintText",
+        "end": 29000,
+        "persona": "Отомэ",
+        "start": 27333,
+        "text": "Э?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29000,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0110",
+        "layer": 0,
+        "persona": "oto",
+        "start": 27333
+    },
+    {
+        "action": "PrintText",
+        "end": 30266,
+        "persona": "Нанами",
+        "start": 29000,
+        "text": "Ты не знала?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30266,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0120",
+        "layer": 0,
+        "persona": "nan",
+        "start": 29000
+    },
+    {
+        "action": "PrintText",
+        "end": 35100,
+        "persona": "Отомэ",
+        "start": 30266,
+        "text": "Угу... Я думала, что они хорошо ладят, но...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 35100,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0130",
+        "layer": 0,
+        "persona": "oto",
+        "start": 30266
+    },
+    {
+        "action": "CreateBG",
+        "end": 52166,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-004",
+        "start": 35083
+    },
+    {
+        "action": "PrintText",
+        "end": 43350,
+        "persona": "Нанами",
+        "start": 35100,
+        "text": "Ну... Так вот... Они там поругались... Мол, Ито с кем-то переспал... Он, правда, отрицает.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43350,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0140",
+        "layer": 0,
+        "persona": "nan",
+        "start": 35100
+    },
+    {
+        "action": "PrintText",
+        "end": 44316,
+        "persona": "Отомэ",
+        "start": 43350,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 44316,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0150",
+        "layer": 0,
+        "persona": "oto",
+        "start": 43350
+    },
+    {
+        "action": "PrintText",
+        "end": 52216,
+        "persona": "Нанами",
+        "start": 44316,
+        "text": "Так вот... Если начистоту... Сэкаи думает, что с тобой.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 52216,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0160",
+        "layer": 0,
+        "persona": "nan",
+        "start": 44316
+    },
+    {
+        "action": "CreateBG",
+        "end": 57066,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-005",
+        "start": 52166
+    },
+    {
+        "action": "PrintText",
+        "end": 53333,
+        "persona": "Отомэ",
+        "start": 52216,
+        "text": "Чего?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 53333,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0170",
+        "layer": 0,
+        "persona": "oto",
+        "start": 52216
+    },
+    {
+        "action": "PrintText",
+        "end": 55116,
+        "persona": "Нанами",
+        "start": 53350,
+        "text": "Не знаешь, почему?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 55116,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0180",
+        "layer": 0,
+        "persona": "nan",
+        "start": 53350
+    },
+    {
+        "action": "PrintText",
+        "end": 57083,
+        "persona": "Отомэ",
+        "start": 55100,
+        "text": "Откуда ж мне знать?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 57083,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0190",
+        "layer": 0,
+        "persona": "oto",
+        "start": 55100
+    },
+    {
+        "action": "CreateBG",
+        "end": 75116,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-006",
+        "start": 57066
+    },
+    {
+        "action": "PrintText",
+        "end": 65233,
+        "persona": "Нанами",
+        "start": 57083,
+        "text": "Понимаю... Да только ругались они при всех... Слухи и расползлись по школе мгновенно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 65233,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0200",
+        "layer": 0,
+        "persona": "nan",
+        "start": 57083
+    },
+    {
+        "action": "PrintText",
+        "end": 67266,
+        "persona": "Отомэ",
+        "start": 65233,
+        "text": "Как оно так всё получилось-то...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 67266,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0210",
+        "layer": 0,
+        "persona": "oto",
+        "start": 65233
+    },
+    {
+        "action": "PrintText",
+        "end": 74000,
+        "persona": "Нанами",
+        "start": 67266,
+        "text": "Не только ты. Кацура из твоего класса тоже в список интрижек Ито попала.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 74000,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0220",
+        "layer": 0,
+        "persona": "nan",
+        "start": 67266
+    },
+    {
+        "action": "PrintText",
+        "end": 75116,
+        "persona": "Отомэ",
+        "start": 74000,
+        "text": "Кацура?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 75116,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0230",
+        "layer": 0,
+        "persona": "oto",
+        "start": 74000
+    },
+    {
+        "action": "CreateBG",
+        "end": 95233,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-007",
+        "start": 75116
+    },
+    {
+        "action": "PrintText",
+        "end": 83216,
+        "persona": "Нанами",
+        "start": 75116,
+        "text": "Ну, там-то явно мимо кассы. С Кацуры этой феромоны так и прут, вот Сэкаи, глянув разок на неё, и ошиблась.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 83216,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0240",
+        "layer": 0,
+        "persona": "nan",
+        "start": 75116
+    },
+    {
+        "action": "PrintText",
+        "end": 85250,
+        "persona": "Отомэ",
+        "start": 83216,
+        "text": "Да и я с ним не спала!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 85250,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0250",
+        "layer": 0,
+        "persona": "oto",
+        "start": 83216
+    },
+    {
+        "action": "PrintText",
+        "end": 88200,
+        "persona": "Нанами",
+        "start": 85250,
+        "text": "А это... Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 88200,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0260",
+        "layer": 0,
+        "persona": "nan",
+        "start": 85250
+    },
+    {
+        "action": "PrintText",
+        "end": 89050,
+        "persona": "Отомэ",
+        "start": 88200,
+        "text": "Э?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 89050,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0270",
+        "layer": 0,
+        "persona": "oto",
+        "start": 88200
+    },
+    {
+        "action": "PrintText",
+        "end": 95283,
+        "persona": "Нанами",
+        "start": 89050,
+        "text": "Слухи ходят... Что вы целовались... Ночь вместе провели... Чего только нет.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 95283,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0280",
+        "layer": 0,
+        "persona": "nan",
+        "start": 89050
+    },
+    {
+        "action": "CreateBG",
+        "end": 101250,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-008",
+        "start": 95233
+    },
+    {
+        "action": "PrintText",
+        "end": 98366,
+        "persona": "Отомэ",
+        "start": 95266,
+        "text": "Да не было у нас ничего такого! Вообще!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 98366,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0290",
+        "layer": 0,
+        "persona": "oto",
+        "start": 95266
+    },
+    {
+        "action": "PrintText",
+        "end": 99383,
+        "persona": "Нанами",
+        "start": 98366,
+        "text": "Ясно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 99383,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0300",
+        "layer": 0,
+        "persona": "nan",
+        "start": 98366
+    },
+    {
+        "action": "PrintText",
+        "end": 101266,
+        "persona": "Отомэ",
+        "start": 99383,
+        "text": "Ч-что?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 101266,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0310",
+        "layer": 0,
+        "persona": "oto",
+        "start": 99383
+    },
+    {
+        "action": "CreateBG",
+        "end": 113366,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-009",
+        "start": 101250
+    },
+    {
+        "action": "PrintText",
+        "end": 106050,
+        "persona": "Нанами",
+        "start": 101266,
+        "text": "В обед ты ведь... Говорила о нём?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 106050,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0320",
+        "layer": 0,
+        "persona": "nan",
+        "start": 101266
+    },
+    {
+        "action": "PrintText",
+        "end": 106383,
+        "persona": "Отомэ",
+        "start": 106050,
+        "text": "Ну.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 106383,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0330",
+        "layer": 0,
+        "persona": "oto",
+        "start": 106050
+    },
+    {
+        "action": "PrintText",
+        "end": 113366,
+        "persona": "Нанами",
+        "start": 106383,
+        "text": "Так вот... Может быть ты... Любишь его... Нет?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 113366,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0340",
+        "layer": 0,
+        "persona": "nan",
+        "start": 106383
+    },
+    {
+        "action": "CreateBG",
+        "end": 126283,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-010",
+        "start": 113366
+    },
+    {
+        "action": "PrintText",
+        "end": 115133,
+        "persona": "Отомэ",
+        "start": 113366,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 115133,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0350",
+        "layer": 0,
+        "persona": "oto",
+        "start": 113366
+    },
+    {
+        "action": "PrintText",
+        "end": 116300,
+        "persona": "Нанами",
+        "start": 115133,
+        "text": "Любишь, значит.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 116300,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0370",
+        "layer": 0,
+        "persona": "nan",
+        "start": 115133
+    },
+    {
+        "action": "PrintText",
+        "end": 124183,
+        "persona": "Отомэ",
+        "start": 116283,
+        "text": "Так-то оно так... Да безответно всё... Ито этого даже и не замечает.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 124183,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0380",
+        "layer": 0,
+        "persona": "oto",
+        "start": 116283
+    },
+    {
+        "action": "PrintText",
+        "end": 125383,
+        "persona": "Нанами",
+        "start": 124166,
+        "text": "Да уж...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 125383,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0390",
+        "layer": 0,
+        "persona": "nan",
+        "start": 124166
+    },
+    {
+        "action": "PrintText",
+        "end": 126283,
+        "persona": "Отомэ",
+        "start": 126000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 126283,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0400",
+        "layer": 0,
+        "persona": "oto",
+        "start": 126000
+    },
+    {
+        "action": "CreateBG",
+        "end": 145383,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-011",
+        "start": 126283
+    },
+    {
+        "action": "PrintText",
+        "end": 133166,
+        "persona": "Нанами",
+        "start": 126283,
+        "text": "Ну... Мы с Сэкаи подруги, так что помочь я тебе тут не могу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 133166,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0410",
+        "layer": 0,
+        "persona": "nan",
+        "start": 126283
+    },
+    {
+        "action": "PrintText",
+        "end": 136150,
+        "persona": "Отомэ",
+        "start": 133166,
+        "text": "Мне и не надо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 136150,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0420",
+        "layer": 0,
+        "persona": "oto",
+        "start": 133166
+    },
+    {
+        "action": "PrintText",
+        "end": 140333,
+        "persona": "Нанами",
+        "start": 136150,
+        "text": "Но... Я думаю, что ты ему подходишь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 140333,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0430",
+        "layer": 0,
+        "persona": "nan",
+        "start": 136150
+    },
+    {
+        "action": "PrintText",
+        "end": 143000,
+        "persona": "Отомэ",
+        "start": 140333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 143000,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0440",
+        "layer": 0,
+        "persona": "oto",
+        "start": 140333
+    },
+    {
+        "action": "PrintText",
+        "end": 145383,
+        "persona": "Нанами",
+        "start": 143000,
+        "text": "Расстанутся они с Сэкаи, тогда уж я тебя поддержу!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 145383,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0450",
+        "layer": 0,
+        "persona": "nan",
+        "start": 143000
+    },
+    {
+        "action": "CreateBG",
+        "end": 152300,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-012",
+        "start": 145383
+    },
+    {
+        "action": "PrintText",
+        "end": 147383,
+        "persona": "Отомэ",
+        "start": 146000,
+        "text": "С-спасибо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 147383,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0460",
+        "layer": 0,
+        "persona": "oto",
+        "start": 146000
+    },
+    {
+        "action": "PrintText",
+        "end": 151383,
+        "persona": "Нанами",
+        "start": 148000,
+        "text": "Что ж... Пойдём на тренировку!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 151383,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0470",
+        "layer": 0,
+        "persona": "nan",
+        "start": 148000
+    },
+    {
+        "action": "PrintText",
+        "end": 152316,
+        "persona": "Отомэ",
+        "start": 151366,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 152316,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0480",
+        "layer": 0,
+        "persona": "oto",
+        "start": 151366
+    },
+    {
+        "action": "CreateBG",
+        "end": 157016,
+        "file": "Event04/04-SE/04-SE-J00/04-SE-J00-013",
+        "start": 152300
+    },
+    {
+        "action": "PrintText",
+        "end": 155016,
+        "persona": "Котоноха",
+        "start": 153316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 155016,
+        "file": "Voice04/04-SE/04-SE-J00/04-SE-J00-0500",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 153316
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 157016,
+        "start": 156100
+    },
+    {
+        "action": "Next",
+        "start": 157016
+    }
+]

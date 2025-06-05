@@ -1,0 +1,282 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 33166
+    },
+    {
+        "action": "PlayBgm",
+        "end": 40033,
+        "file": "BGM/SD_BGM/sdbgm29",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 40033,
+        "file": "SysSe/SE_all/station_train/train_in",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 3383,
+        "file": "Movie05/05-KB/05-KB-K02/05-KB-K02-005",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 6216,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-002",
+        "start": 3383
+    },
+    {
+        "action": "PrintText",
+        "end": 6216,
+        "persona": "Котоноха",
+        "start": 3383,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6216,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0040",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 3383
+    },
+    {
+        "action": "CreateBG",
+        "end": 9033,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-003",
+        "start": 6216
+    },
+    {
+        "action": "PrintText",
+        "end": 9033,
+        "persona": "Макото",
+        "start": 6216,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9033,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0050",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 6216
+    },
+    {
+        "action": "CreateBG",
+        "end": 11133,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-004",
+        "start": 9033
+    },
+    {
+        "action": "PrintText",
+        "end": 11116,
+        "persona": "Котоноха",
+        "start": 9033,
+        "text": "С-скажи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11116,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 9033
+    },
+    {
+        "action": "PrintText",
+        "end": 12383,
+        "persona": "Макото",
+        "start": 11116,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12383,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11116
+    },
+    {
+        "action": "CreateBG",
+        "end": 13000,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-005",
+        "start": 11133
+    },
+    {
+        "action": "PrintText",
+        "end": 14100,
+        "persona": "Котоноха",
+        "start": 12383,
+        "text": "В обед...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14100,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 12383
+    },
+    {
+        "action": "CreateBG",
+        "end": 14066,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-006",
+        "start": 13000
+    },
+    {
+        "action": "PrintText",
+        "end": 19183,
+        "persona": "Макото",
+        "start": 13383,
+        "text": "Сегодня?.. В столовку ходил.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19183,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13383
+    },
+    {
+        "action": "CreateBG",
+        "end": 19283,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-005",
+        "start": 14066
+    },
+    {
+        "action": "CreateBG",
+        "end": 22166,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-008",
+        "start": 19283
+    },
+    {
+        "action": "PrintText",
+        "end": 20316,
+        "persona": "Котоноха",
+        "start": 19316,
+        "text": "Да нет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20316,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 19316
+    },
+    {
+        "action": "PrintText",
+        "end": 22066,
+        "persona": "Макото",
+        "start": 20166,
+        "text": "А что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22066,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 20166
+    },
+    {
+        "action": "CreateBG",
+        "end": 26316,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-009",
+        "start": 22166
+    },
+    {
+        "action": "PrintText",
+        "end": 26350,
+        "persona": "Котоноха",
+        "start": 22216,
+        "text": "Я про завтра... Может поедим вместе?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26350,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 22216
+    },
+    {
+        "action": "PrintText",
+        "end": 29233,
+        "persona": "Макото",
+        "start": 26216,
+        "text": "Завтра?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29233,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 26216
+    },
+    {
+        "action": "CreateBG",
+        "end": 29116,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-010",
+        "start": 26316
+    },
+    {
+        "action": "CreateBG",
+        "end": 31083,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-011",
+        "start": 29116
+    },
+    {
+        "action": "PrintText",
+        "end": 30166,
+        "persona": "Котоноха",
+        "start": 29233,
+        "text": "Да!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30166,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 29233
+    },
+    {
+        "action": "PrintText",
+        "end": 33033,
+        "persona": "Макото",
+        "start": 30166,
+        "text": "Завтра...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33033,
+        "file": "Voice05/05-KB/05-KB-K00/05-KB-K00-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 30166
+    },
+    {
+        "action": "CreateBG",
+        "end": 40033,
+        "file": "Event05/05-KB/05-KB-K00/05-KB-K00-012",
+        "start": 31083
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Ну давай.",
+        "answer2": "NULL",
+        "end": 38183,
+        "start": 33166
+    },
+    {
+        "action": "Next",
+        "start": 40033
+    }
+]

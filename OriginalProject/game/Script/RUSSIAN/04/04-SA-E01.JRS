@@ -1,0 +1,119 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 19083
+    },
+    {
+        "action": "PlaySe",
+        "end": 19083,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5316,
+        "file": "Event04/04-SA/04-SA-E01/04-SA-E01-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1166,
+        "persona": "Макото",
+        "start": 133,
+        "text": "Может и так.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1166,
+        "file": "Voice04/04-SA/04-SA-E01/04-SA-E01-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 133
+    },
+    {
+        "action": "PrintText",
+        "end": 5016,
+        "persona": "Таисукэ",
+        "start": 1183,
+        "text": "Вот! И мне нужен твой совет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5016,
+        "file": "Voice04/04-SA/04-SA-E01/04-SA-E01-0040",
+        "layer": 1,
+        "persona": "tai",
+        "start": 1183
+    },
+    {
+        "action": "PrintText",
+        "end": 5366,
+        "persona": "Макото",
+        "start": 5016,
+        "text": "Совет?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5366,
+        "file": "Voice04/04-SA/04-SA-E01/04-SA-E01-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5016
+    },
+    {
+        "action": "CreateBG",
+        "end": 19083,
+        "file": "Event04/04-SA/04-SA-E01/04-SA-E01-002",
+        "start": 5316
+    },
+    {
+        "action": "PrintText",
+        "end": 11250,
+        "persona": "Таисукэ",
+        "start": 6033,
+        "text": "Ага. У меня есть билеты в бассейн в Сакаки Хиллс.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11250,
+        "file": "Voice04/04-SA/04-SA-E01/04-SA-E01-0060",
+        "layer": 1,
+        "persona": "tai",
+        "start": 6033
+    },
+    {
+        "action": "PrintText",
+        "end": 16050,
+        "persona": "Макото",
+        "start": 11200,
+        "text": "Это в Аквапарк, что ли?.. Популярный который.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16050,
+        "file": "Voice04/04-SA/04-SA-E01/04-SA-E01-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11200
+    },
+    {
+        "action": "PrintText",
+        "end": 19066,
+        "persona": "Таисукэ",
+        "start": 16050,
+        "text": "Да ещё и... целых 4 штуки!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19066,
+        "file": "Voice04/04-SA/04-SA-E01/04-SA-E01-0080",
+        "layer": 1,
+        "persona": "tai",
+        "start": 16050
+    },
+    {
+        "action": "Next",
+        "start": 19083
+    }
+]

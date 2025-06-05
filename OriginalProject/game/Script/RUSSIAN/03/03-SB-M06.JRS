@@ -1,0 +1,221 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 22183
+    },
+    {
+        "action": "PlaySe",
+        "end": 22183,
+        "file": "Se03/03-SB/03-SB-M06/SE03-SB-M06-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3200,
+        "file": "Event03/03-SB/03-SB-M06/03-SB-M06-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1000,
+        "persona": "Макото",
+        "start": 50,
+        "text": "...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1000,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 50
+    },
+    {
+        "action": "PrintText",
+        "end": 1366,
+        "persona": "Сэкаи",
+        "start": 1000,
+        "text": "Макото?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1366,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 1000
+    },
+    {
+        "action": "PrintText",
+        "end": 3200,
+        "persona": "Макото",
+        "start": 1316,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3200,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 1316
+    },
+    {
+        "action": "CreateBG",
+        "end": 9300,
+        "file": "Event03/03-SB/03-SB-M06/03-SB-M06-001B",
+        "start": 3200
+    },
+    {
+        "action": "PrintText",
+        "end": 6250,
+        "persona": "Сэкаи",
+        "start": 3200,
+        "text": "Ничего, тебе не нужно себя заставлять.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6250,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 3200
+    },
+    {
+        "action": "PrintText",
+        "end": 9283,
+        "persona": "Макото",
+        "start": 6250,
+        "text": "Нет, давай, давай помиримся.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9283,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6250
+    },
+    {
+        "action": "PrintText",
+        "end": 10266,
+        "persona": "Сэкаи",
+        "start": 9283,
+        "text": "Да, ладно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10266,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0080",
+        "layer": 0,
+        "persona": "sek",
+        "start": 9283
+    },
+    {
+        "action": "CreateBG",
+        "end": 13183,
+        "file": "Event03/03-SB/03-SB-M06/03-SB-M06-002",
+        "start": 9300
+    },
+    {
+        "action": "PrintText",
+        "end": 12316,
+        "persona": "Макото",
+        "start": 10266,
+        "text": "Вот, держи!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12316,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 10266
+    },
+    {
+        "action": "PrintText",
+        "end": 13166,
+        "persona": "Сэкаи",
+        "start": 12316,
+        "text": "Угу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13166,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0110",
+        "layer": 0,
+        "persona": "sek",
+        "start": 12316
+    },
+    {
+        "action": "CreateBG",
+        "end": 22183,
+        "file": "Event03/03-SB/03-SB-M06/03-SB-M06-003",
+        "start": 13183
+    },
+    {
+        "action": "PrintText",
+        "end": 15050,
+        "persona": "Макото",
+        "start": 13183,
+        "text": "Давай взбодрись.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15050,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13183
+    },
+    {
+        "action": "PrintText",
+        "end": 15250,
+        "persona": "Сэкаи",
+        "start": 15050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15250,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0130",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 15050
+    },
+    {
+        "action": "PrintText",
+        "end": 21283,
+        "persona": "Макото",
+        "start": 15250,
+        "text": "Уверен, ты повеселеешь, пока мы будем гулять. Идём!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21283,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 15250
+    },
+    {
+        "action": "PrintText",
+        "end": 22150,
+        "persona": "Сэкаи",
+        "start": 21283,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22150,
+        "file": "Voice03/03-SB/03-SB-M06/03-SB-M06-0150",
+        "layer": 0,
+        "persona": "sek",
+        "start": 21283
+    },
+    {
+        "action": "Next",
+        "start": 22183
+    }
+]

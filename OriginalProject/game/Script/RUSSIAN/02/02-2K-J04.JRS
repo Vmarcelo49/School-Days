@@ -1,0 +1,163 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 15250
+    },
+    {
+        "action": "PlayBgm",
+        "end": 21266,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 21033,
+        "file": "Se01/01-1K/01-1K-F00/SE01-1K-F00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 21266,
+        "file": "Movie02/02-2K/02-2K-J04/02-2K-J04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1150,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Нужно отодвинуться!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1150,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2183,
+        "persona": "Женщина",
+        "start": 1300,
+        "text": "Гм...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2183,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0050",
+        "layer": 0,
+        "persona": "wmc",
+        "start": 1300
+    },
+    {
+        "action": "PrintText",
+        "end": 4116,
+        "persona": "Макото",
+        "start": 2200,
+        "text": "И-извините!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4116,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2200
+    },
+    {
+        "action": "PrintText",
+        "end": 5050,
+        "persona": "Макото",
+        "start": 4116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5050,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4116
+    },
+    {
+        "action": "PrintText",
+        "end": 7150,
+        "persona": "Котоноха",
+        "start": 5066,
+        "text": "М... Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7150,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 5066
+    },
+    {
+        "action": "PrintText",
+        "end": 8383,
+        "persona": "Макото",
+        "start": 7133,
+        "text": "Прости!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8383,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7133
+    },
+    {
+        "action": "PrintText",
+        "end": 14183,
+        "persona": "Котоноха",
+        "start": 9000,
+        "text": "Всё нормально. Ничего не поделаешь, раз столько народу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14183,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 9000
+    },
+    {
+        "action": "PrintText",
+        "end": 15300,
+        "persona": "Макото",
+        "start": 14183,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15300,
+        "file": "Voice02/02-2K/02-2K-J04/02-2K-J04-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14183
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Немного потискать.",
+        "answer2": "NULL",
+        "end": 20250,
+        "start": 15250
+    },
+    {
+        "action": "PlaySe",
+        "end": 21266,
+        "file": "Se01/01-1K/01-1K-F00/SE01-1K-F00-001",
+        "layer": 2,
+        "start": 21033
+    },
+    {
+        "action": "Next",
+        "start": 21266
+    }
+]

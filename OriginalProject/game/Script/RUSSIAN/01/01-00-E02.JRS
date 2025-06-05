@@ -1,0 +1,215 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 32350
+    },
+    {
+        "action": "PlayBgm",
+        "end": 32333,
+        "file": "BGM/SD_BGM/sdbgm03",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 32350,
+        "file": "Se01/01-00/01-00-E00/SE01-00-E00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2116,
+        "file": "Event01/01-00/01-00-E02/01-00-E02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2033,
+        "persona": "Макото",
+        "start": 100,
+        "text": "Cказала, чтобы мы обедали вдвоём...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2033,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 100
+    },
+    {
+        "action": "PrintText",
+        "end": 2283,
+        "persona": "Котоноха",
+        "start": 1366,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2283,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 1366
+    },
+    {
+        "action": "CreateBG",
+        "end": 2283,
+        "file": "Event01/01-00/01-00-E01/01-00-E01-004",
+        "start": 2116
+    },
+    {
+        "action": "CreateBG",
+        "end": 8350,
+        "file": "Event01/01-00/01-00-E02/01-00-E02-003",
+        "start": 2283
+    },
+    {
+        "action": "PrintText",
+        "end": 8316,
+        "persona": "Макото",
+        "start": 2316,
+        "text": "Ну, знаешь, мы теперь вместе и всё такое...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8316,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2316
+    },
+    {
+        "action": "CreateBG",
+        "end": 12033,
+        "file": "Event01/01-00/01-00-E02/01-00-E02-004",
+        "start": 8350
+    },
+    {
+        "action": "PrintText",
+        "end": 11366,
+        "persona": "Котоноха",
+        "start": 9000,
+        "text": "Да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11366,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 9000
+    },
+    {
+        "action": "CreateBG",
+        "end": 20350,
+        "file": "Event01/01-00/01-00-E02/01-00-E02-005",
+        "start": 12033
+    },
+    {
+        "action": "PrintText",
+        "end": 15283,
+        "persona": "Макото",
+        "start": 12100,
+        "text": "Она что-то палку перегибает. Вот так, сразу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15283,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12100
+    },
+    {
+        "action": "PrintText",
+        "end": 17350,
+        "persona": "Котоноха",
+        "start": 15233,
+        "text": "Да, наверное...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17350,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 15233
+    },
+    {
+        "action": "PrintText",
+        "end": 20250,
+        "persona": "Макото",
+        "start": 17316,
+        "text": "Cначала нас познакомила, а потом вот так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20250,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 17316
+    },
+    {
+        "action": "CreateBG",
+        "end": 26216,
+        "file": "Event01/01-00/01-00-E02/01-00-E02-006",
+        "start": 20350
+    },
+    {
+        "action": "PrintText",
+        "end": 22100,
+        "persona": "Котоноха",
+        "start": 21033,
+        "text": "Но знаешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22100,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 21033
+    },
+    {
+        "action": "PrintText",
+        "end": 22250,
+        "persona": "Макото",
+        "start": 22033,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22250,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 22033
+    },
+    {
+        "action": "PrintText",
+        "end": 25333,
+        "persona": "Котоноха",
+        "start": 23250,
+        "text": "Я рада, что мы только вдвоём...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25333,
+        "file": "Voice01/01-00/01-00-E02/01-00-E02-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 23250
+    },
+    {
+        "action": "CreateBG",
+        "end": 29000,
+        "file": "Event01/01-00/01-00-E02/01-00-E02-008",
+        "start": 26216
+    },
+    {
+        "action": "Next",
+        "start": 32350
+    }
+]

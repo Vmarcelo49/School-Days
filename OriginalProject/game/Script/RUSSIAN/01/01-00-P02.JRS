@@ -1,0 +1,166 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 21166
+    },
+    {
+        "action": "PlayBgm",
+        "end": 21166,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 7116,
+        "file": "Se01/01-00/01-00-P00/SE01-00-P00-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 6333,
+        "file": "Movie01/01-00/01-00-P02/01-00-P02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2016,
+        "persona": "Котоноха",
+        "start": 100,
+        "text": "«Прости»... Что он имел в виду?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2016,
+        "file": "Voice01/01-00/01-00-P02/01-00-P02-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 100
+    },
+    {
+        "action": "PrintText",
+        "end": 6050,
+        "persona": "Котоноха",
+        "start": 2300,
+        "text": "Неужели он больше не хочет со мной встречаться?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6050,
+        "file": "Voice01/01-00/01-00-P02/01-00-P02-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2300
+    },
+    {
+        "action": "PlayMovie",
+        "end": 16366,
+        "file": "Movie01/01-00/01-00-P02/01-00-P02-002",
+        "start": 6333
+    },
+    {
+        "action": "PrintText",
+        "end": 11150,
+        "persona": "Котоноха",
+        "start": 7083,
+        "text": "Вчера на свидании мы всё время молчали...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11150,
+        "file": "Voice01/01-00/01-00-P02/01-00-P02-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 7083
+    },
+    {
+        "action": "PlaySe",
+        "end": 14216,
+        "file": "Se01/01-00/01-00-P00/SE01-00-P00-001",
+        "layer": 2,
+        "start": 7100
+    },
+    {
+        "action": "PrintText",
+        "end": 16100,
+        "persona": "Котоноха",
+        "start": 11383,
+        "text": "Да и сегодня за обедом он только с Саиёндзи говорил.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16100,
+        "file": "Voice01/01-00/01-00-P02/01-00-P02-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 11383
+    },
+    {
+        "action": "PlaySe",
+        "end": 21166,
+        "file": "Se01/01-00/01-00-P00/SE01-00-P00-001",
+        "layer": 1,
+        "start": 14200
+    },
+    {
+        "action": "PrintText",
+        "end": 18050,
+        "persona": "Котоноха",
+        "start": 16200,
+        "text": "Ох...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18050,
+        "file": "Voice01/01-00/01-00-P02/01-00-P02-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 16200
+    },
+    {
+        "action": "PlayMovie",
+        "end": 21166,
+        "file": "Movie01/01-00/01-00-P02/01-00-P02-003",
+        "start": 16366
+    },
+    {
+        "action": "PrintText",
+        "end": 19283,
+        "persona": "Котоноха",
+        "start": 18133,
+        "text": "Наверное, я ему больше не нравлюсь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19283,
+        "file": "Voice01/01-00/01-00-P02/01-00-P02-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 18133
+    },
+    {
+        "action": "PrintText",
+        "end": 20350,
+        "persona": "Котоноха",
+        "start": 19366,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20350,
+        "file": "Voice01/01-00/01-00-P02/01-00-P02-0130",
+        "layer": 0,
+        "persona": "kot",
+        "start": 19366
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 21166,
+        "start": 20166
+    },
+    {
+        "action": "Next",
+        "start": 21166
+    }
+]

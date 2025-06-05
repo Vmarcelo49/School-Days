@@ -1,0 +1,353 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 53183
+    },
+    {
+        "action": "PlaySe",
+        "end": 53183,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 1200,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5383,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-001A",
+        "start": 1200
+    },
+    {
+        "action": "PrintText",
+        "end": 2316,
+        "persona": "Макото",
+        "start": 1250,
+        "text": "Утро...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2316,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 1250
+    },
+    {
+        "action": "PrintText",
+        "end": 4283,
+        "persona": "Таисукэ",
+        "start": 2350,
+        "text": "Здорово, прогульщик!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4283,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0040",
+        "layer": 1,
+        "persona": "tai",
+        "start": 2350
+    },
+    {
+        "action": "PrintText",
+        "end": 5366,
+        "persona": "Макото",
+        "start": 4300,
+        "text": "Отстань...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5366,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4300
+    },
+    {
+        "action": "CreateBG",
+        "end": 7166,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-001B",
+        "start": 5383
+    },
+    {
+        "action": "PrintText",
+        "end": 7183,
+        "persona": "Таисукэ",
+        "start": 6050,
+        "text": "И чем занимался?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7183,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0060",
+        "layer": 1,
+        "persona": "tai",
+        "start": 6050
+    },
+    {
+        "action": "CreateBG",
+        "end": 10383,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-001C",
+        "start": 7166
+    },
+    {
+        "action": "PrintText",
+        "end": 10383,
+        "persona": "Макото",
+        "start": 7166,
+        "text": "Да проспал сильно, и решил в итоге не идти...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10383,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7166
+    },
+    {
+        "action": "CreateBG",
+        "end": 13300,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-001",
+        "start": 10383
+    },
+    {
+        "action": "PrintText",
+        "end": 12300,
+        "persona": "Таисукэ",
+        "start": 10383,
+        "text": "Чудеса...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12300,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0080",
+        "layer": 1,
+        "persona": "tai",
+        "start": 10383
+    },
+    {
+        "action": "PrintText",
+        "end": 13316,
+        "persona": "Макото",
+        "start": 12333,
+        "text": "Отстань.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13316,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12333
+    },
+    {
+        "action": "CreateBG",
+        "end": 14350,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-002",
+        "start": 13300
+    },
+    {
+        "action": "CreateBG",
+        "end": 21133,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-003",
+        "start": 14350
+    },
+    {
+        "action": "PrintText",
+        "end": 16100,
+        "persona": "Сэкаи",
+        "start": 15050,
+        "text": "Привет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16100,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0110",
+        "layer": 0,
+        "persona": "sek",
+        "start": 15050
+    },
+    {
+        "action": "PrintText",
+        "end": 18033,
+        "persona": "Макото",
+        "start": 16066,
+        "text": "Ага, привет.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18033,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16066
+    },
+    {
+        "action": "PrintText",
+        "end": 21083,
+        "persona": "Сэкаи",
+        "start": 18083,
+        "text": "Тебя вчера не было... Я волновалась.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21083,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0130",
+        "layer": 0,
+        "persona": "sek",
+        "start": 18083
+    },
+    {
+        "action": "CreateBG",
+        "end": 27333,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-004",
+        "start": 21133
+    },
+    {
+        "action": "PrintText",
+        "end": 22066,
+        "persona": "Макото",
+        "start": 21133,
+        "text": "Прости.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22066,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 21133
+    },
+    {
+        "action": "PrintText",
+        "end": 24083,
+        "persona": "Сэкаи",
+        "start": 22150,
+        "text": "Болело что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24083,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0150",
+        "layer": 0,
+        "persona": "sek",
+        "start": 22150
+    },
+    {
+        "action": "PrintText",
+        "end": 27266,
+        "persona": "Макото",
+        "start": 24100,
+        "text": "Нет... Проспал, да так и остался дома...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27266,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 24100
+    },
+    {
+        "action": "CreateBG",
+        "end": 35266,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-005",
+        "start": 27333
+    },
+    {
+        "action": "PrintText",
+        "end": 35283,
+        "persona": "Сэкаи",
+        "start": 27350,
+        "text": "А... Зря волновалась значит... А я тебе звонила вчера.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 35283,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0170",
+        "layer": 0,
+        "persona": "sek",
+        "start": 27350
+    },
+    {
+        "action": "CreateBG",
+        "end": 46066,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-006",
+        "start": 35266
+    },
+    {
+        "action": "PrintText",
+        "end": 39300,
+        "persona": "Макото",
+        "start": 35266,
+        "text": "А-ага... Увидел, когда проснулся только.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 39300,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0180",
+        "layer": 1,
+        "persona": "mak",
+        "start": 35266
+    },
+    {
+        "action": "PrintText",
+        "end": 46100,
+        "persona": "Сэкаи",
+        "start": 39316,
+        "text": "Чего?! Мало того, что проспал, так и в постель улёгся пораньше? Нельзя же столько спать...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46100,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0190",
+        "layer": 0,
+        "persona": "sek",
+        "start": 39316
+    },
+    {
+        "action": "CreateBG",
+        "end": 53183,
+        "file": "Event04/04-KA/04-KA-G09/04-KA-G09-007",
+        "start": 46066
+    },
+    {
+        "action": "PrintText",
+        "end": 47166,
+        "persona": "Макото",
+        "start": 46083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 47166,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 46083
+    },
+    {
+        "action": "PrintText",
+        "end": 50066,
+        "persona": "Сэкаи",
+        "start": 47166,
+        "text": "Ну даёшь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50066,
+        "file": "Voice04/04-KA/04-KA-G09/04-KA-G09-0210",
+        "layer": 0,
+        "persona": "sek",
+        "start": 47166
+    },
+    {
+        "action": "Next",
+        "start": 53183
+    }
+]

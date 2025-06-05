@@ -1,0 +1,109 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 13333
+    },
+    {
+        "action": "PlayBgm",
+        "end": 13333,
+        "file": "BGM/SD_BGM/sdbgm21",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3116,
+        "file": "Event05/05-SE/05-SE-M01/05-SE-M01-011",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3116,
+        "persona": "Сэкаи",
+        "start": 0,
+        "text": "Макото... Не может быть...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3116,
+        "file": "Voice05/05-SE/05-SE-M06/05-SE-M06-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 10316,
+        "file": "Event05/05-SE/05-SE-M06/05-SE-M06-002",
+        "start": 3116
+    },
+    {
+        "action": "PrintText",
+        "end": 5016,
+        "persona": "Сэкаи",
+        "start": 3116,
+        "text": "Нет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5016,
+        "file": "Voice05/05-SE/05-SE-M06/05-SE-M06-0050",
+        "layer": 0,
+        "persona": "sek",
+        "start": 3116
+    },
+    {
+        "action": "PrintText",
+        "end": 6383,
+        "persona": "Сэкаи",
+        "start": 5016,
+        "text": "Вернись...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6383,
+        "file": "Voice05/05-SE/05-SE-M06/05-SE-M06-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 5016
+    },
+    {
+        "action": "PrintText",
+        "end": 10316,
+        "persona": "Сэкаи",
+        "start": 6383,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10316,
+        "file": "Voice05/05-SE/05-SE-M06/05-SE-M06-0070",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 6383
+    },
+    {
+        "action": "CreateBG",
+        "end": 13333,
+        "file": "Event05/05-SE/05-SE-J00/05-SE-J00-001",
+        "start": 10316
+    },
+    {
+        "action": "PrintText",
+        "end": 13333,
+        "persona": "Сэкаи",
+        "start": 10316,
+        "text": "Нет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13333,
+        "file": "Voice05/05-SE/05-SE-M06/05-SE-M06-0080",
+        "layer": 0,
+        "persona": "sek",
+        "start": 10316
+    },
+    {
+        "action": "Next",
+        "start": 13333
+    }
+]

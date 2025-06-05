@@ -1,0 +1,172 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 20350
+    },
+    {
+        "action": "PlayBgm",
+        "end": 20350,
+        "file": "BGM/SD_BGM/sdbgm25",
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 20350,
+        "file": "Movie03/03-KB/03-KB-N04/03-KB-N04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1150,
+        "persona": "Макото",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1150,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2066,
+        "persona": "Котоноха",
+        "start": 1133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2066,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 1133
+    },
+    {
+        "action": "PrintText",
+        "end": 2333,
+        "persona": "Макото",
+        "start": 2083,
+        "text": "М?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2333,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2083
+    },
+    {
+        "action": "PrintText",
+        "end": 6250,
+        "persona": "Котоноха",
+        "start": 2333,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6250,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2333
+    },
+    {
+        "action": "PrintText",
+        "end": 7233,
+        "persona": "Макото",
+        "start": 6250,
+        "text": "Э?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7233,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6250
+    },
+    {
+        "action": "PrintText",
+        "end": 9283,
+        "persona": "Котоноха",
+        "start": 7233,
+        "text": "Ты хотел что-то сказать...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9283,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 7233
+    },
+    {
+        "action": "PrintText",
+        "end": 14016,
+        "persona": "Макото",
+        "start": 9283,
+        "text": "Прости, я просто засмотрелся на тебя.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14016,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9283
+    },
+    {
+        "action": "PrintText",
+        "end": 14283,
+        "persona": "Котоноха",
+        "start": 14016,
+        "text": "Э?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14283,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 14016
+    },
+    {
+        "action": "PrintText",
+        "end": 19366,
+        "persona": "Макото",
+        "start": 14283,
+        "text": "Только подумать, что у меня такая красивая девушка...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19366,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 14283
+    },
+    {
+        "action": "PrintText",
+        "end": 20333,
+        "persona": "Котоноха",
+        "start": 19366,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20333,
+        "file": "Voice03/03-KB/03-KB-N04/03-KB-N04-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 19366
+    },
+    {
+        "action": "Next",
+        "start": 20350
+    }
+]

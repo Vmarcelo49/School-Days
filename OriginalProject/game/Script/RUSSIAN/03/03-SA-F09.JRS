@@ -1,0 +1,105 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 5283
+    },
+    {
+        "action": "PlaySe",
+        "end": 12066,
+        "file": "Se03/03-SA/03-SA-F09/SE03-SA-F09-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 12000,
+        "file": "Event03/03-SA/03-SA-F09/03-SA-F09-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 366,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 366,
+        "file": "Voice03/03-SA/03-SA-F09/03-SA-F09-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1350,
+        "persona": "Минами",
+        "start": 366,
+        "text": "Что?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1350,
+        "file": "Voice03/03-SA/03-SA-F09/03-SA-F09-0040",
+        "layer": 0,
+        "persona": "min",
+        "start": 366
+    },
+    {
+        "action": "PrintText",
+        "end": 3050,
+        "persona": "Макото",
+        "start": 1350,
+        "text": "Котоноха...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3050,
+        "file": "Voice03/03-SA/03-SA-F09/03-SA-F09-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 1350
+    },
+    {
+        "action": "PrintText",
+        "end": 3350,
+        "persona": "Котоноха",
+        "start": 3066,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3350,
+        "file": "Voice03/03-SA/03-SA-F09/03-SA-F09-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3066
+    },
+    {
+        "action": "PrintText",
+        "end": 4366,
+        "persona": "Макото",
+        "start": 3350,
+        "text": "Я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4366,
+        "file": "Voice03/03-SA/03-SA-F09/03-SA-F09-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3350
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Люблю Сэкаи.^",
+        "answer2": "NULL",
+        "end": 10283,
+        "start": 5283
+    },
+    {
+        "action": "Next",
+        "start": 12066
+    }
+]

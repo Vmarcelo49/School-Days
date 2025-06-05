@@ -1,0 +1,177 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 24383
+    },
+    {
+        "action": "PlaySe",
+        "end": 31000,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 10383,
+        "file": "Event04/04-SA/04-SA-F00/04-SA-F00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2283,
+        "persona": "Сэкаи",
+        "start": 166,
+        "text": "Может, выберемся куда-нибудь на днях?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2283,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0030",
+        "layer": 0,
+        "persona": "sek",
+        "start": 166
+    },
+    {
+        "action": "PrintText",
+        "end": 3183,
+        "persona": "Макото",
+        "start": 2300,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3183,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2300
+    },
+    {
+        "action": "PrintText",
+        "end": 11033,
+        "persona": "Сэкаи",
+        "start": 3183,
+        "text": "Ты не подумай, не на свидание... Хотя... На свидание... Но не... Э...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11033,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0050",
+        "layer": 0,
+        "persona": "sek",
+        "start": 3183
+    },
+    {
+        "action": "CreateBG",
+        "end": 17383,
+        "file": "Event04/04-SA/04-SA-F00/04-SA-F00-002",
+        "start": 10383
+    },
+    {
+        "action": "PrintText",
+        "end": 12066,
+        "persona": "Макото",
+        "start": 11083,
+        "text": "А поконкретнее?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12066,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 11083
+    },
+    {
+        "action": "PrintText",
+        "end": 16133,
+        "persona": "Сэкаи",
+        "start": 12083,
+        "text": "Друзей позовём и вчетвером куда-нибудь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16133,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 12083
+    },
+    {
+        "action": "PrintText",
+        "end": 18016,
+        "persona": "Макото",
+        "start": 16150,
+        "text": "Я, ты и?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18016,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16150
+    },
+    {
+        "action": "CreateBG",
+        "end": 31000,
+        "file": "Event04/04-SA/04-SA-F00/04-SA-F00-003",
+        "start": 17383
+    },
+    {
+        "action": "PrintText",
+        "end": 20333,
+        "persona": "Сэкаи",
+        "start": 18100,
+        "text": "Ну... Саванага, например.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20333,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0090",
+        "layer": 0,
+        "persona": "sek",
+        "start": 18100
+    },
+    {
+        "action": "PrintText",
+        "end": 22150,
+        "persona": "Макото",
+        "start": 20350,
+        "text": "Таисукэ?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22150,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 20350
+    },
+    {
+        "action": "PrintText",
+        "end": 24133,
+        "persona": "Сэкаи",
+        "start": 22150,
+        "text": "Я тоже подругу приведу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 24133,
+        "file": "Voice04/04-SA/04-SA-F00/04-SA-F00-0110",
+        "layer": 0,
+        "persona": "sek",
+        "start": 22150
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Какую?^",
+        "answer2": "Куроду?^",
+        "end": 29383,
+        "start": 24383
+    },
+    {
+        "action": "Next",
+        "start": 31000
+    }
+]

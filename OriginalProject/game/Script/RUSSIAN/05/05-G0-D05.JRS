@@ -1,0 +1,388 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 64050
+    },
+    {
+        "action": "PlayBgm",
+        "end": 64050,
+        "file": "BGM/SD_BGM/sdbgm20",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4266,
+        "file": "Event05/05-KB/05-KB-D05/05-KB-D05-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2316,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Я рад.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2316,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 4283,
+        "persona": "Котоноха",
+        "start": 2316,
+        "text": "Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4283,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0040",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2316
+    },
+    {
+        "action": "CreateBG",
+        "end": 6150,
+        "file": "Event05/05-G0/05-G0-D05/05-G0-D05-002",
+        "start": 4266
+    },
+    {
+        "action": "PrintText",
+        "end": 6150,
+        "persona": "Макото",
+        "start": 4283,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6150,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4283
+    },
+    {
+        "action": "CreateBG",
+        "end": 10383,
+        "file": "Event05/05-KB/05-KB-D05/05-KB-D05-003",
+        "start": 6150
+    },
+    {
+        "action": "PrintText",
+        "end": 8266,
+        "persona": "Котоноха",
+        "start": 6150,
+        "text": "Слава богу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8266,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 6150
+    },
+    {
+        "action": "PrintText",
+        "end": 10383,
+        "persona": "Макото",
+        "start": 8283,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10383,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0070",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 8283
+    },
+    {
+        "action": "CreateBG",
+        "end": 35133,
+        "file": "Event05/05-KB/05-KB-D05/05-KB-D05-005",
+        "start": 10383
+    },
+    {
+        "action": "PrintText",
+        "end": 17233,
+        "persona": "Котоноха",
+        "start": 10383,
+        "text": "Слава...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17233,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 10383
+    },
+    {
+        "action": "PrintText",
+        "end": 19333,
+        "persona": "Макото",
+        "start": 17233,
+        "text": "Э-эй!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19333,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 17233
+    },
+    {
+        "action": "PrintText",
+        "end": 23100,
+        "persona": "Котоноха",
+        "start": 19350,
+        "text": "Прости... Я так обрадовалась...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23100,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 19350
+    },
+    {
+        "action": "PrintText",
+        "end": 25333,
+        "persona": "Макото",
+        "start": 23100,
+        "text": "А...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25333,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 23100
+    },
+    {
+        "action": "PrintText",
+        "end": 32133,
+        "persona": "Котоноха",
+        "start": 25333,
+        "text": "По телефону... Не могла дозвониться... Вот и... Испугалась...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 32133,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0130",
+        "layer": 0,
+        "persona": "kot",
+        "start": 25333
+    },
+    {
+        "action": "PrintText",
+        "end": 34200,
+        "persona": "Макото",
+        "start": 32133,
+        "text": "Прости.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 34200,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 32133
+    },
+    {
+        "action": "PrintText",
+        "end": 35116,
+        "persona": "Котоноха",
+        "start": 34216,
+        "text": "Ничего.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 35116,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 34216
+    },
+    {
+        "action": "PrintText",
+        "end": 37100,
+        "persona": "Макото",
+        "start": 35116,
+        "text": "Ясно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37100,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 35116
+    },
+    {
+        "action": "CreateBG",
+        "end": 39283,
+        "file": "Event05/05-KB/05-KB-D05/05-KB-D05-006",
+        "start": 35133
+    },
+    {
+        "action": "PrintText",
+        "end": 39283,
+        "persona": "Котоноха",
+        "start": 37116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 39283,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0170",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 37116
+    },
+    {
+        "action": "CreateBG",
+        "end": 64050,
+        "file": "Event05/05-KB/05-KB-D05/05-KB-D05-007A",
+        "start": 39283
+    },
+    {
+        "action": "PrintText",
+        "end": 43250,
+        "persona": "Макото",
+        "start": 39283,
+        "text": "Слушай, ты же сейчас домой пойдёшь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43250,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0180",
+        "layer": 1,
+        "persona": "mak",
+        "start": 39283
+    },
+    {
+        "action": "PrintText",
+        "end": 45233,
+        "persona": "Котоноха",
+        "start": 43266,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 45233,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0190",
+        "layer": 0,
+        "persona": "kot",
+        "start": 43266
+    },
+    {
+        "action": "PrintText",
+        "end": 47200,
+        "persona": "Макото",
+        "start": 45233,
+        "text": "Я провожу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 47200,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0200",
+        "layer": 1,
+        "persona": "mak",
+        "start": 45233
+    },
+    {
+        "action": "PrintText",
+        "end": 50366,
+        "persona": "Котоноха",
+        "start": 47200,
+        "text": "Э?.. Но ведь поздно уже.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50366,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0210",
+        "layer": 0,
+        "persona": "kot",
+        "start": 47200
+    },
+    {
+        "action": "PrintText",
+        "end": 55316,
+        "persona": "Макото",
+        "start": 50366,
+        "text": "Именно поэтому и провожу. Нечего по ночам одной ходить.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 55316,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0220",
+        "layer": 1,
+        "persona": "mak",
+        "start": 50366
+    },
+    {
+        "action": "PrintText",
+        "end": 57250,
+        "persona": "Котоноха",
+        "start": 55316,
+        "text": "Ну, так-то да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 57250,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0230",
+        "layer": 0,
+        "persona": "kot",
+        "start": 55316
+    },
+    {
+        "action": "PrintText",
+        "end": 61050,
+        "persona": "Макото",
+        "start": 57250,
+        "text": "Вот. Пойдём.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 61050,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0240",
+        "layer": 1,
+        "persona": "mak",
+        "start": 57250
+    },
+    {
+        "action": "PrintText",
+        "end": 63050,
+        "persona": "Котоноха",
+        "start": 61066,
+        "text": "А... Погоди...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 63050,
+        "file": "Voice05/05-G0/05-G0-D05/05-G0-D05-0250",
+        "layer": 0,
+        "persona": "kot",
+        "start": 61066
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 64050,
+        "start": 63050
+    },
+    {
+        "action": "Next",
+        "start": 64050
+    }
+]

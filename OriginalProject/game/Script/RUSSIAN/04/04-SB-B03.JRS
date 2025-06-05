@@ -1,0 +1,213 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 24200
+    },
+    {
+        "action": "PlaySe",
+        "end": 18166,
+        "file": "SysSe/SE_all/school/chime",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 3000,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5300,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-002",
+        "start": 3000
+    },
+    {
+        "action": "PrintText",
+        "end": 5116,
+        "persona": "Макото",
+        "start": 3033,
+        "text": "Что ж, домой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5116,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3033
+    },
+    {
+        "action": "CreateBG",
+        "end": 9383,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-003",
+        "start": 5300
+    },
+    {
+        "action": "PrintText",
+        "end": 6266,
+        "persona": "Макото",
+        "start": 5300,
+        "text": "Сэкаи.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6266,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 5300
+    },
+    {
+        "action": "PrintText",
+        "end": 7183,
+        "persona": "Сэкаи",
+        "start": 6266,
+        "text": "Ась?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7183,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6266
+    },
+    {
+        "action": "PrintText",
+        "end": 9383,
+        "persona": "Макото",
+        "start": 7183,
+        "text": "Зайдём куда-нибудь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9383,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7183
+    },
+    {
+        "action": "PlaySe",
+        "end": 24200,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 2,
+        "start": 9383
+    },
+    {
+        "action": "CreateBG",
+        "end": 12333,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-004",
+        "start": 9383
+    },
+    {
+        "action": "PrintText",
+        "end": 12333,
+        "persona": "Сэкаи",
+        "start": 9383,
+        "text": "А, прости... Сегодня никак.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12333,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0080",
+        "layer": 0,
+        "persona": "sek",
+        "start": 9383
+    },
+    {
+        "action": "CreateBG",
+        "end": 13366,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-005",
+        "start": 12333
+    },
+    {
+        "action": "PrintText",
+        "end": 14033,
+        "persona": "Макото",
+        "start": 12333,
+        "text": "Дела?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14033,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12333
+    },
+    {
+        "action": "CreateBG",
+        "end": 18116,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-006",
+        "start": 13366
+    },
+    {
+        "action": "PrintText",
+        "end": 18116,
+        "persona": "Сэкаи",
+        "start": 14033,
+        "text": "Надо Хикари... А, нет, так, девичник.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18116,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0100",
+        "layer": 0,
+        "persona": "sek",
+        "start": 14033
+    },
+    {
+        "action": "CreateBG",
+        "end": 21300,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-007",
+        "start": 18116
+    },
+    {
+        "action": "PrintText",
+        "end": 21350,
+        "persona": "Макото",
+        "start": 18116,
+        "text": "Ясно... Ну я тогда пошёл.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21350,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18116
+    },
+    {
+        "action": "CreateBG",
+        "end": 24200,
+        "file": "Event04/04-SB/04-SB-B03/04-SB-B03-007A",
+        "start": 21300
+    },
+    {
+        "action": "PrintText",
+        "end": 23133,
+        "persona": "Сэкаи",
+        "start": 21350,
+        "text": "Угу, до завтра!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 23133,
+        "file": "Voice04/04-SB/04-SB-B03/04-SB-B03-0120",
+        "layer": 0,
+        "persona": "sek",
+        "start": 21350
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 24200,
+        "start": 23200
+    },
+    {
+        "action": "Next",
+        "start": 24200
+    }
+]

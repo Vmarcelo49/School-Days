@@ -1,0 +1,349 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 49300
+    },
+    {
+        "action": "PlayBgm",
+        "end": 49300,
+        "file": "BGM/SD_BGM/sdbgm19",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 1133,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1133,
+        "persona": "Котоноха",
+        "start": 0,
+        "text": "Я дома!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1133,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0030",
+        "layer": 0,
+        "persona": "kot",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 5333,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-002",
+        "start": 1133
+    },
+    {
+        "action": "PrintText",
+        "end": 2150,
+        "persona": "Манами",
+        "start": 1133,
+        "text": "С возвращением!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2150,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0040",
+        "layer": 0,
+        "persona": "man",
+        "start": 1133
+    },
+    {
+        "action": "PrintText",
+        "end": 4250,
+        "persona": "Котоноха",
+        "start": 2150,
+        "text": "Ты дома!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4250,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0050",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2150
+    },
+    {
+        "action": "PrintText",
+        "end": 5366,
+        "persona": "Манами",
+        "start": 4250,
+        "text": "Ну как?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5366,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0060",
+        "layer": 0,
+        "persona": "man",
+        "start": 4250
+    },
+    {
+        "action": "CreateBG",
+        "end": 15100,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-003",
+        "start": 5333
+    },
+    {
+        "action": "PrintText",
+        "end": 8283,
+        "persona": "Котоноха",
+        "start": 5366,
+        "text": "Да... Нормально.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8283,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 5366
+    },
+    {
+        "action": "PrintText",
+        "end": 11250,
+        "persona": "Манами",
+        "start": 8283,
+        "text": "Чего так скучно-то?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11250,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0080",
+        "layer": 0,
+        "persona": "man",
+        "start": 8283
+    },
+    {
+        "action": "PrintText",
+        "end": 15116,
+        "persona": "Котоноха",
+        "start": 11250,
+        "text": "А я и не для того, чтобы тебя веселить, ездила!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15116,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 11250
+    },
+    {
+        "action": "CreateBG",
+        "end": 18133,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-004",
+        "start": 15100
+    },
+    {
+        "action": "PrintText",
+        "end": 18133,
+        "persona": "Манами",
+        "start": 15116,
+        "text": "Что? С парнем поссорилась?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18133,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0100",
+        "layer": 0,
+        "persona": "man",
+        "start": 15116
+    },
+    {
+        "action": "CreateBG",
+        "end": 21266,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-005",
+        "start": 18133
+    },
+    {
+        "action": "PrintText",
+        "end": 19250,
+        "persona": "Котоноха",
+        "start": 18133,
+        "text": "Нет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19250,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 18133
+    },
+    {
+        "action": "PrintText",
+        "end": 21283,
+        "persona": "Манами",
+        "start": 19250,
+        "text": "А чего ж злая-то тогда какая?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21283,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0120",
+        "layer": 0,
+        "persona": "man",
+        "start": 19250
+    },
+    {
+        "action": "CreateBG",
+        "end": 33050,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-006",
+        "start": 21266
+    },
+    {
+        "action": "PrintText",
+        "end": 25166,
+        "persona": "Котоноха",
+        "start": 21283,
+        "text": "Макото стало плохо и он ушёл пораньше.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25166,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0130",
+        "layer": 0,
+        "persona": "kot",
+        "start": 21283
+    },
+    {
+        "action": "PrintText",
+        "end": 27300,
+        "persona": "Манами",
+        "start": 25166,
+        "text": "Опа, сбежал?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27300,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0140",
+        "layer": 0,
+        "persona": "man",
+        "start": 25166
+    },
+    {
+        "action": "PrintText",
+        "end": 33050,
+        "persona": "Котоноха",
+        "start": 27300,
+        "text": "Нет! Я звонила, ему действительно было нехорошо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33050,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 27300
+    },
+    {
+        "action": "CreateBG",
+        "end": 42033,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-007",
+        "start": 33050
+    },
+    {
+        "action": "PrintText",
+        "end": 36166,
+        "persona": "Манами",
+        "start": 33050,
+        "text": "Эх, не повезло...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 36166,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0160",
+        "layer": 0,
+        "persona": "man",
+        "start": 33050
+    },
+    {
+        "action": "PrintText",
+        "end": 37100,
+        "persona": "Котоноха",
+        "start": 36183,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 37100,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 36183
+    },
+    {
+        "action": "PrintText",
+        "end": 42033,
+        "persona": "Манами",
+        "start": 37100,
+        "text": "Ну, попадутся мне ещё какие билеты. Приберегу для тебя.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 42033,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0180",
+        "layer": 0,
+        "persona": "man",
+        "start": 37100
+    },
+    {
+        "action": "CreateBG",
+        "end": 49300,
+        "file": "Event04/04-KC/04-KC-A01/04-KC-A01-008",
+        "start": 42033
+    },
+    {
+        "action": "PrintText",
+        "end": 45383,
+        "persona": "Котоноха",
+        "start": 42033,
+        "text": "Кстати, мам...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 45383,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0190",
+        "layer": 0,
+        "persona": "kot",
+        "start": 42033
+    },
+    {
+        "action": "PrintText",
+        "end": 46316,
+        "persona": "Манами",
+        "start": 45383,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46316,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0200",
+        "layer": 0,
+        "persona": "man",
+        "start": 45383
+    },
+    {
+        "action": "PrintText",
+        "end": 48350,
+        "persona": "Котоноха",
+        "start": 46316,
+        "text": "Посоветоваться хочу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48350,
+        "file": "Voice04/04-KC/04-KC-A01/04-KC-A01-0210",
+        "layer": 0,
+        "persona": "kot",
+        "start": 46316
+    },
+    {
+        "action": "Next",
+        "start": 49300
+    }
+]

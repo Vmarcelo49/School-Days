@@ -1,0 +1,232 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 31183
+    },
+    {
+        "action": "PlayBgm",
+        "end": 31183,
+        "file": "BGM/SD_BGM/sdbgm25",
+        "start": 0
+    },
+    {
+        "action": "PlayMovie",
+        "end": 31183,
+        "file": "Movie03/03-KB/03-KB-O02/03-KB-O02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2300,
+        "persona": "Котоноха",
+        "start": 0,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2300,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0030",
+        "layer": 0,
+        "persona": "kot",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3166,
+        "persona": "Макото",
+        "start": 2300,
+        "text": "М?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3166,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2300
+    },
+    {
+        "action": "PrintText",
+        "end": 4333,
+        "persona": "Котоноха",
+        "start": 3166,
+        "text": "У тебя раньше было?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4333,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0050",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3166
+    },
+    {
+        "action": "PrintText",
+        "end": 5166,
+        "persona": "Макото",
+        "start": 4333,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5166,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4333
+    },
+    {
+        "action": "PrintText",
+        "end": 7000,
+        "persona": "Котоноха",
+        "start": 5166,
+        "text": "Ну с Саиёндзи...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7000,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 5166
+    },
+    {
+        "action": "PrintText",
+        "end": 8100,
+        "persona": "Макото",
+        "start": 7000,
+        "text": "С Сэкаи?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8100,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7000
+    },
+    {
+        "action": "PrintText",
+        "end": 9200,
+        "persona": "Котоноха",
+        "start": 8083,
+        "text": "Ну то, что мы сейчас делаем...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9200,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 8083
+    },
+    {
+        "action": "PrintText",
+        "end": 12333,
+        "persona": "Макото",
+        "start": 9200,
+        "text": "Нет, а почему ты спросила?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12333,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9200
+    },
+    {
+        "action": "PrintText",
+        "end": 13216,
+        "persona": "Котоноха",
+        "start": 12333,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 13216,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0110",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 12333
+    },
+    {
+        "action": "PrintText",
+        "end": 17300,
+        "persona": "Макото",
+        "start": 13216,
+        "text": "У меня ничего не было с Сэкаи! Правда!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17300,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 13216
+    },
+    {
+        "action": "PrintText",
+        "end": 18366,
+        "persona": "Котоноха",
+        "start": 17300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18366,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0130",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 17300
+    },
+    {
+        "action": "PrintText",
+        "end": 20116,
+        "persona": "Макото",
+        "start": 18366,
+        "text": "Котоноха.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 20116,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 18366
+    },
+    {
+        "action": "PrintText",
+        "end": 30033,
+        "persona": "Котоноха",
+        "start": 20100,
+        "text": "Саванага мне сказал, что вы с Саиёндзи раньше встречались. Ты сказал ему, что любишь её...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 30033,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 20100
+    },
+    {
+        "action": "PrintText",
+        "end": 31183,
+        "persona": "Макото",
+        "start": 30050,
+        "text": "Это...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31183,
+        "file": "Voice03/03-KB/03-KB-O02/03-KB-O02-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 30050
+    },
+    {
+        "action": "Next",
+        "start": 31183
+    }
+]

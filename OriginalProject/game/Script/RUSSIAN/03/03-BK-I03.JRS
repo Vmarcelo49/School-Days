@@ -1,0 +1,183 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 35166
+    },
+    {
+        "action": "PlayBgm",
+        "end": 35166,
+        "file": "BGM/SD_BGM/sdbgm19",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 18350,
+        "file": "Se03/03-BK/03-BK-I03/SE03-BK-I03-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 10050,
+        "file": "Event03/03-BK/03-BK-I03/03-BK-I03-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1200,
+        "persona": "Сэкаи",
+        "start": 0,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1200,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2350,
+        "persona": "Макото",
+        "start": 1300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2350,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0050",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 1300
+    },
+    {
+        "action": "PrintText",
+        "end": 5050,
+        "persona": "Сэкаи",
+        "start": 3166,
+        "text": "Вот зачем ты такой добрый...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 5050,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0060",
+        "layer": 0,
+        "persona": "sek",
+        "start": 3166
+    },
+    {
+        "action": "PrintText",
+        "end": 6066,
+        "persona": "Макото",
+        "start": 5133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6066,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0070",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 5133
+    },
+    {
+        "action": "PrintText",
+        "end": 10033,
+        "persona": "Сэкаи",
+        "start": 6300,
+        "text": "Так нельзя...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10033,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0080",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6300
+    },
+    {
+        "action": "PlayMovie",
+        "end": 35150,
+        "file": "Movie03/03-BK/03-BK-I03/03-BK-I03-002",
+        "start": 10050
+    },
+    {
+        "action": "PrintText",
+        "end": 11316,
+        "persona": "Макото",
+        "start": 10233,
+        "text": "...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11316,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0090",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 10233
+    },
+    {
+        "action": "PrintText",
+        "end": 17233,
+        "persona": "Сэкаи",
+        "start": 12233,
+        "text": "Я так не смогу тебя забыть...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17233,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0100",
+        "layer": 0,
+        "persona": "sek",
+        "start": 12233
+    },
+    {
+        "action": "PrintText",
+        "end": 19066,
+        "persona": "Макото",
+        "start": 18083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19066,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0110",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 18083
+    },
+    {
+        "action": "PlaySe",
+        "end": 35166,
+        "file": "Se03/03-BK/03-BK-I03/SE03-BK-I03-001",
+        "layer": 2,
+        "start": 18333
+    },
+    {
+        "action": "PrintText",
+        "end": 33300,
+        "persona": "Сэкаи",
+        "start": 19383,
+        "text": "Тебе же будет хуже... если я не перестану тебя любить...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33300,
+        "file": "Voice03/03-BK/03-BK-I03/03-BK-I03-0120",
+        "layer": 0,
+        "persona": "sek",
+        "start": 19383
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 35166,
+        "start": 34166
+    },
+    {
+        "action": "Next",
+        "start": 35166
+    }
+]

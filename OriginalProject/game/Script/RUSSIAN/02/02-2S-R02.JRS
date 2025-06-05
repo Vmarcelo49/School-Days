@@ -1,0 +1,78 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 4333
+    },
+    {
+        "action": "PlayBgm",
+        "end": 4333,
+        "file": "BGM/SD_BGM/sdbgm03",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 4333,
+        "file": "Se01/01-00/01-00-B00/SE01-00-B00-001",
+        "layer": 2,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2000,
+        "file": "Event02/02-2S/02-2S-R02/02-2S-R02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1383,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Привет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1383,
+        "file": "Voice02/02-2S/02-2S-R02/02-2S-R02-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4333,
+        "file": "Event02/02-2S/02-2S-R02/02-2S-R02-001B",
+        "start": 2000
+    },
+    {
+        "action": "PrintText",
+        "end": 3100,
+        "persona": "Сэкаи",
+        "start": 2000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3100,
+        "file": "Voice02/02-2S/02-2S-R02/02-2S-R02-0050",
+        "layer": 0,
+        "persona": "sek",
+        "start": 2000
+    },
+    {
+        "action": "PlaySe",
+        "end": 3333,
+        "file": "Voice02/02-2S/02-2S-R02/02-2S-R02-0060",
+        "layer": 1,
+        "start": 2300
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 4333,
+        "start": 3333
+    },
+    {
+        "action": "Next",
+        "start": 4333
+    }
+]

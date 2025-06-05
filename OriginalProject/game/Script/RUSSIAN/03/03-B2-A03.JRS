@@ -1,0 +1,58 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 4350
+    },
+    {
+        "action": "CreateBG",
+        "end": 2000,
+        "file": "Event03/03-B2/03-B2-A03/03-B2-A03-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2000,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Я думаю, у нас уже ничего не получится...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2000,
+        "file": "Voice03/03-B2/03-B2-A03/03-B2-A03-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4350,
+        "file": "Event03/03-B2/03-B2-A03/03-B2-A03-002",
+        "start": 2000
+    },
+    {
+        "action": "PrintText",
+        "end": 3166,
+        "persona": "Котоноха",
+        "start": 2000,
+        "text": "Как ты можешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3166,
+        "file": "Voice03/03-B2/03-B2-A03/03-B2-A03-0050",
+        "layer": 0,
+        "persona": "kot",
+        "start": 2000
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 4350,
+        "start": 3350
+    },
+    {
+        "action": "Next",
+        "start": 4350
+    }
+]

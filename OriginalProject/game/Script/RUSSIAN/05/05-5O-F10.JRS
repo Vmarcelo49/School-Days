@@ -1,0 +1,122 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 10083
+    },
+    {
+        "action": "PlaySe",
+        "end": 10083,
+        "file": "SysSe/SE_all/gaya/kyousitu_rouka",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2050,
+        "file": "Event05/05-5O/05-5O-F09/05-5O-F09-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1383,
+        "persona": "Макото",
+        "start": 50,
+        "text": "С Котонохой... Пожалуй...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1383,
+        "file": "Voice05/05-5O/05-5O-F10/05-5O-F10-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 50
+    },
+    {
+        "action": "CreateBG",
+        "end": 3183,
+        "file": "Event05/05-5O/05-5O-F10/05-5O-F10-002",
+        "start": 2050
+    },
+    {
+        "action": "PrintText",
+        "end": 3083,
+        "persona": "Сэкаи",
+        "start": 2133,
+        "text": "Но!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3083,
+        "file": "Voice05/05-5O/05-5O-F10/05-5O-F10-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 2133
+    },
+    {
+        "action": "CreateBG",
+        "end": 7183,
+        "file": "Event05/05-5O/05-5O-F10/05-5O-F10-003",
+        "start": 3183
+    },
+    {
+        "action": "PrintText",
+        "end": 6150,
+        "persona": "Макото",
+        "start": 3200,
+        "text": "Котоноха... Пошли...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6150,
+        "file": "Voice05/05-5O/05-5O-F10/05-5O-F10-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3200
+    },
+    {
+        "action": "PrintText",
+        "end": 7133,
+        "persona": "Котоноха",
+        "start": 6133,
+        "text": "Пойдём.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7133,
+        "file": "Voice05/05-5O/05-5O-F10/05-5O-F10-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 6133
+    },
+    {
+        "action": "CreateBG",
+        "end": 10083,
+        "file": "Event05/05-5O/05-5O-F10/05-5O-F10-002",
+        "start": 7183
+    },
+    {
+        "action": "PrintText",
+        "end": 9000,
+        "persona": "Сэкаи",
+        "start": 7233,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9000,
+        "file": "Voice05/05-5O/05-5O-F10/05-5O-F10-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 7233
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 10083,
+        "start": 9083
+    },
+    {
+        "action": "Next",
+        "start": 10083
+    }
+]

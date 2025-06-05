@@ -1,0 +1,841 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 125233
+    },
+    {
+        "action": "PlaySe",
+        "end": 68116,
+        "file": "SysSe/SE_all/gaya/syoutengai",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2116,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-001",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 4266,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-002",
+        "start": 2116
+    },
+    {
+        "action": "PrintText",
+        "end": 4233,
+        "persona": "Макото",
+        "start": 2116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4233,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0050",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 2116
+    },
+    {
+        "action": "PrintText",
+        "end": 8066,
+        "persona": "Котоноха",
+        "start": 4233,
+        "text": "Саванаги всё нет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8066,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 4233
+    },
+    {
+        "action": "CreateBG",
+        "end": 6200,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-003",
+        "start": 4266
+    },
+    {
+        "action": "CreateBG",
+        "end": 8050,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-004",
+        "start": 6200
+    },
+    {
+        "action": "CreateBG",
+        "end": 9266,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-005",
+        "start": 8050
+    },
+    {
+        "action": "PrintText",
+        "end": 9300,
+        "persona": "Сэкаи",
+        "start": 8166,
+        "text": "Проспал, наверное.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9300,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 8166
+    },
+    {
+        "action": "PrintText",
+        "end": 10316,
+        "persona": "Макото",
+        "start": 9250,
+        "text": "Ну блин.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10316,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9250
+    },
+    {
+        "action": "CreateBG",
+        "end": 12266,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-002",
+        "start": 9266
+    },
+    {
+        "action": "PrintText",
+        "end": 12250,
+        "persona": "Котоноха",
+        "start": 10283,
+        "text": "Макото.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 12250,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 10283
+    },
+    {
+        "action": "CreateBG",
+        "end": 14033,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-007",
+        "start": 12266
+    },
+    {
+        "action": "PrintText",
+        "end": 14033,
+        "persona": "Макото",
+        "start": 12266,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14033,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 12266
+    },
+    {
+        "action": "CreateBG",
+        "end": 19250,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-008",
+        "start": 14033
+    },
+    {
+        "action": "PrintText",
+        "end": 16083,
+        "persona": "Котоноха",
+        "start": 14033,
+        "text": "Тебе Саванага говорил?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 16083,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 14033
+    },
+    {
+        "action": "PrintText",
+        "end": 18250,
+        "persona": "Макото",
+        "start": 16083,
+        "text": "Ты про подарок?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 18250,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 16083
+    },
+    {
+        "action": "PrintText",
+        "end": 19250,
+        "persona": "Котоноха",
+        "start": 18266,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19250,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 18266
+    },
+    {
+        "action": "CreateBG",
+        "end": 27166,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-009",
+        "start": 19250
+    },
+    {
+        "action": "PrintText",
+        "end": 21116,
+        "persona": "Макото",
+        "start": 19300,
+        "text": "Придумал ведь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 21116,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 19300
+    },
+    {
+        "action": "PrintText",
+        "end": 25266,
+        "persona": "Котоноха",
+        "start": 21116,
+        "text": "Ну, не надо так. Он ведь старается.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25266,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0160",
+        "layer": 0,
+        "persona": "kot",
+        "start": 21116
+    },
+    {
+        "action": "PrintText",
+        "end": 27166,
+        "persona": "Макото",
+        "start": 25266,
+        "text": "Ну, может и так...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27166,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0170",
+        "layer": 1,
+        "persona": "mak",
+        "start": 25266
+    },
+    {
+        "action": "CreateBG",
+        "end": 46333,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-010",
+        "start": 27166
+    },
+    {
+        "action": "PrintText",
+        "end": 33366,
+        "persona": "Котоноха",
+        "start": 27166,
+        "text": "Я уж сегодня буду по мере сил помогать! А ты постарайся узнать, чего она хочет!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33366,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0180",
+        "layer": 0,
+        "persona": "kot",
+        "start": 27166
+    },
+    {
+        "action": "PrintText",
+        "end": 41066,
+        "persona": "Макото",
+        "start": 33366,
+        "text": "Ага... Но ведь в кои-то веки сюда приехали, ты бы...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 41066,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0190",
+        "layer": 1,
+        "persona": "mak",
+        "start": 33366
+    },
+    {
+        "action": "PrintText",
+        "end": 43066,
+        "persona": "Котоноха",
+        "start": 41050,
+        "text": "За меня не переживай.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43066,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0200",
+        "layer": 0,
+        "persona": "kot",
+        "start": 41050
+    },
+    {
+        "action": "PrintText",
+        "end": 44066,
+        "persona": "Макото",
+        "start": 43066,
+        "text": "Но...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 44066,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0210",
+        "layer": 1,
+        "persona": "mak",
+        "start": 43066
+    },
+    {
+        "action": "PrintText",
+        "end": 46350,
+        "persona": "Котоноха",
+        "start": 44066,
+        "text": "Клуазоне. Металлоглина.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 46350,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0220",
+        "layer": 0,
+        "persona": "kot",
+        "start": 44066
+    },
+    {
+        "action": "CreateBG",
+        "end": 53233,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-011",
+        "start": 46333
+    },
+    {
+        "action": "PrintText",
+        "end": 48066,
+        "persona": "Макото",
+        "start": 46350,
+        "text": "А?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48066,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0230",
+        "layer": 1,
+        "persona": "mak",
+        "start": 46350
+    },
+    {
+        "action": "PrintText",
+        "end": 50000,
+        "persona": "Котоноха",
+        "start": 48066,
+        "text": "Жду не дождусь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50000,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0240",
+        "layer": 0,
+        "persona": "kot",
+        "start": 48066
+    },
+    {
+        "action": "PrintText",
+        "end": 53266,
+        "persona": "Макото",
+        "start": 50000,
+        "text": "Таисукэ рассказал?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 53266,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0250",
+        "layer": 1,
+        "persona": "mak",
+        "start": 50000
+    },
+    {
+        "action": "CreateBG",
+        "end": 70183,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-012",
+        "start": 53233
+    },
+    {
+        "action": "PrintText",
+        "end": 59066,
+        "persona": "Котоноха",
+        "start": 53266,
+        "text": "Так, конечно, нечестно. Но раз уж услышала, жду с нетерпением.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 59066,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0260",
+        "layer": 0,
+        "persona": "kot",
+        "start": 53266
+    },
+    {
+        "action": "PrintText",
+        "end": 66100,
+        "persona": "Макото",
+        "start": 59066,
+        "text": "Ну... Я постараюсь, конечно, но учитывай, что я в этом деле не особо смыслю... Может и не выйти ничего путного.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 66100,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0270",
+        "layer": 1,
+        "persona": "mak",
+        "start": 59066
+    },
+    {
+        "action": "PrintText",
+        "end": 70200,
+        "persona": "Котоноха",
+        "start": 66100,
+        "text": "А я любой безделушке от тебя обрадуюсь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 70200,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0280",
+        "layer": 0,
+        "persona": "kot",
+        "start": 66100
+    },
+    {
+        "action": "PlaySe",
+        "end": 125233,
+        "file": "SysSe/SE_all/gaya/syoutengai",
+        "layer": 2,
+        "start": 67233
+    },
+    {
+        "action": "CreateBG",
+        "end": 72233,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-013",
+        "start": 70183
+    },
+    {
+        "action": "PrintText",
+        "end": 72250,
+        "persona": "Макото",
+        "start": 70200,
+        "text": "Ясно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 72250,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0290",
+        "layer": 1,
+        "persona": "mak",
+        "start": 70200
+    },
+    {
+        "action": "CreateBG",
+        "end": 73383,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-014",
+        "start": 72233
+    },
+    {
+        "action": "PrintText",
+        "end": 73200,
+        "persona": "Сэкаи",
+        "start": 73016,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 73200,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0310",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 73016
+    },
+    {
+        "action": "CreateBG",
+        "end": 79083,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-015",
+        "start": 73383
+    },
+    {
+        "action": "PlaySe",
+        "end": 77333,
+        "file": "SysSe/SE_all/footsteps/asioto_out_run",
+        "layer": 1,
+        "start": 74033
+    },
+    {
+        "action": "PrintText",
+        "end": 77150,
+        "persona": "Таисукэ",
+        "start": 74100,
+        "text": "Простите!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 77150,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0330",
+        "layer": 1,
+        "persona": "tai",
+        "start": 74100
+    },
+    {
+        "action": "PrintText",
+        "end": 79050,
+        "persona": "Котоноха",
+        "start": 77166,
+        "text": "О, пришёл!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 79050,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0350",
+        "layer": 0,
+        "persona": "kot",
+        "start": 77166
+    },
+    {
+        "action": "PrintText",
+        "end": 81383,
+        "persona": "Таисукэ",
+        "start": 79050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 81383,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0360",
+        "layer": 1,
+        "persona": "tai",
+        "start": 79050
+    },
+    {
+        "action": "CreateBG",
+        "end": 94000,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-016",
+        "start": 79083
+    },
+    {
+        "action": "PrintText",
+        "end": 83200,
+        "persona": "Котоноха",
+        "start": 81383,
+        "text": "Всё нормально?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 83200,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0370",
+        "layer": 0,
+        "persona": "kot",
+        "start": 81383
+    },
+    {
+        "action": "PrintText",
+        "end": 87316,
+        "persona": "Таисукэ",
+        "start": 83200,
+        "text": "Да-а-а...…^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 87316,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0380",
+        "layer": 1,
+        "persona": "tai",
+        "start": 83200
+    },
+    {
+        "action": "PrintText",
+        "end": 89250,
+        "persona": "Котоноха",
+        "start": 87316,
+        "text": "Передохни немного.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 89250,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0390",
+        "layer": 0,
+        "persona": "kot",
+        "start": 87316
+    },
+    {
+        "action": "PrintText",
+        "end": 93066,
+        "persona": "Таисукэ",
+        "start": 89250,
+        "text": "Спасибо...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 93066,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0400",
+        "layer": 1,
+        "persona": "tai",
+        "start": 89250
+    },
+    {
+        "action": "PrintText",
+        "end": 94033,
+        "persona": "Макото",
+        "start": 93066,
+        "text": "И?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 94033,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0410",
+        "layer": 1,
+        "persona": "mak",
+        "start": 93066
+    },
+    {
+        "action": "CreateBG",
+        "end": 109000,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-017",
+        "start": 94000
+    },
+    {
+        "action": "PrintText",
+        "end": 101133,
+        "persona": "Таисукэ",
+        "start": 94033,
+        "text": "Понимаете... Парень сестры к нам в гости должен придти... Она меня заставила ей с уборкой помочь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 101133,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0420",
+        "layer": 1,
+        "persona": "tai",
+        "start": 94033
+    },
+    {
+        "action": "PrintText",
+        "end": 102300,
+        "persona": "Макото",
+        "start": 101116,
+        "text": "Ночью, что ли?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 102300,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0430",
+        "layer": 1,
+        "persona": "mak",
+        "start": 101116
+    },
+    {
+        "action": "PrintText",
+        "end": 107000,
+        "persona": "Таисукэ",
+        "start": 102283,
+        "text": "К рассвету сестра вырубилась... И я заодно сдулся.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 107000,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0440",
+        "layer": 1,
+        "persona": "tai",
+        "start": 102283
+    },
+    {
+        "action": "PrintText",
+        "end": 109016,
+        "persona": "Макото",
+        "start": 107000,
+        "text": "Да уж...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 109016,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0450",
+        "layer": 1,
+        "persona": "mak",
+        "start": 107000
+    },
+    {
+        "action": "CreateBG",
+        "end": 116016,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-018",
+        "start": 109000
+    },
+    {
+        "action": "PrintText",
+        "end": 111333,
+        "persona": "Таисукэ",
+        "start": 109016,
+        "text": "Оттого и проспал! Простите!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 111333,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0460",
+        "layer": 1,
+        "persona": "tai",
+        "start": 109016
+    },
+    {
+        "action": "PrintText",
+        "end": 113316,
+        "persona": "Котоноха",
+        "start": 111350,
+        "text": "Да ладно, бывает.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 113316,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0470",
+        "layer": 0,
+        "persona": "kot",
+        "start": 111350
+    },
+    {
+        "action": "PrintText",
+        "end": 114283,
+        "persona": "Сэкаи",
+        "start": 113300,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 114283,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0480",
+        "layer": 0,
+        "persona": "sek",
+        "start": 113300
+    },
+    {
+        "action": "PrintText",
+        "end": 116016,
+        "persona": "Макото",
+        "start": 114283,
+        "text": "Нет, не ладно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 116016,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0490",
+        "layer": 1,
+        "persona": "mak",
+        "start": 114283
+    },
+    {
+        "action": "CreateBG",
+        "end": 120233,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-019",
+        "start": 116016
+    },
+    {
+        "action": "PrintText",
+        "end": 117183,
+        "persona": "Котоноха",
+        "start": 116016,
+        "text": "Правда?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 117183,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0500",
+        "layer": 0,
+        "persona": "kot",
+        "start": 116016
+    },
+    {
+        "action": "PrintText",
+        "end": 120233,
+        "persona": "Макото",
+        "start": 117183,
+        "text": "Таисукэ нас сегодня обедом угостит!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 120233,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0510",
+        "layer": 1,
+        "persona": "mak",
+        "start": 117183
+    },
+    {
+        "action": "CreateBG",
+        "end": 125233,
+        "file": "Event04/04-KE/04-KE-F00/04-KE-F00-020",
+        "start": 120233
+    },
+    {
+        "action": "PrintText",
+        "end": 122116,
+        "persona": "Таисукэ",
+        "start": 120250,
+        "text": "Э?! Серьёзно?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 122116,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0520",
+        "layer": 1,
+        "persona": "tai",
+        "start": 120250
+    },
+    {
+        "action": "PrintText",
+        "end": 123133,
+        "persona": "Макото",
+        "start": 122100,
+        "text": "Ещё как.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 123133,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0530",
+        "layer": 1,
+        "persona": "mak",
+        "start": 122100
+    },
+    {
+        "action": "PrintText",
+        "end": 125083,
+        "persona": "Таисукэ",
+        "start": 123200,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 125083,
+        "file": "Voice04/04-KE/04-KE-F00/04-KE-F00-0540",
+        "layer": 1,
+        "persona": "tai",
+        "start": 123200
+    },
+    {
+        "action": "Next",
+        "start": 125233
+    }
+]

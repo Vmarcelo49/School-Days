@@ -1,0 +1,368 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 112000
+    },
+    {
+        "action": "PlayBgm",
+        "end": 112000,
+        "file": "BGM/SD_BGM/sdbgm19",
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 10050,
+        "file": "Event04/04-C1/04-C1-A00/04-C1-A00-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2333,
+        "persona": "Котоноха",
+        "start": 1366,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2333,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0030",
+        "layer": 0,
+        "persona": "kot",
+        "start": 1366
+    },
+    {
+        "action": "PlaySe",
+        "end": 32366,
+        "file": "Se04/04-C1/04-C1-A00/SE04-C1-A00-001",
+        "layer": 1,
+        "start": 2366
+    },
+    {
+        "action": "PrintText",
+        "end": 6050,
+        "persona": "Котоноха",
+        "start": 3316,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6050,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0050",
+        "layer": 0,
+        "persona": "kot",
+        "start": 3316
+    },
+    {
+        "action": "PrintText",
+        "end": 9150,
+        "persona": "Котоноха",
+        "start": 6250,
+        "text": "Неужели... Я тебе не нравлюсь?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9150,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0060",
+        "layer": 0,
+        "persona": "kot",
+        "start": 6250
+    },
+    {
+        "action": "CreateBG",
+        "end": 37116,
+        "file": "Event04/04-C1/04-C1-A00/04-C1-A00-002",
+        "start": 10050
+    },
+    {
+        "action": "PrintText",
+        "end": 15116,
+        "persona": "Котоноха",
+        "start": 10183,
+        "text": "Или же ты любишь Саиёндзи больше меня?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 15116,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0070",
+        "layer": 0,
+        "persona": "kot",
+        "start": 10183
+    },
+    {
+        "action": "PrintText",
+        "end": 22300,
+        "persona": "Котоноха",
+        "start": 15316,
+        "text": "Нет... Быть того не может... Просто не может быть.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22300,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0080",
+        "layer": 0,
+        "persona": "kot",
+        "start": 15316
+    },
+    {
+        "action": "PrintText",
+        "end": 33350,
+        "persona": "Котоноха",
+        "start": 23266,
+        "text": "Ведь Макото любит меня... Саиёндзи тоже так говорила, подбадривала...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33350,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0090",
+        "layer": 0,
+        "persona": "kot",
+        "start": 23266
+    },
+    {
+        "action": "PlaySe",
+        "end": 62283,
+        "file": "Se04/04-C1/04-C1-A00/SE04-C1-A00-001",
+        "layer": 2,
+        "start": 32283
+    },
+    {
+        "action": "PrintText",
+        "end": 36000,
+        "persona": "Котоноха",
+        "start": 34350,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 36000,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0100",
+        "layer": 0,
+        "persona": "kot",
+        "start": 34350
+    },
+    {
+        "action": "CreateBG",
+        "end": 88266,
+        "file": "Event04/04-C1/04-C1-A00/04-C1-A00-003",
+        "start": 37116
+    },
+    {
+        "action": "PrintText",
+        "end": 43200,
+        "persona": "Котоноха",
+        "start": 37216,
+        "text": "Может, я ему разонравилась?..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 43200,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0110",
+        "layer": 0,
+        "persona": "kot",
+        "start": 37216
+    },
+    {
+        "action": "PrintText",
+        "end": 53116,
+        "persona": "Котоноха",
+        "start": 43383,
+        "text": "Ведь я... Поэтому-то он с Саиёндзи... Потому что я не хотела...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 53116,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0120",
+        "layer": 0,
+        "persona": "kot",
+        "start": 43383
+    },
+    {
+        "action": "PrintText",
+        "end": 56016,
+        "persona": "Котоноха",
+        "start": 54250,
+        "text": "Ясно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 56016,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0130",
+        "layer": 0,
+        "persona": "kot",
+        "start": 54250
+    },
+    {
+        "action": "PrintText",
+        "end": 58350,
+        "persona": "Котоноха",
+        "start": 57050,
+        "text": "Вот оно как...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 58350,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0140",
+        "layer": 0,
+        "persona": "kot",
+        "start": 57050
+    },
+    {
+        "action": "PrintText",
+        "end": 61366,
+        "persona": "Котоноха",
+        "start": 59100,
+        "text": "Поэтому-то он с ней...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 61366,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0150",
+        "layer": 0,
+        "persona": "kot",
+        "start": 59100
+    },
+    {
+        "action": "PlaySe",
+        "end": 92233,
+        "file": "Se04/04-C1/04-C1-A00/SE04-C1-A00-001",
+        "layer": 1,
+        "start": 62233
+    },
+    {
+        "action": "PrintText",
+        "end": 69166,
+        "persona": "Котоноха",
+        "start": 63350,
+        "text": "Я не хотела... Он же меня любит...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 69166,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0160",
+        "layer": 0,
+        "persona": "kot",
+        "start": 63350
+    },
+    {
+        "action": "PrintText",
+        "end": 73100,
+        "persona": "Котоноха",
+        "start": 70133,
+        "text": "А я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 73100,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0170",
+        "layer": 0,
+        "persona": "kot",
+        "start": 70133
+    },
+    {
+        "action": "PrintText",
+        "end": 82016,
+        "persona": "Котоноха",
+        "start": 73383,
+        "text": "Точно... Всё потому что я была против... Макото ни в чём не виноват...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 82016,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0180",
+        "layer": 0,
+        "persona": "kot",
+        "start": 73383
+    },
+    {
+        "action": "PrintText",
+        "end": 88133,
+        "persona": "Котоноха",
+        "start": 82316,
+        "text": "И если я соглашусь... Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 88133,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0190",
+        "layer": 0,
+        "persona": "kot",
+        "start": 82316
+    },
+    {
+        "action": "CreateBG",
+        "end": 112000,
+        "file": "Event04/04-C1/04-C1-A00/04-C1-A00-002",
+        "start": 88266
+    },
+    {
+        "action": "PrintText",
+        "end": 91166,
+        "persona": "Котоноха",
+        "start": 90083,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 91166,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0210",
+        "layer": 0,
+        "persona": "kot",
+        "start": 90083
+    },
+    {
+        "action": "PlaySe",
+        "end": 112000,
+        "file": "Se04/04-C1/04-C1-A00/SE04-C1-A00-001",
+        "layer": 2,
+        "start": 92133
+    },
+    {
+        "action": "PrintText",
+        "end": 97383,
+        "persona": "Котоноха",
+        "start": 92316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 97383,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0230",
+        "layer": 0,
+        "persona": "kot",
+        "start": 92316
+    },
+    {
+        "action": "PrintText",
+        "end": 106300,
+        "persona": "Котоноха",
+        "start": 102500,
+        "text": "Макото...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 107300,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0240",
+        "layer": 0,
+        "persona": "kot",
+        "start": 98283
+    },
+    {
+        "action": "PrintText",
+        "end": 109050,
+        "persona": "Котоноха",
+        "start": 108166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 109050,
+        "file": "Voice04/04-C1/04-C1-A00/04-C1-A00-0250",
+        "layer": 0,
+        "persona": "kot",
+        "start": 108166
+    },
+    {
+        "action": "Next",
+        "start": 112000
+    }
+]

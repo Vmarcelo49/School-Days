@@ -1,0 +1,152 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 10166
+    },
+    {
+        "action": "PlayBgm",
+        "end": 10166,
+        "file": "BGM/SD_BGM/sdbgm07",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 10166,
+        "file": "Se03/03-SA/03-SA-E05/SE03-SA-E05-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 2133,
+        "file": "Event03/03-SA/03-SA-E05/03-SA-E05-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 333,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Хорошо.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 333,
+        "file": "Voice03/03-SA/03-SA-E05/03-SA-E05-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2116,
+        "persona": "Сэкаи",
+        "start": 350,
+        "text": "Что?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2116,
+        "file": "Voice03/03-SA/03-SA-E05/03-SA-E05-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 350
+    },
+    {
+        "action": "PrintText",
+        "end": 2333,
+        "persona": "Макото",
+        "start": 2116,
+        "text": "Ой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2333,
+        "file": "Voice03/03-SA/03-SA-E05/03-SA-E05-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2116
+    },
+    {
+        "action": "CreateBG",
+        "end": 6383,
+        "file": "Event03/03-SA/03-SA-E05/03-SA-E05-003",
+        "start": 2133
+    },
+    {
+        "action": "PrintText",
+        "end": 4116,
+        "persona": "Отомэ",
+        "start": 2333,
+        "text": "М?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4116,
+        "file": "Voice03/03-SA/03-SA-E05/03-SA-E05-0060",
+        "layer": 0,
+        "persona": "oto",
+        "start": 2333
+    },
+    {
+        "action": "PrintText",
+        "end": 6366,
+        "persona": "Макото",
+        "start": 4133,
+        "text": "Прости, я, наверное, не смогу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6366,
+        "file": "Voice03/03-SA/03-SA-E05/03-SA-E05-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4133
+    },
+    {
+        "action": "CreateBG",
+        "end": 9033,
+        "file": "Event03/03-SA/03-SA-E05/03-SA-E05-004",
+        "start": 6383
+    },
+    {
+        "action": "PrintText",
+        "end": 9016,
+        "persona": "Сэкаи",
+        "start": 6383,
+        "text": "Не наверное, а точно!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9016,
+        "file": "Voice03/03-SA/03-SA-E05/03-SA-E05-0080",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6383
+    },
+    {
+        "action": "PrintText",
+        "end": 10150,
+        "persona": "Макото",
+        "start": 9016,
+        "text": "Ясно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 10150,
+        "file": "Voice03/03-SA/03-SA-E05/03-SA-E05-0090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 9016
+    },
+    {
+        "action": "CreateBG",
+        "end": 10166,
+        "file": "Event03/03-SA/03-SA-E05/03-SA-E05-005",
+        "start": 9033
+    },
+    {
+        "action": "Next",
+        "start": 10166
+    }
+]

@@ -1,0 +1,2679 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 552266
+    },
+    {
+        "action": "CreateBG",
+        "end": 7200,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 4266,
+        "persona": "Макото",
+        "start": 3200,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3200
+    },
+    {
+        "action": "PrintText",
+        "end": 7200,
+        "persona": "Таисукэ",
+        "start": 5066,
+        "text": "Наконец закончили...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0050",
+        "layer": 1,
+        "persona": "tai",
+        "start": 5066
+    },
+    {
+        "action": "PrintText",
+        "end": 11083,
+        "persona": "Макото",
+        "start": 7066,
+        "text": "В конце концов так никто и не пришёл нас сменить.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 11083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 7066
+    },
+    {
+        "action": "CreateBG",
+        "end": 19300,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-002",
+        "start": 7200
+    },
+    {
+        "action": "PrintText",
+        "end": 17133,
+        "persona": "Таисукэ",
+        "start": 11100,
+        "text": "Тории, Хасэгава и Исимару - все забили. Вот нас никто и не сменил.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 17133,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0070",
+        "layer": 1,
+        "persona": "tai",
+        "start": 11100
+    },
+    {
+        "action": "PrintText",
+        "end": 19083,
+        "persona": "Макото",
+        "start": 17216,
+        "text": "Спасибо тебе.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 17216
+    },
+    {
+        "action": "PrintText",
+        "end": 19266,
+        "persona": "Таисукэ",
+        "start": 19016,
+        "text": "А?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0090",
+        "layer": 1,
+        "persona": "tai",
+        "start": 19016
+    },
+    {
+        "action": "CreateBG",
+        "end": 25266,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-003",
+        "start": 19300
+    },
+    {
+        "action": "PrintText",
+        "end": 22333,
+        "persona": "Макото",
+        "start": 19333,
+        "text": "Ну, я в исполнительном комитете был и отказаться не мог,^"
+    },
+    {
+        "action": "PrintText",
+        "end": 25316,
+        "persona": "Макото",
+        "start": 22333,
+        "text": "но ты-то вовсе не обязан был, а весь день вместе работали.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 25316,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0100",
+        "layer": 1,
+        "persona": "mak",
+        "start": 19333
+    },
+    {
+        "action": "CreateBG",
+        "end": 31100,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-004",
+        "start": 25266
+    },
+    {
+        "action": "PrintText",
+        "end": 29300,
+        "persona": "Таисукэ",
+        "start": 25350,
+        "text": "Да ладно, тебя ведь тоже временно назначили. Так что ничего особенного.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 29300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0110",
+        "layer": 1,
+        "persona": "tai",
+        "start": 25350
+    },
+    {
+        "action": "PrintText",
+        "end": 31116,
+        "persona": "Макото",
+        "start": 29250,
+        "text": "Ха-ха... Ну да, наверное.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 31116,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0120",
+        "layer": 1,
+        "persona": "mak",
+        "start": 29250
+    },
+    {
+        "action": "CreateBG",
+        "end": 42050,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-005",
+        "start": 31100
+    },
+    {
+        "action": "PrintText",
+        "end": 38266,
+        "persona": "Таисукэ",
+        "start": 31166,
+        "text": "Временно или нет, но мы как следует поработали! В наше кафе допоздна люди приходили.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 38266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0130",
+        "layer": 1,
+        "persona": "tai",
+        "start": 31166
+    },
+    {
+        "action": "PrintText",
+        "end": 39200,
+        "persona": "Макото",
+        "start": 38283,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 39200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0140",
+        "layer": 1,
+        "persona": "mak",
+        "start": 38283
+    },
+    {
+        "action": "PrintText",
+        "end": 42200,
+        "persona": "Таисукэ",
+        "start": 39350,
+        "text": "Ну ладно... Давай по домам?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 42200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0150",
+        "layer": 1,
+        "persona": "tai",
+        "start": 39350
+    },
+    {
+        "action": "CreateBG",
+        "end": 48300,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-006",
+        "start": 42050
+    },
+    {
+        "action": "PrintText",
+        "end": 45166,
+        "persona": "Макото",
+        "start": 42150,
+        "text": "А ты что, на танцы не пойдешь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 45166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0160",
+        "layer": 1,
+        "persona": "mak",
+        "start": 42150
+    },
+    {
+        "action": "PrintText",
+        "end": 47016,
+        "persona": "Таисукэ",
+        "start": 45183,
+        "text": "Ой, да ну их...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 47016,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0170",
+        "layer": 1,
+        "persona": "tai",
+        "start": 45183
+    },
+    {
+        "action": "PrintText",
+        "end": 48266,
+        "persona": "Хикари",
+        "start": 46283,
+        "text": "А! Саванага!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 48266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0180",
+        "layer": 0,
+        "persona": "hik",
+        "start": 46283
+    },
+    {
+        "action": "CreateBG",
+        "end": 54200,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-007",
+        "start": 48300
+    },
+    {
+        "action": "PrintText",
+        "end": 50216,
+        "persona": "Таисукэ",
+        "start": 48300,
+        "text": "Да? Что тебе?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 50216,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0190",
+        "layer": 1,
+        "persona": "tai",
+        "start": 48300
+    },
+    {
+        "action": "PrintText",
+        "end": 51283,
+        "persona": "Хикари",
+        "start": 50200,
+        "text": "Ты сегодня здорово поработал.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 51283,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0200",
+        "layer": 0,
+        "persona": "hik",
+        "start": 50200
+    },
+    {
+        "action": "PrintText",
+        "end": 54100,
+        "persona": "Таисукэ",
+        "start": 51383,
+        "text": "Спасибо, ты тоже.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 54100,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0210",
+        "layer": 1,
+        "persona": "tai",
+        "start": 51383
+    },
+    {
+        "action": "CreateBG",
+        "end": 63083,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-008",
+        "start": 54200
+    },
+    {
+        "action": "PrintText",
+        "end": 59283,
+        "persona": "Хикари",
+        "start": 54333,
+        "text": "Мы все собрались на танцы... Ты с нами не пойдешь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 59283,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0220",
+        "layer": 0,
+        "persona": "hik",
+        "start": 54333
+    },
+    {
+        "action": "PrintText",
+        "end": 61383,
+        "persona": "Таисукэ",
+        "start": 60066,
+        "text": "На танцы...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 61383,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0230",
+        "layer": 1,
+        "persona": "tai",
+        "start": 60066
+    },
+    {
+        "action": "PrintText",
+        "end": 63083,
+        "persona": "Макото",
+        "start": 62050,
+        "text": "Иди давай!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 63083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0240",
+        "layer": 1,
+        "persona": "mak",
+        "start": 62050
+    },
+    {
+        "action": "CreateBG",
+        "end": 65333,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-009",
+        "start": 63083
+    },
+    {
+        "action": "PrintText",
+        "end": 64066,
+        "persona": "Таисукэ",
+        "start": 63116,
+        "text": "Макото, а ты?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 64066,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0250",
+        "layer": 1,
+        "persona": "tai",
+        "start": 63116
+    },
+    {
+        "action": "PrintText",
+        "end": 65333,
+        "persona": "Макото",
+        "start": 64316,
+        "text": "Я...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 65333,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0260",
+        "layer": 1,
+        "persona": "mak",
+        "start": 64316
+    },
+    {
+        "action": "CreateBG",
+        "end": 72150,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-010",
+        "start": 65333
+    },
+    {
+        "action": "PrintText",
+        "end": 67366,
+        "persona": "Хикари",
+        "start": 65333,
+        "text": "А, Макото, задержись.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 67366,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0270",
+        "layer": 0,
+        "persona": "hik",
+        "start": 65333
+    },
+    {
+        "action": "PrintText",
+        "end": 68366,
+        "persona": "Таисукэ",
+        "start": 67283,
+        "text": "Это ещё почему?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 68366,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0280",
+        "layer": 1,
+        "persona": "tai",
+        "start": 67283
+    },
+    {
+        "action": "PrintText",
+        "end": 70300,
+        "persona": "Хикари",
+        "start": 68366,
+        "text": "А его Сэцуна ждёт.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 70300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0290",
+        "layer": 0,
+        "persona": "hik",
+        "start": 68366
+    },
+    {
+        "action": "PrintText",
+        "end": 72133,
+        "persona": "Таисукэ",
+        "start": 70300,
+        "text": "По работе, наверное, да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 72133,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0300",
+        "layer": 1,
+        "persona": "tai",
+        "start": 70300
+    },
+    {
+        "action": "CreateBG",
+        "end": 76133,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-011",
+        "start": 72150
+    },
+    {
+        "action": "PrintText",
+        "end": 74350,
+        "persona": "Хикари",
+        "start": 72150,
+        "text": "Ну а зачем ещё? Ладно, пошли!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 74350,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0310",
+        "layer": 0,
+        "persona": "hik",
+        "start": 72150
+    },
+    {
+        "action": "PrintText",
+        "end": 75366,
+        "persona": "Таисукэ",
+        "start": 75050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 75366,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0320",
+        "layer": 1,
+        "persona": "tai",
+        "start": 75050
+    },
+    {
+        "action": "CreateBG",
+        "end": 109150,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-027",
+        "start": 76133
+    },
+    {
+        "action": "PrintText",
+        "end": 84166,
+        "persona": "Макото",
+        "start": 79283,
+        "text": "Сейчас, когда все ушли, нет сил пошевелиться.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 84166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0340",
+        "layer": 1,
+        "persona": "mak",
+        "start": 79283
+    },
+    {
+        "action": "PrintText",
+        "end": 88183,
+        "persona": "Макото",
+        "start": 86100,
+        "text": "Вот это я устал...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 88183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0350",
+        "layer": 1,
+        "persona": "mak",
+        "start": 86100
+    },
+    {
+        "action": "PrintText",
+        "end": 96050,
+        "persona": "Макото",
+        "start": 90200,
+        "text": "Сейчас надо идти к Киоре...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 96050,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0360",
+        "layer": 1,
+        "persona": "mak",
+        "start": 90200
+    },
+    {
+        "action": "PrintText",
+        "end": 101150,
+        "persona": "Макото",
+        "start": 98066,
+        "text": "Не спать... чёрт...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 101150,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0370",
+        "layer": 1,
+        "persona": "mak",
+        "start": 98066
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 109150,
+        "start": 100050
+    },
+    {
+        "action": "PrintText",
+        "end": 104066,
+        "persona": "Макото",
+        "start": 103166,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 104066,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0380",
+        "layer": 1,
+        "persona": "mak",
+        "start": 103166
+    },
+    {
+        "action": "CreateBG",
+        "end": 111250,
+        "file": "System/Screen/White",
+        "start": 109150
+    },
+    {
+        "action": "PlayBgm",
+        "end": 227033,
+        "file": "BGM/SD_BGM/sdbgm28",
+        "start": 111250
+    },
+    {
+        "action": "PlayMovie",
+        "end": 173233,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-014",
+        "start": 111250
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 113250,
+        "start": 111250
+    },
+    {
+        "action": "PrintText",
+        "end": 113000,
+        "persona": "Сэцуна",
+        "start": 112133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 113000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0410",
+        "layer": 0,
+        "persona": "set",
+        "start": 112133
+    },
+    {
+        "action": "PrintText",
+        "end": 116083,
+        "persona": "Макото",
+        "start": 113266,
+        "text": "Не плачь!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 116083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0420",
+        "layer": 1,
+        "persona": "mak",
+        "start": 113266
+    },
+    {
+        "action": "PrintText",
+        "end": 125366,
+        "persona": "Сэцуна",
+        "start": 116066,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 125366,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0430",
+        "layer": 0,
+        "persona": "set",
+        "start": 116066
+    },
+    {
+        "action": "PrintText",
+        "end": 128233,
+        "persona": "Макото",
+        "start": 127016,
+        "text": "Тебе платок дать?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 128233,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0440",
+        "layer": 1,
+        "persona": "mak",
+        "start": 127016
+    },
+    {
+        "action": "PrintText",
+        "end": 130100,
+        "persona": "Сэцуна",
+        "start": 129000,
+        "text": "У меня есть.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 130100,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0450",
+        "layer": 0,
+        "persona": "set",
+        "start": 129000
+    },
+    {
+        "action": "PrintText",
+        "end": 136250,
+        "persona": "Макото",
+        "start": 131000,
+        "text": "Ну чего ты сейчас-то плачешь? Ну подшутили над тобой мальчишки...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 136250,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0460",
+        "layer": 1,
+        "persona": "mak",
+        "start": 131000
+    },
+    {
+        "action": "PrintText",
+        "end": 138033,
+        "persona": "Сэцуна",
+        "start": 137233,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 138033,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0470",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 137233
+    },
+    {
+        "action": "PrintText",
+        "end": 143233,
+        "persona": "Макото",
+        "start": 139116,
+        "text": "Тебя ведь... Э... Киора зовут?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 143233,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0480",
+        "layer": 1,
+        "persona": "mak",
+        "start": 139116
+    },
+    {
+        "action": "PrintText",
+        "end": 144233,
+        "persona": "Сэцуна",
+        "start": 144066,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 144233,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0490",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 144066
+    },
+    {
+        "action": "PrintText",
+        "end": 151366,
+        "persona": "Макото",
+        "start": 146166,
+        "text": "Слушай, если они будут к тебе снова лезть, позови меня, я разберусь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 151366,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0500",
+        "layer": 1,
+        "persona": "mak",
+        "start": 146166
+    },
+    {
+        "action": "PrintText",
+        "end": 153050,
+        "persona": "Сэцуна",
+        "start": 152283,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 153050,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0510",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 152283
+    },
+    {
+        "action": "PrintText",
+        "end": 157066,
+        "persona": "Макото",
+        "start": 154200,
+        "text": "Поэтому успокойся...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 157066,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0520",
+        "layer": 1,
+        "persona": "mak",
+        "start": 154200
+    },
+    {
+        "action": "PrintText",
+        "end": 158166,
+        "persona": "Сэцуна",
+        "start": 157133,
+        "text": "Успокоиться?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 158166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0530",
+        "layer": 0,
+        "persona": "set",
+        "start": 157133
+    },
+    {
+        "action": "PrintText",
+        "end": 160083,
+        "persona": "Макото",
+        "start": 158183,
+        "text": "Да, предоставь это мне!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 160083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0540",
+        "layer": 1,
+        "persona": "mak",
+        "start": 158183
+    },
+    {
+        "action": "PrintText",
+        "end": 161266,
+        "persona": "Сэцуна",
+        "start": 161050,
+        "text": ".....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 161266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0550",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 161050
+    },
+    {
+        "action": "PrintText",
+        "end": 166383,
+        "persona": "Макото",
+        "start": 162350,
+        "text": "Я же их с первого класса знаю.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 166383,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0560",
+        "layer": 1,
+        "persona": "mak",
+        "start": 162350
+    },
+    {
+        "action": "PrintText",
+        "end": 167350,
+        "persona": "Сэцуна",
+        "start": 166366,
+        "text": "Не надо!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 167350,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0570",
+        "layer": 0,
+        "persona": "set",
+        "start": 166366
+    },
+    {
+        "action": "PrintText",
+        "end": 168266,
+        "persona": "Макото",
+        "start": 167350,
+        "text": "А?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 168266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0580",
+        "layer": 1,
+        "persona": "mak",
+        "start": 167350
+    },
+    {
+        "action": "PrintText",
+        "end": 172050,
+        "persona": "Сэцуна",
+        "start": 169216,
+        "text": "Я тебя даже не знаю...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 172050,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0590",
+        "layer": 0,
+        "persona": "set",
+        "start": 169216
+    },
+    {
+        "action": "PrintText",
+        "end": 173350,
+        "persona": "Макото",
+        "start": 172016,
+        "text": "А... Я Ито.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 173350,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0600",
+        "layer": 1,
+        "persona": "mak",
+        "start": 172016
+    },
+    {
+        "action": "CreateBG",
+        "end": 177266,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-015",
+        "start": 173233
+    },
+    {
+        "action": "PrintText",
+        "end": 174266,
+        "persona": "Сэцуна",
+        "start": 173233,
+        "text": "Всё равно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 174266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0610",
+        "layer": 0,
+        "persona": "set",
+        "start": 173233
+    },
+    {
+        "action": "PrintText",
+        "end": 176083,
+        "persona": "Макото",
+        "start": 174166,
+        "text": "А по имени Макото.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 176083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0620",
+        "layer": 1,
+        "persona": "mak",
+        "start": 174166
+    },
+    {
+        "action": "PrintText",
+        "end": 176283,
+        "persona": "Сэцуна",
+        "start": 175216,
+        "text": "Всё равно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 176283,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0630",
+        "layer": 0,
+        "persona": "set",
+        "start": 175216
+    },
+    {
+        "action": "PrintText",
+        "end": 177266,
+        "persona": "Макото",
+        "start": 176300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 177266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0640",
+        "layer": 1,
+        "persona": "mak",
+        "start": 176300
+    },
+    {
+        "action": "PlayMovie",
+        "end": 214216,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-016",
+        "start": 177266
+    },
+    {
+        "action": "PrintText",
+        "end": 180000,
+        "persona": "Сэцуна",
+        "start": 178000,
+        "text": "Не хочу ни на кого полагаться!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 180000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0650",
+        "layer": 0,
+        "persona": "set",
+        "start": 178000
+    },
+    {
+        "action": "PrintText",
+        "end": 185016,
+        "persona": "Макото",
+        "start": 180116,
+        "text": "Вот как... Может, ты и права, что хочешь быть сильной.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 185016,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0660",
+        "layer": 1,
+        "persona": "mak",
+        "start": 180116
+    },
+    {
+        "action": "PrintText",
+        "end": 186283,
+        "persona": "Сэцуна",
+        "start": 185250,
+        "text": "Сильной?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 186283,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0670",
+        "layer": 0,
+        "persona": "set",
+        "start": 185250
+    },
+    {
+        "action": "PrintText",
+        "end": 190000,
+        "persona": "Макото",
+        "start": 187050,
+        "text": "Да, ты, наверное, могла бы стать старостой класса,^"
+    },
+    {
+        "action": "PrintText",
+        "end": 194183,
+        "persona": "Макото",
+        "start": 190000,
+        "text": "и тогда уже никто не посмел бы над тобой подшучивать.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 194183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0680",
+        "layer": 1,
+        "persona": "mak",
+        "start": 187050
+    },
+    {
+        "action": "PrintText",
+        "end": 195266,
+        "persona": "Сэцуна",
+        "start": 194250,
+        "text": "Думаешь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 195266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0690",
+        "layer": 0,
+        "persona": "set",
+        "start": 194250
+    },
+    {
+        "action": "PrintText",
+        "end": 199066,
+        "persona": "Макото",
+        "start": 196016,
+        "text": "Да, думаю, тебе бы пошло быть старостой.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 199066,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0700",
+        "layer": 1,
+        "persona": "mak",
+        "start": 196016
+    },
+    {
+        "action": "PrintText",
+        "end": 200116,
+        "persona": "Сэцуна",
+        "start": 199250,
+        "text": "Угу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 200116,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0710",
+        "layer": 0,
+        "persona": "set",
+        "start": 199250
+    },
+    {
+        "action": "PrintText",
+        "end": 202150,
+        "persona": "Макото",
+        "start": 200333,
+        "text": "Хочешь, я тебя порекомендую?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 202150,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0720",
+        "layer": 1,
+        "persona": "mak",
+        "start": 200333
+    },
+    {
+        "action": "PrintText",
+        "end": 204300,
+        "persona": "Сэцуна",
+        "start": 202300,
+        "text": "Я сама выдвинусь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 204300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0730",
+        "layer": 0,
+        "persona": "set",
+        "start": 202300
+    },
+    {
+        "action": "PrintText",
+        "end": 209366,
+        "persona": "Макото",
+        "start": 205033,
+        "text": "Если так, я за тебя отдам свой голос. Так что больше не плачь, ладно?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 209366,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0740",
+        "layer": 1,
+        "persona": "mak",
+        "start": 205033
+    },
+    {
+        "action": "PrintText",
+        "end": 210183,
+        "persona": "Сэцуна",
+        "start": 209333,
+        "text": "Угу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 210183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0750",
+        "layer": 0,
+        "persona": "set",
+        "start": 209333
+    },
+    {
+        "action": "PrintText",
+        "end": 214200,
+        "persona": "Макото",
+        "start": 211116,
+        "text": "Ладно, раз ты успокоилась, я пойду.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 214200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0760",
+        "layer": 1,
+        "persona": "mak",
+        "start": 211116
+    },
+    {
+        "action": "CreateBG",
+        "end": 227033,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-015",
+        "start": 214216
+    },
+    {
+        "action": "PrintText",
+        "end": 215350,
+        "persona": "Сэцуна",
+        "start": 214216,
+        "text": "Я и не плакала.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 215350,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0770",
+        "layer": 0,
+        "persona": "set",
+        "start": 214216
+    },
+    {
+        "action": "PrintText",
+        "end": 220183,
+        "persona": "Макото",
+        "start": 215283,
+        "text": "А ну да, я же забыл. Сильная Киора просто так нюни не распускает.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 220183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0780",
+        "layer": 1,
+        "persona": "mak",
+        "start": 215283
+    },
+    {
+        "action": "PrintText",
+        "end": 221216,
+        "persona": "Сэцуна",
+        "start": 219300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 221216,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0790",
+        "layer": 0,
+        "persona": "set",
+        "start": 219300
+    },
+    {
+        "action": "PrintText",
+        "end": 226066,
+        "persona": "Макото",
+        "start": 222366,
+        "text": "Ладно, пошли на церемонию начала учебного года.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 226066,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0800",
+        "layer": 1,
+        "persona": "mak",
+        "start": 222366
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "OUT",
+        "end": 227033,
+        "start": 225033
+    },
+    {
+        "action": "CreateBG",
+        "end": 235000,
+        "file": "System/Screen/White",
+        "start": 227033
+    },
+    {
+        "action": "PrintText",
+        "end": 230100,
+        "persona": "Макото",
+        "start": 227233,
+        "text": "Да, точно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 230100,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0820",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 227233
+    },
+    {
+        "action": "PrintText",
+        "end": 235200,
+        "persona": "Макото",
+        "start": 231283,
+        "text": "Киора... Ты ведь всегда была такой.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 235200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0830",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 231283
+    },
+    {
+        "action": "PlayMovie",
+        "end": 238150,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-020",
+        "start": 235000
+    },
+    {
+        "action": "PlayVoice",
+        "end": 238383,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0840",
+        "layer": -1,
+        "persona": "",
+        "start": 235000
+    },
+    {
+        "action": "WhiteFade",
+        "dir": "IN",
+        "end": 235200,
+        "start": 235000
+    },
+    {
+        "action": "PrintText",
+        "end": 239116,
+        "persona": "Макото",
+        "start": 238116,
+        "text": "Ой?!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 239116,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0860",
+        "layer": 1,
+        "persona": "mak",
+        "start": 238116
+    },
+    {
+        "action": "CreateBG",
+        "end": 241300,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-027",
+        "start": 238150
+    },
+    {
+        "action": "PrintText",
+        "end": 240283,
+        "persona": "Сэцуна",
+        "start": 238383,
+        "text": "Проснулся?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 240283,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0880",
+        "layer": 0,
+        "persona": "set",
+        "start": 238383
+    },
+    {
+        "action": "PrintText",
+        "end": 246150,
+        "persona": "Макото",
+        "start": 241100,
+        "text": "Ой! Прости, я заставил тебя ждать...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 246150,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0890",
+        "layer": 1,
+        "persona": "mak",
+        "start": 241100
+    },
+    {
+        "action": "PlayMovie",
+        "end": 270150,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-022",
+        "start": 241300
+    },
+    {
+        "action": "PrintText",
+        "end": 249250,
+        "persona": "Сэцуна",
+        "start": 246283,
+        "text": "Нет, наоборот, это я слишком долго ждала...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 249250,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0900",
+        "layer": 0,
+        "persona": "set",
+        "start": 246283
+    },
+    {
+        "action": "PrintText",
+        "end": 253150,
+        "persona": "Макото",
+        "start": 249300,
+        "text": "Ты о чём? А, точно, Курода говорила...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 253150,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0910",
+        "layer": 1,
+        "persona": "mak",
+        "start": 249300
+    },
+    {
+        "action": "PrintText",
+        "end": 256000,
+        "persona": "Сэцуна",
+        "start": 253383,
+        "text": "Я попросила Хикари тебе передать...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 256000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0920",
+        "layer": 0,
+        "persona": "set",
+        "start": 253383
+    },
+    {
+        "action": "PrintText",
+        "end": 260050,
+        "persona": "Макото",
+        "start": 256100,
+        "text": "А... Вспомнил, голова хоть прояснилась.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 260050,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0930",
+        "layer": 1,
+        "persona": "mak",
+        "start": 256100
+    },
+    {
+        "action": "PrintText",
+        "end": 264116,
+        "persona": "Макото",
+        "start": 261083,
+        "text": "Я вымотался совсем и уснул, представляешь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 264116,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0940",
+        "layer": 1,
+        "persona": "mak",
+        "start": 261083
+    },
+    {
+        "action": "PrintText",
+        "end": 265000,
+        "persona": "Сэцуна",
+        "start": 264150,
+        "text": "Угу.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 265000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0950",
+        "layer": 0,
+        "persona": "set",
+        "start": 264150
+    },
+    {
+        "action": "PrintText",
+        "end": 270083,
+        "persona": "Макото",
+        "start": 266083,
+        "text": "Ух ты, совсем темно. Наверное, праздник уже начался...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 270083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0960",
+        "layer": 1,
+        "persona": "mak",
+        "start": 266083
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 270150,
+        "start": 269350
+    },
+    {
+        "action": "CreateBG",
+        "end": 272100,
+        "file": "System/Screen/Black",
+        "start": 270150
+    },
+    {
+        "action": "PrintText",
+        "end": 271300,
+        "persona": "Сэцуна",
+        "start": 270233,
+        "text": "Да, уже начался.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 271300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0970",
+        "layer": 0,
+        "persona": "set",
+        "start": 270233
+    },
+    {
+        "action": "PlayMovie",
+        "end": 303150,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-024",
+        "start": 272100
+    },
+    {
+        "action": "PrintText",
+        "end": 280116,
+        "persona": "Макото",
+        "start": 272216,
+        "text": "Знаешь, я сейчас о тебе сон видел.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 280116,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0980",
+        "layer": 1,
+        "persona": "mak",
+        "start": 272216
+    },
+    {
+        "action": "PrintText",
+        "end": 281266,
+        "persona": "Сэцуна",
+        "start": 280200,
+        "text": "Обо мне?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 281266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-0990",
+        "layer": 0,
+        "persona": "set",
+        "start": 280200
+    },
+    {
+        "action": "PrintText",
+        "end": 285000,
+        "persona": "Макото",
+        "start": 282100,
+        "text": "Наверное, потому, что мы за обедом все прошлое вспоминали.^"
+    },
+    {
+        "action": "PrintText",
+        "end": 287216,
+        "persona": "Макото",
+        "start": 285000,
+        "text": "Вот и вспомнилось, как мы впервые встретились...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 287216,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1000",
+        "layer": 1,
+        "persona": "mak",
+        "start": 282100
+    },
+    {
+        "action": "PrintText",
+        "end": 288216,
+        "persona": "Сэцуна",
+        "start": 287216,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 288216,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1010",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 287216
+    },
+    {
+        "action": "PrintText",
+        "end": 292166,
+        "persona": "Макото",
+        "start": 288383,
+        "text": "Ты ведь всегда была такой, ещё с тех самых пор.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 292166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1020",
+        "layer": 1,
+        "persona": "mak",
+        "start": 288383
+    },
+    {
+        "action": "PrintText",
+        "end": 293183,
+        "persona": "Сэцуна",
+        "start": 292300,
+        "text": "Да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 293183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1030",
+        "layer": 0,
+        "persona": "set",
+        "start": 292300
+    },
+    {
+        "action": "PrintText",
+        "end": 296083,
+        "persona": "Макото",
+        "start": 294100,
+        "text": "Ха-ха... Да, я помню.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 296083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 294100
+    },
+    {
+        "action": "PrintText",
+        "end": 297166,
+        "persona": "Сэцуна",
+        "start": 296316,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 297166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1050",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 296316
+    },
+    {
+        "action": "PrintText",
+        "end": 303133,
+        "persona": "Макото",
+        "start": 298133,
+        "text": "Хотя ведь всего несколько месяцев прошло, а кажется, так давно было.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 303133,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 298133
+    },
+    {
+        "action": "PlayMovie",
+        "end": 325350,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-025",
+        "start": 303150
+    },
+    {
+        "action": "PrintText",
+        "end": 308000,
+        "persona": "Сэцуна",
+        "start": 303216,
+        "text": "Я ведь тогда в тебя влюбилась, дурачок.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 308000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1080",
+        "layer": 0,
+        "persona": "set",
+        "start": 303216
+    },
+    {
+        "action": "PrintText",
+        "end": 308266,
+        "persona": "Макото",
+        "start": 308050,
+        "text": "Да?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 308266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1090",
+        "layer": 1,
+        "persona": "mak",
+        "start": 308050
+    },
+    {
+        "action": "PrintText",
+        "end": 310016,
+        "persona": "Сэцуна",
+        "start": 309050,
+        "text": "Я люблю тебя!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 310016,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1100",
+        "layer": 0,
+        "persona": "set",
+        "start": 309050
+    },
+    {
+        "action": "PrintText",
+        "end": 314150,
+        "persona": "Макото",
+        "start": 310150,
+        "text": "Киора?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 314150,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 310150
+    },
+    {
+        "action": "PrintText",
+        "end": 317200,
+        "persona": "Сэцуна",
+        "start": 314233,
+        "text": "Ито, я люблю тебя!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 317200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1120",
+        "layer": 0,
+        "persona": "set",
+        "start": 314233
+    },
+    {
+        "action": "PrintText",
+        "end": 322000,
+        "persona": "Макото",
+        "start": 318000,
+        "text": "Нет! Подожди!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 322000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 318000
+    },
+    {
+        "action": "PrintText",
+        "end": 323133,
+        "persona": "Сэцуна",
+        "start": 322100,
+        "text": "Люблю...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 323133,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1140",
+        "layer": 0,
+        "persona": "set",
+        "start": 322100
+    },
+    {
+        "action": "PrintText",
+        "end": 325083,
+        "persona": "Макото",
+        "start": 324100,
+        "text": "Да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 325083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 324100
+    },
+    {
+        "action": "PlayMovie",
+        "end": 374116,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-026",
+        "start": 325350
+    },
+    {
+        "action": "PrintText",
+        "end": 332283,
+        "persona": "Сэцуна",
+        "start": 326033,
+        "text": "Давай хотя бы один раз... Я никому не скажу, пусть это будет наш маленький секрет.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 332283,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1160",
+        "layer": 0,
+        "persona": "set",
+        "start": 326033
+    },
+    {
+        "action": "PrintText",
+        "end": 334166,
+        "persona": "Макото",
+        "start": 333100,
+        "text": "Секрет?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 334166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1170",
+        "layer": 1,
+        "persona": "mak",
+        "start": 333100
+    },
+    {
+        "action": "PrintText",
+        "end": 336350,
+        "persona": "Сэцуна",
+        "start": 336000,
+        "text": "Да! Поэтому...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 336350,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1190",
+        "layer": 0,
+        "persona": "set",
+        "start": 336000
+    },
+    {
+        "action": "PrintText",
+        "end": 339200,
+        "persona": "Макото",
+        "start": 338083,
+        "text": "Киора...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 339200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1210",
+        "layer": 1,
+        "persona": "mak",
+        "start": 338083
+    },
+    {
+        "action": "PrintText",
+        "end": 341050,
+        "persona": "Сэцуна",
+        "start": 340066,
+        "text": "Сэцуна.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 341050,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1220",
+        "layer": 0,
+        "persona": "set",
+        "start": 340066
+    },
+    {
+        "action": "PrintText",
+        "end": 343016,
+        "persona": "Макото",
+        "start": 342083,
+        "text": "Э...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 343016,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1230",
+        "layer": 1,
+        "persona": "mak",
+        "start": 342083
+    },
+    {
+        "action": "PrintText",
+        "end": 345033,
+        "persona": "Сэцуна",
+        "start": 344016,
+        "text": "Ладно, неважно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 345033,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1240",
+        "layer": 0,
+        "persona": "set",
+        "start": 344016
+    },
+    {
+        "action": "PrintText",
+        "end": 349083,
+        "persona": "Макото",
+        "start": 344333,
+        "text": "Прости, я не расслышал, что ты сказала.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 349083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1250",
+        "layer": 1,
+        "persona": "mak",
+        "start": 344333
+    },
+    {
+        "action": "PrintText",
+        "end": 352016,
+        "persona": "Сэцуна",
+        "start": 349116,
+        "text": "Я стесняюсь. Неважно.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 352016,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1260",
+        "layer": 0,
+        "persona": "set",
+        "start": 349116
+    },
+    {
+        "action": "PrintText",
+        "end": 355316,
+        "persona": "Макото",
+        "start": 352233,
+        "text": "Важно! Скажи!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 355316,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1270",
+        "layer": 1,
+        "persona": "mak",
+        "start": 352233
+    },
+    {
+        "action": "PrintText",
+        "end": 357033,
+        "persona": "Сэцуна",
+        "start": 356133,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 357033,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1280",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 356133
+    },
+    {
+        "action": "PrintText",
+        "end": 359100,
+        "persona": "Макото",
+        "start": 358183,
+        "text": "Ну?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 359100,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1290",
+        "layer": 1,
+        "persona": "mak",
+        "start": 358183
+    },
+    {
+        "action": "PrintText",
+        "end": 362283,
+        "persona": "Сэцуна",
+        "start": 359366,
+        "text": "Я хочу, чтобы ты звал меня Сэцуна!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 362283,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1300",
+        "layer": 0,
+        "persona": "set",
+        "start": 359366
+    },
+    {
+        "action": "PrintText",
+        "end": 364150,
+        "persona": "Макото",
+        "start": 362333,
+        "text": "Сэцуна...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 364150,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1310",
+        "layer": 1,
+        "persona": "mak",
+        "start": 362333
+    },
+    {
+        "action": "PrintText",
+        "end": 365216,
+        "persona": "Сэцуна",
+        "start": 364366,
+        "text": "Да.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 365216,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1320",
+        "layer": 0,
+        "persona": "set",
+        "start": 364366
+    },
+    {
+        "action": "PrintText",
+        "end": 367200,
+        "persona": "Макото",
+        "start": 366166,
+        "text": "Сэцуна...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 367200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1330",
+        "layer": 1,
+        "persona": "mak",
+        "start": 366166
+    },
+    {
+        "action": "PrintText",
+        "end": 368333,
+        "persona": "Сэцуна",
+        "start": 368083,
+        "text": "Знаешь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 368333,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1340",
+        "layer": 0,
+        "persona": "set",
+        "start": 368083
+    },
+    {
+        "action": "PrintText",
+        "end": 370300,
+        "persona": "Макото",
+        "start": 369183,
+        "text": "М?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 370300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1360",
+        "layer": 1,
+        "persona": "mak",
+        "start": 369183
+    },
+    {
+        "action": "PlayVoice",
+        "end": 373266,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1350",
+        "layer": -1,
+        "persona": "",
+        "start": 373100
+    },
+    {
+        "action": "CreateBG",
+        "end": 378366,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-027",
+        "start": 374116
+    },
+    {
+        "action": "PrintText",
+        "end": 376233,
+        "persona": "Сэцуна",
+        "start": 375300,
+        "text": "Я тебя хочу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 376233,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1370",
+        "layer": 0,
+        "persona": "set",
+        "start": 375300
+    },
+    {
+        "action": "PlayBgm",
+        "end": 558333,
+        "file": "BGM/SD_BGM/sdbgm25",
+        "start": 378366
+    },
+    {
+        "action": "PlayMovie",
+        "end": 426066,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-028",
+        "start": 378366
+    },
+    {
+        "action": "PrintText",
+        "end": 379350,
+        "persona": "Сэцуна",
+        "start": 379050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 379350,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1390",
+        "layer": 0,
+        "persona": "set",
+        "start": 379050
+    },
+    {
+        "action": "PrintText",
+        "end": 382300,
+        "persona": "Сэцуна",
+        "start": 381016,
+        "text": "Тебе так нравится моя грудь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 382300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1440",
+        "layer": 0,
+        "persona": "set",
+        "start": 381016
+    },
+    {
+        "action": "PrintText",
+        "end": 384300,
+        "persona": "Сэцуна",
+        "start": 384033,
+        "text": "Ох...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 384300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1450",
+        "layer": 0,
+        "persona": "set",
+        "start": 384033
+    },
+    {
+        "action": "PrintText",
+        "end": 386183,
+        "persona": "Макото",
+        "start": 385233,
+        "text": "Чувствуешь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 386183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1460",
+        "layer": 1,
+        "persona": "mak",
+        "start": 385233
+    },
+    {
+        "action": "PrintText",
+        "end": 389350,
+        "persona": "Сэцуна",
+        "start": 389000,
+        "text": "Да она же...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 389350,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1470",
+        "layer": 0,
+        "persona": "set",
+        "start": 389000
+    },
+    {
+        "action": "PrintText",
+        "end": 393383,
+        "persona": "Сэцуна",
+        "start": 390016,
+        "text": "Совсем маленькая...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 393383,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1480",
+        "layer": 0,
+        "persona": "set",
+        "start": 390016
+    },
+    {
+        "action": "PrintText",
+        "end": 398233,
+        "persona": "Макото",
+        "start": 396033,
+        "text": "А потом вот тут...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 398233,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1490",
+        "layer": 1,
+        "persona": "mak",
+        "start": 396033
+    },
+    {
+        "action": "PrintText",
+        "end": 405083,
+        "persona": "Сэцуна",
+        "start": 402333,
+        "text": "Здесь...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 405083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1500",
+        "layer": 0,
+        "persona": "set",
+        "start": 402333
+    },
+    {
+        "action": "PlaySe",
+        "end": 415033,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1621",
+        "layer": 1,
+        "start": 413066
+    },
+    {
+        "action": "PlaySe",
+        "end": 420150,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1631",
+        "layer": 1,
+        "start": 417066
+    },
+    {
+        "action": "PlayMovie",
+        "end": 435033,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-032",
+        "start": 426066
+    },
+    {
+        "action": "PlaySe",
+        "end": 436016,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1661",
+        "layer": 1,
+        "start": 428100
+    },
+    {
+        "action": "PrintText",
+        "end": 433000,
+        "persona": "Макото",
+        "start": 431166,
+        "text": "Ты такая милая...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 433000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1510",
+        "layer": 1,
+        "persona": "mak",
+        "start": 431166
+    },
+    {
+        "action": "PlaySe",
+        "end": 451116,
+        "file": "SysSe/SE_all/h/h_04",
+        "layer": 3,
+        "start": 435033
+    },
+    {
+        "action": "PlayMovie",
+        "end": 437183,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-033",
+        "start": 435033
+    },
+    {
+        "action": "PrintText",
+        "end": 437133,
+        "persona": "Сэцуна",
+        "start": 436133,
+        "text": "Нет...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 437133,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1520",
+        "layer": 0,
+        "persona": "set",
+        "start": 436133
+    },
+    {
+        "action": "PlayMovie",
+        "end": 439333,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-033",
+        "start": 437183
+    },
+    {
+        "action": "PlayMovie",
+        "end": 451116,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-034",
+        "start": 439333
+    },
+    {
+        "action": "PrintText",
+        "end": 441116,
+        "persona": "Сэцуна",
+        "start": 439333,
+        "text": "Ито...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 441116,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1530",
+        "layer": 0,
+        "persona": "set",
+        "start": 439333
+    },
+    {
+        "action": "PrintText",
+        "end": 443300,
+        "persona": "Сэцуна",
+        "start": 442250,
+        "text": "Я больше...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 443300,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1540",
+        "layer": 0,
+        "persona": "set",
+        "start": 442250
+    },
+    {
+        "action": "PrintText",
+        "end": 448066,
+        "persona": "Сэцуна",
+        "start": 444033,
+        "text": "Я больше не могу...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 448066,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1550",
+        "layer": 0,
+        "persona": "set",
+        "start": 444033
+    },
+    {
+        "action": "PrintText",
+        "end": 451316,
+        "persona": "Сэцуна",
+        "start": 450250,
+        "text": "Давай скорее!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 451316,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1560",
+        "layer": 0,
+        "persona": "set",
+        "start": 450250
+    },
+    {
+        "action": "CreateBG",
+        "end": 467366,
+        "file": "Event03/03-A1/03-A1-E08/03-A1-E08-012",
+        "start": 451116
+    },
+    {
+        "action": "PrintText",
+        "end": 454016,
+        "persona": "Макото",
+        "start": 453116,
+        "text": "Ладно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 454016,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1570",
+        "layer": 1,
+        "persona": "mak",
+        "start": 453116
+    },
+    {
+        "action": "PrintText",
+        "end": 459166,
+        "persona": "Макото",
+        "start": 458133,
+        "text": "Сэцуна...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 459166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1580",
+        "layer": 1,
+        "persona": "mak",
+        "start": 458133
+    },
+    {
+        "action": "PrintText",
+        "end": 466000,
+        "persona": "Сэцуна",
+        "start": 463333,
+        "text": "Д... Да...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 466000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1590",
+        "layer": 0,
+        "persona": "set",
+        "start": 463333
+    },
+    {
+        "action": "PlayMovie",
+        "end": 486250,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-041",
+        "start": 467366
+    },
+    {
+        "action": "MoveSom",
+        "end": 478200,
+        "start": 468033
+    },
+    {
+        "action": "PrintText",
+        "end": 478050,
+        "persona": "Сэцуна",
+        "start": 476066,
+        "text": "Ой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 478050,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1600",
+        "layer": 0,
+        "persona": "set",
+        "start": 476066
+    },
+    {
+        "action": "PlaySe",
+        "end": 513383,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1601",
+        "layer": 2,
+        "start": 479100
+    },
+    {
+        "action": "PrintText",
+        "end": 481183,
+        "persona": "Макото",
+        "start": 480166,
+        "text": "Тебе больно?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 481183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1610",
+        "layer": 1,
+        "persona": "mak",
+        "start": 480166
+    },
+    {
+        "action": "CreateBG",
+        "end": 487050,
+        "file": "System/Screen/Black",
+        "start": 486250
+    },
+    {
+        "action": "PlaySe",
+        "end": 514033,
+        "file": "SysSe/SE_all/h/h_03",
+        "layer": 3,
+        "start": 487050
+    },
+    {
+        "action": "PlaySe",
+        "end": 514033,
+        "file": "SysSe/SE_all/h/h_05",
+        "layer": 4,
+        "start": 487050
+    },
+    {
+        "action": "PlaySe",
+        "end": 496350,
+        "file": "SysSe/SE_all/h/h_01",
+        "layer": 5,
+        "start": 487050
+    },
+    {
+        "action": "PlayMovie",
+        "end": 493150,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-038",
+        "start": 487050
+    },
+    {
+        "action": "MoveSom",
+        "end": 499200,
+        "start": 487050
+    },
+    {
+        "action": "CreateBG",
+        "end": 493350,
+        "file": "System/Screen/Black",
+        "start": 493150
+    },
+    {
+        "action": "PlayMovie",
+        "end": 508383,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-044",
+        "start": 493350
+    },
+    {
+        "action": "PlaySe",
+        "end": 513016,
+        "file": "SysSe/SE_all/h/h_04",
+        "layer": 6,
+        "start": 496350
+    },
+    {
+        "action": "MoveSom",
+        "end": 509016,
+        "start": 499200
+    },
+    {
+        "action": "PlayMovie",
+        "end": 514033,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-046",
+        "start": 508383
+    },
+    {
+        "action": "MoveSom",
+        "end": 520266,
+        "start": 509016
+    },
+    {
+        "action": "PlayMovie",
+        "end": 550233,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-047",
+        "start": 514033
+    },
+    {
+        "action": "PrintText",
+        "end": 515200,
+        "persona": "Сэцуна",
+        "start": 514033,
+        "text": "Ито, он у тебя...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 515200,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1620",
+        "layer": 0,
+        "persona": "set",
+        "start": 514033
+    },
+    {
+        "action": "PrintText",
+        "end": 520000,
+        "persona": "Сэцуна",
+        "start": 517366,
+        "text": "Такой большой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 520000,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1630",
+        "layer": 0,
+        "persona": "set",
+        "start": 517366
+    },
+    {
+        "action": "PrintText",
+        "end": 531333,
+        "persona": "Сэцуна",
+        "start": 523150,
+        "text": "Я чувствую, как ты заполняешь мой животик...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 531333,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1640",
+        "layer": 0,
+        "persona": "set",
+        "start": 523150
+    },
+    {
+        "action": "PlaySe",
+        "end": 548183,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1601",
+        "layer": 2,
+        "start": 530183
+    },
+    {
+        "action": "PrintText",
+        "end": 534166,
+        "persona": "Макото",
+        "start": 532033,
+        "text": "Ну не настолько он у меня большой.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 534166,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1650",
+        "layer": 1,
+        "persona": "mak",
+        "start": 532033
+    },
+    {
+        "action": "PrintText",
+        "end": 540083,
+        "persona": "Сэцуна",
+        "start": 534033,
+        "text": "Нет, правда!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 540083,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1660",
+        "layer": 0,
+        "persona": "set",
+        "start": 534033
+    },
+    {
+        "action": "PlaySe",
+        "end": 537316,
+        "file": "SysSe/SE_all/h/nuno1",
+        "layer": 4,
+        "start": 536100
+    },
+    {
+        "action": "MoveSom",
+        "end": 558333,
+        "start": 547333
+    },
+    {
+        "action": "PlaySe",
+        "end": 558333,
+        "file": "SysSe/SE_all/h/h_04",
+        "layer": 4,
+        "start": 548066
+    },
+    {
+        "action": "PlaySe",
+        "end": 558333,
+        "file": "SysSe/SE_all/h/h_05",
+        "layer": 5,
+        "start": 548066
+    },
+    {
+        "action": "PlaySe",
+        "end": 558333,
+        "file": "SysSe/SE_all/h/h_03",
+        "layer": 6,
+        "start": 548066
+    },
+    {
+        "action": "PrintText",
+        "end": 553383,
+        "persona": "Сэцуна",
+        "start": 548166,
+        "text": "Грудь... Грудь... Я... Ах...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 553383,
+        "file": "Voice03/03-A1/03-A1-E08/03-A1-E08-1670",
+        "layer": 0,
+        "persona": "set",
+        "start": 548166
+    },
+    {
+        "action": "PlayMovie",
+        "end": 558333,
+        "file": "Movie03/03-A1/03-A1-E08/03-A1-E08-046",
+        "start": 550233
+    },
+    {
+        "action": "SetSELECT",
+        "answer1": "Кончить наружу.^",
+        "answer2": "NULL",
+        "end": 557266,
+        "start": 552266
+    },
+    {
+        "action": "Next",
+        "start": 558333
+    }
+]

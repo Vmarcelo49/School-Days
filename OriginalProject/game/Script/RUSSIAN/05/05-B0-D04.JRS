@@ -1,0 +1,309 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 79350
+    },
+    {
+        "action": "PlayBgm",
+        "end": 79350,
+        "file": "BGM/SD_BGM/sdbgm19",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 69200,
+        "file": "SysSe/SE_all/h/h_03",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 21316,
+        "file": "SysSe/SE_all/h/h_04",
+        "layer": 2,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 74350,
+        "file": "Event05/05-B0/05-B0-D04/05-B0-D04-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 3233,
+        "persona": "Сэкаи",
+        "start": 0,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3233,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0030",
+        "layer": 0,
+        "persona": "sek",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 6383,
+        "persona": "Макото",
+        "start": 3250,
+        "text": "Вот... Так вот...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6383,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0040",
+        "layer": 1,
+        "persona": "mak",
+        "start": 3250
+    },
+    {
+        "action": "PlaySe",
+        "end": 79350,
+        "file": "SysSe/SE_all/h/vibrator",
+        "layer": 4,
+        "start": 6133
+    },
+    {
+        "action": "PrintText",
+        "end": 19000,
+        "persona": "Сэкаи",
+        "start": 6366,
+        "text": "А... Не слишком ли... Громко... Соседи... Услышат...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 19000,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0050",
+        "layer": 0,
+        "persona": "sek",
+        "start": 6366
+    },
+    {
+        "action": "PrintText",
+        "end": 22133,
+        "persona": "Макото",
+        "start": 19000,
+        "text": "Скорее уж твой голос услышат...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 22133,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0060",
+        "layer": 1,
+        "persona": "mak",
+        "start": 19000
+    },
+    {
+        "action": "PlaySe",
+        "end": 79350,
+        "file": "SysSe/SE_all/h/h_03",
+        "layer": 3,
+        "start": 21333
+    },
+    {
+        "action": "PrintText",
+        "end": 26100,
+        "persona": "Сэкаи",
+        "start": 22133,
+        "text": "Нет!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 26100,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0070",
+        "layer": 0,
+        "persona": "sek",
+        "start": 22133
+    },
+    {
+        "action": "PrintText",
+        "end": 27383,
+        "persona": "Макото",
+        "start": 26116,
+        "text": "Видишь.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 27383,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0080",
+        "layer": 1,
+        "persona": "mak",
+        "start": 26116
+    },
+    {
+        "action": "PrintText",
+        "end": 33350,
+        "persona": "Сэкаи",
+        "start": 27383,
+        "text": "Это... Всё ты...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 33350,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0090",
+        "layer": 0,
+        "persona": "sek",
+        "start": 27383
+    },
+    {
+        "action": "PrintText",
+        "end": 41016,
+        "persona": "Сэкаи",
+        "start": 33350,
+        "text": "Нет!.. Если так и будешь!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 41016,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0100",
+        "layer": 0,
+        "persona": "sek",
+        "start": 33350
+    },
+    {
+        "action": "PrintText",
+        "end": 45316,
+        "persona": "Макото",
+        "start": 41016,
+        "text": "Ничего себе...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 45316,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 41016
+    },
+    {
+        "action": "PrintText",
+        "end": 51383,
+        "persona": "Сэкаи",
+        "start": 45316,
+        "text": "Хвааааатит...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 51383,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0120",
+        "layer": 0,
+        "persona": "sek",
+        "start": 45316
+    },
+    {
+        "action": "PrintText",
+        "end": 54133,
+        "persona": "Макото",
+        "start": 52000,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 54133,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0130",
+        "layer": 1,
+        "persona": "mak",
+        "start": 52000
+    },
+    {
+        "action": "PrintText",
+        "end": 57300,
+        "persona": "Сэкаи",
+        "start": 54116,
+        "text": "Макото... Блин.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 57300,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0140",
+        "layer": 0,
+        "persona": "sek",
+        "start": 54116
+    },
+    {
+        "action": "PrintText",
+        "end": 59133,
+        "persona": "Макото",
+        "start": 57300,
+        "text": "Что?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 59133,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0150",
+        "layer": 1,
+        "persona": "mak",
+        "start": 57300
+    },
+    {
+        "action": "PrintText",
+        "end": 65166,
+        "persona": "Сэкаи",
+        "start": 59133,
+        "text": "Не могу больше терпеть... Вставь!..^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 65166,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0160",
+        "layer": 0,
+        "persona": "sek",
+        "start": 59133
+    },
+    {
+        "action": "PrintText",
+        "end": 68383,
+        "persona": "Макото",
+        "start": 65166,
+        "text": "Ага.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 68383,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0170",
+        "layer": 1,
+        "persona": "mak",
+        "start": 65166
+    },
+    {
+        "action": "PrintText",
+        "end": 74333,
+        "persona": "Сэкаи",
+        "start": 68383,
+        "text": "Какой... он большой...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 74333,
+        "file": "Voice05/05-B0/05-B0-D04/05-B0-D04-0180",
+        "layer": 0,
+        "persona": "sek",
+        "start": 68383
+    },
+    {
+        "action": "PlaySe",
+        "end": 79350,
+        "file": "SysSe/SE_all/h/h_05",
+        "layer": 2,
+        "start": 69183
+    },
+    {
+        "action": "CreateBG",
+        "end": 79350,
+        "file": "Event05/05-B0/05-B0-D04/05-B0-D04-002",
+        "start": 74350
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 79350,
+        "start": 78350
+    },
+    {
+        "action": "Next",
+        "start": 79350
+    }
+]

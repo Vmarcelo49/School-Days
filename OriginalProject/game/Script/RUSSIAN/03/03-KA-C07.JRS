@@ -1,0 +1,164 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 15200
+    },
+    {
+        "action": "PlayBgm",
+        "end": 15200,
+        "file": "BGM/SD_BGM/sdbgm06",
+        "start": 0
+    },
+    {
+        "action": "PlaySe",
+        "end": 15200,
+        "file": "Se03/03-KA/03-KA-C07/SE03-KA-C07-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 1350,
+        "file": "Event03/03-KA/03-KA-C07/03-KA-C07-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1133,
+        "persona": "Макото",
+        "start": 83,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1133,
+        "file": "Voice03/03-KA/03-KA-C07/03-KA-C07-0030",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 83
+    },
+    {
+        "action": "CreateBG",
+        "end": 6266,
+        "file": "Event03/03-KA/03-KA-C07/03-KA-C07-002",
+        "start": 1350
+    },
+    {
+        "action": "PrintText",
+        "end": 4016,
+        "persona": "Макото",
+        "start": 2183,
+        "text": "Кому ты звонишь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4016,
+        "file": "Voice03/03-KA/03-KA-C07/03-KA-C07-0050",
+        "layer": 1,
+        "persona": "mak",
+        "start": 2183
+    },
+    {
+        "action": "PrintText",
+        "end": 6216,
+        "persona": "Сэцуна",
+        "start": 4000,
+        "text": "Я не звоню, я пишу смс-ку.^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6216,
+        "file": "Voice03/03-KA/03-KA-C07/03-KA-C07-0060",
+        "layer": 0,
+        "persona": "set",
+        "start": 4000
+    },
+    {
+        "action": "CreateBG",
+        "end": 7366,
+        "file": "Event03/03-KA/03-KA-C07/03-KA-C07-001",
+        "start": 6266
+    },
+    {
+        "action": "PrintText",
+        "end": 7333,
+        "persona": "Макото",
+        "start": 6283,
+        "text": "И кому пишешь?^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 7333,
+        "file": "Voice03/03-KA/03-KA-C07/03-KA-C07-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 6283
+    },
+    {
+        "action": "CreateBG",
+        "end": 9350,
+        "file": "Event03/03-KA/03-KA-C07/03-KA-C07-004",
+        "start": 7366
+    },
+    {
+        "action": "PrintText",
+        "end": 8283,
+        "persona": "Сэцуна",
+        "start": 8050,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8283,
+        "file": "Voice03/03-KA/03-KA-C07/03-KA-C07-0080",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 8050
+    },
+    {
+        "action": "PrintText",
+        "end": 9266,
+        "persona": "Сэцуна",
+        "start": 9033,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9266,
+        "file": "Voice03/03-KA/03-KA-C07/03-KA-C07-0100",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 9033
+    },
+    {
+        "action": "CreateBG",
+        "end": 15200,
+        "file": "Event03/03-KA/03-KA-C07/03-KA-C07-005",
+        "start": 9350
+    },
+    {
+        "action": "PrintText",
+        "end": 14133,
+        "persona": "Макото",
+        "start": 10016,
+        "text": "Да, пожую-ка я что-нибудь лучше...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 14133,
+        "file": "Voice03/03-KA/03-KA-C07/03-KA-C07-0110",
+        "layer": 1,
+        "persona": "mak",
+        "start": 10016
+    },
+    {
+        "action": "BlackFade",
+        "dir": "OUT",
+        "end": 15200,
+        "start": 14200
+    },
+    {
+        "action": "Next",
+        "start": 15200
+    }
+]

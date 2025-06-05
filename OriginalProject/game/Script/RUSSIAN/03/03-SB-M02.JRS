@@ -1,0 +1,127 @@
+[
+    {
+        "action": "SkipFRAME",
+        "start": 11116
+    },
+    {
+        "action": "PlaySe",
+        "end": 11116,
+        "file": "Se03/03-SB/03-SB-M02/SE03-SB-M02-001",
+        "layer": 1,
+        "start": 0
+    },
+    {
+        "action": "CreateBG",
+        "end": 7133,
+        "file": "Event03/03-SB/03-SB-M02/03-SB-M02-001",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 1166,
+        "persona": "Макото",
+        "start": 0,
+        "text": "Идём со мной!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 1166,
+        "file": "Voice03/03-SB/03-SB-M02/03-SB-M02-0030",
+        "layer": 1,
+        "persona": "mak",
+        "start": 0
+    },
+    {
+        "action": "PrintText",
+        "end": 2266,
+        "persona": "Сэкаи",
+        "start": 1166,
+        "text": "Я не пойду!^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 2266,
+        "file": "Voice03/03-SB/03-SB-M02/03-SB-M02-0040",
+        "layer": 0,
+        "persona": "sek",
+        "start": 1166
+    },
+    {
+        "action": "PrintText",
+        "end": 3300,
+        "persona": "Макото",
+        "start": 2266,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 3300,
+        "file": "Voice03/03-SB/03-SB-M02/03-SB-M02-0050",
+        "layer": 1,
+        "persona": "xxx",
+        "start": 2266
+    },
+    {
+        "action": "PrintText",
+        "end": 4383,
+        "persona": "Сэкаи",
+        "start": 3300,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 4383,
+        "file": "Voice03/03-SB/03-SB-M02/03-SB-M02-0060",
+        "layer": 0,
+        "persona": "xxx",
+        "start": 3300
+    },
+    {
+        "action": "PrintText",
+        "end": 6050,
+        "persona": "Макото",
+        "start": 4383,
+        "text": "Ладно...^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 6050,
+        "file": "Voice03/03-SB/03-SB-M02/03-SB-M02-0070",
+        "layer": 1,
+        "persona": "mak",
+        "start": 4383
+    },
+    {
+        "action": "PlayVoice",
+        "end": 8133,
+        "file": "Voice03/03-SB/03-SB-M02/03-SB-M02-0080",
+        "layer": -1,
+        "persona": "",
+        "start": 6200
+    },
+    {
+        "action": "CreateBG",
+        "end": 11116,
+        "file": "Event03/03-SB/03-SB-M02/03-SB-M02-003",
+        "start": 7133
+    },
+    {
+        "action": "PrintText",
+        "end": 9066,
+        "persona": "Сэкаи",
+        "start": 8116,
+        "text": "....^"
+    },
+    {
+        "action": "PlayVoice",
+        "end": 9066,
+        "file": "Voice03/03-SB/03-SB-M02/03-SB-M02-0090",
+        "layer": 0,
+        "persona": "sek",
+        "start": 8116
+    },
+    {
+        "action": "Next",
+        "start": 11116
+    }
+]
