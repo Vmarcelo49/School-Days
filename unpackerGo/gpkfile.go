@@ -54,7 +54,7 @@ func (gf *GPKFile) Read(data []byte) (int, error) {
 	if gf.isPKG {
 		// Read from GPK package
 		maxLen := int64(len(data))
-		remaining := int64(gf.entry.ComprLen) - gf.position
+		remaining := int64(gf.entry.CompressedFileLen) - gf.position
 		if maxLen > remaining {
 			maxLen = remaining
 		}
@@ -81,15 +81,15 @@ func (gf *GPKFile) Seek(offset int64, whence int) (int64, error) {
 		case io.SeekCurrent:
 			gf.position += offset
 		case io.SeekEnd:
-			gf.position = int64(gf.entry.ComprLen) + offset
+			gf.position = int64(gf.entry.CompressedFileLen) + offset
 		}
 
 		// Ensure position is within bounds
 		if gf.position < 0 {
 			gf.position = 0
 		}
-		if gf.position > int64(gf.entry.ComprLen) {
-			gf.position = int64(gf.entry.ComprLen)
+		if gf.position > int64(gf.entry.CompressedFileLen) {
+			gf.position = int64(gf.entry.CompressedFileLen)
 		}
 
 		// Seek in the underlying GPK file
@@ -103,7 +103,7 @@ func (gf *GPKFile) Seek(offset int64, whence int) (int64, error) {
 // Size returns the size of the file
 func (gf *GPKFile) Size() int64 {
 	if gf.isPKG {
-		return int64(gf.entry.ComprLen)
+		return int64(gf.entry.CompressedFileLen)
 	} else {
 		stat, err := gf.realFile.Stat()
 		if err != nil {
@@ -148,7 +148,7 @@ func (gf *GPKFile) ReadAll() ([]byte, error) {
 // AtEnd returns true if at end of file
 func (gf *GPKFile) AtEnd() bool {
 	if gf.isPKG {
-		return gf.position >= int64(gf.entry.ComprLen)
+		return gf.position >= int64(gf.entry.CompressedFileLen)
 	} else {
 		currentPos, _ := gf.realFile.Seek(0, io.SeekCurrent)
 		size := gf.Size()

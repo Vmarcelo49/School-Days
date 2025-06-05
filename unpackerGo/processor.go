@@ -73,7 +73,7 @@ func processSingleFile(gpkFilePath, outputDir string) error {
 			break
 		}
 		VerbosePrintf(LogVerbose, "  %d: %s (Offset: %d, Size: %d bytes)\n",
-			i+1, entry.Name, entry.Header.Offset, entry.Header.ComprLen)
+			i+1, entry.Name, entry.Header.Offset, entry.Header.CompressedFileLen)
 	}
 
 	// Extract all files using UnpackAll method (now concurrent by default)

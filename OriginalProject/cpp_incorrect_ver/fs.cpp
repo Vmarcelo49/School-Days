@@ -103,13 +103,13 @@ Stream *FS::open(const char *file_name)
     int len = strlen(fn);
     for (int i=0 ; i<len ; i++)
         if (fn[i] == '/')
-            fn[i] = PATH_DELIMITER;
+            fn[i] = PATH_DELIMITER; // reconstruct the path for Windows, audio/file.ogg -> audio\\file.ogg
     #endif
 
     struct stat sts;
     if (stat(fn, &sts) != -1)
     {
-        return new Stream(fn, FILE_OPEN_READ_ST);
+        return new Stream(fn, FILE_OPEN_READ_ST); // return a file stream if the file exists in the filesystem
     }
 
     const char *_fn = strchr(file_name, '/') + 1;
@@ -119,7 +119,7 @@ Stream *FS::open(const char *file_name)
         strcpy(fn_1, _fn);
         strcat(fn_1, ".ogg");
         _fn = fn_1;
-    }
+    } // _fn now contains the file name without the leading slash
     uint32_t size = this->m_packs.size();
     for (uint32_t i=0 ; i<size ; i++)
     {
@@ -128,14 +128,14 @@ Stream *FS::open(const char *file_name)
         {
             Stream *res = new Stream(this->m_packs.at(i));
 
-            if (pidx->uncomprlen)
-                res->m_data.size = pidx->uncomprlen;
+            if (pidx->uncomprlen) // if the file is compressed
+                res->m_data.size = pidx->uncomprlen; // m_data.size is the uncompressed size and we dont do the rest
             else
                 res->m_data.size = pidx->comprlen;
-            res->m_data.offset = pidx->offset;
-            res->m_data.handle = (fileHandle)pidx->offset;
-            res->m_data.stream = new Stream(this->m_packs.at(i)->get_file_name(), FILE_OPEN_READ_ST);
-            NORMA_MESSAGE("FS: File %s opened. Size="PRId64"\n", _fn, res->m_data.size);
+                res->m_data.offset = pidx->offset;
+                res->m_data.handle = (fileHandle)pidx->offset;
+                res->m_data.stream = new Stream(this->m_packs.at(i)->get_file_name(), FILE_OPEN_READ_ST);
+                NORMA_MESSAGE("FS: File %s opened. Size="PRId64"\n", _fn, res->m_data.size);
 
             return res;
         }

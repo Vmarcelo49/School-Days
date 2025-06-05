@@ -110,7 +110,6 @@ func (g *GPK) extractionWorker(workerID int, jobs <-chan FileExtractionJob, resu
 }
 
 // extractSingleFile extracts a single file from the GPK (thread-safe version)
-// This function properly handles ComprHeadLen to produce clean, playable OGG files
 func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string) error {
 	// Use original filename directly (GPK files already have correct extensions)
 	outputPath := filepath.Join(outputDir, entry.Name)
@@ -127,23 +126,13 @@ func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string)
 		return fmt.Errorf("failed to seek to entry %s: %w", entry.Name, err)
 	}
 	// Read exactly the compressed length bytes
-	fileData := make([]byte, entry.Header.ComprLen)
+	fileData := make([]byte, entry.Header.CompressedFileLen)
 	_, err = file.Read(fileData)
 	if err != nil {
 		return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
 	}
 
-	// Skip the compression header if present to get clean data
-	var finalData []byte
-	if entry.Header.ComprHeadLen > 0 && int(entry.Header.ComprHeadLen) < len(fileData) {
-		// Skip the compression header bytes
-		finalData = fileData[entry.Header.ComprHeadLen:]
-	} else {
-		// No compression header or invalid length, use original data
-		finalData = fileData
-	}
-
-	return g.writeExtractedFile(outputPath, finalData)
+	return g.writeExtractedFile(outputPath, fileData)
 }
 
 // writeExtractedFile writes the processed file data to disk

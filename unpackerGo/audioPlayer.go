@@ -96,7 +96,7 @@ func NewGPKAudioReader(gpk *GPK, entry *GPKEntry) (*GPKAudioReader, error) {
 	}
 
 	// Read the compressed data
-	compressedData := make([]byte, entry.Header.ComprLen)
+	compressedData := make([]byte, entry.Header.CompressedFileLen)
 	_, err = file.Read(compressedData)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read entry data: %w", err)
@@ -104,9 +104,9 @@ func NewGPKAudioReader(gpk *GPK, entry *GPKEntry) (*GPKAudioReader, error) {
 
 	// Handle compression header - skip ComprHeadLen bytes to find OGG signature
 	var oggData []byte
-	if entry.Header.ComprHeadLen > 0 && int(entry.Header.ComprHeadLen) < len(compressedData) {
+	if entry.Header.PidxDataHeaderLen > 0 && int(entry.Header.PidxDataHeaderLen) < len(compressedData) {
 		// Skip compression header bytes
-		headerSkipped := compressedData[entry.Header.ComprHeadLen:]
+		headerSkipped := compressedData[entry.Header.PidxDataHeaderLen:]
 
 		// Look for OggS signature after skipping header
 		oggPos := bytes.Index(headerSkipped, []byte("OggS"))

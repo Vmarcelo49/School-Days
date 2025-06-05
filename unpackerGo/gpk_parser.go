@@ -10,7 +10,6 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"strings"
 	"unicode/utf16"
 )
 
@@ -29,14 +28,14 @@ var cipherCode = [16]byte{
 
 // GPKEntryHeader represents an entry header in the GPK file
 type GPKEntryHeader struct {
-	SubVersion   uint16  // Always 0
-	Version      uint16  // Always 0
-	Zero         uint16  // Always 0
-	Offset       uint32  // File data offset in GPK
-	ComprLen     uint32  // Compressed file size
-	Reserved     [4]byte // Padding/reserved space - always 0x20202020 (four ASCII spaces)
-	UncomprLen   uint32  // Uncompressed size (always 0 - size unknown)
-	ComprHeadLen uint8   // Variable compression header length
+	SubVersion        uint16
+	Version           uint16  // Always 1?
+	Zero              uint16  // Always 0
+	Offset            uint32  // File data offset in GPK
+	CompressedFileLen uint32  // Compressed file size
+	MagicDFLT         [4]byte // reserved? magic "DFLT" value, can also be "    " not enough info on it // the original C++ code didnt use it anywhere
+	UncompressedLen   uint32  // raw pidx data length(if magic isn't DFLT, then this filed always zero)
+	PidxDataHeaderLen byte    // Variable compression header length
 }
 
 // GPKSignature represents the GPK file signature
@@ -107,16 +106,16 @@ func readGPKEntryHeader(data []byte) (*GPKEntryHeader, error) {
 	if err := binary.Read(reader, binary.LittleEndian, &header.Offset); err != nil { // 4 bytes
 		return nil, fmt.Errorf("failed to read Offset: %w", err)
 	}
-	if err := binary.Read(reader, binary.LittleEndian, &header.ComprLen); err != nil { // 4 bytes
+	if err := binary.Read(reader, binary.LittleEndian, &header.CompressedFileLen); err != nil { // 4 bytes
 		return nil, fmt.Errorf("failed to read ComprLen: %w", err)
 	}
-	if _, err := io.ReadFull(reader, header.Reserved[:]); err != nil { // 4 bytes - padding/reserved space
+	if _, err := io.ReadFull(reader, header.MagicDFLT[:]); err != nil { // 4 bytes - padding/reserved space
 		return nil, fmt.Errorf("failed to read Reserved field: %w", err)
 	}
-	if err := binary.Read(reader, binary.LittleEndian, &header.UncomprLen); err != nil { // 4 bytes
+	if err := binary.Read(reader, binary.LittleEndian, &header.UncompressedLen); err != nil { // 4 bytes
 		return nil, fmt.Errorf("failed to read UncomprLen: %w", err)
 	}
-	if err := binary.Read(reader, binary.LittleEndian, &header.ComprHeadLen); err != nil { // 1 byte
+	if err := binary.Read(reader, binary.LittleEndian, &header.PidxDataHeaderLen); err != nil { // 1 byte
 		return nil, fmt.Errorf("failed to read ComprHeadLen: %w", err)
 	}
 	// Total: exactly 23 bytes
@@ -281,8 +280,8 @@ func (g *GPK) parseEntries(data []byte) error {
 		}
 
 		// Skip the compression header if present
-		if header.ComprHeadLen > 0 {
-			newOffset += int(header.ComprHeadLen)
+		if header.PidxDataHeaderLen > 0 {
+			newOffset += int(header.PidxDataHeaderLen)
 		}
 
 		offset = newOffset
@@ -347,25 +346,4 @@ func (g *GPK) parseHeader(data []byte, offset int, headerSize int) (*GPKEntryHea
 	}
 
 	return header, offset, nil
-}
-
-// isValidFilename checks if the data at the given offset contains a valid UTF-16 filename
-func (g *GPK) isValidFilename(data []byte, offset int, filenameLen uint16) bool {
-	if offset+2+int(filenameLen)*2 >= len(data) {
-		return false
-	}
-
-	nameBytes := data[offset+2 : offset+2+int(filenameLen)*2]
-	utf16Data := make([]uint16, filenameLen)
-	for i := range int(filenameLen) {
-		utf16Data[i] = binary.LittleEndian.Uint16(nameBytes[i*2 : i*2+2])
-		// Check if this looks like a reasonable character (null character check only)
-		if utf16Data[i] == 0 {
-			return false
-		}
-	}
-
-	possibleName := string(utf16.Decode(utf16Data))
-	// Check if the name looks like a reasonable filename
-	return strings.Contains(possibleName, "/") && strings.Contains(possibleName, ".")
 }

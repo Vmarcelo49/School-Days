@@ -129,8 +129,8 @@ func debugCompressionInfo(gpkFile string) {
 		InfoPrintf("%-30s\t%d\t\t%d\t\t%d\t\t%d\n",
 			entry.Name,
 			entry.Header.Offset,
-			entry.Header.ComprLen,
-			entry.Header.UncomprLen,
-			entry.Header.ComprHeadLen)
+			entry.Header.CompressedFileLen,
+			entry.Header.UncompressedLen,
+			entry.Header.PidxDataHeaderLen)
 	}
 }
