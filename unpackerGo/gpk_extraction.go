@@ -21,6 +21,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"strings"
 	"sync"
 )
 
@@ -163,6 +164,18 @@ func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string)
 
 // writeExtractedFile writes the processed file data to disk
 func (g *GPK) writeExtractedFile(outputPath string, data []byte) error {
+	// Check if this is an OGG file and apply the fix
+	if strings.ToUpper(filepath.Ext(outputPath)) == ".OGG" {
+		fixedData, err := fixOggHeader(data)
+		if err != nil {
+			// If fixing fails, log the error but continue with original data
+			VerbosePrintf(LogVerbose, "    Warning: Failed to fix OGG header for %s: %v\n", filepath.Base(outputPath), err)
+		} else {
+			data = fixedData
+			VerbosePrintf(LogVerbose, "    Applied OGG header fix to %s\n", filepath.Base(outputPath))
+		}
+	}
+
 	outFile, err := os.Create(outputPath)
 	if err != nil {
 		return fmt.Errorf("failed to create output file %s: %w", outputPath, err)

@@ -278,7 +278,6 @@ func (g *Game) loadAudioFile(audioFile AudioFile) error {
 			return fmt.Errorf("failed to read file %s: %v", audioFile.Path, err)
 		}
 	}
-
 	// Decode the OGG file using streaming approach for better compatibility
 	var reader io.ReadSeeker
 
@@ -286,8 +285,15 @@ func (g *Game) loadAudioFile(audioFile AudioFile) error {
 		// Use our custom streaming reader for GPK files that may have header issues
 		reader = NewOGGStreamReader(data, audioFile.GPKEntry)
 	} else {
-		// For regular files, use the data directly
-		fixedData := data // Here we could implement a proper header fix
+		// For regular files, apply OGG header fix if needed
+		fixedData, err := fixOggHeader(data)
+		if err != nil {
+			// If fixing fails, log the error and use original data
+			log.Printf("Warning: Failed to fix OGG header for %s: %v", audioFile.Name, err)
+			fixedData = data
+		} else {
+			log.Printf("Applied OGG header fix to %s", audioFile.Name)
+		}
 		reader = bytes.NewReader(fixedData)
 	}
 
@@ -449,7 +455,14 @@ type OGGStreamReader struct {
 // NewOGGStreamReader creates a new stream reader for OGG data
 func NewOGGStreamReader(data []byte, filename string) *OGGStreamReader {
 	// Try to fix any header issues first
-	fixedData := data
+	fixedData, err := fixOggHeader(data)
+	if err != nil {
+		// If fixing fails, log the error and use original data
+		log.Printf("Warning: Failed to fix OGG header for %s: %v", filename, err)
+		fixedData = data
+	} else {
+		log.Printf("Applied OGG header fix to %s", filename)
+	}
 
 	return &OGGStreamReader{
 		data:   fixedData,
