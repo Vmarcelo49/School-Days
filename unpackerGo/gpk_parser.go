@@ -35,7 +35,7 @@ type GPKEntryHeader struct {
 	CompressedFileLen uint32  // Compressed file size
 	MagicDFLT         [4]byte // reserved? magic "DFLT" value, can also be "    " not enough info on it // the original C++ code didnt use it anywhere
 	UncompressedLen   uint32  // raw pidx data length(if magic isn't DFLT, then this filed always zero)
-	PidxDataHeaderLen byte    // Variable compression header length
+	comprheadlen      byte    // Variable compression header length // unused in the original C++ code, but present in the header
 }
 
 // GPKSignature represents the GPK file signature
@@ -115,7 +115,7 @@ func readGPKEntryHeader(data []byte) (*GPKEntryHeader, error) {
 	if err := binary.Read(reader, binary.LittleEndian, &header.UncompressedLen); err != nil { // 4 bytes
 		return nil, fmt.Errorf("failed to read UncomprLen: %w", err)
 	}
-	if err := binary.Read(reader, binary.LittleEndian, &header.PidxDataHeaderLen); err != nil { // 1 byte
+	if err := binary.Read(reader, binary.LittleEndian, &header.comprheadlen); err != nil { // 1 byte
 		return nil, fmt.Errorf("failed to read ComprHeadLen: %w", err)
 	}
 	// Total: exactly 23 bytes
@@ -280,8 +280,8 @@ func (g *GPK) parseEntries(data []byte) error {
 		}
 
 		// Skip the compression header if present
-		if header.PidxDataHeaderLen > 0 {
-			newOffset += int(header.PidxDataHeaderLen)
+		if header.comprheadlen > 0 {
+			newOffset += int(header.comprheadlen)
 		}
 
 		offset = newOffset

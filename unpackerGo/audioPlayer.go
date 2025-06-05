@@ -81,7 +81,7 @@ func NewGame() *Game {
 
 // NewGPKAudioReader creates a new GPK audio reader that handles compression headers
 // This mimics the C++ Stream class approach for transparent GPK file access
-func NewGPKAudioReader(gpk *GPK, entry *GPKEntry) (*GPKAudioReader, error) {
+func NewGPKAudioReader(gpk *GPK) (*GPKAudioReader, error) {
 	// Open the GPK file
 	file, err := os.Open(gpk.fileName)
 	if err != nil {
@@ -90,7 +90,7 @@ func NewGPKAudioReader(gpk *GPK, entry *GPKEntry) (*GPKAudioReader, error) {
 	defer file.Close()
 
 	// Seek to the entry offset
-	_, err = file.Seek(int64(entry.Header.Offset), 0)
+	_, err = file.Seek(int64(gpk.entries[x].Header.Offset), 0)
 	if err != nil {
 		return nil, fmt.Errorf("failed to seek to entry: %w", err)
 	}
@@ -102,34 +102,7 @@ func NewGPKAudioReader(gpk *GPK, entry *GPKEntry) (*GPKAudioReader, error) {
 		return nil, fmt.Errorf("failed to read entry data: %w", err)
 	}
 
-	// Handle compression header - skip ComprHeadLen bytes to find OGG signature
-	var oggData []byte
-	if entry.Header.PidxDataHeaderLen > 0 && int(entry.Header.PidxDataHeaderLen) < len(compressedData) {
-		// Skip compression header bytes
-		headerSkipped := compressedData[entry.Header.PidxDataHeaderLen:]
-
-		// Look for OggS signature after skipping header
-		oggPos := bytes.Index(headerSkipped, []byte("OggS"))
-		if oggPos >= 0 {
-			oggData = headerSkipped[oggPos:]
-		} else {
-			// Fallback: look in the entire data
-			oggPos = bytes.Index(compressedData, []byte("OggS"))
-			if oggPos >= 0 {
-				oggData = compressedData[oggPos:]
-			} else {
-				return nil, fmt.Errorf("no OGG signature found in entry %s", entry.Name)
-			}
-		}
-	} else {
-		// No compression header or invalid length
-		oggPos := bytes.Index(compressedData, []byte("OggS"))
-		if oggPos >= 0 {
-			oggData = compressedData[oggPos:]
-		} else {
-			return nil, fmt.Errorf("no OGG signature found in entry %s", entry.Name)
-		}
-	}
+	oggData, err := a, a
 
 	return &GPKAudioReader{
 		gpk:      gpk,

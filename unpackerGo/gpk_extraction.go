@@ -131,13 +131,37 @@ func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string)
 	if err != nil {
 		return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
 	}
-
+	// Decompress the file data
+	// TODO FIX THIS AAAAAAAAAAAAAAAAAAAAA
+	if entry.Header.UncompressedLen > 0 { // if higher than 0, it is compressed
+		fileData, err = decompressData(fileData, entry.Header.UncompressedLen)
+		if err != nil {
+			return fmt.Errorf("failed to decompress entry %s: %w", entry.Name, err)
+		}
+		aqui
+	}
 	return g.writeExtractedFile(outputPath, fileData)
 }
 
 // writeExtractedFile writes the processed file data to disk
 func (g *GPK) writeExtractedFile(outputPath string, data []byte) error {
-	// Check if this is an OGG file and apply the fix
+	// the fixer is commented out because it is not needed for now
+	// fixPNGAndOGGHeaders(outputPath, data)
+
+	outFile, err := os.Create(outputPath)
+	if err != nil {
+		return fmt.Errorf("failed to create output file %s: %w", outputPath, err)
+	}
+	defer outFile.Close()
+
+	_, err = outFile.Write(data)
+	if err != nil {
+		return fmt.Errorf("failed to write file %s: %w", outputPath, err)
+	}
+	return nil
+}
+
+func fixPNGAndOGGHeaders(outputPath string, data []byte) error {
 	if strings.ToUpper(filepath.Ext(outputPath)) == ".OGG" {
 		fixedData, err := fixOggHeader(data)
 		if err != nil {
@@ -162,17 +186,6 @@ func (g *GPK) writeExtractedFile(outputPath string, data []byte) error {
 				VerbosePrintf(LogVerbose, "    Applied PNG header fix to %s\n", filepath.Base(outputPath))
 			}
 		}
-	}
-
-	outFile, err := os.Create(outputPath)
-	if err != nil {
-		return fmt.Errorf("failed to create output file %s: %w", outputPath, err)
-	}
-	defer outFile.Close()
-
-	_, err = outFile.Write(data)
-	if err != nil {
-		return fmt.Errorf("failed to write file %s: %w", outputPath, err)
 	}
 	return nil
 }

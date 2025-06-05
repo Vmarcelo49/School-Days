@@ -131,6 +131,6 @@ func debugCompressionInfo(gpkFile string) {
 			entry.Header.Offset,
 			entry.Header.CompressedFileLen,
 			entry.Header.UncompressedLen,
-			entry.Header.PidxDataHeaderLen)
+			entry.Header.comprheadlen)
 	}
 }
