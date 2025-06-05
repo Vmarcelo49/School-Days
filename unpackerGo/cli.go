@@ -1,13 +1,3 @@
-// GPK Unpacker - Command Line Interface
-/*
-the overall simplicity of the audio selector is good but we need to rework how it gets audio from gpk files.
-
-you can understand how this works by looking at the code in cpp_incorrect_ver it is a visual novel engine
-
-we are currently making a simple extractor and a audio player based on it
-
-so your main files to consult are the audio related cpp files from that project
-*/
 package main
 
 import (
@@ -22,7 +12,6 @@ type CLIConfig struct {
 	VerboseMode bool
 	QuietMode   bool
 	OutputDir   string
-	FixPngMode  bool
 	AudioPlayer bool
 	InputPath   string
 }
@@ -43,7 +32,6 @@ func parseCommandLine() *CLIConfig { // Define command line flags
 	flag.BoolVar(&config.QuietMode, "quiet", false, "Suppress all non-essential output")
 	flag.BoolVar(&config.QuietMode, "q", false, "Suppress all non-essential output (short form)")
 	flag.StringVar(&config.OutputDir, "output", "extracted", "Output directory for extracted files")
-	flag.BoolVar(&config.FixPngMode, "fix-png", false, "Fix corrupted PNG files in specified directory")
 	flag.BoolVar(&config.AudioPlayer, "audio-player", false, "Launch the interactive audio player GUI")
 
 	// Custom usage message
@@ -61,7 +49,6 @@ func parseCommandLine() *CLIConfig { // Define command line flags
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -debug BGM.GPK\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -verbose BGM.GPK\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -quiet BGM.GPK\n", os.Args[0])
-		fmt.Fprintf(flag.CommandLine.Output(), "  %s -fix-png extracted/\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "  %s -audio-player\n", os.Args[0])
 	}
 	flag.Parse()
@@ -96,11 +83,6 @@ func runCLI(config *CLIConfig) error {
 		runGameWindow()
 		return nil
 	}
-	// PNG fix mode - fix corrupted PNG files in directory
-	if config.FixPngMode {
-		return FixAllPNGFiles(config.InputPath)
-	}
-
 	// Debug mode - show compression information
 	if config.DebugMode {
 		debugCompressionInfo(config.InputPath)

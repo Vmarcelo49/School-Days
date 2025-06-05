@@ -284,3 +284,27 @@ func FixAllPNGFiles(directory string) error {
 func ValidatePNGSignature(data []byte) bool {
 	return len(data) >= 8 && bytes.HasPrefix(data, pngSignature)
 }
+
+// fixPNGData attempts to fix PNG data by reconstructing missing signature
+// This function works directly with byte arrays and is designed for use
+// during the extraction process, similar to fixOggHeader
+func fixPNGData(data []byte) ([]byte, error) {
+	// Check if PNG is already valid
+	if ValidatePNGSignature(data) {
+		return data, nil
+	}
+
+	// Create a temporary PNGFixer to use existing logic
+	fixer := &PNGFixer{
+		OriginalData:   data,
+		CorruptionInfo: make(map[string]any),
+	}
+
+	// Try to fix the PNG
+	if err := fixer.FixPNG(); err != nil {
+		return nil, err
+	}
+
+	// Return the fixed data
+	return fixer.FixedData, nil
+}

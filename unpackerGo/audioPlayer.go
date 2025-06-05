@@ -291,34 +291,12 @@ func (g *Game) loadAudioFile(audioFile AudioFile) error {
 			// If fixing fails, log the error and use original data
 			log.Printf("Warning: Failed to fix OGG header for %s: %v", audioFile.Name, err)
 			fixedData = data
-		} else {
-			log.Printf("Applied OGG header fix to %s", audioFile.Name)
 		}
 		reader = bytes.NewReader(fixedData)
 	}
-
 	// Decode with the streaming interface
 	stream, err := vorbis.DecodeWithSampleRate(sampleRate, reader)
 	if err != nil {
-		// If decoding fails, analyze the OGG structure for debugging
-		log.Printf("OGG decoding failed for %s: %v", audioFile.Name, err)
-
-		var analysisFilename string
-		if audioFile.IsFromGPK {
-			analysisFilename = audioFile.GPKEntry
-			analyzeOGGStructure(data, audioFile.GPKEntry)
-			analyzeOGGVorbisHeaders(data, audioFile.GPKEntry)
-			analyzeMultipleOGGPages(data, audioFile.GPKEntry)
-		} else {
-			analysisFilename = audioFile.Name
-			analyzeOGGStructure(data, audioFile.Name)
-			analyzeOGGVorbisHeaders(data, audioFile.Name)
-			analyzeMultipleOGGPages(data, audioFile.Name)
-		}
-
-		// Save the problematic OGG data for external analysis
-		saveOGGForAnalysis(data, analysisFilename)
-
 		return fmt.Errorf("failed to decode OGG file %s: %v", audioFile.Name, err)
 	}
 
@@ -460,8 +438,6 @@ func NewOGGStreamReader(data []byte, filename string) *OGGStreamReader {
 		// If fixing fails, log the error and use original data
 		log.Printf("Warning: Failed to fix OGG header for %s: %v", filename, err)
 		fixedData = data
-	} else {
-		log.Printf("Applied OGG header fix to %s", filename)
 	}
 
 	return &OGGStreamReader{
@@ -512,254 +488,11 @@ func (r *OGGStreamReader) Size() int64 {
 	return r.size
 }
 
-// analyzeOGGStructure provides debugging information about OGG file structure
-func analyzeOGGStructure(data []byte, filename string) {
-	log.Printf("Analyzing OGG structure for: %s", filename)
-	log.Printf("Data size: %d bytes", len(data))
-
-	if len(data) < 4 {
-		log.Printf("  ERROR: File too small for OGG")
-		return
-	}
-
-	// Look for OggS pattern
-	oggStartIndex := -1
-	for i := 0; i < len(data)-3; i++ {
-		if data[i] == 'O' && data[i+1] == 'g' && data[i+2] == 'g' && data[i+3] == 'S' {
-			oggStartIndex = i
-			break
-		}
-	}
-
-	if oggStartIndex == -1 {
-		log.Printf("  ERROR: No OggS signature found")
-		log.Printf("  First 20 bytes: %v", data[:min(20, len(data))])
-		return
-	}
-
-	log.Printf("  OggS found at offset: %d", oggStartIndex)
-
-	if oggStartIndex > 0 {
-		log.Printf("  Header prefix size: %d bytes", oggStartIndex)
-		log.Printf("  Header prefix: %v", data[:min(oggStartIndex, 20)])
-	}
-
-	if len(data) >= oggStartIndex+27 {
-		oggData := data[oggStartIndex:]
-		version := oggData[4]
-		headerType := oggData[5]
-		pageSegments := oggData[26]
-
-		log.Printf("  OGG version: %d", version)
-		log.Printf("  Header type: %d", headerType)
-		log.Printf("  Page segments: %d", pageSegments)
-
-		if version != 0 {
-			log.Printf("  WARNING: Non-standard OGG version")
-		}
-
-		headerSize := 27 + int(pageSegments)
-		if len(oggData) >= headerSize {
-			log.Printf("  Header appears complete (size: %d)", headerSize)
-		} else {
-			log.Printf("  WARNING: Incomplete header (need %d, have %d)", headerSize, len(oggData))
-		}
-	} else {
-		log.Printf("  ERROR: OGG header incomplete")
-	}
-}
-
-// Analyze OGG Vorbis headers
-func analyzeOGGVorbisHeaders(data []byte, filename string) {
-	log.Printf("Detailed Vorbis analysis for: %s", filename)
-
-	if len(data) < 45 {
-		log.Printf("  ERROR: Data too small for complete OGG page")
-		return
-	}
-
-	// Parse first OGG page header
-	pageSegments := data[26]
-	headerSize := 27 + int(pageSegments)
-
-	if len(data) < headerSize {
-		log.Printf("  ERROR: Incomplete page header")
-		return
-	}
-
-	// Calculate packet size from segment table
-	var packetSize int
-	for i := 0; i < int(pageSegments); i++ {
-		segmentLen := int(data[27+i])
-		packetSize += segmentLen
-		log.Printf("  Segment %d size: %d", i, segmentLen)
-	}
-
-	log.Printf("  Total packet size: %d bytes", packetSize)
-
-	if len(data) < headerSize+packetSize {
-		log.Printf("  ERROR: Incomplete packet data (need %d, have %d)", headerSize+packetSize, len(data))
-		return
-	}
-
-	// Analyze Vorbis identification header
-	packetData := data[headerSize : headerSize+packetSize]
-	if len(packetData) < 30 {
-		log.Printf("  ERROR: Vorbis packet too small")
-		return
-	}
-
-	// Check Vorbis identification header
-	if packetData[0] != 0x01 {
-		log.Printf("  ERROR: Expected Vorbis ID header (0x01), got 0x%02x", packetData[0])
-		return
-	}
-
-	if string(packetData[1:7]) != "vorbis" {
-		log.Printf("  ERROR: Expected 'vorbis' identifier, got: %s", string(packetData[1:7]))
-		return
-	}
-
-	// Parse Vorbis stream info
-	version := uint32(packetData[7]) | uint32(packetData[8])<<8 | uint32(packetData[9])<<16 | uint32(packetData[10])<<24
-	channels := packetData[11]
-	sampleRate := uint32(packetData[12]) | uint32(packetData[13])<<8 | uint32(packetData[14])<<16 | uint32(packetData[15])<<24
-
-	log.Printf("  Vorbis version: %d", version)
-	log.Printf("  Channels: %d", channels)
-	log.Printf("  Sample rate: %d Hz", sampleRate)
-
-	if version != 0 {
-		log.Printf("  WARNING: Non-standard Vorbis version")
-	}
-
-	if channels == 0 || channels > 8 {
-		log.Printf("  ERROR: Invalid channel count")
-	}
-
-	if sampleRate < 8000 || sampleRate > 192000 {
-		log.Printf("  WARNING: Unusual sample rate")
-	}
-
-	// Check framing bit
-	if packetData[len(packetData)-1]&0x01 == 0 {
-		log.Printf("  ERROR: Framing bit not set in identification header")
-	}
-
-	log.Printf("  Vorbis identification header appears valid")
-}
-
-// analyzeMultipleOGGPages analyzes all OGG pages in the data to find header packets
-func analyzeMultipleOGGPages(data []byte, filename string) {
-	log.Printf("Multi-page OGG analysis for: %s", filename)
-
-	offset := 0
-	pageNum := 0
-
-	for offset < len(data)-27 {
-		// Check for OggS signature
-		if offset+4 <= len(data) && string(data[offset:offset+4]) == "OggS" {
-			log.Printf("  Page %d at offset %d:", pageNum, offset)
-
-			if offset+27 <= len(data) {
-				version := data[offset+4]
-				headerType := data[offset+5]
-				pageSegments := data[offset+26]
-
-				log.Printf("    Version: %d, Header type: %d, Segments: %d", version, headerType, pageSegments)
-
-				headerSize := 27 + int(pageSegments)
-				if offset+headerSize <= len(data) {
-					// Calculate packet sizes
-					var totalPacketSize int
-					for i := range int(pageSegments) {
-						segmentLen := int(data[offset+27+i])
-						totalPacketSize += segmentLen
-					}
-
-					log.Printf("    Packet data size: %d bytes", totalPacketSize)
-
-					// Check packet content if available
-					packetStart := offset + headerSize
-					if packetStart < len(data) && totalPacketSize > 0 && packetStart+totalPacketSize <= len(data) {
-						if totalPacketSize > 0 {
-							packetType := data[packetStart]
-							log.Printf("    First packet type: 0x%02x", packetType)
-
-							if totalPacketSize >= 7 && packetType <= 0x05 {
-								vorbisId := string(data[packetStart+1 : packetStart+7])
-								if vorbisId == "vorbis" {
-									log.Printf("    Vorbis packet detected: %s", getVorbisPacketTypeName(packetType))
-								} else {
-									log.Printf("    Non-vorbis packet or corrupted data")
-								}
-							}
-						}
-					}
-
-					// Move to next page
-					nextOffset := offset + headerSize + totalPacketSize
-					// Align to next OggS boundary if needed
-					found := false
-					for i := nextOffset; i < len(data)-3; i++ {
-						if string(data[i:i+4]) == "OggS" {
-							offset = i
-							found = true
-							break
-						}
-					}
-					if !found {
-						break
-					}
-				} else {
-					break
-				}
-			} else {
-				break
-			}
-			pageNum++
-		} else {
-			offset++
-		}
-	}
-
-	log.Printf("  Total pages found: %d", pageNum)
-}
-
-// getVorbisPacketTypeName returns human readable packet type name
-func getVorbisPacketTypeName(packetType byte) string {
-	switch packetType {
-	case 0x01:
-		return "Identification Header"
-	case 0x03:
-		return "Comment Header"
-	case 0x05:
-		return "Setup Header"
-	default:
-		return "Audio Data"
-	}
-}
-
 func min(a, b int) int {
 	if a < b {
 		return a
 	}
 	return b
-}
-
-// saveOGGForAnalysis saves the extracted OGG data to a file for external analysis
-func saveOGGForAnalysis(data []byte, filename string) {
-	// Create a safe filename
-	safeFilename := strings.ReplaceAll(filename, "/", "_")
-	safeFilename = strings.ReplaceAll(safeFilename, "\\", "_")
-	safeFilename = "debug_" + safeFilename
-
-	err := os.WriteFile(safeFilename, data, 0644)
-	if err != nil {
-		log.Printf("Failed to save OGG data for analysis: %v", err)
-	} else {
-		log.Printf("Saved OGG data to %s for external analysis", safeFilename)
-	}
 }
 
 func runGameWindow() {

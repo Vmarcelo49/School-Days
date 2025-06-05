@@ -1,19 +1,3 @@
-// GPK file extraction functionality
-// This module handles the concurrent extraction of files from GPK archives.
-//
-// CRITICAL UPDATE (Based on analysis):
-// OGG files in GPK archives have custom compression headers that must carefully considered
-// to produce playable audio files. The ComprHeadLen field in GPK entry headers
-// more info on them inside cpp_incorrect_ver, all the audio and png related code
-//
-// Key findings:
-// 1. ComprHeadLen contains the number of compression header bytes (typically 3-5)
-// 2. After skipping these bytes, we need to find the actual "OggS" signature
-// 3. The original C++ engine handles this transparently through the Stream class
-// 4. Our extractor must manually skip these headers to produce clean OGG files
-//
-// This implementation correctly handles ComprHeadLen to extract playable OGG files.
-
 package main
 
 import (
@@ -173,6 +157,21 @@ func (g *GPK) writeExtractedFile(outputPath string, data []byte) error {
 		} else {
 			data = fixedData
 			VerbosePrintf(LogVerbose, "    Applied OGG header fix to %s\n", filepath.Base(outputPath))
+		}
+	}
+
+	// Check if this is a PNG file and apply the fix
+	if strings.ToUpper(filepath.Ext(outputPath)) == ".PNG" {
+		fixedData, err := fixPNGData(data)
+		if err != nil {
+			// If fixing fails, log the error but continue with original data
+			VerbosePrintf(LogVerbose, "    Warning: Failed to fix PNG header for %s: %v\n", filepath.Base(outputPath), err)
+		} else {
+			// Only update data if it was actually fixed (not already valid)
+			if !ValidatePNGSignature(data) && ValidatePNGSignature(fixedData) {
+				data = fixedData
+				VerbosePrintf(LogVerbose, "    Applied PNG header fix to %s\n", filepath.Base(outputPath))
+			}
 		}
 	}
 
