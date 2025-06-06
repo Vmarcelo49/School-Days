@@ -61,9 +61,8 @@ func (g *Game) Init() error {
 	if err = g.filesystem.Init(); err != nil {
 		return fmt.Errorf("failed to initialize filesystem: %w", err)
 	}
-
 	// Initialize graphics renderer
-	g.graphics = graphics.NewRenderer(g.screenWidth, g.screenHeight)
+	g.graphics = graphics.NewRenderer(g.screenWidth, g.screenHeight, g.filesystem)
 	if err = g.graphics.Init(); err != nil {
 		return fmt.Errorf("failed to initialize graphics: %w", err)
 	}
@@ -82,9 +81,8 @@ func (g *Game) Init() error {
 	if err = g.script.Init(); err != nil {
 		return fmt.Errorf("failed to initialize script engine: %w", err)
 	}
-
 	// Initialize menu system
-	g.menu = menu.NewManager(g.graphics, g.audio, g.input)
+	g.menu = menu.NewManager(g.graphics, g.audio, g.input, g.filesystem, g.screenWidth, g.screenHeight)
 	if err = g.menu.Init(); err != nil {
 		return fmt.Errorf("failed to initialize menu: %w", err)
 	}

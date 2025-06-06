@@ -3,7 +3,6 @@ package main
 import (
 	"bytes"
 	"compress/zlib"
-	"encoding/binary"
 	"fmt"
 	"io"
 )
@@ -34,32 +33,38 @@ func decompressData(compressedData []byte, uncompressedSize uint32) ([]byte, err
 	if len(compressedData) < 4 {
 		return nil, fmt.Errorf("compressed data too short: need at least 4 bytes, have %d", len(compressedData))
 	}
+	/*
+		originalSize := binary.LittleEndian.Uint32(compressedData)
 
-	originalSize := binary.LittleEndian.Uint32(compressedData)
-
-	// Verify the size matches what we expect
-	if originalSize != uncompressedSize {
-		return nil, fmt.Errorf("size mismatch: header says %d, expected %d", originalSize, uncompressedSize)
-	}
-
+		// Verify the size matches what we expect
+		if originalSize != uncompressedSize {
+			return nil, fmt.Errorf("size mismatch: header says %d, expected %d", originalSize, uncompressedSize)
+		}
+	*/
 	// Skip the 4-byte size header and start decompression from offset 4
+	fmt.Printf("first 16 bytes of compressed data:%02x \n", compressedData[:16])
+	fmt.Printf("compressed data length: %d, uncompressed size: %d\n", len(compressedData), uncompressedSize)
+	fmt.Printf("Compressed data starts with: %02X %02X\n", compressedData[0], compressedData[1])
+	highByte := byte((uncompressedSize >> 8) & 0xFF)
+	lowByte := byte(uncompressedSize & 0xFF)
+	fmt.Printf("Expected uncompressed size: %02X %02X\n", highByte, lowByte)
 	zlibReader, err := zlib.NewReader(bytes.NewReader(compressedData[4:]))
 	if err != nil {
-		return nil, fmt.Errorf("failed to create zlib reader: %w", err)
+		return nil, fmt.Errorf("failed to create zlib reader: %w ", err)
 	}
 	defer zlibReader.Close()
-	fmt.Println("Decompressing data with expected size:", uncompressedSize)
+	fmt.Printf("Decompressing data with expected size: %x", uncompressedSize)
 	// Decompress the data
 	decompressedData, err := io.ReadAll(zlibReader)
 	if err != nil {
 		return nil, fmt.Errorf("failed to decompress data: %w", err)
 	}
-
-	// Verify the decompressed size
-	if len(decompressedData) != int(uncompressedSize) {
-		return nil, fmt.Errorf("decompressed size mismatch: got %d bytes, expected %d", len(decompressedData), uncompressedSize)
-	}
-
+	/*
+		// Verify the decompressed size
+		if len(decompressedData) != int(uncompressedSize) {
+			return nil, fmt.Errorf("decompressed size mismatch: got %d bytes, expected %d", len(decompressedData), uncompressedSize)
+		}
+	*/
 	return decompressedData, nil
 }
 

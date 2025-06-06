@@ -104,3 +104,33 @@ func (m *Manager) IsKeyJustPressed(key ebiten.Key) bool {
 func (m *Manager) GetMouseState() MouseState {
 	return m.mouse
 }
+
+// GetNormalizedMousePosition returns mouse position normalized to 0.0-1.0 range
+func (m *Manager) GetNormalizedMousePosition(screenWidth, screenHeight int) (float64, float64) {
+	if screenWidth <= 0 || screenHeight <= 0 {
+		return 0.0, 0.0
+	}
+
+	normalizedX := float64(m.mouse.X) / float64(screenWidth)
+	normalizedY := float64(m.mouse.Y) / float64(screenHeight)
+
+	// Clamp to valid range
+	if normalizedX < 0.0 {
+		normalizedX = 0.0
+	} else if normalizedX > 1.0 {
+		normalizedX = 1.0
+	}
+
+	if normalizedY < 0.0 {
+		normalizedY = 0.0
+	} else if normalizedY > 1.0 {
+		normalizedY = 1.0
+	}
+
+	return normalizedX, normalizedY
+}
+
+// CheckPointInRegion checks if normalized coordinates are within a normalized region
+func (m *Manager) CheckPointInRegion(normX, normY, x1, y1, x2, y2 float64) bool {
+	return normX >= x1 && normX <= x2 && normY >= y1 && normY <= y2
+}

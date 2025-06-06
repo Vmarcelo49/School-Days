@@ -132,14 +132,17 @@ func (g *GPK) extractSingleFile(file *os.File, entry GPKEntry, outputDir string)
 		return fmt.Errorf("failed to read entry %s: %w", entry.Name, err)
 	}
 	// Decompress the file data
-	// TODO FIX THIS AAAAAAAAAAAAAAAAAAAAA
-	if entry.Header.UncompressedLen > 0 { // if higher than 0, it is compressed
-		fileData, err = decompressData(fileData, entry.Header.UncompressedLen)
-		if err != nil {
-			return fmt.Errorf("failed to decompress entry %s: %w", entry.Name, err)
+	// TODO fix the decompression, dunno if its working
+	/*
+		if entry.Header.UncompressedLen > 0 { // if higher than 0, it is compressed
+			fileData, err = decompressData(fileData, entry.Header.UncompressedLen)
+			if err != nil {
+				return fmt.Errorf("failed to decompress entry %s: %w", entry.Name, err)
+			}
 		}
-		aqui
-	}
+
+		// decrypt the data
+	*/
 	return g.writeExtractedFile(outputPath, fileData)
 }
 

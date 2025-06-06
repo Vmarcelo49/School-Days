@@ -79,20 +79,14 @@ func (e *Engine) AddEvent(eventType int, data ...string) {
 		State:     EventWait,
 		Data:      data,
 		Direction: true,
+		Duration:  time.Second * 2,                        // Default 2 seconds
+		StartTime: time.Now().Add(time.Millisecond * 100), // Start in 100ms
 	}
+	event.EndTime = event.StartTime.Add(event.Duration)
 
-	// Parse timing information if provided
-	if len(data) >= 3 {
-		// data[1] should be start time, data[2] should be duration
-		// For now, use simple duration parsing
-		event.Duration = time.Second * 2                         // Default 2 seconds
-		event.StartTime = time.Now().Add(time.Millisecond * 100) // Start in 100ms
-		event.EndTime = event.StartTime.Add(event.Duration)
-
-		// Parse direction from data[0]
-		if len(data) > 0 {
-			event.Direction = (data[0] == "IN")
-		}
+	// Parse direction from first data element if provided
+	if len(data) > 0 {
+		event.Direction = (data[0] == "IN")
 	}
 
 	e.events = append(e.events, event)
@@ -116,6 +110,7 @@ func (e *Engine) Update() error {
 		if event.State == EventWait && currentTime.After(event.StartTime) {
 			event.State = EventRun
 			e.startEvent(event)
+			continue // Don't update on the same frame it starts
 		}
 
 		// Process running events

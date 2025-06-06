@@ -1,17 +1,18 @@
 package graphics
 
 import (
+	"fmt"
 	"image"
-	"image/color"
-	_ "image/jpeg" // JPEG decoder
-	_ "image/png"  // PNG decoder
 	"log"
-	"os"
-	"path/filepath"
 
 	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
 )
+
+// FileSystemInterface defines the interface for filesystem operations
+type FileSystemInterface interface {
+	ReadFile(filename string) ([]byte, error)
+	Exists(filename string) bool
+}
 
 // Layer constants based on the original C++ engine
 const (
@@ -54,17 +55,25 @@ type Renderer struct {
 	fadeAlpha   float64
 	fadeToWhite bool
 
-	// Special textures
-	blackTexture *ebiten.Image
-	whiteTexture *ebiten.Image
+	// Texture management
+	textureManager *TextureManager
+
+	// Filesystem interface for loading assets
+	filesystem FileSystemInterface
 }
 
 // NewRenderer creates a new graphics renderer
-func NewRenderer(width, height int) *Renderer {
-	return &Renderer{
+func NewRenderer(width, height int, filesystem FileSystemInterface) *Renderer {
+	renderer := &Renderer{
 		screenWidth:  width,
 		screenHeight: height,
+		filesystem:   filesystem,
 	}
+
+	// Initialize texture manager
+	renderer.textureManager = NewTextureManager(filesystem, width, height)
+
+	return renderer
 }
 
 // Init initializes the graphics renderer
@@ -83,13 +92,6 @@ func (r *Renderer) Init() error {
 		}
 	}
 
-	// Create black and white textures for fade effects
-	r.blackTexture = ebiten.NewImage(r.screenWidth, r.screenHeight)
-	r.blackTexture.Fill(color.RGBA{0, 0, 0, 255})
-
-	r.whiteTexture = ebiten.NewImage(r.screenWidth, r.screenHeight)
-	r.whiteTexture.Fill(color.RGBA{255, 255, 255, 255})
-
 	log.Println("Graphics renderer initialized")
 	return nil
 }
@@ -97,49 +99,11 @@ func (r *Renderer) Init() error {
 // LoadTexture loads a texture into the specified layer
 func (r *Renderer) LoadTexture(filename string, layer int) error {
 	if layer < 0 || layer >= LayersCount {
-		return nil
+		return fmt.Errorf("invalid layer index: %d", layer)
 	}
 
-	// Try to load the actual image file first
-	fullPath := filepath.Join("assets", filename)
-
-	// Check if file exists
-	if _, err := os.Stat(fullPath); err == nil {
-		// File exists, try to load it
-		img, _, err := ebitenutil.NewImageFromFile(fullPath)
-		if err != nil {
-			log.Printf("Failed to load texture %s: %v, using placeholder", filename, err)
-		} else {
-			r.layers[layer] = img
-			r.layerStates[layer].Visible = true
-			log.Printf("Loaded texture %s into layer %d", filename, layer)
-			return nil
-		}
-	}
-
-	// Fall back to placeholder if file doesn't exist or failed to load
-	img := ebiten.NewImage(r.screenWidth, r.screenHeight)
-
-	// Create different colors for different layers for testing
-	var fillColor color.RGBA
-	switch layer {
-	case LayerBG:
-		fillColor = color.RGBA{50, 50, 100, 255} // Dark blue background
-	case LayerTitleBase:
-		fillColor = color.RGBA{100, 50, 50, 255} // Dark red
-	case LayerMenu:
-		fillColor = color.RGBA{50, 100, 50, 255} // Dark green
-	default:
-		fillColor = color.RGBA{80, 80, 80, 255} // Gray
-	}
-
-	img.Fill(fillColor)
-
-	r.layers[layer] = img
-	r.layerStates[layer].Visible = true
-
-	log.Printf("Created placeholder texture for %s in layer %d", filename, layer)
-	return nil
+	// Use texture manager to load the texture
+	return r.textureManager.LoadTextureToLayer(r, filename, layer)
 }
 
 // UnloadTexture removes a texture from the specified layer
@@ -207,9 +171,9 @@ func (r *Renderer) SetFade(alpha float64, toWhite bool) {
 
 	if alpha > 0 {
 		if toWhite {
-			r.fadeTexture = r.whiteTexture
+			r.fadeTexture = r.textureManager.GetWhiteTexture()
 		} else {
-			r.fadeTexture = r.blackTexture
+			r.fadeTexture = r.textureManager.GetBlackTexture()
 		}
 	} else {
 		r.fadeTexture = nil
@@ -256,4 +220,30 @@ func (r *Renderer) drawLayer(screen *ebiten.Image, layer int) {
 // GetScreenSize returns the screen dimensions
 func (r *Renderer) GetScreenSize() (int, int) {
 	return r.screenWidth, r.screenHeight
+}
+
+// GetTextureManager returns the texture manager instance
+func (r *Renderer) GetTextureManager() *TextureManager {
+	return r.textureManager
+}
+
+// LoadTextureFromCache loads a texture from cache if available
+func (r *Renderer) LoadTextureFromCache(filename string, layer int) error {
+	if layer < 0 || layer >= LayersCount {
+		return fmt.Errorf("invalid layer index: %d", layer)
+	}
+
+	texture, err := r.textureManager.LoadTexture(filename)
+	if err != nil {
+		return err
+	}
+
+	r.layers[layer] = texture
+	r.layerStates[layer].Visible = true
+	return nil
+}
+
+// ClearTextureCache clears the texture cache
+func (r *Renderer) ClearTextureCache() {
+	r.textureManager.ClearCache()
 }

@@ -79,9 +79,8 @@ func NewGame() *Game {
 	return game
 }
 
-// NewGPKAudioReader creates a new GPK audio reader that handles compression headers
-// This mimics the C++ Stream class approach for transparent GPK file access
-func NewGPKAudioReader(gpk *GPK) (*GPKAudioReader, error) {
+// NewGPKAudioReader creates a new GPK audio reader
+func NewGPKAudioReader(gpk *GPK, entry *GPKEntry) (*GPKAudioReader, error) {
 	// Open the GPK file
 	file, err := os.Open(gpk.fileName)
 	if err != nil {
@@ -90,7 +89,7 @@ func NewGPKAudioReader(gpk *GPK) (*GPKAudioReader, error) {
 	defer file.Close()
 
 	// Seek to the entry offset
-	_, err = file.Seek(int64(gpk.entries[x].Header.Offset), 0)
+	_, err = file.Seek(int64(entry.Header.Offset), 0)
 	if err != nil {
 		return nil, fmt.Errorf("failed to seek to entry: %w", err)
 	}
@@ -101,8 +100,7 @@ func NewGPKAudioReader(gpk *GPK) (*GPKAudioReader, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to read entry data: %w", err)
 	}
-
-	oggData, err := a, a
+	oggData := compressedData // ogg files are already decompressed in GPK
 
 	return &GPKAudioReader{
 		gpk:      gpk,
